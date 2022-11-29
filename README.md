@@ -132,3 +132,25 @@ tmpfs /dev/shm tmpfs defaults,rw,nodev,nofail,noatime,nosuid,size=6G 0 0 0
 ```
 tmpfs /tmp tmpfs defaults,rw,nodev,nofail,noatime,nosuid,size=6G 0 0 0
 ```
+
+
+# SM Player
+
+- [ ] [SMPlayer](https://www.smplayer.info/en/downloads "SMPlayer — безплатный медиаплеер для Windows и Linux со встроенными кодеками, поддерживающий практически все форматы видео и аудио. А главное это TouTube без РЕКЛАМЫ")<br/>For install:<br/>`yay -S smplayer`<br/>For Dark Theme:<br/>`yay -S smplayer-themes`<br/>`yay -S smplayer-skins`
+
+# gThumb
+
+- [ ] [gThumb](https://pingvinus.ru/program/gthumb "Программа просмотра изображений для рабочего стола GNOME")
+
+# Shariki game
+
+- [ ] [Five or More](https://wiki.gnome.org/Apps/Five%20or%20more) — игра Lines. ШАРИКИ
+
+# Game
+
+- [ ] quadrapassel - аналог классической советской игры «Тетрис».
+
+# CPU 
+
+- [ ] [Boost Changer](https://github.com/nbebaw/boostchanger "Управляет турбонаддувом процессора и настройками скорости процессора")
+
