@@ -1,2 +1,2 @@
-# SharesObsidian-
+# SharesObsidian
 Shares Notes
