@@ -1,0 +1,2 @@
+# SharesObsidian-
+Shares Notes
