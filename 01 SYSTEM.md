@@ -84,7 +84,7 @@
  ## ➖ 
 ---
 
-# 🛠 **"Settings" Aplications for GNOME** 🛠
+# 🛠 **"SETTINGS" Aplications for GNOME** 🛠
  ## ➖ gnome-control-center — Центр управления для GNOME
  ## ➖ gnome-tweaks — Дополнительные настройки GNOME
  ## ➖ Adwaita Dark — Темная тема для GNOME (предоставляется пакетом gnome-themes-extra)
@@ -102,7 +102,7 @@
  ## ➖ 
 ---
 
-# 🍀 **Extensions for GNOME** 🍀
+# 🍀 **EXTENSIONS for GNOME** 🍀
  ## ➖ [Weather in The Clock](https://github.com/JasonLG1979/gnome-shell-extension-weather-in-the-clock/ "Отображение текущей погоды в часах.")
  ## ➖ [Системный монитор GNOME](https://github.com/mgalgs/gnome-shell-system-monitor-applet "Отображение информации в строке состояния GNOME (память, процессор, скорость интернета и т.д.")
  ## ➖ [GPaste](https://www.imagination-land.org/tags/GPaste.html "Система управления буфером обмена для GNOME 40 - (Clipboard management system)")
