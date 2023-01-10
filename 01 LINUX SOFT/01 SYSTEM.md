@@ -48,6 +48,7 @@
 ---
 
 # ⛺ **TERMINAL** ⛺
+ ## ➖ [SSHUTTLE]("https://github.com/sshuttle/sshuttle") - VPN через SSH (Для подключения сначало ставим саму прогу `sshuttle`, а потом вводим в терминале: `sshuttle -vvvv -r ubuntu@168.138.134.130 -x 168.138.134.130 0/0)` для подключения. [VIDEO TUTORIAL](https://www.youtube.com/watch?v=7XDOuH-MPvw)
  ## ➖ NANO (Консольный Текстовый Редактор)
  ## ➖ [AstroVIM](https://www.youtube.com/watch?v=LKnuIazeiM4 "Это полноценная ИДЕ на основе NeoVIM со всеми нужными плагинами")
  ## ➖ TMUX
@@ -75,6 +76,7 @@
  ## ➖ [WhatsTron](https://vjba.github.io/whatstron "это настольный клиент WhatsApp для Linux, созданный с помощью Electron.") - WhatsApp для Linux
  ## ➖ [Telegram Desktop](https://desktop.telegram.org)
  ## ➖ [XAMPP Apache + MariaDB + PHP + Perl](https://www.apachefriends.org/ru/index.html "OpenServer для Linux")
+ ## ➖ [Proxy Switcher в GNOME и сеть Tor](https://www.youtube.com/watch?v=mM9680l7MyY&list=PLcrZh07ZsO5GO97bZtxqFlSw26UKgz5lB&index=8)
  ## ➖ 
 ---
  
@@ -84,7 +86,7 @@
  ## ➖ 
 ---
 
-# 🛠 **"SETTINGS" Aplications for GNOME** 🛠
+# 🛠 **SETTINGS Aplications for GNOME** 🛠
  ## ➖ gnome-control-center — Центр управления для GNOME
  ## ➖ gnome-tweaks — Дополнительные настройки GNOME
  ## ➖ Adwaita Dark — Темная тема для GNOME (предоставляется пакетом gnome-themes-extra)
