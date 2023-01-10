@@ -26,7 +26,7 @@ sudo ip link set wlan0 up
 ```
 
 # Подключение к сети “OrrHome”:
-Если внешни USB Wifi Adapter:
+Если внешний USB Wifi Adapter:
 ```
 iwconfig wlan0 essid OrrHome
 ```
