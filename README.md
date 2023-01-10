@@ -2,20 +2,16 @@
 
 
 # [Как изменить размер tmp (tmpfs) налету](http://www.michurin.net/tools/remount-resize-tmpfs.html)
-
-## Смотрим, сколько места у нас сейчас:
-
-### Это команда покажет все
+ ## Смотрим, сколько места у нас сейчас:
+  ### Это команда покажет все
 ```
 df -h
 ```
-
-### Это команда покажет /tmp
+  ### Это команда покажет /tmp
 ```
 df -h /tmp
 ```
-
-### Это команда покажет /dev/shm
+  ### Это команда покажет /dev/shm
 ```
 df -h /dev/shm
 ```
@@ -23,8 +19,7 @@ df -h /dev/shm
 ```
 df -h | grep -Ei 'shm|size'
 ```
-
-## А теперь увеличим нужную tmpfs в ручную без перезагрузки. Оно увеличится до следующей перезагрузки. Изменяем размер так:
+ ## А теперь увеличим нужную tmpfs в ручную без перезагрузки. Оно увеличится до следующей перезагрузки. Изменяем размер так:
 ```
 mount -o remount,size=6G /tmp
 ```
@@ -32,8 +27,7 @@ mount -o remount,size=6G /tmp
 ```
 mount -o remount,size=6G /dev/shm
 ```
-
-## Если захотите увеличить на постоянной основе придется колдовать в файле `/etc/fstab` нужно будет добавить строчку: 
+ ## Если захотите увеличить на постоянной основе придется колдовать в файле `/etc/fstab` нужно будет добавить строчку: 
 ```
 tmpfs /dev/shm tmpfs defaults,rw,nodev,nofail,noatime,nosuid,size=6G 0 0 0
 ```
@@ -41,6 +35,3 @@ tmpfs /dev/shm tmpfs defaults,rw,nodev,nofail,noatime,nosuid,size=6G 0 0 0
 ```
 tmpfs /tmp tmpfs defaults,rw,nodev,nofail,noatime,nosuid,size=6G 0 0 0
 ```
-
-
-
