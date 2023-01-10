@@ -9,7 +9,7 @@
  ## ➖ [VPaint](https://github.com/dalboris/vpaint "это экспериментальный прототип , основанный на комплексе векторной графики (VGC). Он позволяет создавать иллюстрации и анимацию, не зависящие от разрешения, с использованием инновационных технологий.")
  ## ➖ [Photoflare](https://photoflare.io/ "Photoflare вдохновлен редактором изображений, который в настоящее время доступен только в Microsoft Windows")
  ## ➖ [Share Screen Shots](https://pastenow.ru "Делиться скринами в интернете")
- ## ➖
+ ## ➖ [Online конвертер иконок favicon.ico из формата PNG](http://www.michurin.net/online-tools/favicon-converter.html)
  ## ➖ [Pencil2D Animation](https://www.pencil2d.org/download/ "Простой, интуитивно понятный инструмент для создания рисованной 2D-анимации.")
  ## ➖ [Synfig Studio](https://www.synfig.org/)
 
