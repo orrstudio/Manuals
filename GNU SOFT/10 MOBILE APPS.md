@@ -1,4 +1,5 @@
 # 10 MOBILE APPS
+ ## ➖ [ReadEra](https://readera.org/book-reader "ReadEra - приложение под Android для чтения книг и просмотра документов, бесплатное и без рекламы")
  ## ➖ [OctoDroid](https://github.com/slapperwan/gh4a "Github client for Android")
  ## ➖ [Obsidian](https://obsidian.md/)
  ## ➖ [F-Droid](https://f-droid.org/)
@@ -10,6 +11,6 @@
  ## ➖ ADM - Downloader
  ## ➖ AIDA64
  ## ➖ Authenticator
- ## ➖ 
+ ## ➖ Material Files - Проводник
  ## ➖ 
 ---
