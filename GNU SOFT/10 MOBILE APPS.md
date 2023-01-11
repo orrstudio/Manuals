@@ -12,5 +12,5 @@
  ## ➖ AIDA64
  ## ➖ Authenticator
  ## ➖ Material Files - Проводник
- ## ➖ 
+ ## ➖ SMSRadar
 ---
