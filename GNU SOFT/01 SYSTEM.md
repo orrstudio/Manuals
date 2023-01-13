@@ -24,7 +24,8 @@
 
 ## ➖ FileZilla (FTP)
 
-## ➖
+## ➖ Tor & Gnome Proxy plugin
+## ➖ sshuttle -vvvv -r ubuntu@168.188.188.188 -x 168.188.188.188 0/0
 
 ---
 
@@ -68,8 +69,8 @@
 
 ## ➖ [AppImageLauncher](joplin://x-callback-url/openNote?id=fabc4251115544d39e580e698cc2cae9)
 
-## ➖
-
+## ➖ [PowerMate](https://github.com/stefansundin/powermate-linux "Linux userspace driver for the Griffin PowerMate. (For the classic USB model. There is a proof-of-concept for the Bluetooth model.)")
+## ➖ 
 ---
 
 # 📂 **COMMANDERS** 📂
