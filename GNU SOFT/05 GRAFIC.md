@@ -12,7 +12,7 @@
  ## ➖ [Online конвертер иконок favicon.ico из формата PNG](http://www.michurin.net/online-tools/favicon-converter.html)
  ## ➖ [Pencil2D Animation](https://www.pencil2d.org/download/ "Простой, интуитивно понятный инструмент для создания рисованной 2D-анимации.")
  ## ➖ [Synfig Studio](https://www.synfig.org/)
-
+ ## ➖ [Eyedropper](https://github.com/FineFindus/eyedropper "New Color Picker for GNOME")
  ## ➖ ksnip - Инструмент для создания и аннотирования снимков экрана
  ## ➖ 
 ---
