@@ -28,6 +28,8 @@
     - [Создаём нового пользователя `orr`](#%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%91%D0%BC-%D0%BD%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F-orr)
     - [Задаём пользователю новый пароль](#%D0%B7%D0%B0%D0%B4%D0%B0%D1%91%D0%BC-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8E-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BF%D0%B0%D1%80%D0%BE%D0%BB%D1%8C)
     - [Делаем пользователю orr право на пользование SUDO.](#%D0%B4%D0%B5%D0%BB%D0%B0%D0%B5%D0%BC-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8E-orr-%D0%BF%D1%80%D0%B0%D0%B2%D0%BE-%D0%BD%D0%B0-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-sudo)
+  - [Как изменить размер tmp (tmpfs) налету](#%D0%BA%D0%B0%D0%BA-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80-tmp-tmpfs-%D0%BD%D0%B0%D0%BB%D0%B5%D1%82%D1%83)
+  -  [Управляем тактовой частотой процессора](#%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC-%D1%82%D0%B0%D0%BA%D1%82%D0%BE%D0%B2%D0%BE%D0%B9-%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%B0)
 
 
 
@@ -377,3 +379,98 @@ sudo -ll
 ```
 usermod -aG wheel orr
 ```
+
+## [Как изменить размер tmp (tmpfs) налету](http://www.michurin.net/tools/remount-resize-tmpfs.html)
+
+> Смотрим, сколько места у нас сейчас:
+
+Это команда покажет все
+```
+df -h
+```
+Это команда покажет /tmp
+```
+df -h /tmp
+```
+Это команда покажет /dev/shm
+```
+df -h /dev/shm
+```
+или эта
+```
+df -h | grep -Ei 'shm|size'
+```
+
+А теперь увеличим нужную tmpfs в ручную без перезагрузки. Оно увеличится до следующей перезагрузки. Изменяем размер так:
+```
+mount -o remount,size=6G /tmp
+```
+и или
+```
+mount -o remount,size=6G /dev/shm
+```
+Если захотите увеличить на постоянной основе придется колдовать в файле `/etc/fstab` нужно будет добавить строчку: 
+```
+tmpfs /dev/shm tmpfs defaults,rw,nodev,nofail,noatime,nosuid,size=6G 0 0 0
+```
+и или 
+```
+tmpfs /tmp tmpfs defaults,rw,nodev,nofail,noatime,nosuid,size=6G 0 0 0
+```
+
+## [Управляем тактовой частотой процессора](http://www.michurin.net/tools/cpu-frequency.html)
+
+Проверяем, какая сейчас у нас схема энергосбережения.
+```
+for CPUFREQ in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do [ -f $CPUFREQ ] || continue; cat $CPUFREQ; done
+```
+Оперативно меняем на перформанс (работает до перезагрузки)
+```
+for CPUFREQ in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do [ -f $CPUFREQ ] || continue; echo -n performance > $CPUFREQ; done
+```
+Чтобы работало на постоянной основе устанавливаем cpupower
+
+```bash
+# Установка для ArchLinux
+
+$ pacman -S cpupower
+
+# Установка для UBUNTU
+# Перед установкой systemd-swap нужно  обновиться:
+
+sudo apt-get update -y
+sudo apt-get install -y cpupower
+```
+После чего редактируем файл /etc/default/cpupower
+```
+sudo nano /etc/default/cpupower
+```
+Изменяем следующюю строку как ниже:
+```
+governor='performance'
+```
+Сохраняемся выходим.
+
+```bash
+# Вводим в автозагрузку:
+
+$ sudo systemctl enable cpupower.service
+
+# или
+
+$ sudo systemctl enable --now cpupower.service
+```
+
+Установка графического компонента:
+```
+yay -S cpupower-gui
+```
+Для проверки:
+```
+grep -E '^model name|^cpu MHz' /proc/cpuinfo
+```
+или
+```
+for CPUFREQ in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do [ -f $CPUFREQ ] || continue; cat $CPUFREQ; done
+```
+
