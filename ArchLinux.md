@@ -30,7 +30,15 @@
     - [Делаем пользователю orr право на пользование SUDO.](#%D0%B4%D0%B5%D0%BB%D0%B0%D0%B5%D0%BC-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8E-orr-%D0%BF%D1%80%D0%B0%D0%B2%D0%BE-%D0%BD%D0%B0-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-sudo)
   - [Как изменить размер tmp (tmpfs) налету](#%D0%BA%D0%B0%D0%BA-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80-tmp-tmpfs-%D0%BD%D0%B0%D0%BB%D0%B5%D1%82%D1%83)
   -  [Управляем тактовой частотой процессора](#%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC-%D1%82%D0%B0%D0%BA%D1%82%D0%BE%D0%B2%D0%BE%D0%B9-%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%B0)
-
+  - [ЗАГРУЗЧИКИ Системы](#%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D1%87%D0%B8%D0%BA%D0%B8-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B)
+    - [Initramfs](#initramfs)
+    - [GRUB](#grub)
+    - [Установка rEFInd](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-refind)
+  - [Подключение к сети OrrHome после перезагрузки](#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%81%D0%B5%D1%82%D0%B8-orrhome-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8)
+  - [SOUND - PipeWire](#sound---pipewire)
+  - [reflector](#reflector)
+  - [Установка менеджера отображения GDM + GNOME + Wyland + PipeWire](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BC%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%D0%B0-%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-gdm--gnome--wyland--pipewire)
+  - [Загрузчик системы bootctl](#%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D1%87%D0%B8%D0%BA-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-bootctl)
 
 
 # Установка Arch Linux
@@ -474,7 +482,7 @@ grep -E '^model name|^cpu MHz' /proc/cpuinfo
 for CPUFREQ in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do [ -f $CPUFREQ ] || continue; cat $CPUFREQ; done
 ```
 
-## ЗАГРУЗЧИКИ Систем
+## ЗАГРУЗЧИКИ Системы
 
 ### Initramfs
 
@@ -544,7 +552,7 @@ mkinitcpio -p linux
 
 ### GRUB
 
-Алгоритм для BIOS MBR:
+> Алгоритм для BIOS MBR:
 
 > Установка GRUB-BIOS, создание папки grub и создание конфига grub.cfg:
 ```
@@ -561,7 +569,8 @@ grub-install /dev/sda
 exit
 reboot
 ```
-Алгоритм для EFI:
+***
+> Алгоритм для EFI:
 
 > Устанавливаем ЗАГРУЗЧИК GRUB и efibootmgr:
 ```
@@ -575,6 +584,7 @@ pacman -S grub efibootmgr
 ```
 mkfs.fat32 /dev/sda1
 mkdir -p /boot
+mkdir -p /boot/efi
 ```
 Монтиуем загрузочный раздел.
 ```
@@ -582,19 +592,73 @@ mount /dev/sda1 /mnt/boot
 ```
 Генерируем настройки конфигурации GRUB на разделе `/boot`.
 ```
-grub-install --target=x86_64-efi  --bootloader-id=grub --efi-directory=/boot
+grub-install --target=x86_64-efi  --bootloader-id=grub --efi-directory=/boot/efi
 ```
 ```
-grub-mkconfig -o /boot/EFI/grub/grub.cfg
+grub-mkconfig -o /boot/grub/grub.cfg
 ```
 Выйдите из chroot размонтируйте разделы и перезагрузитесь:
 ```
 exit
 reboot
 ```
-В этом примере загрузочный раздел EFI с каталогом EFI/ заранее смонтирован в /boot, а ID загрузчика полностью совпадает с именем каталога "grub". Поэтому и образ, и файлы загрузчика будут установлены в один и тот же каталог EFI/grub/ на загрузочном разделе. Соответственно, в этом случае стартовый образ будет установлен в /boot/EFI/grub/grubx64.efi, конфиг загрузчика должен быть в /boot/EFI/grub/grub.cfg, а модули в каталоге /boot/EFI/grub/x86_64-efi/.
+В этом примере загрузочный раздел EFI смонтирован в /boot. Стартовый образ будет установлен в /boot/grub/grubx64.efi, конфиг загрузчика должен быть в /boot/grub/grub.cfg, а модули в каталоге /boot/grub/x86_64-efi/.
 
-### rEFInd
+### Загрузчик системы bootctl
+
+Загружаться мы будем через systemd-boot. Для этого установим EFI:
+
+```bash
+bootctl install
+```
+
+Создаем загрузочную запись. Для начала сохраним PARTUUID шифрованного раздела в конфиг, так как его запомнить проблематично:
+
+```bash
+blkid -o value -s PARTUUID /dev/nvme0n1p2 > /boot/loader/entries/arch-ecrypted.conf
+```
+
+При монтировании через `/etc/fstab` лучше использовать **UUID**, так как они уникальны (**PARTUUID** уникален только для **GPT** таблицы).  Жесткие диски типа `/dev/sda` или `/dev/sdb`  могут изменить буквы при переподключении. Это правило не распространяется на [виртуальные блочные устройства](https://ru.wikipedia.org/wiki/Device_mapper) типа `/dev/mapper/cryprt`.
+
+Отредактируем конфиг:
+
+```bash
+micro /boot/loader/entries/arch-ecrypted.conf
+```
+
+Он должен выглядеть примерно так:
+
+```conf
+title   Encrypted Arch Linux
+initrd  /amd-ucode.img
+initrd  /initramfs-linux.img
+linux   /vmlinuz-linux
+options cryptdevice=PARTUUID=fa65a43e-eb75-48f0-aee1-975a50c2e00d:cryptroot:allow-discards root=/dev/mapper/cryptroot rootflags=subvol=/@ rw nvme_core.default_ps_max_latency_us=0
+```
+
+* Параметр `nvme_core.default_ps_max_latency_us=0` нужен для некоторых моделей **SSD M.2**. Без него файловая система через неопределенное время переходит в `read only`.
+* `initrd  /amd-ucode.img` - это подгрузка микрокодов процессора для исправления различных уязвимостей. `/amd-ucode.img` заменяем на `/intel-ucode.img`.
+
+Установите микрокоды проца (в зависимости от производителя):
+
+```bash
+pacman -Sy amd-ucode
+# либо
+pacman -Sy intel-ucode
+```
+
+Настроим загрузчик:
+
+```bash
+micro /boot/loader/loader.conf
+```
+```conf
+timeout 4
+default arch-ecrypted.conf
+console-mode max
+editor no
+```
+
 
 ### Установка rEFInd
 
@@ -698,3 +762,35 @@ $ sudo systemctl enable NetworkManager
 ```
 Теперь протестируйте интернет подключение снова, запустив команду ping
 
+## SOUND - PipeWire
+
+```
+sudo pacman -S pipewire pipewire-alsa pipewire-pulse gst-plugin-pipewire pipewire-jack
+```
+
+## reflector 
+для автоматической настройки самых быстрых зеркал перед каждым обновлением.
+
+```
+sudo pacman -S reflector
+sudo systmectl enable reflector.service
+sudo pacman -Syy
+```
+
+## Установка менеджера отображения GDM + GNOME + Wyland + PipeWire
+
+Достаточно поставить gdm и он потянет за собой минимальный GNOME + Wyland + PipeWire
+```
+sudo pacman -S gdm tilix
+```
+Включение и запуск GDM (GNOME):
+```
+sudo systemctl start gdm
+```
+Для дальнейшей настройки автоматического входа в систему:
+```zsh
+sudo systemctl enable gdm
+sudo systemctl enable NetworkManager
+exit
+reboot
+```
