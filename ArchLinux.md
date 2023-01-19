@@ -900,3 +900,62 @@ sudo systemctl enable NetworkManager
 exit
 reboot
 ```
+# ДОПОЛНЕНИЯ
+
+## Пакетные менеджеры
+
+Пакетным менеджером по-умолчанию для Arch Linux является pacman. Для подсветки вывода pacman в `/etc/pacman.conf` нужно раскомментировать `Color`. Пользовательским репозиторием является [AUR](https://aur.archlinux.org/).
+
+Чтобы не собирать пакеты вручную можно поставить yay:
+```bash
+sudo pacman -S git
+cd /tmp
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -si
+```
+Синтаксис команды Yay аналогичен pacman. Так что будет полезным почитать справку по [pacman](https://wiki.archlinux.org/index.php/Pacman_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)).
+
+## Список пакетов
+
+```bash
+  # ШРИФТЫ
+  adobe-source-code-pro-fonts \ # шрифт для терминала, нужен для темы Oh My Zsh! agnoster
+  ttf-droid \ # шрифт по-умолчанию для VScode
+  consolas-font \ # шрифт по-умолчанию для Chrome
+  ttf-ms-fonts \ # шрифт по-умолчанию для Chrome
+
+  # ПРОГРАММЫ
+  dconf-editor \ # все настройки gnome в одном месте
+  dmraid \ # утилита для работы с raid-массивами дисков
+  docker-compose \ # содержит docker и docker compose
+  ntfs-3g \ # добавляет поддержку файловой системы ntfs
+  exfat-utils \ # добавляет поддержку файловой системы exfat
+  chrome-gnome-shell \ # позволяет устанавливать расширения для Gnome
+  gparted \ # графическая оболочка для разметки дисков
+  htop \ # показывает запущенные процессы, загрузку cpu и потребление памяти
+  net-tools \ # содержит netstat
+  mariadb \ # свободная реализация самой популярной СУБД MySQL
+  mongodb-bin \ # лучшая NoSQL база данных
+  postgresql \ # лучшая SQL база данных
+  pgadmin4 \ # админка для Postgres
+  pgmodeler \ # визуальный редактор для моделирования в Postgres
+  redis \ # СУБД в оперативной памяти, используемая для межпроцессового взаимодействия
+  smartmontools \ # утилита для проверки состояния SSD
+  tor \ # сервис, который можно использовать для подключения к прокси сети Tor
+  woeusb \ # создание загрузочных флешек с Windows
+  xclip \ # копирование файла в буффер обмена из консоли
+  seahorse \ # Приложение для управления паролями, а так же PGP и SSH ключами
+  baobab \ # Приложения для мониторинга дисков
+  jq \ # Утилита для работы с JSON
+  pv \ # получает на вход поток и перенаправляет его, показывая статистику 
+```
+
+## Замена ядра линукс
+
+```bash
+yay -S linux-lts linux-headers-lts
+yay -R linux linux-headers
+mkinitcpio -p linux
+```
+
