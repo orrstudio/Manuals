@@ -35,6 +35,10 @@
   - [ПОДКЛЮЧЕНИЕ К WiFi ПОСЛЕ ПЕРЕЗАГРУЗКИ](#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%81%D0%B5%D1%82%D0%B8-orrhome-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8)
   - [REFLECTOR](#reflector)
   - [GDM + GNOME + WYLAND + PIPEWIRE](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BC%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%D0%B0-%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-gdm--gnome--wyland--pipewire)
+  - [ДОПОЛНЕНИЯ](https://github.com/orrstudio/SharesObsidian/blob/main/ArchLinux.md#%D0%B4%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F)
+    - [Список пакетов](#%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2)
+    - [Замена ядра линукс](#%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D1%8F%D0%B4%D1%80%D0%B0-%D0%BB%D0%B8%D0%BD%D1%83%D0%BA%D1%81)
+
 
 
 # Подготовка к установке
@@ -958,22 +962,3 @@ yay -S linux-lts linux-headers-lts
 yay -R linux linux-headers
 mkinitcpio -p linux
 ```
-
-## Расширения для Gnome
-
-Устанавливаем [расширение](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=ru) для Chrome.
-
-![image](https://user-images.githubusercontent.com/41215002/53135292-b979bc00-358b-11e9-95df-7a540bc7b6f0.png)
-
-Управление расширениями осуществляется через Tweaks.
-
-![image](https://user-images.githubusercontent.com/41215002/53135669-25a8ef80-358d-11e9-9d5b-5024729dc550.png)
-
-Расширения для установки:
-
-| Название <img width="450"> | Описание <img width="450"> |
-| -- | -- |
-| [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/). | Выезжающий Dash - панель с избранными приложениями |
-| [Desktop Icons](https://extensions.gnome.org/extension/1465/desktop-icons/) | Иконки на рабочем столе |
-| [ShellTile](https://extensions.gnome.org/extension/657/shelltile/) | Тайловый менеджер |
-| [Log Out Button](https://extensions.gnome.org/extension/1143/logout-button/) | Добавляет кнопку, которая выполняет выход из системы |
