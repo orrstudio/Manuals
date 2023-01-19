@@ -6,18 +6,18 @@
 
 # ОГЛАВЛЕНИЕ
 
-- [Установка Arch Linux](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-arch-linux)
-  - [Подготовка к установке](#%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BA-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B5)
+- [УСТАНОВКА Arch LINUX](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-arch-linux)
+  - [ПОДГОТОВКА](#%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BA-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B5)
     - [Установочная Флешка Вариант 1 - VENTOY](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BE%D1%87%D0%BD%D0%B0%D1%8F-%D1%84%D0%BB%D0%B5%D1%88%D0%BA%D0%B0-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82-1---ventoy "Подготовка флешки путем записи `копировании/перемещении` образа на USB флешку.")
     - [Установочная Флешка Вариант 2 - dd & RUFUS](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BE%D1%87%D0%BD%D0%B0%D1%8F-%D1%84%D0%BB%D0%B5%D1%88%D0%BA%D0%B0-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82-1---ventoy "Создание образа путем клонирования установочного диска на USB флешку")
-  - [Загрузка с установочной флешки Live System ArchLinux ](#%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0-%D1%81-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BE%D1%87%D0%BD%D0%BE%D0%B9-%D1%84%D0%BB%D0%B5%D1%88%D0%BA%D0%B8-live-system-archlinux "Live-система ArchLinux")
-    - [Начало установки](#%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC%D0%B0-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8)
-    - [Проверка режима загрузки](#%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8) 
-  - [Настройка сети](#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D1%81%D0%B5%D1%82%D0%B8)
-    - [Подключение к сети 'OrrHome'](#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%81%D0%B5%D1%82%D0%B8-orrhome)
-  - [Разметка диска](#%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D0%B0)
-    - [1. Создаем загрузочный раздел ](#1-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BE%D1%87%D0%BD%D1%8B%D0%B9-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB)
-    - [2. Создаем BTRFS раздел. ](#2-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC-btrfs-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB)
+  - [ЗАЗГРУЗКА С USB Live-Arch](#%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0-%D1%81-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BE%D1%87%D0%BD%D0%BE%D0%B9-%D1%84%D0%BB%D0%B5%D1%88%D0%BA%D0%B8-live-system-archlinux "Live-система ArchLinux")
+    - [Начало установки](#%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8)
+    - [Проверка режима загрузки](#%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC%D0%B0-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8) 
+  - [НАСТРОЙКА СЕТИ](#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D1%81%D0%B5%D1%82%D0%B8)
+    - [Подключение к сети WiFi](#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%81%D0%B5%D1%82%D0%B8-orrhome)
+  - [РАЗМЕТКА ДИСКА](#%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D0%B0)
+    - [1. Создание загрузочного раздела ](#1-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BE%D1%87%D0%BD%D1%8B%D0%B9-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB)
+    - [2. Создание основного раздел. ](#2-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC-btrfs-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB)
   - [УСТАНОВКА ПАКЕТОВ](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B)
   - [ГЕНЕРАЦИЯ FSTAB](#%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F-fstab)
   - [ВХОД В CHROOT](#%D0%B2%D1%85%D0%BE%D0%B4-%D0%B2-chroot)
@@ -25,20 +25,20 @@
   - [ЧАСОВОЙ ПОЯС](#%D1%87%D0%B0%D1%81%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BF%D0%BE%D1%8F%D1%81)
   - [HOSTNAME & HOST](#hostname--host)
   - [ПОЛЬЗОВАТЕЛИ](#%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B8)
-    - [Создаём нового пользователя `orr`](#%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%91%D0%BC-%D0%BD%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F-orr)
-    - [Задаём пользователю новый пароль](#%D0%B7%D0%B0%D0%B4%D0%B0%D1%91%D0%BC-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8E-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BF%D0%B0%D1%80%D0%BE%D0%BB%D1%8C)
-    - [Делаем пользователю orr право на пользование SUDO.](#%D0%B4%D0%B5%D0%BB%D0%B0%D0%B5%D0%BC-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8E-orr-%D0%BF%D1%80%D0%B0%D0%B2%D0%BE-%D0%BD%D0%B0-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-sudo)
-  - [Как изменить размер tmp (tmpfs) налету](#%D0%BA%D0%B0%D0%BA-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80-tmp-tmpfs-%D0%BD%D0%B0%D0%BB%D0%B5%D1%82%D1%83)
-  -  [Управляем тактовой частотой процессора](#%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC-%D1%82%D0%B0%D0%BA%D1%82%D0%BE%D0%B2%D0%BE%D0%B9-%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%B0)
-  - [ЗАГРУЗЧИКИ Системы](#%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D1%87%D0%B8%D0%BA%D0%B8-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B)
+    - [Новый пользователь](#%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%91%D0%BC-%D0%BD%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F-orr)
+    - [Задаём пароль](#%D0%B7%D0%B0%D0%B4%D0%B0%D1%91%D0%BC-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8E-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BF%D0%B0%D1%80%D0%BE%D0%BB%D1%8C)
+    - [sudoers](#%D0%B4%D0%B5%D0%BB%D0%B0%D0%B5%D0%BC-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8E-orr-%D0%BF%D1%80%D0%B0%D0%B2%D0%BE-%D0%BD%D0%B0-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-sudo)
+  - [TMPFS](#%D0%BA%D0%B0%D0%BA-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80-tmp-tmpfs-%D0%BD%D0%B0%D0%BB%D0%B5%D1%82%D1%83)
+  - [ЧАСТОТА ПРОЦЕССОРА](#%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC-%D1%82%D0%B0%D0%BA%D1%82%D0%BE%D0%B2%D0%BE%D0%B9-%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%B0)
+  - [ЗАГРУЗЧИКИ](#%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D1%87%D0%B8%D0%BA%D0%B8-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B)
     - [Initramfs](#initramfs)
-    - [GRUB](#grub)
-    - [Установка rEFInd](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-refind)
-  - [Подключение к сети OrrHome после перезагрузки](#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%81%D0%B5%D1%82%D0%B8-orrhome-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8)
-  - [SOUND - PipeWire](#sound---pipewire)
-  - [reflector](#reflector)
-  - [Установка менеджера отображения GDM + GNOME + Wyland + PipeWire](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BC%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%D0%B0-%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-gdm--gnome--wyland--pipewire)
-  - [Загрузчик системы bootctl](#%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D1%87%D0%B8%D0%BA-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-bootctl)
+    - [grub](#grub)
+    - [bootctl](#%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D1%87%D0%B8%D0%BA-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-bootctl)
+    - [rEFInd](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-refind)
+  - [ПОДКЛЮЧЕНИЕ К WiFi ПОСЛЕ ПЕРЕЗАГРУЗКИ](#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%81%D0%B5%D1%82%D0%B8-orrhome-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8)
+  - [REFLECTOR](#reflector)
+  - [GDM + GNOME + WYLAND + PIPEWIRE](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BC%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%D0%B0-%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-gdm--gnome--wyland--pipewire)
+
 
 
 # Установка Arch Linux
@@ -552,6 +552,7 @@ mkinitcpio -p linux
 
 ### GRUB
 
+***
 > Алгоритм для BIOS MBR:
 
 > Установка GRUB-BIOS, создание папки grub и создание конфига grub.cfg:
@@ -569,6 +570,7 @@ grub-install /dev/sda
 exit
 reboot
 ```
+
 ***
 > Алгоритм для EFI:
 
@@ -602,22 +604,17 @@ grub-mkconfig -o /boot/grub/grub.cfg
 exit
 reboot
 ```
-В этом примере загрузочный раздел EFI смонтирован в /boot. Стартовый образ будет установлен в /boot/grub/grubx64.efi, конфиг загрузчика должен быть в /boot/grub/grub.cfg, а модули в каталоге /boot/grub/x86_64-efi/.
 
 ### Загрузчик системы bootctl
 
 Загружаться мы будем через systemd-boot. Для этого установим EFI:
-
 ```bash
 bootctl install
 ```
-
 Создаем загрузочную запись. Для начала сохраним PARTUUID шифрованного раздела в конфиг, так как его запомнить проблематично:
-
 ```bash
 blkid -o value -s PARTUUID /dev/nvme0n1p2 > /boot/loader/entries/arch-ecrypted.conf
 ```
-
 При монтировании через `/etc/fstab` лучше использовать **UUID**, так как они уникальны (**PARTUUID** уникален только для **GPT** таблицы).  Жесткие диски типа `/dev/sda` или `/dev/sdb`  могут изменить буквы при переподключении. Это правило не распространяется на [виртуальные блочные устройства](https://ru.wikipedia.org/wiki/Device_mapper) типа `/dev/mapper/cryprt`.
 
 Отредактируем конфиг:
