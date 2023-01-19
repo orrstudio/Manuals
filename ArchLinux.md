@@ -418,7 +418,9 @@ sudo -ll
 usermod -aG wheel orr
 ```
 
-## [Как изменить размер tmp (tmpfs) налету](http://www.michurin.net/tools/remount-resize-tmpfs.html)
+# TMPFS
+
+[Как изменить размер tmp (tmpfs) налету](http://www.michurin.net/tools/remount-resize-tmpfs.html)
 
 > Смотрим, сколько места у нас сейчас:
 
