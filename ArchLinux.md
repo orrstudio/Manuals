@@ -6,24 +6,24 @@
 
 # ОГЛАВЛЕНИЕ
 
-- [Установка Arch Linux](#%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Arch-Linux)
+- [Установка Arch Linux](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-arch-linux)
   - [Подготовка к установке](#%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BA-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B5)
     - [Установочная Флешка Вариант 1 - VENTOY](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BE%D1%87%D0%BD%D0%B0%D1%8F-%D1%84%D0%BB%D0%B5%D1%88%D0%BA%D0%B0-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82-1---ventoy "Подготовка флешки путем записи `копировании/перемещении` образа на USB флешку.")
     - [Установочная Флешка Вариант 2 - dd & RUFUS](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BE%D1%87%D0%BD%D0%B0%D1%8F-%D1%84%D0%BB%D0%B5%D1%88%D0%BA%D0%B0-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82-1---ventoy "Создание образа путем клонирования установочного диска на USB флешку")
   - [Загрузка с установочной флешки Live System ArchLinux ](#%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0-%D1%81-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BE%D1%87%D0%BD%D0%BE%D0%B9-%D1%84%D0%BB%D0%B5%D1%88%D0%BA%D0%B8-live-system-archlinux "Live-система ArchLinux")
-    - [Начало установки](# )
-    - [Проверка режима загрузки](# ) 
-  - [Настройка сети](#%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D1%81%D0%B5%D1%82%D0%B8)
+    - [Начало установки](#%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC%D0%B0-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8)
+    - [Проверка режима загрузки](#%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8) 
+  - [Настройка сети](#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D1%81%D0%B5%D1%82%D0%B8)
     - [Подключение к сети 'OrrHome'](#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%81%D0%B5%D1%82%D0%B8-orrhome)
-  - [Разметка диска](# )
-    - [1. Создаем загрузочный раздел ](# )
-    - [2. Создаем BTRFS раздел. ](# )
-  - [УСТАНОВКА ПАКЕТОВ](# )
-  - [ГЕНЕРАЦИЯ FSTAB](# )
-  - [ВХОД В CHROOT](# )
-  - [ЛОКАЛИЗАЦИЯ](# )
-  - [ЧАСОВОЙ ПОЯС](# )
-  - [HOSTNAME & HOST](# )
+  - [Разметка диска](#%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D0%B0)
+    - [1. Создаем загрузочный раздел ](#1-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BE%D1%87%D0%BD%D1%8B%D0%B9-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB)
+    - [2. Создаем BTRFS раздел. ](#2-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%B5%D0%BC-btrfs-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB)
+  - [УСТАНОВКА ПАКЕТОВ](#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B)
+  - [ГЕНЕРАЦИЯ FSTAB](#%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F-fstab)
+  - [ВХОД В CHROOT](#%D0%B2%D1%85%D0%BE%D0%B4-%D0%B2-chroot)
+  - [ЛОКАЛИЗАЦИЯ](#%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F)
+  - [ЧАСОВОЙ ПОЯС](#%D1%87%D0%B0%D1%81%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BF%D0%BE%D1%8F%D1%81)
+  - [HOSTNAME & HOST](#hostname--host)
 
 
 
@@ -202,20 +202,21 @@ mount -o compress=zstd,autodefrag,subvol=@ /dev/sda2 /mnt
 pacstrap -i /mnt base linux
 ```
 
- ➖ base 
- ➖ base-devel 
- ➖ linux-zen
- ➖ linux-zen-headers
- ➖ linux-firmware 
- ➖ networkmanager 
- ➖ btrfs-progs 
- ➖ ntfs-3g
- ➖ nano 
- ➖ vim
- ➖ mc
- ➖ htop
- ➖ tmux
- ➖ tilix
+ - base 
+ - base-devel 
+ - linux-zen
+ - linux-zen-headers
+ - linux-firmware 
+ - networkmanager 
+ - btrfs-progs 
+ - ntfs-3g
+ - nano 
+ - vim
+ - mc
+ - htop
+ - tmux
+ - tilix
+
 
 ## ГЕНЕРАЦИЯ FSTAB
 
