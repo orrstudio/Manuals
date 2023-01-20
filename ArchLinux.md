@@ -960,3 +960,67 @@ yay -S linux-lts linux-headers-lts
 yay -R linux linux-headers
 mkinitcpio -p linux
 ```
+
+## Спецсимволы
+
+Для вставки специальных символов в Gnome применяется сочетание клавиш `Ctrl+Shift+U`, далее вводим 4-х значный код символа.
+
+| Символ | Unicode  |
+| -- | -- |
+| « | 00ab |
+| » | 00bb |
+| © | 00a9 |
+| ™ | 2122 |
+| § | 00a7 |
+| – | 2013 |
+| € | 20ac |
+| ₽ | 20bd |
+| → | 2192 |
+| λ | 03bb |
+
+
+## systemd
+
+```bash
+# Все сервисы
+
+# Покажут только включенные
+$ systemctl
+$ systemctl list-units --type service
+
+# + выключенные
+$ systemctl list-unit-files --type service
+
+$ sudo systemctl enable docker
+
+$ sudo systemctl disable docker
+
+$ sudo systemctl restart nginx.service
+
+$ sudo systemctl start application.service
+
+$ sudo systemctl start application.service
+
+$ systemctl status nginx.service
+
+$ sudo systemctl is-enabled service
+```
+
+Создание своего сервиса:
+
+`/etc/systemd/system/rot13.service`:
+```config
+[Unit]
+Description=ROT13 demo service
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=centos
+ExecStart=/usr/bin/env php /path/to/server.php
+
+[Install]
+WantedBy=multi-user.target
+```
