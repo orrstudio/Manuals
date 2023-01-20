@@ -1,3 +1,7 @@
-01 ArchLinux INSTALL
-02 LINUX SOFT
+01 ArchLinux INSTALL  
+
+
+02 LINUX SOFT  
+
+
 03 MAN & INFO
