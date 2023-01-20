@@ -1024,3 +1024,18 @@ ExecStart=/usr/bin/env php /path/to/server.php
 [Install]
 WantedBy=multi-user.target
 ```
+# ВОЗМОЖНЫЕ ПРОБЛЕМЫ
+
+## Что делать, если каталоги открываются в VSCode?
+
+Существует файл /usr/share/applications/mimeinfo.cache. В нем хранятся ассоциации между mime-типами и приложениями. Его редактирование исправляет проблему, НО такое решение является временным, так как этот файл генерируется при каждом обновлении системы из *.desktop файлов.
+
+Нужно отредактировать MimeType (я его просто закомментировал) в /usr/share/applications/visual-studio-code.desktop и обновить mimeinfo.cache:
+
+```bash
+$ sudo nano /usr/share/applications/visual-studio-code.desktop
+...
+# MimeType=text/plain;inode/directory;
+...
+$ sudo update-desktop-database /usr/share/applications
+```
