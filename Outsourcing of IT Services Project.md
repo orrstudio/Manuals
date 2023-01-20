@@ -1,4 +1,4 @@
-# **"Outsourcing of IT Services"** Project
+# **Outsourcing of IT Services Project**
 # Проект **«Аутсорсинг ИТ-услуг»**
 
 # ****Бизнес План****
