@@ -1,12 +1,15 @@
-# SYSTEM APPS
+# ОГЛАВЛЕНИЕ
 
-## 💨 **BOOT** 💨
+
+
+# SYSTEM APPS
+## BOOT
  - Ventoy
  - Чтобы отображать лог загрузки Линукса, нужно раскоментировать в файле `/etc/systemd/system.conf` строку с надписью `ShowStatus=yes`
  - [ЗАГРУЗОЧНЫ ДИСК SUPER GRUB2 2.04S1](https://www.supergrubdisk.org/category/download/supergrub2diskdownload/super-grub2-disk-stable/ "Это iso загрузочного диска для испорченных загрузок установленных систем линукс")
  - [Boost Changer](https://github.com/nbebaw/boostchanger "Управляет турбонаддувом процессора и настройками скорости процессора")
 
-## 🗼 **NETWORK** 🗼
+## NETWORK
  - telnet (pacman -S inetutils)
  - nman (программа для определения открытых портов сервера)
  - networkmanager-openvpn https://www.youtube.com/watch?v=2oCpjla-lw0
@@ -15,7 +18,7 @@
  - [TOR PROXY](https://www.youtube.com/watch?v=mM9680l7MyY&list=PLcrZh07ZsO5GO97bZtxqFlSw26UKgz5lB&index=10) - Ставим [GNOME Proxy Switcher](https://extensions.gnome.org/extension/771/proxy-switcher/) Если нету [GNOME Shell integration](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep) то ставим его чтобы включать дополнения прямо из браузера. Потом ставим [TOR](https://wiki.archlinux.org/title/tor) в терминале. Включаем тор в терминале под рутом и настраиваем GNOME Proxy Switcer как показано в видео. Ползуемсю.
  - [sshuttle](https://github.com/sshuttle/sshuttle "Прокси-сервер, который работает как VPN форвард по ssh. Не требует админ. Работает с Linux и MacOS. Поддерживает туннелирование DNS.") - (Ставим sshuttle на клиенте и запускаем в терминале: sshuttle -vvvv -r ubuntu@168.188.188.188 -x 168.188.188.188 0/0)
 
-## ♻️ **SYSTEM TOOLS** ♻️
+## SYSTEM TOOLS
  - dconf-editor \ # все настройки gnome в одном месте
  - hardinfo (Информация о системе и устройствах)
  - timeshift
@@ -36,14 +39,14 @@
  - [AppImageLauncher](joplin://x-callback-url/openNote?id=fabc4251115544d39e580e698cc2cae9)
  - [PowerMate](https://github.com/stefansundin/powermate-linux "Linux userspace driver for the Griffin PowerMate. (For the classic USB model. There is a proof-of-concept for the Bluetooth model.)")
 
-## 📂 **COMMANDERS** 📂
+## COMMANDERS
  - MC - файловый менеджер для Linux.
  - GNOME Commander — двухпанельный файловый менеджер для Linux.
  - File Roller — Archive Manager
  - lf — терминальны файловый менеджер для Linux.
  - ranger — терминальны файловый менеджер для Linux.
 
-## ⛺ **TERMINAL** ⛺
+## TERMINAL
  - [SSHUTTLE]() - VPN через SSH (Для подключения сначало ставим саму прогу `sshuttle`, а потом вводим в терминале: `sshuttle -vvvv -r ubuntu@168.188.188.88 -x 168.188.188.88 0/0)` для подключения. [VIDEO TUTORIAL](https://www.youtube.com/watch?v=7XDOuH-MPvw)
  - NANO (Консольный Текстовый Редактор)
  - [AstroVIM](https://www.youtube.com/watch?v=LKnuIazeiM4 "Это полноценная ИДЕ на основе NeoVIM со всеми нужными плагинами")
@@ -61,7 +64,7 @@
  - [neofetch](https://github.com/dylanaraps/neofetch "Neofetch отображает информацию о вашей операционной системе в терминале, программном и аппаратном обеспечении в эстетичном и визуально приятном виде. Для того чтобы неофетч запускался при открытии терминала нужно в конце файла ~/.bashrc или ~/.zshrc прописать neofetch. Дальше в конфиге неофетча можно скрыть или показать поля для отображения в терминале. Файл конфигурации содается при первом старте неофетч и находится в : ~/.config/neofetch/config.conf")
  - [SSHMenu Utility](https://github.com/Orr888/SSHMenu "Сценарий Bash для управления вашими ssh-соединениями, который создает меню (через диалог в терминале) из вашего файла ~/.ssh/config.")
 
-## 🌐 **INTERNET** 🌐
+## INTERNET
  - Google Chrome
  - FireFOX
  - OPERA
@@ -73,12 +76,12 @@
  - [XAMPP Apache + MariaDB + PHP + Perl](https://www.apachefriends.org/ru/index.html "OpenServer для Linux")
  - [Proxy Switcher в GNOME и сеть Tor](https://www.youtube.com/watch?v=mM9680l7MyY&list=PLcrZh07ZsO5GO97bZtxqFlSw26UKgz5lB&index=8)
 
-## 🛡 **SECURITY** 🛡
+## SECURITY
  - [hBlock](https://github.com/hectorm/hblock "Блокировщик рекламы и вредоносных доменов. Делает записи в /etc/hosts файле.") После установки hBlock следует запустить в терминале: ($ sudo hblock) Для временного отключения hBlock введите в терминале: ($ sudo hblock -S none -D none)
  - [GUFW](http://gufw.org/ "FireWall для Linux") После установки включаем в автозапуск `systemctl enable ufw`
  - seahorse \ # Приложение для управления паролями, а так же PGP и SSH ключами
 
-## 🛠 **SETTINGS Aplications for GNOME** 🛠
+## SETTINGS Aplications for GNOME
  - gnome-control-center — Центр управления для GNOME
  - gnome-tweaks — Дополнительные настройки GNOME
  - Adwaita Dark — Темная тема для GNOME (предоставляется пакетом gnome-themes-extra)
@@ -94,7 +97,7 @@
  - system log — for GNOME
  - gnome-connections — RDP for GNOME
 
-## 🍀 **EXTENSIONS for GNOME** 🍀
+## EXTENSIONS for GNOME
  - [Weather in The Clock](https://github.com/JasonLG1979/gnome-shell-extension-weather-in-the-clock/ "Отображение текущей погоды в часах.")
  - [Системный монитор GNOME](https://github.com/mgalgs/gnome-shell-system-monitor-applet "Отображение информации в строке состояния GNOME (память, процессор, скорость интернета и т.д.")
  - [GPaste](https://www.imagination-land.org/tags/GPaste.html "Система управления буфером обмена для GNOME 40 - (Clipboard management system)")
@@ -205,7 +208,7 @@ $ sudo update-desktop-database /usr/share/applications
  - [CyberPanel](https://cyberpanel.net/docs/installing-cyberpanel/ "Панель управления веб-хостингом") [Тёмная тема](https://community.cyberpanel.net/t/cyberpanel-darkside-theme-also-called-dark-mode-night-mode-dark-theme/30951)
 
 
-# 🎮 **GAMES** 🎮
+# GAMES
  - [Five or More](https://wiki.gnome.org/Apps/Five%20or%20more) — игра Lines. ШАРИКИ
  - quadrapassel - аналог классической советской игры «Тетрис».
  - gweled - Складывание камней
@@ -272,7 +275,7 @@ $ sudo update-desktop-database /usr/share/applications
 - Pessulus — редактор блокировок возможностей пользовательского интерфейса
 - Sabayon — редактор профилей пользователей
 
-## Далее представлены приложения, которые разработаны с использованием библиотек GNOME.
+Далее представлены приложения, которые разработаны с использованием библиотек GNOME.
 
 ### Графика
  - F-Spot — менеджер фотографий
