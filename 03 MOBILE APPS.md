@@ -1,4 +1,4 @@
-![](https://w7.pngwing.com/pngs/52/715/png-transparent-google-play-logo-google-play-computer-icons-app-store-google-text-logo-sign.png)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Google_Play_2022_logo.svg/1280px-Google_Play_2022_logo.svg.png)
 
  - [ReadEra](https://readera.org/book-reader "ReadEra - приложение под Android для чтения книг и просмотра документов, бесплатное и без рекламы")
  - [OctoDroid](https://github.com/slapperwan/gh4a "Github client for Android")
