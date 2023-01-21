@@ -30,18 +30,14 @@
 ---
 
 # ♻️ **SYSTEM TOOLS** ♻️
-
+## ➖ dconf-editor \ # все настройки gnome в одном месте
 ## ➖ hardinfo (Информация о системе и устройствах)
 
 ## ➖ timeshift
 
 ## ➖ Stacer — утилита для мониторинга, оптимизации, настройки и очистки системы.
 
-## ➖ Шрифты Microsoft
-
-## ➖ ttf-freefont
-
-## ➖ ttf-linux-libertine
+## ➖ Шрифты
 
 ## ➖ [Flameshot](https://github.com/flameshot-org/flameshot "Мощное, но простое в использовании программное обеспечение для создания скриншотов")
 
@@ -157,7 +153,8 @@
 
 ## ➖ [GUFW](http://gufw.org/ "FireWall для Linux") После установки включаем в автозапуск `systemctl enable ufw`
 
-## ➖
+## ➖ seahorse \ # Приложение для управления паролями, а так же PGP и SSH ключами
+## ➖ 
 
 ---
 
@@ -169,7 +166,7 @@
 
 ## ➖ Adwaita Dark — Темная тема для GNOME (предоставляется пакетом gnome-themes-extra)
 
-## ➖ chrome-gnome-shell — Надстрока для GNOME Extensions (Чобы устанавливать "extensions" через Хром браузер)
+## ➖ chrome-gnome-shell — Надстрока для GNOME Extensions (Позволяет устанавливать Gnome "extensions" через Хром браузер)
 
 ## ➖ fragments - torrent client for GNOME
 

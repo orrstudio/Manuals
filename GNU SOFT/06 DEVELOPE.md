@@ -43,7 +43,15 @@ PLUGINS:
 		"folders": [{"path": "../../../../GitHub"}],
 		"settings": {}
 	}
-  ```
+
+# Что делать, если каталоги открываются в VSCode?
+# Существует файл /usr/share/applications/mimeinfo.cache. В нем хранятся ассоциации между mime-типами и приложениями. Его редактирование исправляет проблему, НО такое решение является временным, так как этот файл генерируется при каждом обновлении системы из *.desktop файлов.
+
+# Нужно отредактировать MimeType (я его просто закомментировал) в /usr/share/applications/visual-studio-code.desktop и обновить mimeinfo.cache:
+$ sudo nano /usr/share/applications/visual-studio-code.desktop
+# MimeType=text/plain;inode/directory;
+$ sudo update-desktop-database /usr/share/applications
+```
  ## ➖ [Darling - run macOS software on Linux](https://www.darlinghq.org/)
  ## ➖ [ANDBOX - ANDROID В КОРОБКЕ](https://anbox.io/#collapse2)
  ## ➖ [SQLite Studio](https://github.com/pawelsalawa/sqlitestudio/releases/tag/3.3.3 "Бесплатный многоплатформенный менеджер баз данных SQLite с открытым исходным кодом.")
