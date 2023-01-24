@@ -132,6 +132,7 @@
  - [Системный монитор GNOME](https://github.com/mgalgs/gnome-shell-system-monitor-applet "Отображение информации в строке состояния GNOME (память, процессор, скорость интернета и т.д.")
  - [GPaste](https://www.imagination-land.org/tags/GPaste.html "Система управления буфером обмена для GNOME 40 - (Clipboard management system)")
  - [Net Speed Simpl](https://github.com/prateekmedia/netspeedsimplified "Это на тот случай если хочется видеть только скорость интернета  строке состояния рядом с часами.")
+ - [RunCat](https://extensions.gnome.org/extension/2986/runcat/ "Кошка сообщает вам об использовании процессора по скорости работы")
  - KDE Connect
 
 # OFFICE SOFTS
