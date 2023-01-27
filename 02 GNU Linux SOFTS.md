@@ -1,6 +1,7 @@
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYSqYceQoNlj6uuVpp1CluK3knHqwzR2DOw&usqp=CAU)
+<img src="https://user-images.githubusercontent.com/65281943/215001207-d1a0f318-2a85-468a-b391-fd55e569dc9f.png" height="300" align="middle">
 
 # ОГЛАВЛЕНИЕ
+
 
  - [SYSTEM APPS](#system-apps)
    - [BOOT](#boot)
@@ -127,8 +128,8 @@
  - [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect "GSConnect - это полная реализация KDE Connect специально для GNOME Shell с интеграцией Nautilus, Chrome и Firefox. Он не зависит от настольного приложения KDE Connect и не будет работать с установленным приложением. KDEConnect позволяет устройствам безопасно обмениваться контентом, например, уведомлениями или файлами, а также использовать другие функции, такие как SMS-сообщения и удаленное управление. Команда KDE Connect имеет приложения для Linux, BSD, Android, Sailfish, iOS, macOS и Windows.")
 
 # OFFICE SOFTS
- - Libre Office
- - [CherryTree для Kelime Kelime Kuran Meali](https://www.giuspen.com/cherrytree/ "Приложение для создания иерархических заметок с богатым текстом и подсветкой синтаксиса, хранящее данные в одном файле xml или sqlite.")
+ - [Libre Office](https://ru.libreoffice.org "LibreOffice — мощный офисный пакет, полностью совместимый с 32/64-битными системами. Переведён более чем на 30 языков мира. Поддерживает большинство популярных операционных систем, включая GNU/Linux, Microsoft Windows и Mac OS X.")
+ - [CherryTree](https://www.giuspen.com/cherrytree/ "Приложение для создания иерархических заметок с богатым текстом и подсветкой синтаксиса, хранящее данные в одном файле xml или sqlite.")
  - [Gromit-MPX](https://github.com/bk138/gromit-mpx "Это инструмент для экранных аннотаций, который работает с любой средой рабочего стола Unix под X11, а также с Wayland. Его основное использование для создания презентаций некоторых приложений. Обычно вам нужно будет перемещать указатель мыши вокруг точки интереса, пока все не заметят ее. С Gromit-MPX вы можете рисовать везде на экране, выделяя какую-то кнопку или область. Для установки используем yay -S gromit-mpx")
 
 # E-BOOKS
