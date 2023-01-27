@@ -18,6 +18,7 @@
  - [PHOTO](#photo)
  - [DEVELOPE](#develope)
  - [GAMES](#games)
+ - [Список приложений GNOME](#)
  - [NEW SOFT NOT TESTED](#new-soft-not-tested)
 
 # SYSTEM APPS
@@ -236,7 +237,7 @@ $ sudo update-desktop-database /usr/share/applications
  - dreamchess — трехмерные шахматы для Linux.
 
 
-# [Список приложений GNOME]
+# Список приложений GNOME
  - GCalctool — калькулятор  
  - Gconf-editor — редактор конфигураций  
  - Gedit — текстовый редактор  
