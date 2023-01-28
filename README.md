@@ -1,4 +1,11 @@
-<body style="background-color: #000000">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 20" fill="none">
+    <text x="0" y="15" fill="#4285f4">G</text>
+    <text x="12" y="15" fill="#ea4335">o</text>
+    <text x="21" y="15" fill="#fbbc05">o</text>
+    <text x="30" y="15" fill="#4285f4">g</text>
+    <text x="40" y="15" fill="#389738">l</text>
+    <text x="45" y="15" fill="#ea4335">e</text>
+</svg>
   
 # My Notes and Manuals
 
@@ -32,5 +39,3 @@
 [03 MOBILE APPS](https://github.com/orrstudio/My-Notes-and-Manuals/blob/main/03%20MOBILE%20APPS.md)<br>
 [04 WINDOWS APPS](https://github.com/orrstudio/My-Notes-and-Manuals/blob/main/04%20WINDOWS%20APPS.md)<br>
 [05 Outsourcing of IT Services Project](https://github.com/orrstudio/My-Notes-and-Manuals/blob/main/05%20Outsourcing%20of%20IT%20Services%20Project.md)<br>
-
-</body>
