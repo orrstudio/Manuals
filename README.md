@@ -1,7 +1,4 @@
-<style>
-background-color: #000000;
-</style>
-
+<span style="background-color: #000000">
 # My Notes and Manuals
 
 ## HELP & MANUALS
@@ -35,3 +32,4 @@ background-color: #000000;
 [04 WINDOWS APPS](https://github.com/orrstudio/My-Notes-and-Manuals/blob/main/04%20WINDOWS%20APPS.md)<br>
 [05 Outsourcing of IT Services Project](https://github.com/orrstudio/My-Notes-and-Manuals/blob/main/05%20Outsourcing%20of%20IT%20Services%20Project.md)<br>
 
+</span>
