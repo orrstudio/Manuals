@@ -1,4 +1,4 @@
-# Уроки для Jekyll
+# Уроки на YouTube для Jekyll
 
  - [Сайт на Jekyll от kiviok](https://www.youtube.com/watch?v=MwFxU_JO-mg&list=PLiQQbsp51_qRqVEsKWXnG2WjhimnKcgOU&index=2)
  - [Как установить шаблон Jekyll](https://www.youtube.com/watch?v=Aa3yAUVUPqM&list=PLyHuZVg03hQjtV45HPlfuPzHJOtEoK6DT&index=3)
