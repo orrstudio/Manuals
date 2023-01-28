@@ -1,7 +1,5 @@
 <body style="background-color: #000000">
   
-  <span style="color:red; background-color: #000000"> RED TEXT2 </span>
-  
 # My Notes and Manuals
 
 ## HELP & MANUALS
