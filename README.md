@@ -1,6 +1,14 @@
 <span style="background-color: #000000">
   
-  <span style="color:red"> RED TEXT </span>
+  <span style="color:red; background-color: #000000"> RED TEXT2 </span>
+
+```diff
++ Green
+- Red
+! Orange
+@@ Pink @@
+# Gray
+```
   
 # My Notes and Manuals
 
