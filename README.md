@@ -1,3 +1,7 @@
+<style>
+background-color: #000000;
+</style>
+
 # My Notes and Manuals
 
 ## HELP & MANUALS
