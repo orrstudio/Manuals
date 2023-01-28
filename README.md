@@ -1,4 +1,7 @@
 <span style="background-color: #000000">
+  
+  <span style="color:red"> RED TEXT </span>
+  
 # My Notes and Manuals
 
 ## HELP & MANUALS
