@@ -1,12 +1,3 @@
-  <svg viewBox="0 0 55 20" fill="none">
-    <text x="0" y="15" fill="#428000">G</text>
-    <text x="5" y="5" fill="#ea4000">A</text>
-    <text x="10" y="15" fill="#fbb000">A</text>
-    <text x="15" y="5" fill="#428000">g</text>
-    <text x="20" y="15" fill="#389000">A</text>
-    <text x="25" y="5" fill="#ea4000">e</text>
-</svg>
-
 # HELP & MANUALS
 [00 КОНСОЛЬНЫЕ КОМАНДЫ ЛИНУКС](https://github.com/orrstudio/My-Notes-and-Manuals/blob/main/HELP%20%26%20MAN/00%20%D0%9A%D0%9E%D0%9D%D0%A1%D0%9E%D0%9B%D0%AC%D0%9D%D0%AB%D0%95%20%D0%9A%D0%9E%D0%9C%D0%90%D0%9D%D0%94%D0%AB%20%D0%9B%D0%98%D0%9D%D0%A3%D0%9A%D0%A1.md)<br>
 [01 Yay – Еще один надежный помощник AUR](https://github.com/orrstudio/My-Notes-and-Manuals/blob/main/HELP%20%26%20MAN/01%20Yay%20%E2%80%93%20%D0%95%D1%89%D0%B5%20%D0%BE%D0%B4%D0%B8%D0%BD%20%D0%BD%D0%B0%D0%B4%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D0%BD%D0%B8%D0%BA%20AUR%2C%20%D0%BD%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%BD%D0%B0%20GO%20%E2%80%93%20IT%20is%20good.md)<br>
