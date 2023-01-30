@@ -171,6 +171,7 @@
 
 # DEVELOPE
  - [GitHUB Desktop](https://github.com/shiftkey/desktop) $ yay -S github-desktop (Еще нужно установит gnome-keyring) Или можно скачать Appimage.
+ - [Code Formatter](https://github.com/prettier/prettier "Prettier — самоуверенный форматировщик кода. Он обеспечивает согласованный стиль, анализируя ваш код и перепечатывая его с помощью собственных правил, учитывающих максимальную длину строки, при необходимости перенося код.")
  - [VisualStudio Code](https://wiki.archlinux.org/title/Visual_Studio_Code_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9))
     - VS Code PLUGINS List: [20 BEST VSCODE EXTENSIONS ](https://x-team.com/blog/best-vscode-extensions/#settings-sync)
         - [Snippet](https://github.com/mre/vscode-snippet "Расширение Visual Studio Code для cheat.sh. Быстро и легко находите фрагменты кода для любого языка прямо в вашей IDE.")
