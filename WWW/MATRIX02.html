@@ -1,10 +1,27 @@
+
 <!DOCTYPE html>
-<html>
+<html lang=&quot;en&quot; >
+
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset=&quot;UTF-8&quot;>
+  
+<link rel=&quot;apple-touch-icon&quot; type=&quot;image/png&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png&quot; />
+<meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;CodePen&quot;>
+
+<link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico&quot; />
+
+<link rel=&quot;mask-icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg&quot; color=&quot;#111&quot; />
+
+
+  
+  <title>CodePen - Digital Rain – CodePen Challenge </title>
+  <link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;><link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin><link href=&quot;https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&amp;display=swap&quot; rel=&quot;stylesheet&quot;>
+<meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;>
+  <link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css&quot;>
+
+  
+  
 <style>
 *,
 *:after,
@@ -28,20 +45,33 @@ canvas {
   transform: rotateY(180deg);
 }
 </style>
-</head>	
-<body>
 
-<canvas id="rain"></canvas>
+  <script>
+  window.console = window.console || function(t) {};
+</script>
 
-</body>
   
-<script>
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage(&quot;resize&quot;, &quot;*&quot;);
+  }
+</script>
 
-import gsap from 'https://cdn.skypack.dev/gsap@3.11.0'
 
-console.clear()
+</head>
 
-const CANVAS = document.querySelector('#rain')
+<body translate=&quot;no&quot; >
+  <canvas id=&quot;rain&quot;></canvas>
+    <script src=&quot;https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js&quot;></script>
+
+  
+      <script id=&quot;rendered-js&quot; type=&quot;module&quot;>
+import gsap from 'https://cdn.skypack.dev/gsap@3.11.0';
+
+console.clear();
+
+const CANVAS = document.querySelector('#rain');
 
 const DEFAULT_OPTIONS = {
   size: () => window.innerWidth * 0.015,
@@ -50,54 +80,54 @@ const DEFAULT_OPTIONS = {
   hue: 120,
   limiter: 0.25,
   glyphs:
-    'ラドクリフマラソンわたしワタシんょンョたばこタバコとうきょうトウキョウ0123456789±!@#$%^&*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+  'ラドクリフマラソンわたしワタシんょンョたばこタバコとうきょうトウキョウ0123456789±!@#$%^&amp;*()_+ABCDEFGHIJKLMNOPQRSTUVWXYZ'
   // glyphs: '01'
+};
 
-}
 
 const DigitalRain = function (el, options) {
-  if (el.tagName !== 'CANVAS') return console.error('Need a canvas element')
-  const self = this
-  self.__ratio = window.devicePixelRatio || 1
-  self.canvas = el
-  self.options = options
-  self.size = options.size
-  self.glyphs = self.options.glyphs.split('')
-  self.context = el.getContext('2d')
-  self.setSize()
-  self.setTracker()
-  self.init()
-  return self
-}
+  if (el.tagName !== 'CANVAS') return console.error('Need a canvas element');
+  const self = this;
+  self.__ratio = window.devicePixelRatio || 1;
+  self.canvas = el;
+  self.options = options;
+  self.size = options.size;
+  self.glyphs = self.options.glyphs.split('');
+  self.context = el.getContext('2d');
+  self.setSize();
+  self.setTracker();
+  self.init();
+  return self;
+};
 
 // Sending back a column Object that represents the state of a column
 DigitalRain.prototype.setColumn = function (column = {}) {
-  const self = this
-  const { glyphs } = self
-  // Set a destination and record len && lastLen
-  const len = gsap.utils.random(6, self.rows, 1)
-  const lastLen = column.len || len
+  const self = this;
+  const { glyphs } = self;
+  // Set a destination and record len &amp;&amp; lastLen
+  const len = gsap.utils.random(6, self.rows, 1);
+  const lastLen = column.len || len;
   // const destination = self.rows + len
-  const destination = gsap.utils.random(self.rows * 0.1, self.rows + len, 1)
-  const lastDestination = column.destination || destination
+  const destination = gsap.utils.random(self.rows * 0.1, self.rows + len, 1);
+  const lastDestination = column.destination || destination;
   // Tracking the last Destination needs a tail off to roll out the old stream
-  const tailEnd = lastDestination + lastLen
+  const tailEnd = lastDestination + lastLen;
 
   // If you have column.chars reuse else reset up to destination
-  let chars = column.chars || []
+  let chars = column.chars || [];
 
   // When you come in, cache the last set of chars
-  let cacheChars = [...chars]
+  let cacheChars = [...chars];
 
   chars = new Array(Math.max(destination, chars.length)).fill().map((entry, index) => {
     if (index <= destination) {
-      return self.glyphs[gsap.utils.random(0, self.glyphs.length - 1, 1)]
+      return self.glyphs[gsap.utils.random(0, self.glyphs.length - 1, 1)];
     } else {
-      return cacheChars[index]
+      return cacheChars[index];
     }
-  })
+  });
 
-  const row = gsap.utils.random(-self.rows, -1, 1)
+  const row = gsap.utils.random(-self.rows, -1, 1);
 
   // column.hue = column.hue || gsap.utils.random(0, 359, 1)
 
@@ -111,135 +141,138 @@ DigitalRain.prototype.setColumn = function (column = {}) {
     tailEnd,
     tailCounter: lastDestination,
     row,
-    len,
-  }
-}
+    len };
+
+};
 
 DigitalRain.prototype.setTracker = function () {
-  const self = this
-  self.tracker = new Array(self.columns).fill().map(() => self.setColumn())
-}
+  const self = this;
+  self.tracker = new Array(self.columns).fill().map(() => self.setColumn());
+};
 
 DigitalRain.prototype.reset = function () {
-  const self = this
-  self.context.clearRect(0, 0, self.canvas.width, self.canvas.height)
-  self.setSize()
-  self.setTracker()
-}
+  const self = this;
+  self.context.clearRect(0, 0, self.canvas.width, self.canvas.height);
+  self.setSize();
+  self.setTracker();
+};
 
 DigitalRain.prototype.init = function () {
-  const self = this
-  self.renderMatrix = () => self.render()
-  self.resetOnSize = () => self.reset()
-  window.addEventListener('resize', self.resetOnSize)
-  gsap.ticker.add(self.renderMatrix)
-  gsap.ticker.fps(self.options.fps)
+  const self = this;
+  self.renderMatrix = () => self.render();
+  self.resetOnSize = () => self.reset();
+  window.addEventListener('resize', self.resetOnSize);
+  gsap.ticker.add(self.renderMatrix);
+  gsap.ticker.fps(self.options.fps);
   self.pause = () => {
-    gsap.ticker.remove(self.renderMatrix)
-  }
+    gsap.ticker.remove(self.renderMatrix);
+  };
   self.play = () => {
-    gsap.ticker.add(self.renderMatrix)
-  }
-}
+    gsap.ticker.add(self.renderMatrix);
+  };
+};
 
 DigitalRain.prototype.getColor = function (
-  x,
-  y,
-  {
-    hue,
-    row,
-    len,
-    lastLen,
-    lastDestination,
-    tailCounter,
-  }
-) {
-  const self = this
+x,
+y,
+{
+  hue,
+  row,
+  len,
+  lastLen,
+  lastDestination,
+  tailCounter })
+
+{
+  const self = this;
   // If y > row but less than last destination, work out the color as if row === column.lastDestination
-  const lower = 0.1
-  const upper = 1
-  let alpha = 0.1
+  const lower = 0.1;
+  const upper = 1;
+  let alpha = 0.1;
 
   if (y <= row) {
     alpha = gsap.utils.clamp(
-      lower,
-      upper,
-      gsap.utils.mapRange(-len, 0, lower, upper)(y - row)
-    )
-  } else if (y > row && y <= lastDestination) {
+    lower,
+    upper,
+    gsap.utils.mapRange(-len, 0, lower, upper)(y - row));
+
+  } else if (y > row &amp;&amp; y <= lastDestination) {
     alpha = gsap.utils.clamp(
-      lower,
-      upper,
-      gsap.utils.mapRange(-lastLen, 0, lower, upper)(y - tailCounter)
-    )
+    lower,
+    upper,
+    gsap.utils.mapRange(-lastLen, 0, lower, upper)(y - tailCounter));
+
   } else if (y > lastDestination) {
-    alpha = lower
+    alpha = lower;
   }
-  return `hsl(${hue || self.options.hue}, 100%, ${row === y ? 100 : 70}%, ${alpha})`
-}
+  return `hsl(${hue || self.options.hue}, 100%, ${row === y ? 100 : 70}%, ${alpha})`;
+};
 
 DigitalRain.prototype.render = function () {
-  const self = this
-  self.context.clearRect(0, 0, self.canvas.width, self.canvas.height)
+  const self = this;
+  self.context.clearRect(0, 0, self.canvas.width, self.canvas.height);
   // Need to try and iterate over every cell in the Matrix...
-  for (let c = 0; c < self.characters; c++) {
-    const x = c % self.columns
-    const y = Math.floor(c / self.columns)
-    const column = self.tracker[x]
+  for (let c = 0; c < self.characters; c++) {if (window.CP.shouldStopExecution(0)) break;
+    const x = c % self.columns;
+    const y = Math.floor(c / self.columns);
+    const column = self.tracker[x];
 
     // On the first row, let's bump the index
-    if (y === 0 && Math.random() > 0.1) {
-      column.row += 1
+    if (y === 0 &amp;&amp; Math.random() > 0.1) {
+      column.row += 1;
     }
 
-    if (column.tailCounter !== column.tailOff && y === 0) {
-      column.tailCounter += 1
+    if (column.tailCounter !== column.tailOff &amp;&amp; y === 0) {
+      column.tailCounter += 1;
     }
 
-    const row = column.row
-    const chars = column[y > row ? 'cacheChars' : 'chars']
-    
-    self.context.fillStyle = self.getColor(x, y, column)
+    const row = column.row;
+    const chars = column[y > row ? 'cacheChars' : 'chars'];
+
+    self.context.fillStyle = self.getColor(x, y, column);
 
 
     if (chars[y]) {
-      if (Math.random() > 0.999 && y > row) {
-        column.cacheChars[y] = column.chars[y] = ''
+      if (Math.random() > 0.999 &amp;&amp; y > row) {
+        column.cacheChars[y] = column.chars[y] = '';
       }
-      if (Math.random() > 0.99 && (y < row && y < column.destination && y > (column.destination - column.len))) {
-        column.cacheChars[y] = column.chars[y] = self.glyphs[gsap.utils.random(0, self.glyphs.length - 1, 1)]
+      if (Math.random() > 0.99 &amp;&amp; y < row &amp;&amp; y < column.destination &amp;&amp; y > column.destination - column.len) {
+        column.cacheChars[y] = column.chars[y] = self.glyphs[gsap.utils.random(0, self.glyphs.length - 1, 1)];
       }
       self.context.fillText(
-        chars[y],
-        (x + 0.5) * self.fontSize,
-        (y + 1) * self.fontSize
-      )
+      chars[y],
+      (x + 0.5) * self.fontSize,
+      (y + 1) * self.fontSize);
+
     }
     // Reset the column if we go past destination
     if (row > column.destination) {
-      self.tracker[x] = self.setColumn(column)
+      self.tracker[x] = self.setColumn(column);
     }
-  }
-}
+  }window.CP.exitedLoop(0);
+};
 
 DigitalRain.prototype.setSize = function () {
-  const self = this
-  const { height, width } = self.canvas.getBoundingClientRect()
-  self.canvas.height = height * self.__ratio
-  self.canvas.width = width * self.__ratio
+  const self = this;
+  const { height, width } = self.canvas.getBoundingClientRect();
+  self.canvas.height = height * self.__ratio;
+  self.canvas.width = width * self.__ratio;
   // Set the font size and get the rows/columns
-  self.fontSize = Math.ceil(typeof self.size === 'function' ? self.size() : self.size)
-  self.columns = Math.ceil(self.canvas.width / self.fontSize)
+  self.fontSize = Math.ceil(typeof self.size === 'function' ? self.size() : self.size);
+  self.columns = Math.ceil(self.canvas.width / self.fontSize);
   // self.columns = 1
-  self.rows = Math.ceil(self.canvas.height / self.fontSize)
-  self.characters = self.rows * self.columns
-  self.context.font = `${self.fontSize}px ${self.options.family}`
-  self.context.textAlign = 'center'
-}
+  self.rows = Math.ceil(self.canvas.height / self.fontSize);
+  self.characters = self.rows * self.columns;
+  self.context.font = `${self.fontSize}px ${self.options.family}`;
+  self.context.textAlign = 'center';
+};
 
-window.myDigitalRain = new DigitalRain(CANVAS, DEFAULT_OPTIONS)
+window.myDigitalRain = new DigitalRain(CANVAS, DEFAULT_OPTIONS);
+//# sourceURL=pen.js
+    </script>
 
-	
-</script>
-	
+  
+
+</body>
+
 </html>
