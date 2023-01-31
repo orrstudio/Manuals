@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
-
-  
-
-    <style>
+<head>
+<style>
 *,
 *:after,
 *:before {
@@ -25,18 +23,17 @@ canvas {
 	inset: 0;
   transform: rotateY(180deg);
 }
-  </style>
-	
-	
-	  <body>
-		  <div>
-     <canvas id="rain"></canvas>
-		  </div>
-  </body>
-  
-  <script>
+</style>
+</head>	
+<body>
 
-    import gsap from 'https://cdn.skypack.dev/gsap@3.11.0'
+<canvas id="rain"></canvas>
+
+</body>
+  
+<script>
+
+import gsap from 'https://cdn.skypack.dev/gsap@3.11.0'
 
 console.clear()
 
@@ -238,7 +235,7 @@ DigitalRain.prototype.setSize = function () {
 
 window.myDigitalRain = new DigitalRain(CANVAS, DEFAULT_OPTIONS)
 
-    
-  </script>
+	
+</script>
 	
 </html>
