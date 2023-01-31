@@ -3,6 +3,37 @@
 
   
 
+    <style>
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	font-family:  'Google Sans', sans-serif, system-ui;
+}
+
+canvas {
+	background: hsl(0 0% 5%);
+	height: 100vh;
+	position: fixed;
+	width: 100vw;
+	inset: 0;
+  transform: rotateY(180deg);
+}
+  </style>
+	
+	
+	  <body>
+		  <div>
+     <canvas id="rain"></canvas>
+		  </div>
+  </body>
+  
   <script>
 
     import gsap from 'https://cdn.skypack.dev/gsap@3.11.0'
@@ -209,34 +240,5 @@ window.myDigitalRain = new DigitalRain(CANVAS, DEFAULT_OPTIONS)
 
     
   </script>
-    <style>
-*,
-*:after,
-*:before {
-	box-sizing: border-box;
-}
-
-body {
-	display: grid;
-	place-items: center;
-	min-height: 100vh;
-	font-family:  'Google Sans', sans-serif, system-ui;
-}
-
-canvas {
-	background: hsl(0 0% 5%);
-	height: 100vh;
-	position: fixed;
-	width: 100vw;
-	inset: 0;
-  transform: rotateY(180deg);
-}
-  </style>
-	
-	
-	  <body>
-     <canvas id="rain"></canvas>
-  </body>
-  
 	
 </html>
