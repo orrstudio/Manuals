@@ -195,7 +195,7 @@
     - Indent one space
     - Indenticator
     - JavaScript (ES6) code snippets
-    - jshint
+    - jshint (есть настрока для этого плагина. смотреть видео с описанием: https://www.youtube.com/watch?v=rRiTxn15Q3Y&list=PLQEds1ESt7csjTThaq8xzdf0Axxhyk5mL)
     - Live Server
     - Multiple cursor case preserver
     - Open Browser Preview
