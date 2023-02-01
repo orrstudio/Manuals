@@ -207,7 +207,8 @@
     - Simple icons
 
 ```bash
-# Как отключить встроенный git vs code?
+# Как отключить встроенный git в VS Code?
+#
 # 1) В левой панели раздел "Расширения" -> "Отображать встроенные расширения"
 # 2) Находим расширение Git и все ненужные, нажимаем "Отключить"
 ```
@@ -232,16 +233,24 @@
 
 ```bash
 # Что делать, если каталоги открываются в VSCode?
-# Существует файл /usr/share/applications/mimeinfo.cache. В нем хранятся ассоциации между mime-типами и приложениями. Его редактирование исправляет проблему, НО такое решение является временным, так как этот файл генерируется при каждом обновлении системы из *.desktop файлов.
-№ Такие как эти:
+
+# Существует файл /usr/share/applications/mimeinfo.cache.
+# В нем хранятся ассоциации между mime-типами и приложениями.
+# Его редактирование исправляет проблему,
+# НО такое решение является временным, так как этот файл генерируется
+# при каждом обновлении системы из *.desktop файлов.
+№ Удалить в этом фале нуно схожие этим строчкам:
 # code-oss.desktop;
 # application/x-code-oss-workspace=code-oss.desktop;
 # x-scheme-handler/code-oss=code-oss-url-handler.desktop;
-# я их удалил.
-#
-# Еще нужно отредактировать MimeType (я его просто закомментировал) в /usr/share/applications/visual-studio-code.desktop и обновить mimeinfo.cache:
+
+# Еще нужно отредактировать MimeType (я его просто закомментировал)
+# в /usr/share/applications/visual-studio-code.desktop и обновить mimeinfo.cache:
+
 $ sudo nano /usr/share/applications/visual-studio-code.desktop
+
 # MimeType=text/plain;inode/directory;
+
 $ sudo update-desktop-database /usr/share/applications
 ```
 
