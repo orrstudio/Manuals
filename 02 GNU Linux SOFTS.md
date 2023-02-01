@@ -120,7 +120,7 @@
 
 ## EXTENSIONS for GNOME
 
-<img src="https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true" alt="Get it on GNOME Extensions" height="100" align="middle">
+<img src="https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true" alt="Get it on GNOME Extensions" height="100" align="middle"> [Видео с описанием многих расширений.](https://www.youtube.com/watch?v=cxMV8QlrKAo)
 
  - [OpenWeather](https://extensions.gnome.org/extension/750/openweather/ "Отображение прогноза погоды в строке состояния GNOME.")
  - [Vitals](https://github.com/corecoding/Vitals "Отображение информации в строке состояния GNOME (память, процессор, скорость интернета и т.д.")
@@ -190,7 +190,7 @@
         - vscode-icons
         - Better Comments
 ```config
- settings.json
+ json.json
 	{
     "workbench.colorTheme": "Monokai Dimmed",
     "editor.formatOnSave": true,
