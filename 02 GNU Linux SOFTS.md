@@ -57,7 +57,6 @@
 - [Oracle VM VirtualBox](https://www.virtualbox.org/ "Мощный продукт виртуализации x86 и AMD64/Intel64 для корпоративного и домашнего использования.")
 - [Brasero](https://pingvinus.ru/program/brasero "Brasero — программа для записи дисков в Linux. Обладает всеми необходимыми функциями для записи и копирования дисков. Программа Brasero может записывать обычные CD/DVD диски с данными, звуковые диски, видеопроекты, образы дисков (iso и cue), копировать и форматировать диски.")
 - [Actiona](https://github.com/Jmgr/actiona "Макросы для Linux. Actiona - это инструмент автоматизации, который позволяет вам выполнять множество действий на вашем компьютере, таких как эмуляция щелчков мыши, нажатия клавиш, отображения окон сообщений, редактирования текстовых файлов и т. Д. Задачи можно создавать с помощью простого редактора или с помощью программирования EcmaScript (JavaScript). язык для дополнительной настройки. Actiona является кроссплатформенной.")
-- [Ezanvakti](https://github.com/fbostanci/ezanvakti "GNU/Linux icin ezan vakti bildirici")
 - [PowerMate](https://github.com/stefansundin/powermate-linux)
 - [AppImageLauncher](joplin://x-callback-url/openNote?id=fabc4251115544d39e580e698cc2cae9)
 - [PowerMate](https://github.com/stefansundin/powermate-linux "Linux userspace driver for the Griffin PowerMate. (For the classic USB model. There is a proof-of-concept for the Bluetooth model.)")
@@ -75,6 +74,7 @@
 - [SSHUTTLE]() - VPN через SSH (Для подключения сначало ставим саму прогу `sshuttle`, а потом вводим в терминале: `sshuttle -vvvv -r ubuntu@168.188.188.88 -x 168.188.188.88 0/0)` для подключения. [VIDEO TUTORIAL](https://www.youtube.com/watch?v=7XDOuH-MPvw)
 - NANO (Консольный Текстовый Редактор)
 - [AstroVIM](https://www.youtube.com/watch?v=LKnuIazeiM4 "Это полноценная ИДЕ на основе NeoVIM со всеми нужными плагинами")
+- [Vim color themes](https://vimcolorschemes.com/dark/)
 - TMUX
 - foot - terminal
 - TILIX
@@ -129,7 +129,7 @@
 ## EXTENSIONS for GNOME
 
 <img src="https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true" alt="Get it on GNOME Extensions" height="100" align="middle"> [Видео с описанием многих расширений.](https://www.youtube.com/watch?v=cxMV8QlrKAo)
-
+- [Azan Islamic Prayer Times](https://extensions.gnome.org/extension/1510/azan-islamic-prayer-times/)
 - [OpenWeather](https://extensions.gnome.org/extension/750/openweather/ "Отображение прогноза погоды в строке состояния GNOME.")
 - [Vitals](https://github.com/corecoding/Vitals "Отображение информации в строке состояния GNOME (память, процессор, скорость интернета и т.д.")
 - [TopHat](https://extensions.gnome.org/extension/5219/tophat/ "TopHat отображает активность процессора, памяти, диска и сети в верхней панели GNOME.)

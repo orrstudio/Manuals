@@ -2,6 +2,8 @@
 
 **Arch Linux** ‒ это один из немногих дистрибутивов Linux, в котором доступны самые последние версии пакетов.
 
+> [GUI version ArchLinux Install](https://archlinuxgui.in/download.html)
+
 # УСТАНОВКА Arch LINUX
 
 - [ПОДГОТОВКА](#%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BA-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B5)
