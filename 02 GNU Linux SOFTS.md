@@ -105,18 +105,18 @@
 
 ## SECURITY
 
-- [pass](https://www.passwordstore.org/ "Менеджер паролей - скрипт для gnupg") [Статья про pass на ХАБРе](https://habr.com/ru/post/479540/)
+- [PASS](https://www.passwordstore.org/ "Менеджер паролей - скрипт для gnupg") - [Статья про pass на ХАБРе](https://habr.com/ru/post/479540/)
   - Дополнительные зависимости и приложения для 'pass':
-    - QtPass        # Графический интерфейс для Linux. (https://github.com/IJHack/QtPass)
-    - browserpass   # Pасширение для браузеров. Чтобы правильно установить Browserpass, необходимо установить два его компонента: 
-      - [Браузерное расширение](https://github.com/browserpass/browserpass-extension)
-      - [Клиентское приложение](https://github.com/browserpass/browserpass-native#installation)
-    - pass-update   # дополняет утилиту pass командой update, обеспечивающей простой процесс обновления паролей. Он поддерживает обновление путей, каталогов и подстановочных знаков. Кроме того, вы можете выбрать, как обновлять свои пароли, автоматически генерируя новые пароли или устанавливая свои собственные вручную. (https://github.com/roddhjav/pass-update#readme)
-    - pass-import   # это расширение хранилища паролей, позволяющее вам удобно импортировать базу данных паролей в хранилище паролей. (https://github.com/roddhjav/pass-import#readme)
+    - [QTPASS](https://github.com/IJHack/QtPass "Графический интерфейс для Linux.")
+    - BROWSERPASS - Pасширение для браузеров. Для установки Browserpass, необходимо установить два его компонента: 
+      - [browserpass-extension - Браузерное расширение](https://github.com/browserpass/browserpass-extension)
+      - [browserpass-native - Клиентское приложение](https://github.com/browserpass/browserpass-native#installation)
+    - [PASS UPDATE](https://github.com/roddhjav/pass-update#readme) - дополняет утилиту pass командой update, обеспечивающей простой процесс обновления паролей. Он поддерживает обновление путей, каталогов и подстановочных знаков. Кроме того, вы можете выбрать, как обновлять свои пароли, автоматически генерируя новые пароли или устанавливая свои собственные вручную. 
+    - [PASS IMPORT](https://github.com/roddhjav/pass-import#readme "это утилита импорта паролей из сторонних баз паролей.")
     - qrencode      # for QR code support.
     - xclip         # for clipboard support on X11.
     - wl-clipboard  # for clipboard support on Wayland.
-- GPG - GnuPG [Команды для pass и gpg:](https://www.youtube.com/watch?v=NM1eYYyk2WE "Видео с пояснениями")
+- GPG, GnuPG - [Команды для PASS и GPG:](https://www.youtube.com/watch?v=NM1eYYyk2WE "Видео с пояснениями")
   ```bash
   gpg --full-gen-key # генерировать gpg ключ.
   gpg --list-keys # просмотр списка ключей. Так же ключи можно посмотреть программой seahorse.
@@ -139,9 +139,9 @@
   sudo nano /usr/bin/pass # если выдает ошибку при редактировании нуно изменить строку с редактором в этом файле.
   pass generate new.key 25 # генерация пароля с указанием длины пароля.
   ``` 
-- seahorse \ # Приложение для управления паролями, а так же PGP и SSH ключами
-- [GUFW](http://gufw.org/ "FireWall для Linux") После установки включаем в автозапуск `systemctl enable ufw`
-- [hBlock](https://github.com/hectorm/hblock "Блокировщик рекламы и вредоносных доменов. Делает записи в /etc/hosts файле.") После установки hBlock следует запустить в терминале: ($ sudo hblock) Для временного отключения hBlock введите в терминале: ($ sudo hblock -S none -D none)
+- seahorse - Приложение для управления паролями, а так же PGP и SSH ключами
+- [GUFW](http://gufw.org/ "FireWall для Linux") - После установки включаем в автозапуск `systemctl enable ufw`
+- [hBlock](https://github.com/hectorm/hblock "Блокировщик рекламы и вредоносных доменов. Делает записи в /etc/hosts файле.") - После установки hBlock следует запустить в терминале: ($ sudo hblock) Для временного отключения hBlock введите в терминале: ($ sudo hblock -S none -D none)
 - [firejail](https://github.com/netblue30/firejail "ПЕСОЧНИЦА для линукс") - [доп инфа в видео](https://www.youtube.com/watch?v=OWu5RNWjhEc)
 
 ## SETTINGS Aplications for GNOME
