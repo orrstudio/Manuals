@@ -104,9 +104,42 @@
 
 ## SECURITY
 
-- [hBlock](https://github.com/hectorm/hblock "Блокировщик рекламы и вредоносных доменов. Делает записи в /etc/hosts файле.") После установки hBlock следует запустить в терминале: ($ sudo hblock) Для временного отключения hBlock введите в терминале: ($ sudo hblock -S none -D none)
-- [GUFW](http://gufw.org/ "FireWall для Linux") После установки включаем в автозапуск `systemctl enable ufw`
+- [pass](https://www.passwordstore.org/ "Менеджер паролей - скрипт для gnupg")
+  ```text
+  Дополнительные зависимости для 'pass':
+    browserpass   # расширение для браузеров. ()
+    pass-update   # дополняет утилиту pass командой update, обеспечивающей простой процесс обновления паролей. Он поддерживает обновление путей, каталогов и подстановочных знаков. Кроме того, вы можете выбрать, как обновлять свои пароли, автоматически генерируя новые пароли или устанавливая свои собственные вручную. (https://github.com/roddhjav/pass-update#readme)
+    pass-import   # это расширение хранилища паролей, позволяющее вам удобно импортировать базу данных паролей в хранилище паролей. (https://github.com/roddhjav/pass-import#readme)
+    qrencode      # for QR code support.
+    xclip         # for clipboard support on X11.
+    wl-clipboard  # for clipboard support on Wayland.
+
+  [Инструкция пользования и команды:](https://www.youtube.com/watch?v=NM1eYYyk2WE)
+    GPG - GnuPG:
+    $ gpg --full-gen-key # генерировать gpg ключ
+    $ gpg --list-keys # просмотр списка ключей. Так же ключи можно посмотреть программой seahorse.
+    $ gpg -k # просмотр public ключей.
+    $ gpg -K # просмотр privat ключей.
+    $ pass init orr888@gmail.com # инифицирование ключа
+    $ pass insert yutube.com # добавление пароля
+    $ pass insert -m yutube.com # добавление мульти пароля. несколько строк.
+    $ pass # просмотр дерева паролей
+    $ gpg -a --export # просмотр public ключа в терминале
+    $ gpg -a --export-secret-keys # просмотр privat ключа в терминале
+    $ gpg --output ~/public.key.gpg --armor --export orr888@gmail.com # экспорт public ключа в файл.
+    $ gpg --output ~/privat.key.gpg --armor --export-secret-keys orr888@gmail.com # экспорт privat ключа в файл.
+    $ gpg --import ~/pub-and-prv-keys.gpg
+    $ gpg --delete-secret-keys orr888@gmail.com # удаление ключа privat
+    $ gpg --delete-keys orr888@gmail.com # удаление ключа public
+    $ pass edit myh.godaddy.com # редактироване уже имеющегося пароля.
+    $ pass update -E myh.godaddy.com # редактироване уже имеющегося пароля.
+    $ pass update myh.godaddy.com # утилита генерации нового пароля.
+    $ sudo nano /usr/bin/pass # если выдает ошибку при редактировании нуно изменить строку с редактором в этом файле.
+    $ pass generate new.key 25 # генерация пароля
+  ``` 
 - seahorse \ # Приложение для управления паролями, а так же PGP и SSH ключами
+- [chrome-pass](https://github.com/hsanson/chrome-pass "Менеджер паролей для Chrome")- [GUFW](http://gufw.org/ "FireWall для Linux") После установки включаем в автозапуск `systemctl enable ufw`
+- [hBlock](https://github.com/hectorm/hblock "Блокировщик рекламы и вредоносных доменов. Делает записи в /etc/hosts файле.") После установки hBlock следует запустить в терминале: ($ sudo hblock) Для временного отключения hBlock введите в терминале: ($ sudo hblock -S none -D none)
 - [firejail](https://github.com/netblue30/firejail "ПЕСОЧНИЦА для линукс") - [доп инфа в видео](https://www.youtube.com/watch?v=OWu5RNWjhEc)
 
 ## SETTINGS Aplications for GNOME
