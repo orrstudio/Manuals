@@ -1,0 +1,56 @@
+<PowerMateDoc>
+  <settings>
+    <lastUpdateCheck>17.03.2016 14:04:38</lastUpdateCheck>
+    <showTaskbarIcon>True</showTaskbarIcon>
+  </settings>
+  <device name="PowerMate 1">
+    <settings>
+      <lastpath>\\?\hid#vid_077d&amp;pid_0410#6&amp;107a4441&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}</lastpath>
+    </settings>
+    <app name="Global Setting">
+      <action pmaction="ClockwiseRotate" caction="Volume Up" plugin="Volume">
+        <settings>
+          <description>Raise System Volume</description>
+        </settings>
+      </action>
+      <action pmaction="CounterClockwiseRotate" caction="Volume Down" plugin="Volume">
+        <settings>
+          <description>Lower System Volume</description>
+        </settings>
+      </action>
+      <action pmaction="Click" caction="Mute" plugin="Volume" />
+    </app>
+    <app image="mp3DirectCut" name="mp3DirectCut">
+      <settings>
+        <iconPath>C:\Program Files (x86)\mp3DirectCut\mp3DirectCut.exe</iconPath>
+      </settings>
+      <action pmaction="ClockwiseRotate" caction="Send Keys" plugin="Send Keys">
+        <settings>
+        </settings>
+        <panel>
+          <string>Right</string>
+        </panel>
+      </action>
+      <action pmaction="CounterClockwiseRotate" caction="Send Keys" plugin="Send Keys">
+        <panel>
+          <string>Left</string>
+        </panel>
+      </action>
+      <action pmaction="ClickClockwiseRotate" caction="Send Keys" plugin="Send Keys">
+        <panel>
+          <string>Down</string>
+        </panel>
+      </action>
+      <action pmaction="ClickCounterClockwiseRotate" caction="Send Keys" plugin="Send Keys">
+        <panel>
+          <string>Up</string>
+        </panel>
+      </action>
+      <action pmaction="Click" caction="Send Keys" plugin="Send Keys">
+        <panel>
+          <string>Space</string>
+        </panel>
+      </action>
+    </app>
+  </device>
+</PowerMateDoc>
