@@ -197,6 +197,7 @@
 - Audacious — WINAMP
 - OBS Studio - Программа для записи экрана.
 - Hypnotix - Ip TV
+- [Ardour](https://ardour.org/ "Программа для многоканальной записи звука и цифровая звуковая станция в одном.")
 
 # PHOTO
 
