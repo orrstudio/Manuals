@@ -75,6 +75,7 @@
 - NANO (Консольный Текстовый Редактор)
 - [AstroVIM](https://www.youtube.com/watch?v=LKnuIazeiM4 "Это полноценная ИДЕ на основе NeoVIM со всеми нужными плагинами")
 - [Vim color themes](https://vimcolorschemes.com/dark/)
+- duf - аналог df но красивше. Показывает информацию про диски в табличной форме.
 - TMUX
 - tree - утилита показывающая дерево каталогов и файлов в терминале.
 - foot - terminal
