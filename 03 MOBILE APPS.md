@@ -14,3 +14,4 @@
  - Authenticator
  - Material Files - Проводник
  - SMSRadar
+ - [AFWall+ (Android Firewall)](https://github.com/ukanth/afwall "iptables based firewall for Android")
