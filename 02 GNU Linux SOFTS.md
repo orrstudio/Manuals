@@ -153,6 +153,7 @@
 - Adwaita Dark — Темная тема для GNOME (предоставляется пакетом gnome-themes-extra)
 - chrome-gnome-shell — Надстрока для GNOME Extensions (Позволяет устанавливать Gnome "extensions" через Хром браузер)
 - fragments - torrent client for GNOME
+- Transmission - torrent client 
 - GtkHash - Hash summ files for GNOME
 - feary - email client for GNOME
 - seahorse - Хранител паролей и создатель ключей SSH, PGP для GNOME
