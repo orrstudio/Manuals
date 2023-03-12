@@ -327,6 +327,7 @@ $ sudo update-desktop-database /usr/share/applications
 
 # NEW SOFT NOT TESTED
 
+- [Open source TeamViewer](https://github.com/rustdesk/rustdesk "Инфраструктура виртуальных / удаленных рабочих столов для всех! Альтернатива TeamViewer / Citrix с открытым исходным кодом. Все платформы включая линукс и андроид")
 - [Моя папка в сети](https://www.youtube.com/watch?v=lCfIgtLVNfM)
 - [Geppetto](https://geppetto.js.org/ "Набор инструментов анимации WebGL для создания красивой анимации, которая также позволяет управлять в реальном времени.")
 - [ScreenCat](https://www.electronjs.org/apps/screencat "Совместное использование экрана WebRTC")
