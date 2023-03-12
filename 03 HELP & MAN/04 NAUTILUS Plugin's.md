@@ -21,17 +21,12 @@ sudo nano ~/.config/user-dirs.dirs
 # путь относительно домашнего каталога, или XDG_xxx_DIR="/yyy", 
 # где /yyy – абсолютный путь. Никакой другой формат не поддерживается.
 #
-XDG_DESKTOP_DIR="$HOME/IMF-Teams"
 XDG_DOWNLOAD_DIR="$HOME/Downloads"
 XDG_TEMPLATES_DIR="$HOME/TEMPLATES"
-XDG_SCREENSHOTS_DIR="$HOME/SCREENSHOTS"
 XDG_DOCUMENTS_DIR="$HOME/DOCUMENTS"
 XDG_MUSIC_DIR="$HOME/MUSIC"
 XDG_PICTURES_DIR="$HOME/PICTURES"
 XDG_VIDEOS_DIR="$HOME/VIDEOS"
-XDG_GITHUB_DIR="$HOME/GITHUB"
-XDG_APPIMAGES_DIR="$HOME/.AppImages"
-XDG_PASSWORDSTORE_DIR="$HOME/.password-store"
 ```
 Default settings for user directories
 ```bash
@@ -46,17 +41,12 @@ sudo nano /etc/xdg/user-dirs.defaults
 # Значения являются относительными путями из домашнего каталога и будут 
 # переведены для каждого элемента пути в языковой стандарт пользователя.
 #
-DESKTOP=IMF-Teams
 DOWNLOAD=Downloads
 TEMPLATES=TEMPLATES
-SCREENSHOTS=SCREENSHOTS
 DOCUMENTS=DOCUMENTS
 MUSIC=MUSIC
 PICTURES=PICTURES
 VIDEOS=VIDEOS
-GITHUB=GITHUB
-APPIMAGES=.AppImages
-PASSWORDSTORE=.password-store
 #
 #
 # Another alternative is (Другая альтернатива):
