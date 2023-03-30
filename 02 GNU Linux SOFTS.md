@@ -44,7 +44,7 @@
 
 ## SYSTEM TOOLS
 
-- [File manager functionality](https://wiki.archlinux.org/title/File_manager_functionality_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9) "Монтирование цифровых фотоаппаратов и мобильных устройств")
+- [File manager functionality](https://wiki.archlinux.org/title/File_manager_functionality_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9) "Монтирование цифровых фотоаппаратов и мобильных устройств и многое другое")
 - dconf-editor \ # все настройки gnome в одном месте
 - hardinfo (Информация о системе и устройствах)
 - timeshift
@@ -89,6 +89,14 @@
 - bash-completion
 - xclip - буфер обмена для командной строки
 - git или wget (Консольный Менеджер Закачки)
+- [cloudcross](https://cloudcross.mastersoft24.ru/ "CloudCross — это проект с открытым исходным кодом для синхронизации между вашими устройствами и различными облачными хранилищами. Такими как: GoogleDrive, OndeDrive, Dropbox, ЯндексДиск и Mail.Ru")
+```bash
+ccross -a # Cloud provider athentication
+ccross --prefer local # Can be one of "local" or "remote". "remote" - for priority of google-drive, and "locl" for local folder priority.
+ccross --dry-run # shows which files will be loaded/unloaded, but really do not synchronize
+ccross -p /home/orr/Downloads/google-drive # the absolute path to synchronize directory. And synchronizing command.
+ccross # For synchronization, you enough run.
+```
 - [uGet Download Manager](https://ugetdm.com/ "Консольный и Графический Менеджер Закачки и Торрента")
 - [uGet Integrator](https://github.com/ugetdm/uget-integrator "Интегрируйте uGet Download Manager с Google Chrome, Chromium, Opera, Vivaldi и Mozilla Firefox")
 - ZSH & Oh My ZSH. Сначало ставим ZSH а потом Oh My ZSH потом fonts-powerline. После вводим в терминале `sudo usermod -s /bin/zsh orr` и тем самым делаем по умолчанию. Ставим плагины (yay -S zsh-autosuggestions, zsh-syntax-highlighting, zsh-history-substring-search)[Как здесь](https://medium.com/macoclock/enhance-your-terminal-with-manjaros-zsh-config-ecada5b2897d) [Powerlevel10k ставим как здесь](https://gist.github.com/kevin-smets/8568070) [Еще инструкции здесь](https://habr.com/ru/post/323496/)
