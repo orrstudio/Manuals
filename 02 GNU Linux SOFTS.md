@@ -178,6 +178,7 @@ ccross # For synchronization, you enough run.
 ## EXTENSIONS for GNOME
 
 <img src="https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true" alt="Get it on GNOME Extensions" height="100" align="middle"> [Видео с описанием многих расширений.](https://www.youtube.com/watch?v=cxMV8QlrKAo)
+- [Munadi - Simple Athan App](https://flathub.org/ru/apps/org.munadi.Munadi)
 - [Azan Islamic Prayer Times](https://extensions.gnome.org/extension/1510/azan-islamic-prayer-times/)
 - [OpenWeather](https://extensions.gnome.org/extension/750/openweather/ "Отображение прогноза погоды в строке состояния GNOME.")
 - [Vitals](https://github.com/corecoding/Vitals "Отображение информации в строке состояния GNOME (память, процессор, скорость интернета и т.д.")
