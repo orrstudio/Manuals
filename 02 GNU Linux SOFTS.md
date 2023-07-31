@@ -208,6 +208,7 @@ ccross # For synchronization, you enough run.
 видео")
 - [FF Multi Converter](https://sites.google.com/site/ffmulticonverter/home "Конвертер аудио, видео, изображений и документов между всеми популярными форматами")
 - [ocenaudio](https://www.ocenaudio.com/ "Это идеальное программное обеспечение для людей, которым необходимо редактировать и анализировать аудиофайлы без каких-либо сложностей. ")
+- [Reaper](https://flathub.org/ru/apps/fm.reaper.Reaper)
 - [Kid3](https://kid3.kde.org "Редактoр тегoв audio файлoв")
 - Audacious — WINAMP
 - OBS Studio - Программа для записи экрана.
