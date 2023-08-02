@@ -34,6 +34,7 @@
 
 ## NETWORK
 
+- [What IP](https://flathub.org/ru/apps/org.gabmus.whatip "Информация о вашем IP")
 - telnet (pacman -S inetutils)
 - nman (программа для определения открытых портов сервера)
 - networkmanager-openvpn https://www.youtube.com/watch?v=2oCpjla-lw0
@@ -115,6 +116,7 @@ ccross # For synchronization, you enough run.
 - pCloud
 - [WhatsTron](https://vjba.github.io/whatstron "это настольный клиент WhatsApp для Linux, созданный с помощью Electron.") - WhatsApp для Linux
 - [Telegram Desktop](https://desktop.telegram.org)
+- [WhatsApp для Linux](https://flathub.org/ru/apps/com.github.eneshecan.WhatsAppForLinux "WhatsApp для Linux — это неофициальное настольное приложение WhatsApp, написанное на C++.")
 - [XAMPP Apache + MariaDB + PHP + Perl](https://www.apachefriends.org/ru/index.html "OpenServer для Linux")
 - [Proxy Switcher в GNOME и сеть Tor](https://www.youtube.com/watch?v=mM9680l7MyY&list=PLcrZh07ZsO5GO97bZtxqFlSw26UKgz5lB&index=8)
 
