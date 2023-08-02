@@ -111,6 +111,7 @@ ccross # For synchronization, you enough run.
 - Google Chrome
 - FireFOX
 - OPERA
+- [CrowTranslate](https://flathub.org/ru/apps/io.crow_translate.CrowTranslate "Crow Translate — это простой и легкий переводчик, написанный на C++/Qt, который позволяет вам переводить и озвучивать текст с помощью Google, Yandex, Bing, LibreTranslate и Lingva translate API.")
 - MEGA
 - insync
 - pCloud
