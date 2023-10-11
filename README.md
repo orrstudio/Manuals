@@ -57,7 +57,6 @@
    - - Oruc Qafarov CV.docx
    - - Outsourcing of IT Services Project.md
    - - RedMeNot8Pro IMEI.md
-   - - İNDEX və ADRESLƏR.md
    - - ŞİRNİYYAT SEXİ XƏRCLƏRİ.md
 
 ## Arch Linux INSTALL Instruction
