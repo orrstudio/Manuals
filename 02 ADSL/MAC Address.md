@@ -10,3 +10,8 @@
 | 8   | 50-8F-4C-50-CB-8B | 192.168.0.12 | RedMi Not4 ZERIFE |
 | 9    |04-B1-67-48-41-24| 192.168.0.13|Mi A1 KUZKIN|
 | 10   |6C-00-6B-04-FE-D3|192.168.0.14|Samsung A40 KERIM|
+
+| Google DNS Servers |     |
+| --- | --- |
+| Primary DNS Server | 8.8.8.8 |
+| Secondary DNS Server | 8.8.4.4 |
