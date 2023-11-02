@@ -1,6 +1,6 @@
 <img src="https://logodownload.org/wp-content/uploads/2017/05/google-chrome-logo-5.png" align="middle">
 
-# РАСШИРЕНИЯ
+# Расширения (Extensions) для Google Chrome
 
 - [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
   - [Закадровый перевод видеоOOT](https://github.com/ilyhalight/voice-over-translation)
