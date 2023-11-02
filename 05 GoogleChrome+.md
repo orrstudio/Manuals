@@ -1,4 +1,4 @@
-<img src="https://e7.pngegg.com/pngimages/527/129/png-clipart-google-chrome-logo-computer-icons-web-browser-google-text-logo.png" height="300" align="middle">
+<img src="https://logodownload.org/wp-content/uploads/2017/05/google-chrome-logo-5.png" height="300" align="middle">
 
 # РАСШИРЕНИЯ
 
