@@ -3,7 +3,7 @@
 # Расширения (Extensions) для Google Chrome
 
 - [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-  - [Закадровый перевод видеоOOT](https://github.com/ilyhalight/voice-over-translation)
+  - [Закадровый перевод видео (YANDEX)](https://github.com/ilyhalight/voice-over-translation)
   - [GitHub HTML Preview](https://github.com/Mottie/GitHub-userscripts)
   - [YouTube Больше Ускоряет](https://github.com/orrstudio/More-Speeds-Buttons-for-YouTube)
   - [YouTube speed rememberer](https://greasyfork.org/ru/scripts/27091-youtube-speed-rememberer)
