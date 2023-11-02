@@ -1,4 +1,4 @@
-<img src="https://logodownload.org/wp-content/uploads/2017/05/google-chrome-logo-5.png" height="300" align="middle">
+<img src="https://logodownload.org/wp-content/uploads/2017/05/google-chrome-logo-5.png" align="middle">
 
 # РАСШИРЕНИЯ
 
