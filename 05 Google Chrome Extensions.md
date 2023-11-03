@@ -7,7 +7,7 @@
   - [GitHub HTML Preview](https://github.com/Mottie/GitHub-userscripts)
   - [YouTube Больше Ускоряет](https://github.com/orrstudio/More-Speeds-Buttons-for-YouTube)
   - [YouTube speed rememberer](https://greasyfork.org/ru/scripts/27091-youtube-speed-rememberer)
-  - [Youtube Downloader](https://greasyfork.org/ru/scripts/34613-youtube-multi-downloader-v8-6-relaunched-tubemp3-to-no-ads-new-layout-for-yt)
+  - [Youtube Downloader](https://greasyfork.org/ru/scripts/446208-youtube-download-button)
   - [Youtube AD blocker](https://github.com/ChenZihan-sudo/Youtube-AD-blocker)
   - [Remove Adblock Thing](https://github.com/TheRealJoelmatic/RemoveAdblockThing)
 - [Dark Mode](https://chrome.google.com/webstore/detail/dark-mode/dmghijelimhndkbmpgbldicpogfkceaj)
