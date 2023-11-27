@@ -1,4 +1,4 @@
-# 1 - SmartTube (For youtube without reklam)
+# 1 - SmartTube (For watch YouTube without reklam)
 
 https://smarttube.app
 <br>
