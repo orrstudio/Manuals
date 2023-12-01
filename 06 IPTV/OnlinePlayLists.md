@@ -130,7 +130,7 @@ https://m3url.ru/
 <br>https://m3url.ru/ЗЛОВЕЩИЕ_МЕРТВЕЦЫ.m3u
 <br>https://m3url.ru/ЗОЛОТОЙ_ГУСЬ.m3u
 <br>https://m3url.ru/ИРИНА_КРУГ.m3u
-<br>https://m3url.ru/ИСТРЕБИТЕЛЬНИЦА_ПРИШЕЛЬЦЕ� �.m3u
+<br>https://m3url.ru/ИСТРЕБИТЕЛЬНИЦА_ПРИШЕЛЬЦЕ��.m3u
 <br>https://m3url.ru/КАРЛИК_НОС.m3u
 <br>https://m3url.ru/КВН_ВЫСШАЯ_ЛИГА_2021.m3u
 <br>https://m3url.ru/КИЛЛЕР_2022_1_СЕЗОН.m3u
@@ -146,14 +146,14 @@ https://m3url.ru/
 <br>https://m3url.ru/Моя_последняя_слеза.m3u
 <br>https://m3url.ru/музыка_наш.m3u
 <br>https://m3url.ru/Никто_не_узнает.m3u
-<br>https://m3url.ru/НОВИНКИ_ИНДИЙСКИЕ_ФИЛЬМЫ_202 2.m3u
+<br>https://m3url.ru/НОВИНКИ_ИНДИЙСКИЕ_ФИЛЬМЫ_2022.m3u
 <br>https://m3url.ru/НОВИНКИ_ИНДИЙСКИЕ_ФИЛЬМЫ_2022.m3u
 <br>https://m3url.ru/Оби-Ван_Кеноби_1_сезон_720p_RHS_[scarfilm].m3u
 <br>https://m3url.ru/ОГНИВО.m3u
 <br>https://m3url.ru/ОДНА_В_ПОЛЕ_ВОИН.m3u
 <br>https://m3url.ru/ОРУЖИЕ.m3u
 <br>https://m3url.ru/ОЧЕНЬ_СТРАННЫЕ_ДЕЛА_1-3_СЕЗОНЫ.m3u
-<br>https://m3url.ru/Очень_странные_дела_4_сезон. m3u
+<br>https://m3url.ru/Очень_странные_дела_4_сезон.m3u
 <br>https://m3url.ru/пересуд.m3u
 <br>https://m3url.ru/под_защитой.m3u
 <br>https://m3url.ru/ПРИЗРАК_В_ДОСПЕХАХ.m3u
@@ -162,7 +162,7 @@ https://m3url.ru/
 <br>https://m3url.ru/РТ.m3u
 <br>https://m3url.ru/ру_тв.m3u
 <br>https://m3url.ru/С_ХОЛОДА.m3u
-<br>https://m3url.ru/САМЫЕ_ЛУЧШИЕ_РОК_КОНЦЕРТЫ.m3 u
+<br>https://m3url.ru/САМЫЕ_ЛУЧШИЕ_РОК_КОНЦЕРТЫ.m3u
 <br>https://m3url.ru/СБОРКА.m3u
 <br>https://m3url.ru/сегодня.m3u8
 <br>https://m3url.ru/СИНЯЯ_БЕЗДНА.m3u
@@ -213,9 +213,9 @@ https://m3url.ru/
 <br>https://m3url.ru/AMAZON-AES.m3u
 <br>https://m3url.ru/Anaconda__1997.BDRip.avi.m3u
 <br>https://m3url.ru/ASTRA.m3u
-<br>https://m3url.ru/Avatar_Extended_Collector's_Edition_2009_BD_AI_UPS CALE_3840x2160.m3u
+<br>https://m3url.ru/Avatar_Extended_Collector's_Edition_2009_BD_AI_UPSCALE_3840x2160.m3u
 <br>https://m3url.ru/Avatar.2009.x264.BDRip.(720p).KSab.mkv.m3u
-<br>https://m3url.ru/Bahubali.2.The_Conclusion.2017.MVO.BDRip.AVC.ExKin oRay.mkv.m3u
+<br>https://m3url.ru/Bahubali.2.The_Conclusion.2017.MVO.BDRip.AVC.ExKinoRay.mkv.m3u
 <br>https://m3url.ru/Bahubali.2015.XviD.BDRip-Dego.m3u
 <br>https://m3url.ru/Bcu_.m3u
 <br>https://m3url.ru/BCU_Каналы.m3u8
@@ -228,8 +228,8 @@ https://m3url.ru/
 <br>https://m3url.ru/cliptv.m3u
 <br>https://m3url.ru/compile.m3u
 <br>https://m3url.ru/crelcom_(1).m3u
-<br>https://m3url.ru/Dance_Dance_{HD}_Mithun_Chakraborty_Mandakini_Smit a_Patil_Amrish.m3u
-<br>https://m3url.ru/Don't.Breathe.2.2021.D.AVO.BDRip.1080p.seleZen.mkv .m3u
+<br>https://m3url.ru/Dance_Dance_{HD}_Mithun_Chakraborty_Mandakini_Smita_Patil_Amrish.m3u
+<br>https://m3url.ru/Don't.Breathe.2.2021.D.AVO.BDRip.1080p.seleZen.mkv.m3u
 <br>https://m3url.ru/E-Light-Telecom.m3u
 <br>https://m3url.ru/edem_.m3u8
 <br>https://m3url.ru/Endhiran.2010.Blu-ray.720p.x264.Rus.Tam.mkv.m3u
@@ -270,17 +270,17 @@ https://m3url.ru/
 <br>https://m3url.ru/Iptvuz.m3u
 <br>https://m3url.ru/iRON_MAIDEN_ЛУЧШЕЕ.m3u
 <br>https://m3url.ru/ITV.LIVE.m3u8
-<br>https://m3url.ru/JSC_Rostelecom_regional_branch_Siberia,_Росси я,_Омск.m3u
+<br>https://m3url.ru/JSC_Rostelecom_regional_branch_Siberia,_Россия,_Омск.m3u
 <br>https://m3url.ru/Juchka@tasixiptv.m3u
 <br>https://m3url.ru/kaz_89.m3u
 <br>https://m3url.ru/Kino-koncert.v.Luzhnikah.1990.HDTVRip-AVC.ExKinoRay.mkv.m3u
 <br>https://m3url.ru/kino.m3u
 <br>https://m3url.ru/kinokanaly.m3u
-<br>https://m3url.ru/KTEL,_Россия,_Екатеринбург__1234 .m3u
+<br>https://m3url.ru/KTEL,_Россия,_Екатеринбург__1234.m3u
 <br>https://m3url.ru/KTEL,_Россия,_Кировград_81.m3u
 <br>https://m3url.ru/kuzya@tasixiptv.m3u
 <br>https://m3url.ru/Led_Zeppelin.m3u
-<br>https://m3url.ru/Limited_Company_SiNT,_Россия,_Ачинск.m 3u
+<br>https://m3url.ru/Limited_Company_SiNT,_Россия,_Ачинск.m3u
 <br>https://m3url.ru/LLC__Group_Tower_Telecom_81,_Russia,_Volzhskiy.m3u
 <br>https://m3url.ru/Lyla.2022.Pa.WEB-DLRip.14OOMB.avi.m3u
 <br>https://m3url.ru/M3U-IPTV-ru.m3u
@@ -298,7 +298,7 @@ https://m3url.ru/
 <br>https://m3url.ru/MITV.m3u
 <br>https://m3url.ru/MIX-SBORKA(1).m3u8
 <br>https://m3url.ru/mix.m3u
-<br>https://m3url.ru/Modern_Talking_Maxi_And_Singles_Collection_Dieter_ Bohlen_Edition.m3u
+<br>https://m3url.ru/Modern_Talking_Maxi_And_Singles_Collection_Dieter_Bohlen_Edition.m3u
 <br>https://m3url.ru/mono-tv.m3u
 <br>https://m3url.ru/Monstr_Kino-tv.m3u
 <br>https://m3url.ru/mtv_90s-.m3u8
@@ -320,7 +320,7 @@ https://m3url.ru/
 <br>https://m3url.ru/OOO_BSCOM,_Россия,_Красноярск.m3u
 <br>https://m3url.ru/OOO_BSCOM,_Россия,_Новый_Урал.m3u
 <br>https://m3url.ru/OOO_BSCOM,_Россия,_Тында.m3u
-<br>https://m3url.ru/OOO_Post_ltd,_Россия,_Пятигорск_81. m3u
+<br>https://m3url.ru/OOO_Post_ltd,_Россия,_Пятигорск_81.m3u
 <br>https://m3url.ru/ott-pink(2)_(1).m3u
 <br>https://m3url.ru/OTVPL.m3u
 <br>https://m3url.ru/Peers.m3u
@@ -415,7 +415,7 @@ https://m3url.ru/
 <br>https://m3url.ru/xxx-chanall.m3u8
 <br>https://m3url.ru/xxx.m3u
 <br>https://m3url.ru/xxx(1).m3u
-<br>https://m3url.ru/YA_ne_terrorist_Istoriya_moyey_smerti_Men_terrorch i_emasman_2021.m3u
+<br>https://m3url.ru/YA_ne_terrorist_Istoriya_moyey_smerti_Men_terrorchi_emasman_2021.m3u
 <br>https://m3url.ru/yosso.media.pl.m3u
 <br>https://m3url.ru/YuRA_ShATUNOV_KLIPY.m3u
 <br>https://m3url.ru/ZSTTK.m3u
@@ -628,7 +628,7 @@ https://m3url.ru/
 <br>https://dl.dropbox.com/s/94i5wwlqityc09o/TV-PUB-3.m3u
 <br>https://dl.dropbox.com/s/cvfv4fdgg9fvpn0/edem3iptvfork.m3u
 <br>https://dl.dropbox.com/s/eq3yu1xix2ny92t/IPTV_HD.m3u8
-<br>https://dl.dropbox.com/s/i6cy4ug8ovtnkue/@tv_pub 2.m3u
+<br>https://dl.dropbox.com/s/i6cy4ug8ovtnkue/@tv_pub2.m3u
 <br>https://dl.dropbox.com/s/isy19fq1oeavmtv/tricolortvfree.m3u
 <br>https://dl.dropbox.com/s/isy19fq1oeavmtv/triton.m3u
 <br>https://dl.dropbox.com/s/jvisunngesoo2dc/slilitv.m3u
@@ -639,10 +639,10 @@ https://m3url.ru/
 <br>https://dl.dropbox.com/s/vtd4s4yv2snliu2/YANDEXRadio.m3u
 <br>https://dl.dropbox.com/s/wp3qe030kivwhft/Edem4IPTVFORK.m3u
 <br>https://dl.dropbox.com/s/wwm9ur9z7efoamh/vega.m3u
-<br>https://dl.dropbox.com/s/ziyfi7qhr95f1d ... zhskiy.m3u
+<br>https://dl.dropbox.com/s/ziyfi7qhr95f1d...zhskiy.m3u
 <br>https://dl.dropbox.com/s/ziyfi7qhr95f1ds/LLC%20Volzhskiy.m3u
 <br>https://dl.dropboxusercontent.com/s/8mdn0esx2t0et84/bobik@tasixiptv.m3u
-<br>https://github.com/Karnei4/Karnei4.gith ... ations.txt
+<br>https://github.com/Karnei4/Karnei4.gith...ations.txt
 <br>https://i.mjh.nz/Plex/us.m3u8
 <br>https://ip-tv.pro/all.m3u
 <br>https://ip-tv.pro/mult.m3u
@@ -774,4 +774,3 @@ https://m3url.ru/
 <br>https://zona-iptv.ru/play/ukr.m3u
 <br>https://zona-iptv.ru/play/yan_tv.m3u
 <br>https://zona-iptv.ru/play/zsttk.m3u
-<br>
