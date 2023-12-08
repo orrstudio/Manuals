@@ -34,7 +34,7 @@ sudo pacman -Syyu
 6. В крайнем случае, установите пакет с ключом -U pacman:
 
 ```
-pacman -U /var/cache/pacman/pkg/package-1.3.9-1.x86_64.pkg.tar.xz
+sudo pacman -U /var/cache/pacman/pkg/package-1.3.9-1.x86_64.pkg.tar.xz
 ```
 
 ## Также возможно, что одно из зеркал pacman, возможно даже первое, недоступно (возврат 404). В этом случае выполните следующие действия:
@@ -49,5 +49,5 @@ sudo rm -fr /var/lib/pacman/sync
 3. Обновите базу данных и обновите систему:
 
 ```
-pacman -Syyu
+sudo pacman -Syyu
 ```
