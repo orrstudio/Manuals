@@ -3,32 +3,32 @@
 1. Переустановите keyrings, включая последние ключи:
 
 ```
-pacman -Sy archlinux-keyring artix-keyring
+sudo pacman -Sy archlinux-keyring
 ```
 
 2. Удалите старые и, возможно, просроченные, отозванные или недействительные ключи, выполнив следующую команду:
 
 ```
-rm -r /etc/pacman.d/gnupg
+sudo rm -r /etc/pacman.d/gnupg
 ```
 
 3. Инициализируйте связку ключей pacman:
 
 ```
-pacman-key --init
+sudo pacman-key --init
 ```
 
 4. Загрузите ключи подписи:
 
 ```
-pacman-key --populate archlinux
+sudo pacman-key --populate archlinux
 ```
 
 5. Удалите пакеты программного обеспечения, загруженные во время прерванной установки:
 
 ```
-pacman -Scc
-pacman -Syyu
+sudo pacman -Scc
+sudo pacman -Syyu
 ```
 
 6. В крайнем случае, установите пакет с ключом -U pacman:
