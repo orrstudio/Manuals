@@ -182,7 +182,7 @@ ccross # For synchronization, you enough run.
 
 ## EXTENSIONS for GNOME
 
-<img src="https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true" alt="Get it on GNOME Extensions" height="100" align="middle"> [Видео с описанием многих расширений.](https://www.youtube.com/watch?v=cxMV8QlrKAo)
+<img src="https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true" alt="Get it on GNOME Extensions" height="100" align="middle">
 - [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/ "Tweak Tool to Customize GNOME Shell")
 - [Tiling-Assistant](https://extensions.gnome.org/extension/3733/tiling-assistant/ "")
 - [Munadi - Simple Athan App](https://flathub.org/ru/apps/org.munadi.Munadi)
