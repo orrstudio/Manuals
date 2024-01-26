@@ -166,6 +166,7 @@ ccross # For synchronization, you enough run.
 - seahorse - Приложение для управления паролями, а так же PGP и SSH ключами
 - [GUFW](http://gufw.org/ "FireWall для Linux") - После установки включаем в автозапуск `systemctl enable ufw`
 - [hBlock](https://github.com/hectorm/hblock "Блокировщик рекламы и вредоносных доменов. Делает записи в /etc/hosts файле.") - После установки hBlock следует запустить в терминале: ($ sudo hblock) Для временного отключения hBlock введите в терминале: ($ sudo hblock -S none -D none)
+- [Portmaster](https://github.com/safing/portmaster/?tab=readme-ov-file "Aвтоматически блокирует рекламу, трекеры и вредоносные программы на всем вашем устройстве.")
 - [firejail](https://github.com/netblue30/firejail "ПЕСОЧНИЦА для линукс") - [доп инфа в видео](https://www.youtube.com/watch?v=OWu5RNWjhEc)
 
 ## SETTINGS Aplications for GNOME
