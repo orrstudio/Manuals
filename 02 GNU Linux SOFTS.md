@@ -254,6 +254,7 @@ ccross # For synchronization, you enough run.
 - [Synfig Studio](https://www.synfig.org/)
 - [Eyedropper](https://github.com/FineFindus/eyedropper "New Color Picker for GNOME")
 - ksnip - Инструмент для создания и аннотирования снимков экрана
+- [digiKam](https://www.digikam.org/download/ "digiKam — это усовершенствованное приложение для управления цифровыми фотографиями с открытым исходным кодом, работающее на Linux, Windows и macOS. Приложение предоставляет полный набор инструментов для импорта, управления, редактирования и обмена фотографиями и необработанными файлами.")
 
 # DEVELOPE
 
