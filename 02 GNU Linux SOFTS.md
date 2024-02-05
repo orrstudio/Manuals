@@ -199,6 +199,7 @@ ccross # For synchronization, you enough run.
 - [Vakt-i Salah](https://flathub.org/ru/apps/io.github.eminfedar.vaktisalah-gtk-rs "Приложение Prayer Times на базе Rust и GTK4. Он использует время молитв турецкого Управления по делам религии (Diyanet İşleri Başkanlığı)")
 - [Azan Islamic Prayer Times](https://extensions.gnome.org/extension/1510/azan-islamic-prayer-times/)
 - [Muezzin](https://github.com/DBChoco/Muezzin "Приложение «Время молитвы» (Азан) и Коран для Windows, macOS и GNU/Linux.")
+- [Azan Islamic Prayer Times](https://github.com/fahrinh/azan-gnome-shell-extension "Азан для Gnome Shell. ")
 - [OpenWeather](https://extensions.gnome.org/extension/750/openweather/ "Отображение прогноза погоды в строке состояния GNOME.")
 - [Weather O'Clock](https://extensions.gnome.org/extension/5470/weather-oclock/ "Display the current weather inside the pill next to the clock. GNOME Weather is required for this extension to work.")
 - [Vitals](https://github.com/corecoding/Vitals "Отображение информации в строке состояния GNOME (память, процессор, скорость интернета и т.д.")
