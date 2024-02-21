@@ -72,6 +72,7 @@
 - [CPU-X](https://flathub.org/ru/apps/io.github.thetumultuousunicornofdarkness.cpu-x "Собирает информацию о процессоре, материнской плате и многом другом.")
 - [Adobe Reader](https://flathub.org/ru/apps/com.adobe.Reader "официальное программное обеспечение Adobe для просмотра, печати и аннотирования PDF-документов.")
 - [Shortcut](https://flathub.org/ru/apps/io.github.andreibachim.shortcut "Сделайте ярлыки приложений")
+- [Distrobox](https://github.com/89luca89/distrobox "Контейнер с дистрибутивом Linux")
 
 ## COMMANDERS
 
