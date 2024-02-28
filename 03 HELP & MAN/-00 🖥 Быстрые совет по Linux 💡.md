@@ -32,11 +32,14 @@ do
     # Удаляем расширение из имени файла для создания папки
     foldername="${line%.*}"
 
-    # Создаем папку, если она еще не существует
-    mkdir -p "$foldername"
+    # Проверяем, существует ли уже файл с таким именем
+    if [ ! -f "$line" ]; then
+        # Создаем папку, если она еще не существует
+        mkdir -p "$foldername"
 
-    # Перемещаем файлы в соответствующую папку
-    find . -maxdepth 1 -name "$line" -exec mv {} "$foldername" \;
+        # Перемещаем файлы в соответствующую папку
+        find . -maxdepth 1 -name "$line" -exec mv {} "$foldername" \;
+    fi
 done < "$filename"
 
 # Конец скрипта.
