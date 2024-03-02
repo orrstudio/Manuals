@@ -1,5 +1,9 @@
 # Tht BEST Linux Operating Systems
 
+## ChromeOS with Google Play support on a USB Drive (2022)
+
+[Видео установки полной версии ChromeOS с поддержкой Google Play на USB-накопитель (2022 г.)](https://www.youtube.com/watch?v=pJzyekTBxc0)
+
 # Small Linux Operating Systems
 
 ## Porteus — это полноценная операционная система Linux, оптимизированная для запуска с компакт-диска, USB-накопителя, жесткого диска или другого загрузочного носителя. 
