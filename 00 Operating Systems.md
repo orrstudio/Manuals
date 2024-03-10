@@ -1,8 +1,8 @@
 # Microsoft Operating Systems
 
-## [m0nkrus](http://monkrus.ws "MS & Adobe Hacker")
+## [m0nkrus web site](http://monkrus.ws "MS & Adobe Hacker")
 
-### [Win10LTSC-Optimamod-[m0nkrus].iso](https://w14.monkrus.ws/search/label/LTSB-LTSC0
+### [Win10LTSC-Optimamod-(m0nkrus).iso](https://w14.monkrus.ws/search/label/LTSB-LTSC0
 ### [All MsWindows](https://w14.monkrus.ws/search/label/Windows)
 ### [AllMsOffice](https://w14.monkrus.ws/search/label/Office)
 
