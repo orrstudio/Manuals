@@ -4,7 +4,7 @@
 
 ### [Win10LTSC-Optimamod-(m0nkrus).iso](https://w14.monkrus.ws/search/label/LTSB-LTSC0
 ### [All MsWindows](https://w14.monkrus.ws/search/label/Windows)
-### [AllMsOffice](https://w14.monkrus.ws/search/label/Office)
+### [All MsOffices](https://w14.monkrus.ws/search/label/Office)
 
 - [m0nkrus Telegram chanel](https://t.me/s/m0nkrus)
 
