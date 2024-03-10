@@ -2,7 +2,7 @@
 
 ## [m0nkrus web site](http://monkrus.ws "MS & Adobe Hacker")
 
-### [Win10LTSC-Optimamod-(m0nkrus).iso](https://w14.monkrus.ws/search/label/LTSB-LTSC0
+### [Win10LTSC-Optimamod-[m0nkrus].iso](https://w14.monkrus.ws/search/label/LTSB-LTSC0)
 ### [All MsWindows](https://w14.monkrus.ws/search/label/Windows)
 ### [All MsOffices](https://w14.monkrus.ws/search/label/Office)
 
