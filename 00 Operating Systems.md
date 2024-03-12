@@ -27,7 +27,7 @@
 
 ## [m0nkrus web site](http://monkrus.ws "MS & Adobe Hacker")
 
-### [Win10LTSC-Optimamod-[m0nkrus].iso](https://w14.monkrus.ws/search/label/LTSB-LTSC0)
+### [Windows 10 LTSC OptimaMod (Dec`21) RUS-ENG x86-x64](https://w14.monkrus.ws/2021/12/windows-10-ltsc-optimamod-dec21-rus-eng.html)
 ### [All MsWindows](https://w14.monkrus.ws/search/label/Windows)
 ### [All MsOffices](https://w14.monkrus.ws/search/label/Office)
 
