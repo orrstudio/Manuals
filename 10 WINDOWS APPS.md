@@ -2,7 +2,6 @@
 
 # Системные утилиты:
 
- - [Microsoft Windows 10 Home](https://www.microsoft.com/en-us/software-download/windows10ISO "C4WNR-GXPDX-XJF6C-FMYXX-6CKVQ")
  - [Windows 10 LTSC OptimaMod - [m0nkrus]](https://w14.monkrus.ws/2021/12/windows-10-ltsc-optimamod-dec21-rus-eng.html "Windows 10 LTSC OptimaMod (Dec`21) RUS-ENG x86-x64")
  - [Diskinternals Linux Reader](https://www.diskinternals.com/linux-reader/ "Бесплатная программа Linux Reader ™ для Windows. Можете работать с разделами Linux как с обычными NTFS или FAT.")
  - [ДРАЙВЕРА EXT2FSD](https://losst.ru/podklyuchenie-ext4-v-windows "С помощью драйвера Ext2fsd вы можете работать с вашими разделами Linux как с обычными NTFS или FAT.")
