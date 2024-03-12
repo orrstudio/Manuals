@@ -21,21 +21,21 @@
 |YUMURTA|2|ƏD|
 |QOZ LƏPƏSİ|150|GR|
 
-|**3 KG PAXLAVA ÜÇÜN<br>YEKUN XƏRCLƏR**|**Miqdar**|**Ölçü Vahidi**|**AzM**|
-|:---|---:|:---:|---:|
-|QOZ LƏPƏSİ|650|GR|10|
-|KƏRƏ YAĞI|500|GR|10|
-|SÜD|250|ML|0.70
-|UN|800|GR|2|
-|ŞƏKƏR TOZU|1|KG|1.50|
-|HİL|1|XQ|0.60|
-|VANİL|1|PÇ|0.20|
-|DROJ|1|ÇQ|0.30|
-|LİON DUZU|1|ÇQ|0.10|
-|BAL|1|XQ|2|
-|YUURTA|4|ƏD|1|
-|İŞIQ PULU VƏ DİGƏR XƏRC|||1.50|
-|**Y E K U N**  -- 1kg = 11man|3|KG|30|
+|**3 KG PAXLAVA ÜÇÜN<br>YEKUN XƏRCLƏR**|**Miqdar**|**Ölçü Vahidi**|
+|:---|---:|:---:|
+|QOZ LƏPƏSİ|650|GR|
+|KƏRƏ YAĞI|500|GR|
+|SÜD|250|ML|
+|UN|800|GR|
+|ŞƏKƏR TOZU|1|KG|
+|HİL|1|XQ|
+|VANİL|1|PÇ|
+|DROJ|1|ÇQ|
+|LİON DUZU|1|ÇQ|
+|BAL|1|XQ|
+|YUURTA|4|ƏD|
+|İŞIQ PULU VƏ DİGƏR XƏRC|||
+|**Y E K U N**  -- 1kg = 11man|3|KG|
 
 # ŞƏKƏRBURA - 1.5 KG
 |--**XƏMİRİN XƏRCİ**--|**Miqdar**|**Ölçü Vahidi**|
