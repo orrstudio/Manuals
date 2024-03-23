@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Welcome to Arch application installer"
+echo "Welcome to Arch applications installer"
 
 # Ask the user if they want to check for yay and install if not present
 read -p "Do you want to check if yay is installed and install it if it's not? (y/n): " check_yay_choice

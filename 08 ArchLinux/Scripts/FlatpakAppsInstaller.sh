@@ -2,8 +2,8 @@
 
 while true; do
     clear
-    echo "Thank you for using Gosh-Its-Flatpak CLI App Store"
-    echo "This script will modify installed flatpaks system-wide; use at own risk!"
+    echo "Thank you for using Flatpak CLI App Store"
+    echo "This script will modify installed flatpaks system-wide"
     echo ""
     echo "1) Application Search"
     echo "2) Show Installed Applications"
