@@ -7,17 +7,23 @@ Remember you using these at your own risk. These are not official scripts please
 Scripts must be run as root/sudo!
 
 
-# What Script files does
+## What Script files does
 
 
-nixos_cli_appstore.sh -> Custom build NixOS app store using command line. It can add/remove applications. Works by editing the global section of configuration.nix file
+> nixos_cli_appstore.sh
+
+- Custom build NixOS app store using command line. It can add/remove applications. Works by editing the global section of configuration.nix file
+
+> nixos_gui_changer.sh  
+
+- Use this after installing NixOS it allows you to change your desktop enviroment from one system to another (GNOME, KDE, XFCE, MATE, Pantheon, Cinnamon). If you use this and the screen goes blank; its because its removed your existing GUI. In this case login to terminal and run nixos-rebuild switch
+
+> nixos_postinstall.sh  
+
+- Easier way for some post intall functions (Flatpak, Custom DNS Resolver, Garbage Collection). Use with CAUTION! 
 
 
-nixos_gui_changer.sh -> Use this after installing NixOS it allows you to change your desktop enviroment from one system to another (GNOME, KDE, XFCE, MATE, Pantheon, Cinnamon). If you use this and the screen goes blank; its because its removed your existing GUI. In this case login to terminal and run nixos-rebuild switch
+> nixos_virt_setup.sh  
 
-
-nixos_postinstall.sh -> Easier way for some post intall functions (Flatpak, Custom DNS Resolver, Garbage Collection). Use with CAUTION! 
-
-
-nixos_virt_setup.sh -> Allows you to install VirtualBox, KVM (and add user to libvirtd group), Docker & Podman,  easily on NixOS.
+- Allows you to install VirtualBox, KVM (and add user to libvirtd group), Docker & Podman,  easily on NixOS.
 
