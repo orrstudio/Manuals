@@ -264,12 +264,11 @@
   neofetch # Инструмент системной информации
   gnome.gnome-tweaks # Графический интерфейс для расширенных настроек GNOME.
 # pantheon-tweaks # Панель системных настроек для Pantheon Desktop. 
-
   firefox
   google-chrome
   filezilla
-  python311
-  python311Packages.pip
+# python311
+# python311Packages.pip
 # vlc
 # distrobox
 # kitty
@@ -357,7 +356,7 @@
   # Enable Flatpak service.
   # Включить сервис Flatpak.
   # ------------------------
-  services.flatpak.enable =true;
+  # services.flatpak.enable =true;
 
 
   # Enable the OpenSSH daemon.
