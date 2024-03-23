@@ -1,23 +1,13 @@
-## NixOS Scripts (Recommended for FRESH NixOS install/default configuration.nix file)
+# NixOS Scripts
 
-Getting started
-These scripts are meant to make NixOS Linux easier to manage / get up and running!
-Remember you using these at your own risk. These are not official scripts please don't ask NixOS Linux team for help.
+Getting started  
+These scripts are meant to make NixOS Linux easier to manage / get up and running!  
+Remember you using these at your own risk. These are not official scripts please don't ask NixOS Linux team for help.  
+
 Scripts must be run as root/sudo!
 
-Steps NixOS
-Open up a terminal
 
-- git clone https://github.com/orrstudio/nixos.git
-- cd nixos
-- cd scripts
-- chmod +x *.sh
-
-Once completed you should be able to run the individual scripts (All must be run as sudo)
-
-
-
-What each file does
+# What Script files does
 
 
 nixos_cli_appstore.sh -> Custom build NixOS app store using command line. It can add/remove applications. Works by editing the global section of configuration.nix file
