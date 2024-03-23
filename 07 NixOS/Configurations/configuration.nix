@@ -223,7 +223,7 @@
   # Включите автоматический вход пользователя.
   # ------------------------------------------
     services.xserver.displayManager.autoLogin.enable = true;
-    services.xserver.displayManager.autoLogin.user = "user";
+    services.xserver.displayManager.autoLogin.user = "orr";
 
 
   # Workaround for GNOME autologin:
