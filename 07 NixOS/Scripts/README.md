@@ -7,11 +7,17 @@ Remember you using these at your own risk. These are not official scripts please
 Помните, что вы используете их на свой страх и риск. Это не официальные скрипты, пожалуйста, не обращайтесь за помощью к команде NixOS Linux.  
 
 
-Scripts must be run as root/sudo!  
-Скрипты должны запускаться от имени пользователя root/sudo!  
+Сделайте скрипт исполняемым:
+```bash
+sudo chmod +x script.sh
+```
+Запустите скрипт от имени пользователя root:  
+```bash
+sudo ./script.sh
+```
 
 
-## What Script files does / Что делают файлы сценариев
+## What Scripts does / Что делают скрипты
 
 
 > nixos_cli_appstore.sh
