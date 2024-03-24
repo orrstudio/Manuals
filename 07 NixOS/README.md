@@ -1,3 +1,5 @@
+W@^6^f792u56vMv
+
 # NixOS Scripts / Скрипты NixOS
 
 
