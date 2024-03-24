@@ -52,7 +52,7 @@ garbage_collection() {
 show_menu() {
     clear
     echo "1) Enable FlatpakService"
-    echo "1) Enable AddFlathubRepo"
+    echo "2) Enable AddFlathubRepo"
     echo "3) Set Custom DNS Resolver"
     echo "4) Disable Custom DNS Resolver"
     echo "5) Garbage Collection (Del old points)"
