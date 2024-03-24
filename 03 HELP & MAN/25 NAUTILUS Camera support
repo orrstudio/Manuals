@@ -1,3 +1,5 @@
+http://www.gphoto.org/
+
 ## 1 extra/gvfs-gphoto2 (установлено)
 - Virtual filesystem implementation for GIO (gphoto2 backend; PTP camera, MTP media player)
 - Реализация виртуальной файловой системы для GIO (серверная часть gphoto2; камера PTP, медиаплеер MTP)
