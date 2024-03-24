@@ -18,8 +18,11 @@ ask_rebuild() {
     [[ $confirm == "Y" || $confirm == "y" || $confirm == "" ]] && nixos-rebuild switch
 }
 
-enable_flatpaks_flathub() {
+enable_flatpaks() {
     insert_before_last_brace "services.flatpak.enable = true;"
+}
+
+enable__flathub() {
     flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 }
 
@@ -48,18 +51,20 @@ garbage_collection() {
 
 show_menu() {
     clear
-    echo "1) Enable FlatpakService & AddFlathubRepo"
-    echo "2) Set Custom DNS Resolver"
-    echo "3) Disable Custom DNS Resolver"
-    echo "4) Garbage Collection (Del old points)"
+    echo "1) Enable FlatpakService"
+    echo "1) Enable AddFlathubRepo"
+    echo "3) Set Custom DNS Resolver"
+    echo "4) Disable Custom DNS Resolver"
+    echo "5) Garbage Collection (Del old points)"
     echo "0) Exit"
     read -p "Enter your choice: " choice
 
     case $choice in
-        1) enable_flatpaks_flathub; ask_rebuild;;
-        2) set_dns; ask_rebuild;;
-        3) disable_dns; ask_rebuild;;
-        4) garbage_collection;;
+        1) enable_flatpaks; ask_rebuild;;
+        2) enable_flathub; ask_rebuild;;
+        3) set_dns; ask_rebuild;;
+        4) disable_dns; ask_rebuild;;
+        5) garbage_collection;;
         0) exit 0;;
         *) echo "Invalid option";;
     esac
