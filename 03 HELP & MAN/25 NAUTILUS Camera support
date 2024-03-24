@@ -1,0 +1,19 @@
+## 1 extra/gvfs-gphoto2 (установлено)
+- Virtual filesystem implementation for GIO (gphoto2 backend; PTP camera, MTP media player)
+- Реализация виртуальной файловой системы для GIO (серверная часть gphoto2; камера PTP, медиаплеер MTP)
+
+## 2 extra/gvfs-smb (установлено)
+- Virtual filesystem implementation for GIO (SMB/CIFS backend; Windows client)
+- Реализация виртуальной файловой системы для GIO (серверная часть SMB/CIFS; клиент Windows)
+
+## 3 extra/gvfs (установлено)
+- Virtual filesystem implementation for GIO
+- Реализация виртуальной файловой системы для GIO.
+
+## 4 extra/gvfs-afc (установлено)
+- Virtual filesystem implementation for GIO (AFC backend; Apple mobile devices)
+- Реализация виртуальной файловой системы для GIO (серверная часть AFC; мобильные устройства Apple)
+
+## 5 extra/gvfs-mtp (установлено)
+- Virtual filesystem implementation for GIO (MTP backend; Android, media player)
+- Реализация виртуальной файловой системы для GIO (серверная часть MTP; Android, медиаплеер)
