@@ -22,7 +22,7 @@ enable_flatpaks() {
     insert_before_last_brace "services.flatpak.enable = true;"
 }
 
-enable__flathub() {
+enable_flathub() {
     flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 }
 
@@ -51,8 +51,8 @@ garbage_collection() {
 
 show_menu() {
     clear
-    echo "1) Enable FlatpakService"
-    echo "2) Enable AddFlathubRepo"
+    echo "1) Enable Flatpak Service"
+    echo "2) Add Flathub Repo"
     echo "3) Set Custom DNS Resolver"
     echo "4) Disable Custom DNS Resolver"
     echo "5) Garbage Collection (Del old points)"
