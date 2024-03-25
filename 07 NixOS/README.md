@@ -1,4 +1,9 @@
-W@^6^f792u56vMv
+Проверьте конфигурацию Bluetooth в NixOS. Убедитесь, что в вашем файле конфигурации /etc/nixos/configuration.nix включена поддержка Bluetooth1. Вот пример того, как это может выглядеть:
+
+hardware.bluetooth.enable = true; # включает поддержку Bluetooth
+hardware.bluetooth.powerOnBoot = true; # включает Bluetooth при загрузке
+
+
 
 # NixOS Scripts / Скрипты NixOS
 
