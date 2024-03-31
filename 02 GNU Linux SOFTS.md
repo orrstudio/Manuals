@@ -132,41 +132,22 @@ ccross # For synchronization, you enough run.
 
 ## SECURITY
 
-- [PASS](https://www.passwordstore.org/ "Менеджер паролей - скрипт для gnupg") - [Статья про pass на ХАБРе](https://habr.com/ru/post/479540/)
-  - Дополнительные зависимости и приложения для 'pass':
-    - [QTPASS](https://github.com/IJHack/QtPass "Графический интерфейс для Linux.")
-    - BROWSERPASS - Pасширение для браузеров. Для установки Browserpass, необходимо установить два его компонента: 
-      - [browserpass-extension - Браузерное расширение](https://github.com/browserpass/browserpass-extension)
-      - [browserpass-native - Клиентское приложение](https://github.com/browserpass/browserpass-native#installation)
-    - [PASS UPDATE](https://github.com/roddhjav/pass-update#readme) - дополняет утилиту pass командой update, обеспечивающей простой процесс обновления паролей. Он поддерживает обновление путей, каталогов и подстановочных знаков. Кроме того, вы можете выбрать, как обновлять свои пароли, автоматически генерируя новые пароли или устанавливая свои собственные вручную. 
-    - [PASS IMPORT](https://github.com/roddhjav/pass-import#readme "это утилита импорта паролей из сторонних баз паролей.")
-    - qrencode      # for QR code support.
-    - xclip         # for clipboard support on X11.
-    - wl-clipboard  # for clipboard support on Wayland.
-- GPG, GnuPG - [Команды для PASS и GPG:](https://www.youtube.com/watch?v=NM1eYYyk2WE "Видео с пояснениями")
-  ```bash
-  gpg --full-gen-key # генерировать gpg ключ.
-  gpg --list-keys # просмотр списка ключей. Так же ключи можно посмотреть программой seahorse.
-  gpg -k # public ключи.
-  gpg -K # privat ключи.
-  gpg -a --export # просмотр public ключа в терминале.
-  gpg -a --export-secret-keys # просмотр privat ключа в терминале.
-  gpg --output ~/public.key.gpg --armor --export orr888@gmail.com # экспорт public ключа в файл ~/public.key.gpg.
-  gpg --output ~/privat.key.gpg --armor --export-secret-keys orr888@gmail.com # экспорт privat ключа в файл ~/privat.key.gpg.
-  gpg --import ~/название_фала_с_ключем.gpg # Импорт ключей.
-  gpg --delete-secret-keys orr888@gmail.com # удаление ключа privat
-  gpg --delete-keys orr888@gmail.com # удаление ключа public
-  pass init orr888@gmail.com # инифицирование ключа для pass
-  pass insert yutube.com # добавление пароля
-  pass insert -m yutube.com # добавление мульти пароля c несколькокими строками.
-  pass # просмотр списка паролей в форме дерева.
-  pass edit yutube.com # редактироване уже имеющегося пароля.
-  pass update -E yutube.com # редактироване уже имеющегося пароля.
-  pass update yutube.com # утилита генерации нового пароля.
-  sudo nano /usr/bin/pass # если выдает ошибку при редактировании нуно изменить строку с редактором в этом файле.
-  pass generate new.key 25 # генерация пароля с указанием длины пароля.
-  ``` 
-- seahorse - Приложение для управления паролями, а так же PGP и SSH ключами
+- [PASS](https://www.passwordstore.org/ "Менеджер паролей - скрипт для gpg")
+  - [Полное описание установки PASS и GPG](https://habr.com/ru/post/479540/)
+  - GUI для GPG [Seahorse](https://wiki.gnome.org/Apps/Seahorse "Приложение для управления паролями, а так же PGP и SSH ключами")
+  - GUI приложения для PASS
+    - GUI для Pass [QtPass](https://qtpass.org/) 
+    - GUI для Pass и GPG [Kleopatra](https://apps.kde.org/kleopatra/) 
+  - Pасширение для браузеров.
+      - [Browserpass](https://github.com/browserpass)
+        - Для установки Browserpass, необходимо установить два его компонента: 
+        - [browserpass-extension - Браузерное расширение](https://chromewebstore.google.com/detail/browserpass/naepdomgkenhinolocfifgehidddafch)
+        - [browserpass-native - Клиентское приложение](https://github.com/browserpass/browserpass-native#installation)
+      - [PassFF](https://github.com/passff)
+        - Для установки PassFF, необходимо установить два его компонента:
+        - [PassFF - Браузерное расширение](https://addons.mozilla.org/ru/firefox/addon/passff/)
+        - [PassFF Хост-приложение для WebExtension](https://github.com/passff/passff-host)
+  - [PASS IMPORT](https://github.com/roddhjav/pass-import#readme "это утилита импорта паролей из сторонних баз паролей.")
 - [GUFW](http://gufw.org/ "FireWall для Linux") - После установки включаем в автозапуск `systemctl enable ufw`
 - [hBlock](https://github.com/hectorm/hblock "Блокировщик рекламы и вредоносных доменов. Делает записи в /etc/hosts файле.") - После установки hBlock следует запустить в терминале: ($ sudo hblock) Для временного отключения hBlock введите в терминале: ($ sudo hblock -S none -D none)
 - [Portmaster](https://github.com/safing/portmaster/?tab=readme-ov-file "Aвтоматически блокирует рекламу, трекеры и вредоносные программы на всем вашем устройстве.")
