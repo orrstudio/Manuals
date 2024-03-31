@@ -22,14 +22,6 @@ gpg -k
 ```
 gpg -K
 ```
-- экспорт всех открытых ключей в вашей связке ключей в формате ASCII
-```
-gpg -a --export
-```
-- экспорт privat ключа
-```
-gpg -a --export-secret-keys
-```
 - экспорт public ключа в файл ~/public.key.gpg
 ```
 gpg --output ~/public.key.gpg --armor --export orr888@gmail.com
@@ -51,7 +43,7 @@ gpg --delete-secret-keys orr888@gmail.com
 gpg --delete-keys orr888@gmail.com
 ```
 
-> Так же ключи можно посмотреть программой Seahorse.  
+> Так же управлять ключами можно программой Seahorse.
 
 ## [GUI для GPG - Seahorse](https://wiki.gnome.org/Apps/Seahorse)
 
@@ -63,10 +55,6 @@ gpg --delete-keys orr888@gmail.com
 - Добавьте изображение в любом формате, поддерживаемом GDK, в качестве идентификатора фотографии OpenGPG.
 - Создавайте ключи SSH, настраивайте их, кэшируйте.
 - И многое другое...
-
-## GUI для GPG [Kleopatra](https://apps.kde.org/kleopatra/) 
-
-- Менеджер сертификатов и единый криптографический графический интерфейс 
 
 ## Для Android существуют программы: 
 - GnuPG for Android
@@ -108,8 +96,11 @@ pass
 - Экспериментальная поддержка WebDAV
 - Гораздо более
 
+## GUI для Pass и GPG [Kleopatra](https://apps.kde.org/kleopatra/) 
 
-## [Интеграция с Android](https://habr.com/ru/articles/479540/)
+- Менеджер сертификатов и единый криптографический графический интерфейс 
+
+# [Интеграция с Android](https://habr.com/ru/articles/479540/)
 
 - Реализация GPG под Android называется [OpenKeychain](https://www.openkeychain.org/). Для её настройки достаточно зайти в меню "управление ключами" и импортировать ранее созданный секретный ключ.  
 - Реализация PASS под Android называется [Android-Password-Store](https://github.com/android-password-store/Android-Password-Store) сокращенно APS.  
