@@ -135,9 +135,9 @@ ccross # For synchronization, you enough run.
 - [PASS](https://www.passwordstore.org/ "Менеджер паролей - скрипт для gpg")
   - [Полное описание установки PASS и GPG](https://habr.com/ru/post/479540/)
   - GUI для GPG [Seahorse](https://wiki.gnome.org/Apps/Seahorse "Приложение для управления паролями, а так же PGP и SSH ключами")
-  - GUI приложения для PASS
-    - GUI для Pass [QtPass](https://qtpass.org/) 
-    - GUI для Pass и GPG [Kleopatra](https://apps.kde.org/kleopatra/) 
+  - GUI для Pass [QtPass](https://qtpass.org/) 
+  - GUI для Pass и GPG [Kleopatra](https://apps.kde.org/kleopatra/)
+  - [PASS IMPORT](https://github.com/roddhjav/pass-import#readme "это утилита импорта паролей из сторонних баз паролей.")
   - Pасширение для браузеров.
       - [Browserpass](https://github.com/browserpass)
         - Для установки Browserpass, необходимо установить два его компонента: 
@@ -147,7 +147,6 @@ ccross # For synchronization, you enough run.
         - Для установки PassFF, необходимо установить два его компонента:
         - [PassFF - Браузерное расширение](https://addons.mozilla.org/ru/firefox/addon/passff/)
         - [PassFF Хост-приложение для WebExtension](https://github.com/passff/passff-host)
-  - [PASS IMPORT](https://github.com/roddhjav/pass-import#readme "это утилита импорта паролей из сторонних баз паролей.")
 - [GUFW](http://gufw.org/ "FireWall для Linux") - После установки включаем в автозапуск `systemctl enable ufw`
 - [hBlock](https://github.com/hectorm/hblock "Блокировщик рекламы и вредоносных доменов. Делает записи в /etc/hosts файле.") - После установки hBlock следует запустить в терминале: ($ sudo hblock) Для временного отключения hBlock введите в терминале: ($ sudo hblock -S none -D none)
 - [Portmaster](https://github.com/safing/portmaster/?tab=readme-ov-file "Aвтоматически блокирует рекламу, трекеры и вредоносные программы на всем вашем устройстве.")
