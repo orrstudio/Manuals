@@ -138,15 +138,14 @@ ccross # For synchronization, you enough run.
   - GUI для Pass [QtPass](https://qtpass.org/) 
   - GUI для Pass и GPG [Kleopatra](https://apps.kde.org/kleopatra/)
   - [PASS IMPORT](https://github.com/roddhjav/pass-import#readme "это утилита импорта паролей из сторонних баз паролей.")
-  - Pасширение для браузеров.
-      - [Browserpass](https://github.com/browserpass)
-        - Для установки Browserpass, необходимо установить два его компонента: 
-        - [browserpass-extension - Браузерное расширение](https://chromewebstore.google.com/detail/browserpass/naepdomgkenhinolocfifgehidddafch)
-        - [browserpass-native - Клиентское приложение](https://github.com/browserpass/browserpass-native#installation)
-      - [PassFF](https://github.com/passff)
-        - Для установки PassFF, необходимо установить два его компонента:
-        - [PassFF - Браузерное расширение](https://addons.mozilla.org/ru/firefox/addon/passff/)
-        - [PassFF Хост-приложение для WebExtension](https://github.com/passff/passff-host)
+  - Pасширение для браузера Google Chrome [Browserpass](https://github.com/browserpass)
+    - Для установки Browserpass, необходимо установить два его компонента: 
+    - [browserpass-extension - Браузерное расширение](https://chromewebstore.google.com/detail/browserpass/naepdomgkenhinolocfifgehidddafch)
+    - [browserpass-native - Клиентское приложение](https://github.com/browserpass/browserpass-native#installation)
+  - Pасширение для браузера FireFox [PassFF](https://github.com/passff)
+    - Для установки PassFF, необходимо установить два его компонента:
+    - [PassFF - Браузерное расширение](https://addons.mozilla.org/ru/firefox/addon/passff/)
+    - [PassFF Хост-приложение для WebExtension](https://github.com/passff/passff-host)
 - [GUFW](http://gufw.org/ "FireWall для Linux") - После установки включаем в автозапуск `systemctl enable ufw`
 - [hBlock](https://github.com/hectorm/hblock "Блокировщик рекламы и вредоносных доменов. Делает записи в /etc/hosts файле.") - После установки hBlock следует запустить в терминале: ($ sudo hblock) Для временного отключения hBlock введите в терминале: ($ sudo hblock -S none -D none)
 - [Portmaster](https://github.com/safing/portmaster/?tab=readme-ov-file "Aвтоматически блокирует рекламу, трекеры и вредоносные программы на всем вашем устройстве.")
