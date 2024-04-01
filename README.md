@@ -37,3 +37,7 @@
 |111|7 (4+2+1)|R W X|Read + Write + Execute|
 
 
+# Файловая система Linux
+
+![LinuxFileSystems](https://github.com/orrstudio/My-Notes-and-Manuals/assets/65281943/e1ffd7b4-5ee2-4291-9562-964605b3ace0)
+
