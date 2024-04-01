@@ -12,5 +12,3 @@
 |110|6 (4+2+0)|R W -|Read + Write|
 |111|7 (4+2+1)|R W X|Read + Write + Execute|
 
-
-![LinuxPermissions](https://github.com/orrstudio/My-Notes-and-Manuals/assets/65281943/0261250f-e80f-43bb-b83e-6ae65581dc12)
