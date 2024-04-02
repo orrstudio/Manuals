@@ -212,7 +212,7 @@
 
 # --== Расширения "GNOME Tweaks" ==--
   gnome.gnome-tweaks # Настройка Расширений "GNOME Tweaks"
-  gnome.gpaste # Расширение для буфера обмена
+  gnomeExtensions.pano # Расширение для буфера обмена
   gnomeExtensions.net-speed-simplified # Индигатор скрости сети
   gnomeExtensions.tiling-assistant
   gnomeExtensions.tophat # Индигатор системных ресуров
