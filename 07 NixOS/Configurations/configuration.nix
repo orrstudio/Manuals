@@ -16,7 +16,7 @@
     theme = "/boot/grub/themes/atomic"; };
 
   # Имя хоста (Компа)
-    networking.hostName = "nixos"; 
+    networking.hostName = "HpProBook"; 
 
   # Включение сети Ethernet
     networking.networkmanager.enable = true;
@@ -85,7 +85,7 @@
 
   # Включение автоматического входа пользователя
     services.xserver.displayManager.autoLogin.enable = true;
-    services.xserver.displayManager.autoLogin.user = "orr";
+    services.xserver.displayManager.autoLogin.user = "user";
   # Обходной путь для автоматического входа в GNOME
     systemd.services."getty@tty1".enable = false;
     systemd.services."autovt@tty1".enable = false;
@@ -112,14 +112,14 @@
 #=============================#
 # Учетная запись пользователя #
 #=============================#
-    users.users.orr = {
+    users.users.user = {
     # Пароль установить с помощью ‘passwd’
       isNormalUser = true;
-      description = "Oruc Qafarov";
+      description = "User";
       extraGroups = [ "networkmanager" "wheel" ];
       packages = with pkgs; [
       # Приложения установленные только для текущуго пользователя:
-      # firefox
+      firefox
       ];
     };
 
@@ -129,10 +129,10 @@
 #===============================================#
 
   # programs.mtr.enable = true;
-    programs.gnupg.agent = {
-      enable = true;
-  #   enableSSHSupport = true;
-    };
+  # programs.gnupg.agent = {
+  # enable = true;
+  # enableSSHSupport = true;
+  # };
 
 #=============================#
 # Дополнительные фитчи и софт #
@@ -142,7 +142,7 @@
   nixpkgs.config.allowUnfree = true;
 
 # Расширение browserpass
-  programs.browserpass.enable = true;
+# programs.browserpass.enable = true;
 
 # Конфигурация приложения - "Настройка Qt5"
 # "Настройка Qt5" используется для измененияе темы приложений (QtPass)
@@ -185,36 +185,48 @@
   git # Клнирование репозтриев на компьютер
 # ventoy # Утилита для создания загрузочной флешки
   github-desktop
-  pass # The standard unix password manager
-  qtpass # GUI for Pass
-  libsForQt5.kleopatra # GUI for Pass and GPG
-  browserpass # Browsers Extantion for Pass/gpg
+# pass # The standard unix password manager
+# qtpass # GUI for Pass
+# libsForQt5.kleopatra # GUI for Pass and GPG
+# browserpass # Browsers Extantion for Pass/gpg
 # libsForQt5.qtstyleplugin-kvantum # Диспетчер Kvantum Manager
   libsForQt5.qt5ct # Приложение "Настройки Qt5"
+  peazip # Файл Менеджер Архивов
+  bash-completion
+  nix-bash-completions
+  xclip # Инструмент для доступа к буферу бмена Х из консоли
+  hblock
+  transmission_4-gtk # Торрент клиент
+  smplayer
+  
   
 # --== Приложения для Canon Camera ==--
-  gphoto2 # CLI Консольное приложение для импорта фотографий
-  darktable # Приложение для импорта и обработки фотографий
+#  gphoto2 # CLI Консольное приложение для импорта фотографий
+# darktable # Приложение для импорта и обработки фотографий
 # entangle # Управление камерой и захват (использует libgphoto2)
 # libgphoto2 # Библиотека для доступа к цифровым камерам 
 
 # --== Приложения для интернет ==--
-  firefox
   google-chrome
-  filezilla # FTP Клиент
+# filezilla # FTP Клиент
 
 # --== Офисные Приложения ==--
   libreoffice-fresh # Офисные приложения (Word, Excell, ...)
-  gedit
+# gedit
 
 # --== Игры ==--
-  gnome.iagno # go game
+  gnome.iagno # JapaniseGame
+  gnome.quadrapassel # Тетрис
+  gnome.five-or-more # Шарики
+  gweled # Склаывание японских камней с роглифами
 
 # --== Расширения "GNOME Tweaks" ==--
+  gnome-browser-connector # Собственный хост-коннектор для расширения браузера GNOME Shell. 
+  gnome.gvfs # Библиотека поддержки виртуальной файловой системы
   gnome.gnome-tweaks # Настройка Расширений "GNOME Tweaks"
   gnomeExtensions.pano # Расширение для буфера обмена
-  gnomeExtensions.net-speed-simplified # Индигатор скрости сети
-  gnomeExtensions.tiling-assistant
+# gnomeExtensions.net-speed-simplified # Индигатор скрости сети
+# gnomeExtensions.tiling-assistant
   gnomeExtensions.tophat # Индигатор системных ресуров
   libgtop # Библиотека считывающая информацию о процессах системы 
 # gnomeExtensions.weather-oclock
@@ -231,7 +243,7 @@ environment.gnome.excludePackages = (with pkgs; [
   cheese # webcam tool
   gnome-music
   gnome-terminal
-  gedit # text editor
+# gedit # text editor
   epiphany # web browser
   geary # email reader
   evince # document viewer
