@@ -1,4 +1,4 @@
-# Установка rEFInd в NixOS
+# Установка rEFInd
 
 ```bash
 sudo nix-shell -p refind efibootmgr
