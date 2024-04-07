@@ -1,8 +1,8 @@
 # Описание папок загрузочного диска /dev/sda1 смонтированного как /boot
 
-> grubThemes - темы для граб
-> UEFI-ArchLinux - диск /dev/sda1 смонтированный как /boot для ArchLinux
-> UEFI-NixOs - диск /dev/sda1 смонтированный как /boot для NixOs
+> grubThemes - темы для граб  
+> UEFI-ArchLinux - диск /dev/sda1 смонтированный как /boot для ArchLinux  
+> UEFI-NixOs - диск /dev/sda1 смонтированный как /boot для NixOs  
 
 - EFI # Папка UEFI загрузчика.
   - BOOT    # Это папка rEFInd. Мы изменили название на BOOT чтобы комп стартовал с него.
