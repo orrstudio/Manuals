@@ -82,7 +82,7 @@
 
   # Включение автоматического входа пользователя
     services.xserver.displayManager.autoLogin.enable = true;
-    services.xserver.displayManager.autoLogin.user = "user";
+    services.xserver.displayManager.autoLogin.user = "orr";
   # Обходной путь для автоматического входа в GNOME
     systemd.services."getty@tty1".enable = false;
     systemd.services."autovt@tty1".enable = false;
@@ -109,7 +109,7 @@
 #=============================#
 # Учетная запись пользователя #
 #=============================#
-    users.users.user = {
+    users.users.orr = {
     # Пароль установить с помощью ‘passwd’
       isNormalUser = true;
       description = "Oruc Qafarov";
@@ -204,6 +204,7 @@
 
 # --== Приложения для интернет ==--
   google-chrome
+  firefox
   filezilla # FTP Клиент
 
 # --== Офисные Приложения ==--
