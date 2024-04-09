@@ -45,7 +45,7 @@ distrobox-create -i archlinux --name archlinux --nvidia --init --home ~/ArchHome
 ## ⭐️ Команды запуска контейнера в Distrobox
 
 ```bash
-distrobox enter archlinux
+distrobox enter arch
 ```
 
 ## ⭐️ Команды удаления контейнера из Distrobox
