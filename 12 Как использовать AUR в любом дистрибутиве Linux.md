@@ -1,6 +1,6 @@
 # [Как использовать AUR в любом дистрибутиве Linux](https://www.youtube.com/watch?v=RHOcNRWiL4g)
 
-## ⭐️ Команды создания контейнера
+## ⭐️ Команды создания контейнера в Distrobox
 
 ```bash
 distrobox-create -i archlinux --name arch
@@ -16,13 +16,13 @@ distrobox-create -i archlinux --name archlinux --nvidia --init --home ~/ArchHome
 > --init - загружает контейнера с systemd  
 > --home ~/ArchHome - создает контейнер со своей домашней директорией `ArchHome`  
 
-## ⭐️ Команды запуска контейнера
+## ⭐️ Команды запуска контейнера в Distrobox
 
 ```bash
 distrobox enter archlinux
 ```
 
-## ⭐️ Команды удаления контейнера
+## ⭐️ Команды удаления контейнера из Distrobox
 
 ```bash
 distrobox-stop arch
@@ -36,7 +36,7 @@ distrobox-export -a [application-name]
 distrobox-export -b /usr/bin/[binary]
 ```
 
-## ⭐️ Установка `yay` в контейнере
+## ⭐️ Установка `yay` в контейнере Distrobox-а
 
 ```bash
 pacman -S --needed git base-devel
@@ -45,15 +45,15 @@ cd yay
 makepkg -si
 ```
 
-## ⭐️ Использование yay и pacman для установки программного обеспечения в контейнере
+## ⭐️ Использование yay и pacman для установки программного обеспечения в контейнере Distrobox
 
 ```bash
 yay [package-name]
 pacman -Syu [package-name]
 ```
 
-## ⭐️ Использование yay и pacman для удаления программного обеспечения и его зависимостей из контейнера.
-> ⚠️ Не используйте это в вашей хост-системе, так как это может привести к неработоспособности вашей системы. Используйте внутри контейнера, чтобы не насти никакого вреда хост-системе.
+## ⭐️ Использование yay и pacman для удаления программного обеспечения и его зависимостей из контейнера Distrobox.
+> ⚠️ Не используйте это в вашей хост-системе, так как это может привести к неработоспособности вашей системы. Используйте внутри контейнера Distrobox, это не нанесет никакого вреда вашей хост-системе.
 
 ```bash
 yay -Rs [packagename]
