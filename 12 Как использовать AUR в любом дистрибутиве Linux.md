@@ -1,4 +1,4 @@
-# ⭐️ [⭐️ Как использовать AUR в любом дистрибутиве Linux](https://www.youtube.com/watch?v=RHOcNRWiL4g)
+# [⭐️ Как использовать AUR в любом дистрибутиве Linux](https://www.youtube.com/watch?v=RHOcNRWiL4g)
 
 ## ⭐️ Команды создания контейнера в Distrobox
 
