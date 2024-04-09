@@ -7,7 +7,14 @@ distrobox-create -i archlinux --name arch
 distrobox-create -i archlinux --name arch --nvidia
 distrobox-create -i archlinux --name arch --init
 distrobox-create -i archlinux --name arch --nvidia --init
+distrobox-create -i archlinux --name archlinux --nvidia --init --home ~/ArchHome
 ```
+
+> Где:
+> --name archlinux - это название контейнера
+> --nvidia - загружает контейнера с драйвеоами Nvidia
+> --init - загружает контейнера с systemd
+> --home ~/ArchHome - создает контейнер со своей домашней директорией `ArchHome`
 
 ## ⭐️ Команды удаления Distrobox
 
