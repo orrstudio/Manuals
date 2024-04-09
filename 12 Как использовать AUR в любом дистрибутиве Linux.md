@@ -35,7 +35,7 @@ distrobox-create -i archlinux --name archlinux --nvidia --init --home ~/ArchHome
 ```
 
 > Где:  
-> --name archlinux - это название контейнера  
+> --name arch - это название контейнера. Оно может быть любым.  
 > --nvidia - загружает контейнера с драйвеоами Nvidia  
 > --init - загружает контейнера с systemd  
 > --home ~/ArchHome - создает контейнер со своей домашней директорией `ArchHome`  
