@@ -26,6 +26,8 @@ echo '{
 
 ## ⭐️ Команды создания контейнера в Distrobox
 
+> [Срисок дистрибутивов поддерживаемых Distrobox-ом](https://repology.org/project/distrobox/versions)
+
 ```bash
 distrobox-create -i archlinux --name arch
 distrobox-create -i archlinux --name arch --nvidia
