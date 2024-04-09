@@ -1,4 +1,4 @@
-# [⭐️ Ссылка на видео "Как использовать AUR в любом дистрибутиве Linux"](https://www.youtube.com/watch?v=RHOcNRWiL4g)
+# [⭐️ Ссылка на видео по теме "Как использовать AUR в любом дистрибутиве Linux"](https://www.youtube.com/watch?v=RHOcNRWiL4g)
 
 ## ⭐️ После установки Distrobox (дополнително нужно установить podman или docker или lilipod) необходимо создать директорию по пути `/etc/containers` и поместить в неё файл `policy.json`.
 
