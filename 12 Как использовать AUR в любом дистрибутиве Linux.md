@@ -1,4 +1,28 @@
-# [⭐️ Как использовать AUR в любом дистрибутиве Linux](https://www.youtube.com/watch?v=RHOcNRWiL4g)
+# [⭐️ Ссылка на видео "Как использовать AUR в любом дистрибутиве Linux"](https://www.youtube.com/watch?v=RHOcNRWiL4g)
+
+## ⭐️ После установки Distrobox необходимо создать директорию по пути `/etc/containers` и поместить в неё файл `policy.json`.
+
+> Этот файл необходим для работы Podman и Docker, и он содержит политики безопасности для контейнеров.
+
+```bash
+sudo mkdir -p /etc/containers
+echo '{
+  "default": [
+    {
+      "type": "insecureAcceptAnything"
+    }
+  ],
+  "transports":
+    {
+      "docker-daemon":
+        {
+          "": [{"type":"insecureAcceptAnything"}]
+        }
+    }
+}' | sudo tee /etc/containers/policy.json
+```
+
+> Эти команды создадут файл policy.json с базовой политикой безопасности, которая позволяет всем контейнерам запускаться.
 
 ## ⭐️ Команды создания контейнера в Distrobox
 
