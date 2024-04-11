@@ -1,8 +1,8 @@
 # Чтобы обновить пакеты в NixOS, вы можете следовать следующим шагам:
 
 ```
-sudo nix-channel --update1.
-sudo nixos-rebuild switch1.
+sudo nix-channel --update
+sudo nixos-rebuild switch
 ```
 
 # Чтобы удалить старые загрузки Grub в NixOS, вы можете выполнить следующие шаги:
