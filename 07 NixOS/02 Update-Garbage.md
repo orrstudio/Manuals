@@ -21,12 +21,12 @@ sudo nixos-rebuild switch
 
 Запустите команду 
 ```
-nix-env --delete-generations old --profile /nix/var/nix/profiles/system
+sudo nix-env --delete-generations old --profile /nix/var/nix/profiles/system
 ```
 Это удалит все старые системные корни сборки мусора, кроме самого нового.  
 Затем выполните команду 
 ```
-/nix/var/nix/profiles/system/bin/switch-to-configuration switch
+sudo /nix/var/nix/profiles/system/bin/switch-to-configuration switch
 ```
 Это перезагрузит текущую системную конфигурацию и обновит grub.cfg только с профилями живой системы1.
 
