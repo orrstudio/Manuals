@@ -3,7 +3,8 @@
 # что должно быть установлено в вашей системе.             #
 #==========================================================#
 
-{ config, pkgs, ... }: 
+{ config, pkgs, lib, ... }:
+
 {
   # Подключение файла конфигурации оборудования
   imports = [ ./hardware-configuration.nix ];
@@ -57,6 +58,17 @@
 #==================#
 # Сервисы и демоны #
 #==================#
+
+  # Добавление правиля UDEV для Powermate Griffin USB (60-powermate.rules)
+    services.udev.extraRules = ''
+      ACTION=="add", ENV{ID_USB_DRIVER}=="powermate", SYMLINK+="input/powermate", TAG+="uaccess"
+    '';
+
+  # Установка podman
+    virtualisation.podman.enable = true;
+    
+  # crontab -e для добавления задач.
+    services.cron.enable = true;
 
   # Включение оконной системы X11
     services.xserver.enable = true;
@@ -151,7 +163,7 @@
       name = "Utterly Nord Plasma";
     };
   };
-
+  
 #======================#
 # Переменные окружения #
 #======================#
@@ -161,6 +173,19 @@
   GI_TYPELIB_PATH = "/run/current-system/sw/lib/girepository-1.0";
   # Переменная для работы приложения - "Настройка Qt5"
   QT_QPA_PLATFORMTHEME = "qt5ct";
+  EDITOR = "nano";
+  };
+  environment.etc = {
+    "xdg/user-dirs.defaults".text = ''
+      DESKTOP=Desktop
+      DOWNLOAD=Downloads
+      TEMPLATES=Templates
+      PUBLICSHARE=Public
+      DOCUMENTS=Documents
+      MUSIC=Music
+      PICTURES=Pictures
+      VIDEOS=Videos
+    '';
   };
 
 #===========================================================#
@@ -171,16 +196,20 @@
   environment.systemPackages = with pkgs; [
   
 # -== Системные Приложения ==--
+# nix-software-center # Центр программного обеспечения Nix
 # nano # Установлен в системе по умолчанию.
 # vim # Терминальный текстовый редактор
-  tilix # Тайлинговый эмулятор терминала
-  tree # Консольная утилита просмотра в формате дерева
 # htop # Просмотрщик процессов в терминале
 # neofetch # Системная информации в терминале
 # mc # Файловый менеджер Midnight Commander
 # wget # Получения файлов через HTTP, HTTPS и FTP
-  git # Клнирование репозтриев на компьютер
+# coreutils # основные утилиты GNU
 # ventoy # Утилита для создания загрузочной флешки
+  distrobox # Любой дистрибутив Linux внутри своего терминала. 
+  podman # Подобие Docker. Используется distrobox-ом
+  tilix # Тайлинговый эмулятор терминала
+  tree # Консольная утилита просмотра в формате дерева
+  git # Клнирование репозтриев на компьютер
   github-desktop
   pass # The standard unix password manager
   qtpass # GUI for Pass
@@ -195,6 +224,7 @@
   hblock # нужно запустить после установки чтобы заработал
   transmission_4-gtk # Торрент клиент
   smplayer # Аудио Видео Плеер
+  handbrake # Аудио конвертор
   
 # --== Приложения для Canon Camera ==--
   gphoto2 # CLI Консольное приложение для импорта фотографий
@@ -202,14 +232,14 @@
 # entangle # Управление камерой и захват (использует libgphoto2)
 # libgphoto2 # Библиотека для доступа к цифровым камерам 
 
-# --== Приложения для интернет ==--
+# --== Приложения для интернета ==--
   google-chrome
   firefox
   filezilla # FTP Клиент
 
 # --== Офисные Приложения ==--
+# gedit
   libreoffice-fresh # Офисные приложения (Word, Excell, ...)
-  gedit
 
 # --== Игры ==--
   gnome.iagno # JapaniseGame
@@ -218,17 +248,17 @@
   gweled # Склаывание японских камней с роглифами
 
 # --== Расширения "GNOME Tweaks" ==--
+# gnomeExtensions.net-speed-simplified # Индигатор скрости сети
+# gnomeExtensions.tiling-assistant # Тайлинговый менеджер окон в гном.
+# gnomeExtensions.weather-oclock # Погода рядом с часами.
+# gnomeExtensions.another-window-session-manager # Открывает окна после перезагрузки как до неё. Устанавливаете через веб сайт как расширение гном.
   gnome-browser-connector # Собственный хост-коннектор для расширения браузера GNOME Shell. 
   gnome.gvfs # Библиотека поддержки виртуальной файловой системы
   gnome.gnome-tweaks # Настройка Расширений "GNOME Tweaks"
   gnomeExtensions.pano # Расширение для буфера обмена
   gnomeExtensions.tophat # Индигатор системных ресуров
   libgtop # Библиотека считывающая информацию о процессах системы 
-# gnomeExtensions.net-speed-simplified # Индигатор скрости сети
-# gnomeExtensions.tiling-assistant
-# gnomeExtensions.weather-oclock
-
-  ];
+];
 
 #======================================================#
 # Удаление GNOME приложений установленных по умолчанию #
@@ -238,15 +268,15 @@ environment.gnome.excludePackages = (with pkgs; [
 # gnome-photos
   gnome-tour
 ]) ++ (with pkgs.gnome; [
+# gnome-characters
   cheese # webcam tool
-  gnome-music
-  epiphany # web browser
+  gnome-music # Аудио плейер гном
+  epiphany # web browser гном
   geary # email reader
   evince # document viewer
-# gnome-characters
-  totem # video player
-  gnome-calendar
+  totem # Видео плейер гном
   yelp # Gnome Help
+  gnome-calendar 
   gnome-contacts
   gnome-maps
   simple-scan
