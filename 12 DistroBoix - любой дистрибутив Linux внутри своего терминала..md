@@ -99,9 +99,15 @@ distrobox-export -b /usr/bin/[binary]
 ## ⭐️ Установка `yay` в контейнере Distrobox-а
 
 ```bash
-pacman -S --needed git base-devel
-git clone https:// aur . archlinux . org /yay.git
+sudo pacman -S --needed git base-devel
+```
+```bash
+git clone https://aur.archlinux.org/yay.git
+```
+```bash
 cd yay
+```
+```bash
 makepkg -si
 ```
 
