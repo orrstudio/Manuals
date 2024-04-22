@@ -1,12 +1,5 @@
 # Linux Operating Systems
 
-## [archi.py](https://github.com/ksandronline/archi/wiki/archi)
-
-- python-скрипт для установки Arch linux с графическим интерфейсом.
-
-## [archi](https://github.com/ksandronline/archi)
-
-- Профиль для archiso для создания установного образа с преднастроенным русским языком. 
 
 ## [Archcraft](https://archcraft.io/)
 
