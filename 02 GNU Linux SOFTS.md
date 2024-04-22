@@ -87,6 +87,9 @@
 
 ## TERMINAL
 
+- [rubin](https://github.com/BiteDasher/rubin "Исправлялка команд написанных по-английски на русской раскладке ")
+- [INTELLI-SHELL](https://github.com/lasantosr/intelli-shell "IntelliShell действует как хранилище закладок для команд, поэтому вам не нужно поддерживать чистоту истории, чтобы иметь возможность найти что-то полезное с ctrl + R. ")
+- [Translate Shell](https://www.soimort.org/translate-shell/ "Переводчик командной строки")
 - [SSHUTTLE]() - VPN через SSH (Для подключения сначало ставим саму прогу `sshuttle`, а потом вводим в терминале: `sshuttle -vvvv -r ubuntu@168.188.188.88 -x 168.188.188.88 0/0)` для подключения. [VIDEO TUTORIAL](https://www.youtube.com/watch?v=7XDOuH-MPvw)
 - NANO (Консольный Текстовый Редактор)
 - [AstroVIM](https://www.youtube.com/watch?v=LKnuIazeiM4 "Это полноценная ИДЕ на основе NeoVIM со всеми нужными плагинами")
