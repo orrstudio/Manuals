@@ -33,4 +33,4 @@
 - [uBlock Origin Lite](https://addons.mozilla.org/ru/firefox/addon/ublock-origin-lite/ "Блокировщик контента, не требующий разрешений. Сразу после инсталляции блокирует рекламу, трекеры, майнеры и многое другое.")
 - [uMatrix](https://addons.mozilla.org/ru/firefox/addon/umatrix/ "Используйте его для блокировки скриптов, iframe, рекламы, Facebook и т. д.")
 - [YT Siphon](https://github.com/d3vr/yt-siphon/ "Перенаправить URL-адреса YouTube на альтернативные интерфейсы")
-- 
+- [ClearURLs](https://docs.clearurls.xyz "Это расширение автоматически удалит элементы отслеживания из URL-адресов, чтобы защитить вашу конфиденциальность при работе в Интернете.")
