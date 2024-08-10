@@ -34,3 +34,8 @@
 - [uMatrix](https://addons.mozilla.org/ru/firefox/addon/umatrix/ "Используйте его для блокировки скриптов, iframe, рекламы, Facebook и т. д.")
 - [YT Siphon](https://github.com/d3vr/yt-siphon/ "Перенаправить URL-адреса YouTube на альтернативные интерфейсы")
 - [ClearURLs](https://docs.clearurls.xyz "Это расширение автоматически удалит элементы отслеживания из URL-адресов, чтобы защитить вашу конфиденциальность при работе в Интернете.")
+- [behind!](https://github.com/kubuzetto/behind# "Если «Просмотр фонового изображения» неактивен, это дополнение поможет вам.")
+- [PlanetFree VPN](https://freevpnplanet.com/)
+- [Multi-Account Containers](https://github.com/mozilla/multi-account-containers#readme "Контейнеры с несколькими учетными записями ")
+- [Hide My IP VPN](https://myiphider.com/)
+- [Video DownloadHelper](https://www.downloadhelper.net/)
