@@ -353,3 +353,4 @@ $ sudo update-desktop-database /usr/share/applications
 
 - [Geppetto](https://geppetto.js.org/ "Набор инструментов анимации WebGL для создания красивой анимации, которая также позволяет управлять в реальном времени.")
 - [FreeFileSync](https://pingvinus.ru/program/freefilesync "Программа сравнивает содержимое двух директорий, определяет какие файлы были изменены и выполняет синхронизацию только измененных файлов, сводя к минимуму копирование данных. Может использоваться для создания резервных копий данных.")
+- [Tiny RDM (Tiny Redis Desktop Manager)](https://github.com/tiny-craft/tiny-rdm "Cовременный, красочный и сверхлегкий клиент Redis с графическим интерфейсом для Mac, Windows и Linux.")
