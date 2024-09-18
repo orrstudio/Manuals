@@ -48,6 +48,9 @@
 
 - [Distrobox - Используйте любой дистрибутив Linux внутри своего терминала](https://github.com/89luca89/distrobox)
 - [Flatseal - Утилита управления разрешениями Flatpak (flatseal)](https://flathub.org/ru/apps/com.github.tchx84.Flatseal "Это графическая утилита для просмотра и изменения разрешений ваших приложений Flatpak.")
+- [Warehouse](https://flathub.org/ru/apps/io.github.flattool.Warehouse "это приложение, которое управляет установленными пакетами Flatpak, их пользовательскими данными и репозиториями.")
+- [Gear Lever](https://flathub.org/ru/apps/it.mijorus.gearlever "Утилита управления AppImages! Gear Lever создаёт ярлыки приложений, обновляет и хранить несколько версий одновременно")
+- [Iconic](https://flathub.org/ru/apps/nl.emphisia.icon "Эта программа позволяет простым и интуитивно понятным способом добавить значок поверх папки, чтобы помочь вам лучше ее отличить. ")
 - [PulseAudio Volume Control (pavucontrol)](https://flathub.org/ru/apps/org.pulseaudio.pavucontrol "Это инструмент управления громкостью («микшер») для звукового сервера PulseAudio. В отличие от классических инструментов микшера, этот позволяет вам управлять громкостью как аппаратных устройств, так и каждого потока воспроизведения в отдельности.")
 - [File manager functionality](https://wiki.archlinux.org/title/File_manager_functionality_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9) "Монтирование цифровых фотоаппаратов и мобильных устройств и многое другое")
 - dconf-editor \ # все настройки gnome в одном месте
@@ -232,7 +235,7 @@ ccross # For synchronization, you enough run.
 - [Gimp](https://www.gimp.org/ "Программа для создания и обработки растровой графики и частичной поддержкой работы с векторной графикой")
 - [Inkscape](https://inkscape.org/)
 - [Krita](https://krita.org/en/)
-- [ColorPicker](https://colorpicker.fr "это настольный инструмент с Electron для быстрого получения и сохранения кода цветов для OS X, Windows и Linux!")
+- [Coulr](https://flathub.org/ru/apps/com.github.huluti.Coulr "это настольный инструмент для быстрого получения и сохранения кода цветов")
 - [MyPaint](https://github.com/mypaint/mypaint/releases/tag/v2.0.1 "MyPaint - это простая программа для рисования и рисования, которая хорошо работает с графическими планшетами в стиле Wacom.")
 - [VPaint](https://github.com/dalboris/vpaint "это экспериментальный прототип , основанный на комплексе векторной графики (VGC). Он позволяет создавать иллюстрации и анимацию, не зависящие от разрешения, с использованием инновационных технологий.")
 - [Photoflare](https://photoflare.io/ "Photoflare вдохновлен редактором изображений, который в настоящее время доступен только в Microsoft Windows")
