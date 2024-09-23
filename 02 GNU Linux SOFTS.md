@@ -55,6 +55,7 @@
 - [File manager functionality](https://wiki.archlinux.org/title/File_manager_functionality_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9) "Монтирование цифровых фотоаппаратов и мобильных устройств и многое другое")
 - dconf-editor \ # все настройки gnome в одном месте
 - hardinfo (Информация о системе и устройствах)
+- [systemctl-tui](https://github.com/rgwood/systemctl-tui "Быстрый и простой TUI для взаимодействия со службами systemd и их журналами.")
 - timeshift
 - Stacer — утилита для мониторинга, оптимизации, настройки и очистки системы.
 - Шрифты
