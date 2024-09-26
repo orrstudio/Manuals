@@ -8,6 +8,7 @@
   - [BOOT](#boot)
   - [NETWORK](#network)
   - [SYSTEM TOOLS](#system-tools)
+    - [REMOTE DESKTOP APPS](#remote-desktop-apps)
   - [COMMANDERS](#commanders)
   - [TERMINAL](#terminal)
   - [INTERNET](#internet)
@@ -40,6 +41,7 @@
 - networkmanager-openvpn https://www.youtube.com/watch?v=2oCpjla-lw0
 - samba smbclient cifs-utils gvfs-smb — [MANUAL для настройки сети SAMBA](https://github.com/orrstudio/My-Notes-and-Manuals/blob/main/03%20HELP%20%26%20MAN/11%20SAMBA%20(%D0%9D%D0%90%D0%A1%D0%A2%D0%A0%D0%9E%D0%99%D0%9A%D0%98).md)
 - FileZilla (FTP)
+- [FreeFileSync](https://freefilesync.org "Программа сравнивает содержимое двух директорий, определяет какие файлы были изменены и выполняет синхронизацию только измененных файлов, сводя к минимуму копирование данных. Может использоваться для создания резервных копий данных. Работает с FTP и SFTP")
 - [TOR PROXY](https://www.youtube.com/watch?v=mM9680l7MyY&list=PLcrZh07ZsO5GO97bZtxqFlSw26UKgz5lB&index=10) - Ставим [GNOME Proxy Switcher](https://extensions.gnome.org/extension/771/proxy-switcher/) Если нету [GNOME Shell integration](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep) то ставим его чтобы включать дополнения прямо из браузера. Потом ставим [TOR](https://wiki.archlinux.org/title/tor) в терминале. Включаем тор в терминале под рутом и настраиваем GNOME Proxy Switcer как показано в видео. Ползуемсю.
 - [sshuttle](https://github.com/sshuttle/sshuttle "Прокси-сервер, который работает как VPN форвард по ssh. Не требует админ. Работает с Linux и MacOS. Поддерживает туннелирование DNS.") - (Ставим sshuttle на клиенте и запускаем в терминале: sshuttle -vvvv -r ubuntu@168.188.188.188 -x 168.188.188.188 0/0)
 - [IP Lookup](https://flathub.org/ru/apps/io.github.bytezz.IPLookup "Найти информацию об IP-адресе интернет-провайдерa, географическое положение IP-адреса и т.д.")
@@ -55,6 +57,7 @@
 - [File manager functionality](https://wiki.archlinux.org/title/File_manager_functionality_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9) "Монтирование цифровых фотоаппаратов и мобильных устройств и многое другое")
 - dconf-editor \ # все настройки gnome в одном месте
 - hardinfo (Информация о системе и устройствах)
+- [systemctl-tui](https://github.com/rgwood/systemctl-tui "Быстрый и простой TUI для взаимодействия со службами systemd и их журналами.")
 - timeshift
 - Stacer — утилита для мониторинга, оптимизации, настройки и очистки системы.
 - Шрифты
@@ -79,6 +82,12 @@
 - [Distrobox](https://github.com/89luca89/distrobox "Контейнер с дистрибутивом Linux")
 - [Easy Effects](https://github.com/wwmm/easyeffects?tab=readme-ov-file "Easy Effects — это продвинутый инструмент для манипуляций со звуком. ")
 - [PeaZip](https://peazip.github.io/peazip-linux.html "МЕНЕДЖЕР АРХИВОВ ДЛЯ LINUX")
+
+### REMOTE DESKTOP APPS
+
+- [RustDesk](https://github.com/rustdesk/rustdesk "Приложение для удаленного рабочего стола с открытым исходным кодом на всех устройствах, предназначенное для самостоятельного размещения в качестве альтернативы TeamViewer.")
+- [AnyDesk](https://anydesk.com "Решение для удаленного доступа")
+- [Tiny RDM](https://github.com/tiny-craft/tiny-rdm "Tiny RDM (Tiny Redis Desktop Manager) — современный, красочный и сверхлегкий клиент Redis с графическим интерфейсом для Mac, Windows и Linux.")
 
 ## COMMANDERS
 
@@ -355,5 +364,3 @@ $ sudo update-desktop-database /usr/share/applications
 # NEW SOFT NOT TESTED
 
 - [Geppetto](https://geppetto.js.org/ "Набор инструментов анимации WebGL для создания красивой анимации, которая также позволяет управлять в реальном времени.")
-- [FreeFileSync](https://pingvinus.ru/program/freefilesync "Программа сравнивает содержимое двух директорий, определяет какие файлы были изменены и выполняет синхронизацию только измененных файлов, сводя к минимуму копирование данных. Может использоваться для создания резервных копий данных.")
-- [Tiny RDM (Tiny Redis Desktop Manager)](https://github.com/tiny-craft/tiny-rdm "Cовременный, красочный и сверхлегкий клиент Redis с графическим интерфейсом для Mac, Windows и Linux.")
