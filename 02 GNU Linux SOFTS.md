@@ -8,6 +8,7 @@
   - [BOOT](#boot)
   - [NETWORK](#network)
   - [SYSTEM TOOLS](#system-tools)
+    - [REMOTE DESKTOP APPS](#remote-desktop-apps)
   - [COMMANDERS](#commanders)
   - [TERMINAL](#terminal)
   - [INTERNET](#internet)
@@ -80,6 +81,12 @@
 - [Distrobox](https://github.com/89luca89/distrobox "Контейнер с дистрибутивом Linux")
 - [Easy Effects](https://github.com/wwmm/easyeffects?tab=readme-ov-file "Easy Effects — это продвинутый инструмент для манипуляций со звуком. ")
 - [PeaZip](https://peazip.github.io/peazip-linux.html "МЕНЕДЖЕР АРХИВОВ ДЛЯ LINUX")
+
+### REMOTE DESKTOP APPS
+
+- [RustDesk](https://github.com/rustdesk/rustdesk "Приложение для удаленного рабочего стола с открытым исходным кодом на всех устройствах, предназначенное для самостоятельного размещения в качестве альтернативы TeamViewer.")
+- [AnyDesk](https://anydesk.com "Решение для удаленного доступа")
+- [Tiny RDM](https://github.com/tiny-craft/tiny-rdm "Tiny RDM (Tiny Redis Desktop Manager) — современный, красочный и сверхлегкий клиент Redis с графическим интерфейсом для Mac, Windows и Linux.")
 
 ## COMMANDERS
 
@@ -357,4 +364,3 @@ $ sudo update-desktop-database /usr/share/applications
 
 - [Geppetto](https://geppetto.js.org/ "Набор инструментов анимации WebGL для создания красивой анимации, которая также позволяет управлять в реальном времени.")
 - [FreeFileSync](https://pingvinus.ru/program/freefilesync "Программа сравнивает содержимое двух директорий, определяет какие файлы были изменены и выполняет синхронизацию только измененных файлов, сводя к минимуму копирование данных. Может использоваться для создания резервных копий данных.")
-- [Tiny RDM (Tiny Redis Desktop Manager)](https://github.com/tiny-craft/tiny-rdm "Cовременный, красочный и сверхлегкий клиент Redis с графическим интерфейсом для Mac, Windows и Linux.")
