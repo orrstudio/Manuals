@@ -232,6 +232,7 @@ ccross # For synchronization, you enough run.
 - [Reaper](https://www.reaper.fm)
 - [VoiceGen](https://flathub.org/ru/apps/io.gitlab.persiangolf.voicegen "преобразовывать текст в речь")
 - [Kid3](https://kid3.kde.org "Редактoр тегoв audio файлoв")
+- [Плеер Qmmp](https://flathub.org/ru/apps/com.ylsoftware.qmmp.Qmmp)
 - Audacious — WINAMP
 - OBS Studio - Программа для записи экрана.
 - Hypnotix - Ip TV
