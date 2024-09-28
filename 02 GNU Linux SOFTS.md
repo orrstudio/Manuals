@@ -48,6 +48,7 @@
 
 ## SYSTEM TOOLS
 
+- qt5ct, qt6ct, kvantum (Для настройки темного режима Qt приложений)
 - [Distrobox - Используйте любой дистрибутив Linux внутри своего терминала](https://github.com/89luca89/distrobox)
 - [Flatseal - Утилита управления разрешениями Flatpak (flatseal)](https://flathub.org/ru/apps/com.github.tchx84.Flatseal "Это графическая утилита для просмотра и изменения разрешений ваших приложений Flatpak.")
 - [Warehouse](https://flathub.org/ru/apps/io.github.flattool.Warehouse "это приложение, которое управляет установленными пакетами Flatpak, их пользовательскими данными и репозиториями.")
