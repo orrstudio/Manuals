@@ -54,7 +54,7 @@
 - [Flatseal](https://flathub.org/ru/apps/com.github.tchx84.Flatseal "Это графическая утилита для просмотра и изменения разрешений ваших приложений Flatpak.") - Утилита управления разрешениями Flatpak
 - [Warehouse](https://flathub.org/ru/apps/io.github.flattool.Warehouse "управляет установленными пакетами Flatpak, их пользовательскими данными и репозиториями.") - Утилита управления установленными пакетами Flatpak
 - [Gear Lever](https://flathub.org/ru/apps/it.mijorus.gearlever "Утилита управления AppImages! Gear Lever создаёт ярлыки приложений, обновляет и хранить несколько версий одновременно") - Утилита управления AppImages
-- [Iconic](https://flathub.org/ru/apps/nl.emphisia.icon "Эта программа позволяет простым и интуитивно понятным способом добавить значок поверх папки, чтобы помочь вам лучше ее отличить. ")
+- [Iconic](https://flathub.org/ru/apps/nl.emphisia.icon) - добавить значок папке
 - [PulseAudio Volume Control](https://flathub.org/ru/apps/org.pulseaudio.pavucontrol "Это инструмент управления громкостью («микшер») для звукового сервера PulseAudio. Позволяет управлять громкостью каждого потока воспроизведения в отдельности.") - pavucontrol это микшер звука PulseAudio сервера
 - [Easy Effects](https://github.com/wwmm/easyeffects?tab=readme-ov-file) - инструмент для манипуляций со звуком
 - [File manager functionality](https://wiki.archlinux.org/title/File_manager_functionality_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9) "Монтирование цифровых фотоаппаратов и мобильных устройств и многое другое")
