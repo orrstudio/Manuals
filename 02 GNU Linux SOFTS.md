@@ -42,8 +42,7 @@
 - samba, smbclient, cifs-utils, gvfs-smb — [MANUAL для настройки сети SAMBA](https://github.com/orrstudio/My-Notes-and-Manuals/blob/main/03%20HELP%20%26%20MAN/11%20SAMBA%20(%D0%9D%D0%90%D0%A1%D0%A2%D0%A0%D0%9E%D0%99%D0%9A%D0%98).md)
 - FileZilla (FTP)
 - [FreeFileSync](https://freefilesync.org "Программа сравнивает содержимое двух директорий, определяет какие файлы были изменены и выполняет синхронизацию только измененных файлов, сводя к минимуму копирование данных. Может использоваться для создания резервных копий данных. Работает с FTP и SFTP")
-- TOR PROXY
-  > Включаем [TOR](https://wiki.archlinux.org/title/tor) в терминале под рутом и настраиваем [GNOME Proxy Switcher](https://extensions.gnome.org/extension/771/proxy-switcher/) как показано в [видео](https://www.youtube.com/watch?v=mM9680l7MyY&list=PLcrZh07ZsO5GO97bZtxqFlSw26UKgz5lB&index=10).
+- TOR PROXY - Включаем [TOR](https://wiki.archlinux.org/title/tor) в терминале под рутом и настраиваем [GNOME Proxy Switcher](https://extensions.gnome.org/extension/771/proxy-switcher/) как показано в [видео](https://www.youtube.com/watch?v=mM9680l7MyY&list=PLcrZh07ZsO5GO97bZtxqFlSw26UKgz5lB&index=10).
 - [IP Lookup](https://flathub.org/ru/apps/io.github.bytezz.IPLookup) - Найти информацию об IP-адресе интернет-провайдерa, географическое положение IP-адреса и т.д.
 
 ## System Tools
