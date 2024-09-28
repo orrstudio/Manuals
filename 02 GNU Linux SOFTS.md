@@ -44,6 +44,7 @@
 - [FreeFileSync](https://freefilesync.org "Программа сравнивает содержимое двух директорий, определяет какие файлы были изменены и выполняет синхронизацию только измененных файлов, сводя к минимуму копирование данных. Может использоваться для создания резервных копий данных. Работает с FTP и SFTP")
 - [TOR PROXY](https://www.youtube.com/watch?v=mM9680l7MyY&list=PLcrZh07ZsO5GO97bZtxqFlSw26UKgz5lB&index=10)
   > Включаем тор в терминале под рутом и настраиваем [GNOME Proxy Switcher](https://extensions.gnome.org/extension/771/proxy-switcher/) как показано в видео.
+  > 
   > [TOR](https://wiki.archlinux.org/title/tor)
 - [IP Lookup](https://flathub.org/ru/apps/io.github.bytezz.IPLookup) - Найти информацию об IP-адресе интернет-провайдерa, географическое положение IP-адреса и т.д.
 
