@@ -1,4 +1,7 @@
-<img src="https://user-images.githubusercontent.com/65281943/215001207-d1a0f318-2a85-468a-b391-fd55e569dc9f.png" height="300" align="middle">
+<img src="https://github.com/user-attachments/assets/99fb4512-b584-470d-ac4f-e7fdb0863766" height="300" align="middle">
+
+<br>
+<br>
 
 [List of Arch Linux applications](https://wiki.archlinux.org/title/List_of_applications#top-page "Эта статья представляет собой общий список приложений, отсортированных по категориям, в качестве справки для тех, кто ищет пакеты. Многие разделы разделены между консольными и графическими приложениями.")
 
