@@ -105,6 +105,22 @@ pass
 
 - Менеджер сертификатов и единый криптографический графический интерфейс 
 
+# [PASS IMPORT](https://github.com/roddhjav/pass-import#readme)
+
+> Утилита импорта паролей из сторонних баз паролей.
+
+# Pасширения для браузеров Google Chrome и FireFox
+
+## Pасширение для браузера [Browserpass](https://github.com/browserpass)
+> Для установки Browserpass, необходимо установить два его компонента: 
+- [browserpass-extension - Браузерное расширение](https://chromewebstore.google.com/detail/browserpass/naepdomgkenhinolocfifgehidddafch)
+- [browserpass-native - Клиентское приложение](https://github.com/browserpass/browserpass-native#installation)
+## Pасширение для браузера [PassFF](https://github.com/passff)
+> Для установки PassFF, необходимо установить два его компонента:
+- [PassFF - Браузерное расширение](https://addons.mozilla.org/ru/firefox/addon/passff/)
+- [PassFF Хост-приложение для WebExtension](https://github.com/passff/passff-host)
+
+
 # [Интеграция с Android](https://habr.com/ru/articles/479540/)
 
 - Реализация GPG под Android называется [OpenKeychain](https://www.openkeychain.org/). Для её настройки достаточно зайти в меню "управление ключами" и импортировать ранее созданный секретный ключ.  
