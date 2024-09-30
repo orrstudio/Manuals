@@ -58,6 +58,7 @@
 - [Iconic](https://flathub.org/ru/apps/nl.emphisia.icon) - добавить значок папке
 - [PulseAudio Volume Control](https://flathub.org/ru/apps/org.pulseaudio.pavucontrol "Это инструмент управления громкостью («микшер») для звукового сервера PulseAudio. Позволяет управлять громкостью каждого потока воспроизведения в отдельности.") - pavucontrol это микшер звука PulseAudio сервера
 - [Easy Effects](https://github.com/wwmm/easyeffects?tab=readme-ov-file) - инструмент для манипуляций со звуком
+- [pwvucontrol](https://flathub.org/ru/apps/com.saivert.pwvucontrol) - инструмент для манипуляций со звуком
 - [File manager functionality](https://wiki.archlinux.org/title/File_manager_functionality_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9) "Монтирование цифровых фотоаппаратов и мобильных устройств и многое другое")
 - dconf-editor - все настройки gnome в одном месте
 - hardinfo - Информация о системе и устройствах
@@ -268,6 +269,7 @@ ccross # For synchronization, you enough run.
 # GAMES
 
 - [Five or More](https://wiki.gnome.org/Apps/Five%20or%20more) — игра Lines. ШАРИКИ
+- [Kulki](https://flathub.org/ru/apps/net.jockx.Kulki) — игра Lines. ШАРИКИ
 - quadrapassel - аналог классической советской игры «Тетрис».
 - gweled - Складывание камней
 - megamario - Mega Mario
