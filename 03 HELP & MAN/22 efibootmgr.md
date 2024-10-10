@@ -44,3 +44,10 @@ efibootmgr -c -L "Arch linux" -l '\vmlinuz-linux' -u "root=/dev/sda2 rw initrd=\
 ```bash
 sudo efibootmgr --create --part 1 --label "Linux" --loader '\efi\boot\bootx64.efi'
 ```
+
+## Для удалении записи
+
+```bashh
+efibootmgr -b 5 -B
+```
+Только вместо 5 нужно поставить тот номер, который надо удалить.
