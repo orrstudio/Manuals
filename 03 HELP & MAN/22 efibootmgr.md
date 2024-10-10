@@ -35,3 +35,8 @@ Boot3001* EFI Internal Hard Disk
 Boot3002* EFI Solid State Disk	RC
 ```
 
+## Для создании новой записи
+
+```bash
+efibootmgr -c -L "Arch linux" -l '\vmlinuz-linux' -u "root=/dev/sda2 rw initrd=\initramfs-linux.img enforcing=0"
+```
