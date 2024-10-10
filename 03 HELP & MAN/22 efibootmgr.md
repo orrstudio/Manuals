@@ -40,3 +40,7 @@ Boot3002* EFI Solid State Disk	RC
 ```bash
 efibootmgr -c -L "Arch linux" -l '\vmlinuz-linux' -u "root=/dev/sda2 rw initrd=\initramfs-linux.img enforcing=0"
 ```
+или
+```bash
+sudo efibootmgr --create --part 1 --label "Linux" --loader '\efi\boot\bootx64.efi'
+```
