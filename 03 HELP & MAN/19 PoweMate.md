@@ -1,18 +1,33 @@
-https://wirefall.dyndns.org/powermate.html
+# Установка PoweMate
 
-# PoweMate
+>
+> Описание:
+> https://wirefall.dyndns.org/powermate.html
+>
+> Репозиторий программы:
+> https://github.com/stefansundin/powermate-linux
+>
 
-https://github.com/stefansundin/powermate-linux
-
-Для запуска:
-
+Клонируем репозиторий
+```bash
+git clone --recurse-submodules https://github.com/stefansundin/powermate-linux.git
 ```
-$ cd powermate-linux
-$ ./powermate -d
+Она скопируется в папку `tmp/powermate-linux`. Перемещаем ее в домашнюю директорию `/home/orr/powermate-linux`, затем скачиваем файл `powermate` из репозитория `https://github.com/stefansundin/powermate-linux/releases` в папку эту. Из этой папки копируем правила в `/etc/udev/rules.d/`
+```bash
+sudo cp 60-powermate.rules /etc/udev/rules.d/
 ```
-
+После копирования файла отключите и снова подключите устройство.
+ <br><br>
+Запускаем:
+```bash
+cd powermate-linux
+./powermate -d
+```
 или
-
+```bsh
+/home/orr/powermate-linux/powermate -d
 ```
-$ /home/orr/powermate-linux/powermate -d
+Так же можно скопировать файл `powermate` в папочку `/bin` и запускать программу без указания пути:
+```bash
+./powermate -d
 ```
