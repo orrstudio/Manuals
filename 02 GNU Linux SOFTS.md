@@ -265,7 +265,7 @@ ccross # For synchronization, you enough run.
 - [SQLite Studio](https://github.com/pawelsalawa/sqlitestudio/releases/tag/3.3.3) - менеджер баз данных SQLite
 - [CyberPanel](https://cyberpanel.net/docs/installing-cyberpanel) - Панель управления веб-хостингом
 - [Darling](https://www.darlinghq.org/) - run macOS software on Linux
-- [ANDBOX](https://anbox.io/#collapse2) - ANDROID В КОРОБКЕ
+- [Waydroid](https://waydro.id/) - ANDROID В КОРОБКЕ
 
 # GAMES
 
