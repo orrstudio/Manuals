@@ -1,6 +1,20 @@
-# Настройки боковой панели
+# [Настройки для папок боковой панели]()https://wiki.archlinux.org/title/XDG_user_directories_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)
 
+Установите пакет `xdg-user-dirs`
+
+> Пакет обычно уже установлен вместе со средой рабочего стола GNOME.
+
+Следующая команда автоматически создаст локализованные пользовательские каталоги в $HOME: 
+```bash
 xdg-user-dirs-update
+```
+Если вы хотите, чтобы каталоги имели английские названия независимо от текущей локали, можно выполнить 
+```bash
+LC_ALL=C xdg-user-dirs-update --force
+```
+Также эта команда:
+
+ - создаёт локальный файл конфигурации ~/.config/user-dirs.dirs, который используется приложениями для поиска и использования каталогов текущего аккаунта;
 
 ```bash
 sudo nano ~/.config/user-dirs.dirs
@@ -28,7 +42,12 @@ XDG_MUSIC_DIR="$HOME/MUSIC"
 XDG_PICTURES_DIR="$HOME/PICTURES"
 XDG_VIDEOS_DIR="$HOME/VIDEOS"
 ```
-Default settings for user directories
+  
+ - создаёт локальный файл конфигурации ~/.config/user-dirs.locale, который используется для установки языка в соответствии с используемой локалью.  
+
+Также есть пользовательская служба xdg-user-dirs-update.service, которая включена по умолчанию и поддерживает каталоги в актуальном состоянии, выполняя эту команду в начале каждого сеанса при входе в систему.  
+
+Default settings for user directories  
 ```bash
 sudo nano /etc/xdg/user-dirs.defaults
 ```
@@ -80,6 +99,31 @@ enabled=False
 # использоваться кодировка локали пользователя.
 
 filename_encoding=UTF-8
+```
+Создание пользовательских каталогов
+
+Как локальные ~/.config/user-dirs.dirs, так и глобальные /etc/xdg/user-dirs.defaults файлы конфигурации используют формат переменных окружения, чтобы указать на пользовательские каталоги:XDG_DIRNAME_DIR="$HOME/directory_name". Пример файла конфигурации:
+
+```bash
+~/.config/user-dirs.dirs
+```
+```txt
+XDG_DESKTOP_DIR="$HOME/Рабочий стол"
+XDG_DOCUMENTS_DIR="$HOME/Документы"
+XDG_DOWNLOAD_DIR="$HOME/Загрузки"
+XDG_MUSIC_DIR="$HOME/Музыка"
+XDG_PICTURES_DIR="$HOME/Изображения"
+XDG_PUBLICSHARE_DIR="$HOME/Общедоступные"
+XDG_TEMPLATES_DIR="$HOME/Шаблоны"
+XDG_VIDEOS_DIR="$HOME/Видео"
+```
+Обновляем закладки проводника. Для этого редактируем `~/.config/gtk-3.0/bookmarks` и пишем туда что-то типа:
+```txt
+file:///home/holyblackcat/.documents Документы
+file:///home/holyblackcat/.images Изображения
+file:///home/holyblackcat/.music Музыка
+file:///home/holyblackcat/.videos Видео
+file:///home/holyblackcat/.downloads Загрузки
 ```
 
 # 1 - NAUTILUS as ROOT - "Открыть как Администратор"
