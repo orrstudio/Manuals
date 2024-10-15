@@ -183,6 +183,7 @@ ccross # For synchronization, you enough run.
 
 - gnome-control-center — Центр управления
 - gnome-tweaks — Дополнительные настройки
+- gnome-session-properties - Управление автоматическим запуском приложений при старте системы
 - Adwaita Dark — Темная тема для GNOME (предоставляется пакетом gnome-themes-extra)
 - chrome-gnome-shell — Позволяет устанавливать Gnome "extensions" через Хром браузер
 - fragments - torrent client
