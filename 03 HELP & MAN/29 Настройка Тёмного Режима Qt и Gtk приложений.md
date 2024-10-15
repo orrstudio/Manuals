@@ -1,4 +1,4 @@
-# Настройка темного режима Qt приложений или [Dark mode switching](https://wiki.archlinux.org/title/Dark_mode_switching)
+# Настройка темного режима Qt и Gtk приложений или [Dark mode switching](https://wiki.archlinux.org/title/Dark_mode_switching)
 
 ## 1. Установка приложения `kvantum` с темой `engine`, `qt5ct` и `qt6ct`.
 
