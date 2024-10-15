@@ -1,4 +1,4 @@
-# Настройка темного режима Qt и Gtk приложений или [Dark mode switching](https://wiki.archlinux.org/title/Dark_mode_switching)
+# Настройка темного режима Qt и Gtk приложений и [Dark mode switching](https://wiki.archlinux.org/title/Dark_mode_switching) и [GTK](https://wiki.archlinux.org/title/GTK)
 
 ## 1. Установка приложения `kvantum` `qt5ct` и `qt6ct`.
 
@@ -19,14 +19,22 @@ yay -S kvantum qt5ct qt6ct
 yay -S gnome-themes-extra adwaita-qt6-git adwaita-qt5-git xdg-desktop-portal-gtk
 ```
 
-## 3. Установка [Yin-Yang](https://github.com/oskarsh/Yin-Yang "Автоматический ночной режим для KDE, Gnome, Budgie, VSCode, Atom и других")
+## 3. Установка [Yin-Yang](https://github.com/oskarsh/Yin-Yang "Автоматический ночной режим для KDE, Gnome, Budgie, VSCode, Atom и других ")
 
 ```
 yay -S yin-yang
 ```
-Откройте приложение Yin-Yang и настройте темы. Установка тем Gtk и Qt обязательна для работы Yin-Yang.
 
->
-> Чтобы посмотреть какая тема установлена для Gtk введите в командной строке:
-> `gsettings get org.gnome.desktop.interface gtk-theme`
-> 
+## 4. [Oomox theme designer](https://github.com/themix-project/themix-gui "Oo-mox — графическое приложение для создания различных цветовых вариаций тем Numix и Flat-Plat (GTK 2 и 3), тем значков Archdroid и Gnome-Colors. Также позволяет создавать предварительно масштабированные темы GTK 2 для дисплеев HiDPI. ")
+
+```bash
+flatpak install flathub com.github.themix_project.Oomox
+```
+
+## 5. [nwg-look](https://github.com/nwg-piotr/nwg-look "Редактор настроек GTK3 адаптирован для работы в среде wlroots ")
+
+```
+yay -S nwg-look
+```
+
+Запускать нужно в терминале.
