@@ -24,6 +24,7 @@ yay -S gnome-themes-extra adwaita-qt6-git adwaita-qt5-git
 ```
 yay -S yin-yang
 ```
+Откройте приложение Yin-Yang и настройте темы.
 
 >
 > Чтобы посмотреть какая тема установлена для Gtk введите в командной строке:
