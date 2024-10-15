@@ -86,6 +86,7 @@
 - [CPU-X](https://flathub.org/ru/apps/io.github.thetumultuousunicornofdarkness.cpu-x "Собирает информацию о процессоре, материнской плате и многом другом.")
 - [Shortcut](https://flathub.org/ru/apps/io.github.andreibachim.shortcut "Сделайте ярлыки приложений")
 - [PeaZip](https://peazip.github.io/peazip-linux.html "МЕНЕДЖЕР АРХИВОВ ДЛЯ LINUX")
+- gnome-session-properties - Автоматический запуск приложений при входе в систему
 
 ## Remote DESKTOP Apps
 
@@ -183,7 +184,7 @@ ccross # For synchronization, you enough run.
 
 - gnome-control-center — Центр управления
 - gnome-tweaks — Дополнительные настройки
-- gnome-session-properties - Управление автоматическим запуском приложений при старте системы
+- gnome-session-properties - Автоматический запуск приложений при входе в систему
 - Adwaita Dark — Темная тема для GNOME (предоставляется пакетом gnome-themes-extra)
 - chrome-gnome-shell — Позволяет устанавливать Gnome "extensions" через Хром браузер
 - fragments - torrent client
