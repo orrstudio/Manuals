@@ -1,38 +1,25 @@
-# Настройка темного режима Qt приложений
+# Настройка темного режима Qt приложений или [Dark mode switching](https://wiki.archlinux.org/title/Dark_mode_switching)
 
-## Вариант 1. 
+## 1. Установка приложения `kvantum` с темой `engine`, `qt5ct` и `qt6ct`.
 
-Установка приложения `kvantum` с темой `engine`, чья тема по умолчанию оформлена в темном режиме.
 ```
-yay -S kvantum
+yay -S kvantum qt5ct qt6ct
 ```
-Установите переменную среду
+Послле установки приллложений:  
+
+- Установите переменную среды `export QT_QPA_PLATFORMTHEME=qt5ct`  
+- Альтернативно вы можете добавить `QT_QPA_PLATFORMTHEME=qt5ct` вашему `~/.profile`  
+- Запустите qt5ct выберите «Fusion» в качестве темы и «darker» в качестве цветовой схемы.  
+- Перезагрузитесь.  
+
+## 3. Установка тем `gnome-themes-extra adwaita-qt6-git adwaita-qt5-git`
+
 ```
-export QT_STYLE_OVERRIDE=kvantum
-qtpass
-```
-или
-```
-QT_STYLE_OVERRIDE=kvantum qtpass
+yay -S gnome-themes-extra adwaita-qt6-git adwaita-qt5-git
 ```
 
-## Вариант 2. 
+## 4. Установка [Yin-Yang](https://github.com/oskarsh/Yin-Yang "Автоматический ночной режим для KDE, Gnome, Budgie, VSCode, Atom и других")
 
-Установка `qt5ct`
 ```
-yay -S qt5ct
-```
-- Установите переменную среды QT_QPA_PLATFORMTHEME=qt5ct
-  - Если хотите, вы можете сделать это глобально, создав `/etc/environment.d/100qt5ct-dark-theme.conf` с текстом `QT_QPA_PLATFORMTHEME=qt5ct` внутри.
-  - Альтернативно вы можете добавить `export QT_QPA_PLATFORMTHEME=qt5ct` вашему `~/.profile`
-- Запустите qt5ct и один раз выберите «Fusion» в качестве темы и выберите «darker» цветовую схему в разделе `Appearance > Palette > Custom > Color scheme > "darker"`.
-- Повторно войдите в систему, чтобы ваша DE была перезапущена с уже установленной темной средой.
-
-Все приложения Qt теперь по умолчанию должны быть в темной теме!
-
-## Вариант 3
-
-Установка `qt6ct`
-```
-yay -S qt6ct
+yay -S yin-yang
 ```
