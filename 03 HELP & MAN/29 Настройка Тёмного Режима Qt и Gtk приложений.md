@@ -12,13 +12,13 @@ yay -S kvantum qt5ct qt6ct
 - Запустите qt5ct выберите «Fusion» в качестве темы и «darker» в качестве цветовой схемы.  
 - Перезагрузитесь.  
 
-## 3. Установка тем `gnome-themes-extra adwaita-qt6-git adwaita-qt5-git`
+## 2. Установка тем `gnome-themes-extra adwaita-qt6-git adwaita-qt5-git`
 
 ```
 yay -S gnome-themes-extra adwaita-qt6-git adwaita-qt5-git
 ```
 
-## 4. Установка [Yin-Yang](https://github.com/oskarsh/Yin-Yang "Автоматический ночной режим для KDE, Gnome, Budgie, VSCode, Atom и других")
+## 3. Установка [Yin-Yang](https://github.com/oskarsh/Yin-Yang "Автоматический ночной режим для KDE, Gnome, Budgie, VSCode, Atom и других")
 
 ```
 yay -S yin-yang
