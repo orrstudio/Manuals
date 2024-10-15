@@ -13,10 +13,10 @@ yay -S kvantum qt5ct qt6ct
 - В kvantum установите тему `engine`
 - Перезагрузитесь.  
 
-## 2. Установка тем `gnome-themes-extra adwaita-qt6-git adwaita-qt5-git`
+## 2. Установка тем `gnome-themes-extra` `adwaita-qt6-git` `adwaita-qt5-git` и `xdg-desktop-portal-gtk`
 
 ```
-yay -S gnome-themes-extra adwaita-qt6-git adwaita-qt5-git
+yay -S gnome-themes-extra adwaita-qt6-git adwaita-qt5-git xdg-desktop-portal-gtk
 ```
 
 ## 3. Установка [Yin-Yang](https://github.com/oskarsh/Yin-Yang "Автоматический ночной режим для KDE, Gnome, Budgie, VSCode, Atom и других")
@@ -24,7 +24,7 @@ yay -S gnome-themes-extra adwaita-qt6-git adwaita-qt5-git
 ```
 yay -S yin-yang
 ```
-Откройте приложение Yin-Yang и настройте темы.
+Откройте приложение Yin-Yang и настройте темы. Установка тем Gtk и Qt обязательна для работы Yin-Yang.
 
 >
 > Чтобы посмотреть какая тема установлена для Gtk введите в командной строке:
