@@ -1,4 +1,4 @@
-# [DAVINCI RESOLVE В LINUX НЕ ЗАПУСКАЕТСЯ | РЕШЕНИЕ ЗА 2 МИНУТЫ](https://www.youtube.com/watch?v=9scpXdp1PxI)
+# [DaVinci Resolve НЕ ЗАПУСКАЕТСЯ](https://www.youtube.com/watch?v=9scpXdp1PxI)
 
 ## Чтобы посмотреть в консоли почему не запускается Давинчи, нужно запустить ее в терминале:
 
