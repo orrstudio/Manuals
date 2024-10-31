@@ -1,11 +1,14 @@
 
 # Как вставить картинку в README.md на GitHub
 
-![Иллюстрация к проекту](https://github.com/orrstudio/Manuals/raw/main/images/logo.png)
+Пример:  
+![Пример вставленной картинки](https://github.com/orrstudio/Manuals/raw/main/images/logo.png)
 
 
-![Иллюстрация к проекту](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
-
+Описание линка для вставки картинки:
+```
+![imageName](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
+```
 - {username} — ваш ник на ГитХабе;  
 - {repository} — репозиторий где хранятся картинки;  
 - {branch} — ветка репозитория;  
