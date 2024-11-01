@@ -1,6 +1,6 @@
 # [Render did not complete](https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=149942)
 
-<img src="https://github.com/orrstudio/Manuals/raw/main/03 HELP & MAN/01 DaVinci Resolve/Render did not complete.PNG" width="30px" height="30px" scale="50%" title="hover text" alt="accessibility text">
+<img src="https://github.com/orrstudio/Manuals/raw/main/03 HELP & MAN/01 DaVinci Resolve/Render did not complete.PNG" width="500px" title="Warning! Render did not complete!">
 
 Я использовал "Magic Mask" в Fusion, и он выдавал мне предупреждение об ошибке:  
 ```
