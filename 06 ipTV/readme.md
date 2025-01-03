@@ -17,7 +17,3 @@ For TELEVIZO need to download and install IPTV.m3u8 playlist
 # 3 - X-plore File Manager
 
 https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore&hl=ru&gl=US
-
-# 4 - Яндекс Браузер для ТВ
-
-https://play.google.com/store/apps/details?id=com.yandex.browser.tv&hl=ru&gl=US
