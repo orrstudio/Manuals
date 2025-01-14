@@ -1,31 +1,29 @@
 # Создание загрузочной флешки MacOS
 
-> Для создании загрузочной флешки используем программу [balenaEtcher](https://etcher.balena.io/)  
-> Работает она под любую операционную систему (MacOS, Windows, Linux).  
-> Программу не обязательно устанавливать, есть портативные варианты как  
-> для 32 битной так и для 64 битной систем Линукс и Виндовс.  
+Для создании загрузочной флешки используем программу [balenaEtcher](https://etcher.balena.io/)  
+
+> Работает под любую операционную систему (MacOS, Windows, Linux).  
+> Программу не обязательно устанавливать, есть портативные варианты как для 32 битной так и для 64 битной систем Линукс и Виндовс.  
 > Скачиваем zip файл для Linux, распаковываем и пользуемся.  
 > Аналогично и для иных систем.  
-> Может понадобиться утилита dmg2img для [преобразования dmg файлов в img](https://www.youtube.com/watch?v=4c8o-54jVy8).  
->   
-> Далее скачиваем образ загрузочного диска MacOS  
-- [MacOS-HighSierra10.13](https://disk.yandex.ru/d/BU9ZvcG5yIbuNQ) - по этой ссылке лежит MacOS-HighSierra10.13, файл называется "bckup.img"
-- Есть вариант забрать [образы MacOS на сайте Apple](https://support.apple.com/ru-ru/101578)  
+> В случае Линукс и Виндовс понадобиться утилита dmg2img для [преобразования dmg файлов в img](https://www.youtube.com/watch?v=4c8o-54jVy8).  
 
-# Установкa свежих версий MacOS
-> [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) - это программа устанавливается на мак,
-> загружает новую версию Операционной системы не поддерживаемой маком и создает флешку для установки.
-> После установки пропатчивает систему чтобы поставились драйвера видео и другого оборудования.
-- [OpenCore Legacy Patcher - Официальный сайт](https://dortania.github.io/OpenCore-Legacy-Patcher/)
+Далее скачиваем образ загрузочного диска MacOS.  
+- [MacOS-HighSierra10.13](https://disk.yandex.ru/d/BU9ZvcG5yIbuNQ) - по этой ссылке лежит MacOS-HighSierra10.13, файл называется "bckup.img"
+- Есть вариант забрать [образы MacOS на сайте Apple](https://support.apple.com/ru-ru/101578). Только версии ниже HighSierra.  
+
+# Установкa версий MacOS выше HighSierra 10.13.
+
+[OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) - это программа устанавливается на Mac, загружает новую версию Операционной системы не поддерживаемой Mac и создает флешку для установки. После установки патчит систему чтобы поставились драйвера видео и другого оборудования.  
 
 # X-Code
 - [Список релизов X-Code с поддерживаемыми MacOS](https://xcodereleases.com/)  
-- [Официальная документация по релизам Xcodes](https://developer.apple.com/documentation/xcode-release-notes/xcode-14_2-release-notes)  
+- [Официальная документация по релизам X-Codes](https://developer.apple.com/documentation/xcode-release-notes/xcode-14_2-release-notes)  
 - [More Downloads for Apple Developers](https://developer.apple.com/download/all/)
 
 # Dark Mode в macOS High Sierra
 
-Чтобы включить Темный режим в macOS High Sierra введите в терминале следующую команду:  
+Чтобы включить Dark Mode в macOS High Sierra 10.13 введите в терминале следующую команду:  
 
 ```
 defaults write -g NSWindowDarkChocolate -bool TRUE
@@ -33,7 +31,7 @@ defaults write -g NSWindowDarkChocolate -bool TRUE
 
 Перезагрузитесь.  
 
-Чтобы вернуть все обратно, введите следующую команду в терминале:  
+Чтобы вернуть все обратно введите:  
 
 ```
 defaults delete -g NSWindowDarkChocolate
