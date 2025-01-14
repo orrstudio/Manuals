@@ -15,3 +15,4 @@
 # 6. [OpenCore Legacy Patcher WebSite](https://dortania.github.io/OpenCore-Legacy-Patcher/)
 # 7. [Релизы Xcode](https://xcodereleases.com/)  
 # 8. [Apple Developer Documentation for Xcodes](https://developer.apple.com/documentation/xcode-release-notes/xcode-14_2-release-notes)  
+# 9. [More Downloads for Apple Developers](https://developer.apple.com/download/all/)
