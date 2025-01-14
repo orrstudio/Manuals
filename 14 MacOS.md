@@ -9,12 +9,12 @@
 > В случае Линукс и Виндовс понадобиться утилита dmg2img для [преобразования dmg файлов в img](https://www.youtube.com/watch?v=4c8o-54jVy8).  
 
 Далее скачиваем образ загрузочного диска MacOS.  
-- [MacOS-HighSierra10.13](https://disk.yandex.ru/d/BU9ZvcG5yIbuNQ) - по этой ссылке лежит MacOS-HighSierra10.13, файл называется "bckup.img"
-- Есть вариант забрать [образы MacOS на сайте Apple](https://support.apple.com/ru-ru/101578). Только версии ниже HighSierra.  
+- [MacOS-HighSierra10.13](https://disk.yandex.ru/d/BU9ZvcG5yIbuNQ) - лежит по этой ссылке. Файл называется "bckup.img".
+- Есть вариант [образы MacOS на официальном сайте Apple](https://support.apple.com/ru-ru/101578). Можно использовать только версии ниже HighSierra, так как если ставить версии выше то без патчей драйвера на видео карту и другое не встанут.  
 
-# Установкa версий MacOS выше HighSierra 10.13.
+# Установкa версий MacOS выше HighSierra 10.13 с патчем OpenCore.
 
-[OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) - это программа устанавливается на Mac, загружает новую версию Операционной системы не поддерживаемой Mac и создает флешку для установки. После установки патчит систему чтобы поставились драйвера видео и другого оборудования.  
+- [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) - это программа устанавливается на Mac, загружает новую версию Операционной системы не поддерживаемой Mac и создает флешку для установки. После установки патчит систему чтобы поставились драйвера видео и другого оборудования.  
 
 # X-Code
 - [Список релизов X-Code с поддерживаемыми MacOS](https://xcodereleases.com/)  
