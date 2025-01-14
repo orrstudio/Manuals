@@ -22,3 +22,21 @@
 - [Список релизов X-Code с поддерживаемыми MacOS](https://xcodereleases.com/)  
 - [Официальная документация по релизам Xcodes](https://developer.apple.com/documentation/xcode-release-notes/xcode-14_2-release-notes)  
 - [More Downloads for Apple Developers](https://developer.apple.com/download/all/)
+
+# Dark Mode в macOS High Sierra
+
+Чтобы включить Темный режим в macOS High Sierra введите в терминале следующую команду:  
+
+```
+defaults write -g NSWindowDarkChocolate -bool TRUE
+```
+
+Перезагрузитесь.  
+
+Чтобы вернуть все обратно, введите следующую команду в терминале:  
+
+```
+defaults delete -g NSWindowDarkChocolate
+```
+
+Перезагрузитесь.  
