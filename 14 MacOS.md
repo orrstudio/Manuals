@@ -1,18 +1,24 @@
-# 1. [Как создать загрузочную флешку с Mac OS X из под Windows](https://www.youtube.com/watch?v=ef-jxVTk_mQ)  
- - [Boot Disk Utility](https://cvad-mac.narod.ru/index/bootdiskutility_exe/0-5)  
+# Создание загрузочной флешки MacOS
 
-# 2. [Создание загрузочной флешки MacOS на Windows](https://www.youtube.com/watch?v=XWlgEBZr038&list=PLuKOcoizje6byvtGYN56oBQH1mOaz6r5r&index=25)  
- - [MacOS-HighSierra10.13 & Win32DiskImager-1.0.0-Installer.exe](https://disk.yandex.ru/d/BU9ZvcG5yIbuNQ)
+> Для создании загрузочной флешки используем программу [balenaEtcher](https://etcher.balena.io/)  
+> Работает она под любую операционную систему (MacOS, Windows, Linux).  
+> Программу не обязательно устанавливать, есть портативные варианты как  
+> для 32 битной так и для 64 битной систем Линукс и Виндовс.  
+> Скачиваем zip файл для Linux, распаковываем и пользуемся.  
+> Аналогично и для иных систем.  
+> Может понадобиться утилита dmg2img для [преобразования dmg файлов в img](https://www.youtube.com/watch?v=4c8o-54jVy8).  
+>   
+> Далее скачиваем образ загрузочного диска MacOS  
+- [MacOS-HighSierra10.13](https://disk.yandex.ru/d/BU9ZvcG5yIbuNQ) - по этой ссылке лежит MacOS-HighSierra10.13, файл называется "bckup.img"
+- Есть вариант забрать [образы MacOS на сайте Apple](https://support.apple.com/ru-ru/101578)  
 
-# 3. [КАК СОЗДАТЬ ЗАГРУЗОЧНУЮ ФЛЭШКУ С MAC OS | МЕТОДЫ ДЛЯ MACos и WINDOWS](https://www.youtube.com/watch?v=5MUh5yTWt28)  
- - [Образы систем на сайте Apple](https://support.apple.com/ru-ru/101578)  
- - [DiskMakerX](https://diskmakerx.com)  
- - [TransMac](https://transmac.ru.uptodown.com/windows)  
+# Установкa свежих версий MacOS
+> [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) - это программа устанавливается на мак,
+> загружает новую версию Операционной системы не поддерживаемой маком и создает флешку для установки.
+> После установки пропатчивает систему чтобы поставились драйвера видео и другого оборудования.
+- [OpenCore Legacy Patcher - Официальный сайт](https://dortania.github.io/OpenCore-Legacy-Patcher/)
 
-# 4. [Как создать загрузочную флешку Mac OS](https://www.youtube.com/watch?v=Ua--LZGPCo8)
-
-# 5. [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher)  
-# 6. [OpenCore Legacy Patcher WebSite](https://dortania.github.io/OpenCore-Legacy-Patcher/)
-# 7. [Релизы Xcode](https://xcodereleases.com/)  
-# 8. [Apple Developer Documentation for Xcodes](https://developer.apple.com/documentation/xcode-release-notes/xcode-14_2-release-notes)  
-# 9. [More Downloads for Apple Developers](https://developer.apple.com/download/all/)
+# X-Code
+- [Список релизов X-Code с поддерживаемыми MacOS](https://xcodereleases.com/)  
+- [Официальная документация по релизам Xcodes](https://developer.apple.com/documentation/xcode-release-notes/xcode-14_2-release-notes)  
+- [More Downloads for Apple Developers](https://developer.apple.com/download/all/)
