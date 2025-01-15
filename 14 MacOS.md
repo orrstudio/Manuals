@@ -41,3 +41,9 @@ defaults delete -g NSWindowDarkChocolate
 ```
 
 Перезагрузитесь.  
+
+## APPs for MacOS
+
+- [Commander One PRO: FTP & Cloud](https://cdn.electronic.us/products/commander/mac/download/commander.dmg)
+- [iTerm2](https://iterm2.com/)
+- 
