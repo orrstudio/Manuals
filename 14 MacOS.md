@@ -10,6 +10,7 @@
 
 Далее скачиваем образ загрузочного диска MacOS.  
 - [MacOS-HighSierra10.13](https://disk.yandex.ru/d/BU9ZvcG5yIbuNQ) - лежит по этой ссылке. Файл называется "bckup.img".
+- [MacOS-BigSur11.6.8](https://drive.google.com/drive/folders/16G1d_XnOOppaervgbi00isNpzprupvCT) - iso файл сжатый в rar
 - Есть вариант [образы MacOS на официальном сайте Apple](https://support.apple.com/ru-ru/102662). Можно использовать только версии ниже HighSierra, так как если ставить версии выше то без патчей драйвера на видео карту и другое не встанут.  
 
 # MacOS версий выше HighSierra 10.13 с патчем OpenCore.
