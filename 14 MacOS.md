@@ -1,3 +1,7 @@
+# Модели ноутбуков
+
+https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/docs/MODELS.md#macbook-pro
+
 # Создание загрузочной флешки MacOS
 
 Для создании загрузочной флешки используем программу с официального сайта [balenaEtcher](https://etcher.balena.io/)  
