@@ -2,6 +2,10 @@
 
 [How to run macOS on Linux (without too much hassle)](https://www.youtube.com/watch?v=Qa6y_CiyAMA)  
 
+## [QuickEMU](https://quickemu-project.github.io/) - запускайте оптимизированные виртуальные машины Windows, macOS и Linux из терминала на Linux и macOS.
+## [QuickGUI](https://github.com/quickemu-project/quickgui) - графичсекий интерфейс для QuickEMU для Linux и macOS.
+
+# УСТАНОВКА
 
 Перед установкой QuickEMU нужно установить QEMU с фулл конфигурацией:
 ```
@@ -84,10 +88,3 @@ sudo trimforce enable
 sudo rm /Library/Preferences/SystemConfiguration/NetworkInterfaces.plist
 ```
 Перезагрузитесь. App Store должен заработать. 
-
-# ССЫЛКИ НА ПРОЕКТЫ:
-
-## [QuickEMU](https://quickemu-project.github.io/) - запускайте оптимизированные виртуальные машины Windows, macOS и Linux из терминала на Linux и macOS.
-## [QuickGUI](https://github.com/quickemu-project/quickgui) - графичсекий интерфейс для QuickEMU для Linux и macOS.
-
-
