@@ -97,6 +97,7 @@
 ## Terminal
 
 - bash-completion
+- [atuin](https://github.com/atuinsh/atuin) - ✨ Magical shell history 
 - tree - Дерево файлов и каталогов в терминале
 - git - Консольный Менеджер Закачки
 - wget - Консольный Менеджер Закачки
