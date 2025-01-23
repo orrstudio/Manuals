@@ -1,0 +1,14 @@
+# Assign the logo image
+image = Image("apple-logo.png")
+
+# Set the screen to black
+screen_width, screen_height = Window.GetSize()
+Window.SetBackgroundTopColor(0, 0, 0)  # Black
+Window.SetBackgroundBottomColor(0, 0, 0)  # Black
+
+# Center the logo
+image_width, image_height = image:GetSize()
+x = (screen_width - image_width) / 2
+y = (screen_height - image_height) / 2
+image:Draw(x, y)
+

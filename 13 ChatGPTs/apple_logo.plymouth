@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=Apple Logo
+Description=Loading screen with Apple logo
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/apple_logo
+ScriptFile=/usr/share/plymouth/themes/apple_logo/apple_logo.script
+
