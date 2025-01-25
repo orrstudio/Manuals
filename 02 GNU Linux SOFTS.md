@@ -94,7 +94,7 @@
 - [AnyDesk](https://anydesk.com "Решение для удаленного доступа")
 - [Tiny RDM](https://github.com/tiny-craft/tiny-rdm "Tiny RDM (Tiny Redis Desktop Manager) — современный, красочный и сверхлегкий клиент Redis с графическим интерфейсом для Mac, Windows и Linux.")
 
-## Terminal
+## Terminal - [7 удивительных инструментов CLI, без которых вы не сможете жить ](https://www.youtube.com/watch?v=mmqDYw9C30I)
 
 - bash-completion
 - [FZF (Командная строка Fuzzy Finder) ](https://github.com/junegunn/fzf) - ✨ Современная альтернатива tree и history.
