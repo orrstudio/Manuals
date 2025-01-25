@@ -97,7 +97,9 @@
 ## Terminal
 
 - bash-completion
-- [atuin](https://github.com/atuinsh/atuin) - ✨ Magical shell history 
+- [FZF (Командная строка Fuzzy Finder) ](https://github.com/junegunn/fzf) - ✨ Современная альтернатива tree и history.
+- [eza](https://github.com/eza-community/eza) - ✨ Современная альтернатива ls.
+- [https://www.warp.dev/](https://www.warp.dev/) - Интеллектуальный терминал.
 - tree - Дерево файлов и каталогов в терминале
 - git - Консольный Менеджер Закачки
 - wget - Консольный Менеджер Закачки
