@@ -1,4 +1,4 @@
-# Links for ExpoGO
+# Links for [Expo](https://github.com/expo)GO
 - [Expo Go или Development Builds - разница и как использовать](https://expo.dev/blog/expo-go-vs-development-builds) - [Видео](https://www.youtube.com/watch?v=FdjczjkwQKE)
 - [Expo Orbit для macOS и Windows](https://docs.expo.dev/build/orbit/)
 - [Native Directory React - проверить совместима ли библиотека с Expo Go](https://reactnative.directory/)
@@ -9,23 +9,27 @@
   - [expo-video - Документация библиотеки](https://docs.expo.dev/versions/unversioned/sdk/video/) - [Объяснение](https://www.youtube.com/watch?v=2SfQzU7rY8A)
   - [expo-audio - Документация библиотеки](https://docs.expo.dev/versions/latest/sdk/audio/) - [Объяснение]()
   - [Expo FileSystem - Документация библиотеки](https://docs.expo.dev/versions/latest/sdk/filesystem/)
-- []()
+- [VS Code Plugin for Expo](https://marketplace.visualstudio.com/items?itemName=expo.vscode-expo-tools&ssr=false#overview)
+- [@Expo/Vector-Icons](https://github.com/expo/vector-icons)
+- [Expo Snack - позволяет запускать Expo в браузере и эмулирует все девайсы включая Айфон и Андроид](https://snack.expo.dev/)
+- [ПРИМЕРЫ](https://github.com/expo/examples)
 
 # [УРОКИ ExpoGO](https://docs.expo.dev/tutorial/overview/)
 > Обзор учебных пособий и руководств по пользовательским интерфейсам
 
 ## [Учебник Universal App](https://docs.expo.dev/tutorial/introduction/)
 > Если вы новичок в Expo, мы рекомендуем начать с этого урока. Он предоставляет пошаговое руководство по созданию приложения Expo, которое работает на Android, iOS и Web.
-- [Учебное пособие: использование React Native и Expo](https://docs.expo.dev/tutorial/introduction/) - 
-- [Глава 1: Создайте первое приложение](https://docs.expo.dev/tutorial/create-your-first-app/)
-- [Глава 2: Добавь навигацию](https://docs.expo.dev/tutorial/add-navigation/)
-- [Глава 3: Создайте экран](https://docs.expo.dev/tutorial/build-a-screen/)
-- [Глава 4: Используйте средство выбора изображений](https://docs.expo.dev/tutorial/image-picker/)
-- [Глава 5: Создать модальное окно](https://docs.expo.dev/tutorial/create-a-modal/)
-- [Глава 6: Добавить жесты](https://docs.expo.dev/tutorial/gestures/)
-- [Глава 7: Сделать снимок экрана](https://docs.expo.dev/tutorial/screenshot/)
-- [Глава 8: Устранение различий между платформами](https://docs.expo.dev/tutorial/platform-differences/)
-- [Глава 9: Настройка строки состояния](https://docs.expo.dev/tutorial/configuration/)
+- [Учебное пособие: использование React Native и Expo](https://docs.expo.dev/tutorial/introduction/)
+- [Глава 1: Создайте первое приложение](https://docs.expo.dev/tutorial/create-your-first-app/) - [Видео](https://www.youtube.com/watch?v=m1-bc53EGh8)
+- [Глава 2: Добавь навигацию](https://docs.expo.dev/tutorial/add-navigation/) - [Видео](https://www.youtube.com/watch?v=8336fcFV_T4)
+- [Глава 3: Создайте экран](https://docs.expo.dev/tutorial/build-a-screen/) - [Видео](https://www.youtube.com/watch?v=3rcOP8xDwTQ)
+- [Глава 4: Используйте средство выбора изображений](https://docs.expo.dev/tutorial/image-picker/) - [Видео](https://www.youtube.com/watch?v=iEQZU58naS8)
+- [Глава 5: Создать модальное окно](https://docs.expo.dev/tutorial/create-a-modal/) - [Видео](https://www.youtube.com/watch?v=HRAMzrBwVeo)
+- [Глава 6: Добавить жесты](https://docs.expo.dev/tutorial/gestures/) - [Видео](https://www.youtube.com/watch?v=0q48LLvTGDU)
+- [Глава 7: Сделать снимок экрана](https://docs.expo.dev/tutorial/screenshot/) - [Видео](https://www.youtube.com/watch?v=Jft3_Yfr-p4)
+- [Глава 8: Устранение различий между платформами](https://docs.expo.dev/tutorial/platform-differences/) - [Видео](https://www.youtube.com/watch?v=mEKQvF4irBM)
+- [Глава 9: Настройка строки состояния](https://docs.expo.dev/tutorial/configuration/) - [Видео](https://www.youtube.com/watch?v=OgGCYdElcZo)
+- [Учебные ресурсы](https://docs.expo.dev/tutorial/follow-up/)
 
 ## [Учебник EAS](https://docs.expo.dev/tutorial/eas/introduction/)
 > Если вы хотите узнать о создании ваших приложений Android и iOS с использованием услуг Expo Application (EAS), этот учебник охватывает сборку EAS, обновление и отправку рабочих процессов.
