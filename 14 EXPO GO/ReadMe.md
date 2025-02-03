@@ -13,6 +13,9 @@
 - [@Expo/Vector-Icons](https://github.com/expo/vector-icons)
 - [Expo Snack - позволяет запускать Expo в браузере и эмулирует все девайсы включая Айфон и Андроид](https://snack.expo.dev/)
 - [ПРИМЕРЫ](https://github.com/expo/examples)
+  - [Expo Router TV demo](https://github.com/expo/examples/tree/master/with-router-tv)
+  - [TV Example](https://github.com/expo/examples/tree/master/with-tv)
+  - [Video Background Example](https://github.com/expo/examples/tree/master/with-video-background)
 
 # [УРОКИ ExpoGO](https://docs.expo.dev/tutorial/overview/)
 > Обзор учебных пособий и руководств по пользовательским интерфейсам
