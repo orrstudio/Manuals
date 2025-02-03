@@ -17,6 +17,10 @@
 # [УРОКИ ExpoGO](https://docs.expo.dev/tutorial/overview/)
 > Обзор учебных пособий и руководств по пользовательским интерфейсам
 
+# ДОПОЛНИТЕЛЬНЫЕ УРОКИ КОТОРЫЕ НЕ ВОШЛИ В НИЖНИЕ
+- [Как создать значок приложения и экрана Splash для выставки проекта](https://docs.expo.dev/develop/user-interface/splash-screen-and-app-icon/) - [Видео](https://www.youtube.com/watch?v=QSNkU7v0MPc)
+
+
 ## [Учебник Universal App](https://docs.expo.dev/tutorial/introduction/)
 > Если вы новичок в Expo, мы рекомендуем начать с этого урока. Он предоставляет пошаговое руководство по созданию приложения Expo, которое работает на Android, iOS и Web.
 - [Учебное пособие: использование React Native и Expo](https://docs.expo.dev/tutorial/introduction/)
