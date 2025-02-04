@@ -20,8 +20,7 @@
 # [УРОКИ ExpoGO](https://docs.expo.dev/tutorial/overview/)
 > Обзор учебных пособий и руководств по пользовательским интерфейсам
 
-## ДОПОЛНИТЕЛЬНЫЕ УРОКИ КОТОРЫЕ НЕ ВОШЛИ В НИЖНИЕ
-- [Как создать значок приложения и экрана Splash для выставки проекта](https://docs.expo.dev/develop/user-interface/splash-screen-and-app-icon/) - [Видео](https://www.youtube.com/watch?v=QSNkU7v0MPc)
+## [Как создать значок приложения и экрана Splash для выставки проекта](https://docs.expo.dev/develop/user-interface/splash-screen-and-app-icon/) - [Видео](https://www.youtube.com/watch?v=QSNkU7v0MPc)
 
 
 ## [Учебник Universal App](https://docs.expo.dev/tutorial/introduction/)
