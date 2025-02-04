@@ -56,3 +56,15 @@
 
 ## YouTube Blogers
 - [React Native Expo 4 урока](https://www.youtube.com/playlist?list=PLiephKfU5Qxx5ABoV_JdWtoG0pg5cZyTf)
+
+
+# Редакторы кода ИИ
+- [CURSOR](https://www.cursor.com/)
+- [WindSurf](https://codeium.com/)
+- [VOID](https://voideditor.com/)
+- [TABNINE](https://www.tabnine.com/)
+- [ZED](https://zed.dev/)
+- [ASKODI](https://www.askcodi.com)
+- [AIDE](https://aide.dev/)
+- [PearAI](https://trypear.ai/)
+- [BOLT](https://bolt.new/~/bolt-nativescript-js)
