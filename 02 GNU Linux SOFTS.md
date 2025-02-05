@@ -8,6 +8,7 @@
 # ОГЛАВЛЕНИЕ
 
 - [SYSTEM APPS](#system-apps)
+  - alacarte - редактор меню Gnome. меняет иконки приложений.
   - [BOOT](#boot)
   - [NETWORK](#network)
   - [SYSTEM TOOLS](#system-tools)
