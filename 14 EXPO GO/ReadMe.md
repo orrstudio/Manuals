@@ -16,6 +16,7 @@
   - [Expo Router TV demo](https://github.com/expo/examples/tree/master/with-router-tv)
   - [TV Example](https://github.com/expo/examples/tree/master/with-tv)
   - [Video Background Example](https://github.com/expo/examples/tree/master/with-video-background)
+- [🎨 Figma Template](https://www.figma.com/community/file/1466490409418563617)
 
 # [УРОКИ ExpoGO](https://docs.expo.dev/tutorial/overview/)
 > Обзор учебных пособий и руководств по пользовательским интерфейсам
