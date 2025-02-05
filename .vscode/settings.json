@@ -1,13 +1,5 @@
 {
-    "editor.fontSize": 24,
-    "debug.console.fontSize": 24,
-    "scm.inputFontSize": 24,
-    "terminal.integrated.fontSize": 24,
-    "chat.editor.fontSize": 24,
-    "markdown.preview.fontSize": 24,
-    "notebook.output.fontSize": 24,
-    "notebook.markup.fontSize": 24,
-    "editor.suggestFontSize": 24,
-    "editor.inlayHints.fontSize": 24,
-    "editor.codeLensFontSize": 24
+    "terminal.integrated.fontLigatures": true,
+    "editor.mouseWheelZoom": true,
+    "terminal.integrated.mouseWheelZoom": true
 }
