@@ -4,6 +4,7 @@
 # Инструменты
  - [Контакты](https://play.google.com/store/apps/details?id=com.google.android.contacts)
  - [ADM Downloader](https://play.google.com/store/apps/details?id=com.dv.adm "Advanced Download Manager")
+ - [ytdlnis](https://github.com/deniscerri/ytdlnis) - Android Video/Audio Downloader app using yt-dlp
  - [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)
  - [ReadEra](https://readera.org/book-reader "Для чтения книг. Бесплатное и без рекламы")
  - [SpeedTest](https://play.google.com/store/apps/details?id=org.zwanoo.android.speedtest)
