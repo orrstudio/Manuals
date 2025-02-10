@@ -39,6 +39,7 @@
 
 ## Network
 
+- [Sniffnet](https://sniffnet.net/) - Отслеживать свой интернет -трафик.
 - [What IP](https://flathub.org/ru/apps/org.gabmus.whatip "Информация о вашем IP")
 - telnet (pacman -S inetutils)
 - nman - программа для определения открытых портов сервера

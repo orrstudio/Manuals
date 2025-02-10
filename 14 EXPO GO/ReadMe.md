@@ -1,3 +1,5 @@
+# [Expo Documentation](https://docs.expo.dev/versions/latest/)
+
 # Links for [Expo](https://github.com/expo)GO
 - [Expo Go или Development Builds - разница и как использовать](https://expo.dev/blog/expo-go-vs-development-builds) - [Видео](https://www.youtube.com/watch?v=FdjczjkwQKE)
 - [Expo Orbit для macOS и Windows](https://docs.expo.dev/build/orbit/)
@@ -17,6 +19,8 @@
   - [TV Example](https://github.com/expo/examples/tree/master/with-tv)
   - [Video Background Example](https://github.com/expo/examples/tree/master/with-video-background)
 - [🎨 Figma Template](https://www.figma.com/community/file/1466490409418563617)
+- [COLORS](https://reactnative.dev/docs/colors)
+- [React Devtools](https://reactnative.dev/docs/react-native-devtools) - `npm install -g react-devtools`
 
 # [УРОКИ ExpoGO](https://docs.expo.dev/tutorial/overview/)
 > Обзор учебных пособий и руководств по пользовательским интерфейсам
