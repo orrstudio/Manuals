@@ -143,9 +143,11 @@ ccross # For synchronization, you enough run.
 
 ## INTERNET
 
+- Zen
 - FireFOX
 - Google Chrome
 - OPERA
+- [Инструмент CLI для сохранения полных веб -страниц в виде единого HTML -файла ](https://github.com/Y2Z/monolith)
 - [CrowTranslate](https://flathub.org/ru/apps/io.crow_translate.CrowTranslate) - Переводчик переводить и озвучивать текст с помощью Google, Yandex, Bing, LibreTranslate и Lingva translate API.
 - MEGA
 - insync
