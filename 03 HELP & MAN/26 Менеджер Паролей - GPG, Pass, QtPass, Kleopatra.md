@@ -56,10 +56,6 @@ gpg --delete-keys orr888@gmail.com
 - Создавайте ключи SSH, настраивайте их, кэшируйте.
 - И многое другое...
 
-## Для Android существуют программы: 
-- GnuPG for Android
-- [OpenKeychain](https://www.openkeychain.org/)
-
 > Создатели GnuPG for Android рекомендуют использовать [OpenKeychain](https://www.openkeychain.org/).
 
 # [Pass](https://www.passwordstore.org/) 
@@ -123,13 +119,18 @@ pass
 
 # [Интеграция с Android](https://habr.com/ru/articles/479540/)
 
-- Реализация GPG под Android называется [OpenKeychain](https://www.openkeychain.org/). Для её настройки достаточно зайти в меню "управление ключами" и импортировать ранее созданный секретный ключ.  
-- Реализация PASS под Android называется [Android-Password-Store](https://github.com/android-password-store/Android-Password-Store) сокращенно APS.  
+- Реализация GPG под Android называется [OpenKeychain](https://www.openkeychain.org/). Для её настройки достаточно зайти в меню "управление ключами" и импортировать ключ (приватную часть).  
+- Реализация PASS под Android называется [Password Store](https://github.com/android-password-store/Android-Password-Store) сокращенно PasswordStore. Ссылку на нее можно найти прям в приложении [OpenKeychain](https://play.google.com/store/apps/details?id=org.sufficientlysecure.keychain) или в PlayMarket
 
-Устанавливаем и запускаем APS. Прежде чем синхронизировать хранилище паролей, заходим в меню "Настройки".  
+Устанавливаем и запускаем PasswordStore. Прежде чем синхронизировать хранилище паролей, заходим в меню "Настройки".  
 Там нам понадобятся следующие пункты:
 
-- Настройки сервера git. Получившийся URL должен быть таким же, какой указан на странице репозитория на github. Тип авторизации — OpenKeychain.
-- Git utils. В этом разделе указываем username и email из ключа gpg.
-- Провайдер OpenPGP. Выбираем OpenKeychain.
-- Автозаполнение. Эта совсем недавно появившаяся фича включает заполнение паролей в приложениях на Android 8.0+.
+## Изменить настройки сервера git. 
+- URL репозитория: git@github.com:orrstudio/pass.git (указан на странице репозитория pass)
+- Ветка: main (обязвтельно меняем на маин, а то потом он не меняется, придется удалять приложение и заново ставить)
+- Тип авторизации: SSH КЛЮЧ
+- Сохраняем.
+- Импортируем ssh ключ (id_ed25519) приватную часть (он должен быть так же на гитхабе)
+- Клонируем.
+- ГОТОВО!
+- Настраиваем Автозаполнение в настройках приложения.
