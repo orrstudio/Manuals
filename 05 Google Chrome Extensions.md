@@ -67,7 +67,7 @@
 - [Browserpass](https://chrome.google.com/webstore/detail/browserpass/naepdomgkenhinolocfifgehidddafch)
 - [chrome-pass (ZX2C4)](https://github.com/hsanson/chrome-pass)
 - [smart-pass](https://github.com/fmeum/smart-pass)
-- 
+- [pass-browser-chrome](https://chromewebstore.google.com/detail/pass-browser-chrome/ncoadlppaciemlepmdmdnecjlfmbidcd)
 - [GNOME Shell integration](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)
 - [HARPA AI](https://chromewebstore.google.com/detail/harpa-ai-%D0%B0%D0%B3%D0%B5%D0%BD%D1%82-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0/eanggfilgoajaocelnaflolkadkeghjp "может быстро резюмировать многочасовые видео по частям, экономя ваше время на просмотре. это чат с искусственным интеллектом на любом сайте. Он предоставляет GPT-ответы рядом с результатами поиска Google / Bing / DuckDuckGo / Yahoo, позволяет разговаривать с веб-страницами, видео и PDF, резюмировать юридические документы, извлекать данные, SEO-ключевые слова и многое другое, что делает его идеальным помощником в исследованиях")
 - [Голосовое управление для ChatGPT](https://chromewebstore.google.com/detail/%D0%B3%D0%BE%D0%BB%D0%BE%D1%81%D0%BE%D0%B2%D0%BE%D0%B5-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BB%D1%8F/baahncfnjojaofhdmdfkpeadigoemkif "Это расширение дополняет ChatGPT функциями голосового управления и чтения вслух с использованием передовых технологий распознавания голоса и преобразования текста в речь (TTS). Что позволяет вести голосовые разговоры с ChatGPT на нескольких языках. Это расширение помогает вам общаться с ИИ без ввода текста. ")
