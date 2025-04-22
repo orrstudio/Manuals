@@ -5,6 +5,7 @@
  - <img src="https://massgrave.dev/img/logo.png" width="15">  [Microsoft Activation Scripts (MAS)](https://massgrave.dev/)
  - <img src="https://massgrave.dev/img/logo.png" width="15">  [IDM-Activation-Script](https://github.com/WindowsAddict/IDM-Activation-Script)
  - [Windows 10 LTSC OptimaMod - [m0nkrus]](https://w14.monkrus.ws/2021/12/windows-10-ltsc-optimamod-dec21-rus-eng.html "Windows 10 LTSC OptimaMod (Dec`21) RUS-ENG x86-x64")
+ - [Windows X-Lite](https://windowsxlite.com/updatepacks/)
  - [Утилита очистки Windows отовсякого дерьма майкрософт - от ChrisTitusTech](https://github.com/ChrisTitusTech/winutil "установка программ, настроек, исправлений и обновлений") - [Видео с описанием](https://www.youtube.com/watch?v=U7Iq2FijTtM)
  - [Скрипт для удаления мусорных программ, рекламы и многое другое в Windows 10 и 11](https://github.com/Raphire/Win11Debloat)
  - [Еще одна программа для удаления мусорных программ, рекламы и многое другое в Windows 10 и 11](https://github.com/hellzerg/optimizer) - [Видео](https://youtu.be/_t_ttjekjbA)
