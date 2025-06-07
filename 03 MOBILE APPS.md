@@ -40,6 +40,7 @@
  - [VLC](https://play.google.com/store/apps/details?id=org.videolan.vlc)
  - [mAbook Плеер Аудиокниг](https://play.google.com/store/apps/details?id=mindmine.audiobook)
  - [Smart AudioBook Player](https://play.google.com/store/apps/details?id=ak.alizandro.smartaudiobookplayer)
+ - [YouTube Music Client для Android](https://github.com/Arturo254/OpenTune)
 
 # THEOLOGY
  - [Zikir](https://play.google.com/store/apps/details?id=com.zikir.yap)
