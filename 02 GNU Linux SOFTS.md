@@ -224,6 +224,7 @@ ccross # For synchronization, you enough run.
 
 - [Libre Office](https://ru.libreoffice.org "LibreOffice — мощный офисный пакет, полностью совместимый с 32/64-битными системами. Переведён более чем на 30 языков мира. Поддерживает большинство популярных операционных систем, включая GNU/Linux, Microsoft Windows и Mac OS X.")
 - [Apostrophe - Edit Markdown in style](https://flathub.org/ru/apps/org.gnome.gitlab.somas.Apostrophe)
+- [Mini Text](https://github.com/Nokse22/mini-text "Очень маленький и простой текстовый редактор.")
 
 ## E-Books
 
