@@ -67,6 +67,7 @@
 - hardinfo - Информация о системе и устройствах
 - File Roller — Archive Manager
 - timeshift
+- [Mission Center](https://flathub.org/ru/apps/io.missioncenter.MissionCenter)
 - Stacer — Утилита для мониторинга, оптимизации, настройки и очистки системы.
 - [Шрифты](https://github.com/orrstudio/Manuals/blob/9853127bda563d6edb6e1d8fb4c503d628a08eee/03%20HELP%20%26%20MAN/07%20%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%A8%D1%80%D0%B8%D1%84%D1%82%D0%BE%D0%B2.md)
 - [gerb](https://github.com/epilys/gerb) - font editor
@@ -223,6 +224,7 @@ ccross # For synchronization, you enough run.
 
 - [Libre Office](https://ru.libreoffice.org "LibreOffice — мощный офисный пакет, полностью совместимый с 32/64-битными системами. Переведён более чем на 30 языков мира. Поддерживает большинство популярных операционных систем, включая GNU/Linux, Microsoft Windows и Mac OS X.")
 - [Apostrophe - Edit Markdown in style](https://flathub.org/ru/apps/org.gnome.gitlab.somas.Apostrophe)
+- [Mini Text](https://github.com/Nokse22/mini-text "Очень маленький и простой текстовый редактор.")
 
 ## E-Books
 
