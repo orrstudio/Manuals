@@ -268,6 +268,7 @@ ccross # For synchronization, you enough run.
 - [Eyedropper](https://github.com/FineFindus/eyedropper) - инструмент для получения кода цветов для GNOME
 - ksnip - Инструмент для создания и аннотирования снимков экрана
 - [Gromit-MPX](https://github.com/bk138/gromit-mpx) - Инструмент для экранных аннотаций. Можете рисовать везде на экране, выделяя какую-то кнопку или область. (yay -S gromit-mpx)
+- [pad.ws](https://github.com/pad-ws/pad.ws)
 
 # DEVELOPE
 
