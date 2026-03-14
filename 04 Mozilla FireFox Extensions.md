@@ -29,6 +29,7 @@
 - [DeepL Переводчик](https://addons.mozilla.org/ru/firefox/addon/deepl-translate/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search "Перевод при чтении и письме")
 - [Google Переводчик Страниц](https://addons.mozilla.org/ru/firefox/addon/traduzir-paginas-web/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search "быстро переводить веб-страницы")
 - [Read Aloud - Читай вслух](https://addons.mozilla.org/ru/firefox/addon/read-aloud/ "A Text to Speech Voice Reader - Программа чтения текста в речь")
+- [Bad Website Block list](https://github.com/popcar2/BadWebsiteBlocklist)
 - [uBlock Origin](https://addons.mozilla.org/ru/firefox/addon/ublock-origin/ "быстрый и эффективный блокировщик для браузеров.")
 - [uBlock Origin Lite](https://addons.mozilla.org/ru/firefox/addon/ublock-origin-lite/ "Блокировщик контента, не требующий разрешений. Сразу после инсталляции блокирует рекламу, трекеры, майнеры и многое другое.")
 - [uMatrix](https://addons.mozilla.org/ru/firefox/addon/umatrix/ "Используйте его для блокировки скриптов, iframe, рекламы, Facebook и т. д.")
