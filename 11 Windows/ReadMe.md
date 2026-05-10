@@ -2,6 +2,7 @@
 
 # <img src="https://massgrave.dev/img/logo.png" width="30"> Системные утилиты:
 
+ - [Чистая Windows (ltsc iot) без мусора](https://www.youtube.com/watch?v=YkkoSUIKrPU)
  - [ExplorerPatcher - Утилита для изменения дизайна Win11 под Win10 или 7 (К примеру: Поднять панель задач наверх)](https://github.com/valinet/ExplorerPatcher)
  - <img src="https://massgrave.dev/img/logo.png" width="15">  [Microsoft Activation Scripts (MAS)](https://massgrave.dev/)
  - <img src="https://massgrave.dev/img/logo.png" width="15">  [IDM-Activation-Script](https://github.com/WindowsAddict/IDM-Activation-Script)
