@@ -102,12 +102,10 @@
 - bash-completion
 - [FZF (Командная строка Fuzzy Finder) ](https://github.com/junegunn/fzf) - ✨ Современная альтернатива tree и history.
 - [eza](https://github.com/eza-community/eza) - ✨ Современная альтернатива ls.
-- [https://www.warp.dev/](https://www.warp.dev/) - Интеллектуальный терминал.
 - tree - Дерево файлов и каталогов в терминале
 - git - Консольный Менеджер Закачки
 - wget - Консольный Менеджер Закачки
 - terminator - Много-окнонный терминал
-- gemini - Ai agent for terminal
 - ranger — терминальны файловый менеджер для Linux.
 - nano - Консольный Текстовый Редактор
 - mc - файловый менеджер для Linux.
@@ -118,47 +116,23 @@
   > Ставим `sshuttle` на клиенте и запускаем там же в терминале: `sshuttle -vvvv -r ubuntu@168.188.188.188 -x 168.188.188.188 0/0` для подключения.
   > [VIDEO TUTORIAL](https://www.youtube.com/watch?v=7XDOuH-MPvw)
 - [SSHMenu Utility](https://github.com/Orr888/SSHMenu "Сценарий Bash для управления вашими ssh-соединениями, который создает меню (через диалог в терминале) из вашего файла ~/.ssh/config.")
-- ZSH & Oh My ZSH
-  > Сначало ставим `ZSH` а потом `Oh My ZSH` потом `fonts-powerline`.
-  > После вводим в терминале `sudo usermod -s /bin/zsh orr` и тем самым делаем по умолчанию.
-  > [Ставим плагины как здесь](https://medium.com/macoclock/enhance-your-terminal-with-manjaros-zsh-config-ecada5b2897d) - (yay -S zsh-autosuggestions, zsh-syntax-highlighting, zsh-history-substring-search)
-  > [Powerlevel10k ставим как здесь](https://gist.github.com/kevin-smets/8568070)
-  > [Еще инструкции здесь](https://habr.com/ru/post/323496/)
-- [neofetch](https://github.com/dylanaraps/neofetch) - отображает информацию о вашей операционной системе в терминале
-  > Для того чтобы неофетч запускался при открытии терминала нужно в конце файла ~/.bashrc или ~/.zshrc прописать neofetch.
-  > Дальше в конфиге неофетча можно скрыть или показать поля для отображения в терминале.
-  > Файл конфигурации содается при первом старте неофетч и находится в : ~/.config/neofetch/config.conf")
-- [AstroVIM](https://www.youtube.com/watch?v=LKnuIazeiM4) - Это полноценная ИДЕ на основе NeoVIM со всеми нужными плагинами
-- [Vim color themes](https://vimcolorschemes.com/dark/)
 - duf - Показывает информацию про диски в табличной форме (аналог df).
 - TMUX
 - Recoll — утилита для поиска файлов по содержимому.
 - xclip - буфер обмена для командной строки
-- [cloudcross](https://cloudcross.mastersoft24.ru) - для синхронизации между вашими устройствами и различными облачными хранилищами. Такими как: GoogleDrive, OndeDrive, Dropbox, ЯндексДиск и Mail.Ru
-```bash
-ccross -a # Cloud provider athentication
-ccross --prefer local # Can be one of "local" or "remote". "remote" - for priority of google-drive, and "locl" for local folder priority.
-ccross --dry-run # shows which files will be loaded/unloaded, but really do not synchronize
-ccross -p /home/orr/Downloads/google-drive # the absolute path to synchronize directory. And synchronizing command.
-ccross # For synchronization, you enough run.
-```
 
 ## INTERNET
 
 - Zen
 - FireFOX
 - Google Chrome
-- OPERA
-- [Инструмент CLI для сохранения полных веб -страниц в виде единого HTML -файла ](https://github.com/Y2Z/monolith)
 - [CrowTranslate](https://flathub.org/ru/apps/io.crow_translate.CrowTranslate) - Переводчик переводить и озвучивать текст с помощью Google, Yandex, Bing, LibreTranslate и Lingva translate API.
 - MEGA
-- insync
 - pCloud
 - [uGet Download Manager](https://ugetdm.com/ "Консольный и Графический Менеджер Закачки и Торрента")
 - [uGet Integrator](https://github.com/ugetdm/uget-integrator "Интегрируйте uGet Download Manager с Google Chrome, Chromium, Opera, Vivaldi и Mozilla Firefox")
 - [Telegram Desktop](https://desktop.telegram.org)
 - [XAMPP Apache + MariaDB + PHP + Perl](https://www.apachefriends.org/ru/index.html "OpenServer для Linux")
-- [Proxy Switcher в GNOME и сеть Tor](https://www.youtube.com/watch?v=mM9680l7MyY&list=PLcrZh07ZsO5GO97bZtxqFlSw26UKgz5lB&index=8)
 - [Youtube Downloader Plus](https://flathub.org/ru/apps/io.github.aandrew_me.ytdn "Скачивайте видео и аудио с сотен сайтов")
 
 ## SECURITY
@@ -166,48 +140,33 @@ ccross # For synchronization, you enough run.
 - [Менеджер Паролей - GPG, Pass, QtPass, Kleopatra](https://github.com/orrstudio/Manuals/blob/9853127bda563d6edb6e1d8fb4c503d628a08eee/03%20HELP%20%26%20MAN/26%20%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%20%D0%9F%D0%B0%D1%80%D0%BE%D0%BB%D0%B5%D0%B9%20-%20GPG%2C%20Pass%2C%20QtPass%2C%20Kleopatra.md)
 - [GUFW](http://gufw.org/ "FireWall для Linux") - После установки включаем в автозапуск `systemctl enable ufw`
 - [hBlock](https://github.com/hectorm/hblock "Блокировщик рекламы и вредоносных доменов. Делает записи в /etc/hosts файле.") - После установки hBlock следует запустить в терминале: ($ sudo hblock) Для временного отключения hBlock введите в терминале: ($ sudo hblock -S none -D none)
-- [firejail](https://github.com/netblue30/firejail "ПЕСОЧНИЦА для линукс") - [доп инфа в видео](https://www.youtube.com/watch?v=OWu5RNWjhEc)
 
 ## EXTENSIONS for GNOME
 
 <img src="https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true" alt="Get it on GNOME Extensions" height="100" align="middle">
 
 - [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/ "Tweak Tool to Customize GNOME Shell")
-- [Tiling-Assistant](https://extensions.gnome.org/extension/3733/tiling-assistant/ "")
-- [Munadi - Simple Athan App](https://flathub.org/ru/apps/org.munadi.Munadi)
-- [Vakt-i Salah](https://flathub.org/ru/apps/io.github.eminfedar.vaktisalah-gtk-rs "Приложение Prayer Times на базе Rust и GTK4. Он использует время молитв турецкого Управления по делам религии (Diyanet İşleri Başkanlığı)")
-- [Azan Islamic Prayer Times](https://extensions.gnome.org/extension/1510/azan-islamic-prayer-times/)
-- [Muezzin](https://github.com/DBChoco/Muezzin "Приложение «Время молитвы» (Азан) и Коран для Windows, macOS и GNU/Linux.")
-- [Azan Islamic Prayer Times](https://github.com/fahrinh/azan-gnome-shell-extension "Азан для Gnome Shell. ")
-- [OpenWeather](https://extensions.gnome.org/extension/750/openweather/ "Отображение прогноза погоды в строке состояния GNOME.")
-- [Weather O'Clock](https://extensions.gnome.org/extension/5470/weather-oclock/ "Display the current weather inside the pill next to the clock. GNOME Weather is required for this extension to work.")
 - [Vitals](https://github.com/corecoding/Vitals "Отображение информации в строке состояния GNOME (память, процессор, скорость интернета и т.д.")
 - [TopHat](https://extensions.gnome.org/extension/5219/tophat "TopHat отображает активность процессора, памяти, диска и сети в верхней панели GNOME.")
 - [GPaste](https://www.imagination-land.org/tags/GPaste.html "Система управления буфером обмена для GNOME 40 - (Clipboard management system)")
 - [CliboardIndicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 - [Net Speed Simpl](https://github.com/prateekmedia/netspeedsimplified "Виджет на температуру, скорость интернета, использование памяти и загрузку процессора.")
 - [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect "GSConnect - это полная реализация KDE Connect специально для GNOME Shell с интеграцией Nautilus, Chrome и Firefox. Он не зависит от настольного приложения KDE Connect и не будет работать с установленным приложением. KDEConnect позволяет устройствам безопасно обмениваться контентом, например, уведомлениями или файлами, а также использовать другие функции, такие как SMS-сообщения и удаленное управление. Команда KDE Connect имеет приложения для Linux, BSD, Android, Sailfish, iOS, macOS и Windows.")
-- [GNU/Linux icin ezan vakti bildirici](https://github.com/fbostanci/ezanvakti)
-- [DownFall](https://extensions.gnome.org/extension/3539/downfall/ "Имитирует листья, снег, фейерверки, НЛО и многое другое!")
 
 ## Aplications for GNOME
 
+- gnome-session-properties — утилита для управления автозапуском приложений в сеансе GNOME. 
 - gnome-control-center — Центр управления
 - gnome-tweaks — Дополнительные настройки
-- gnome-session-properties - Автоматический запуск приложений при входе в систему
 - Adwaita Dark — Темная тема для GNOME (предоставляется пакетом gnome-themes-extra)
 - chrome-gnome-shell — Позволяет устанавливать Gnome "extensions" через Хром браузер
-- fragments - torrent client
 - transmission - torrent client 
 - GtkHash - Hash summ files
-- feary - email client
 - seahorse - Хранител паролей и создатель ключей SSH, PGP
-- Webapp Manager - создает приложение из вэб страницы
 - gnome-screenshot
 - System Monitor (HTOP)
 - fonts
 - system log
-- gnome-connections — RDP for GNOME
 - GCalctool — калькулятор
 - Gconf-editor — редактор конфигураций
 - Gedit — текстовый редактор
@@ -215,21 +174,12 @@ ccross # For synchronization, you enough run.
 - Tsclient — удаленное администрирование
 - EasyTAG — редактор тегов ID3.
 - Dia — создание диаграмм
-- GNOME-DB — менеджер баз данных
 - Conglomerate — Редактор XML
-- GSQL — среда разработки баз данных
 - Guake — выпадающий эмулятор терминала
 
 # OFFICE
 
-## Office
-
 - [Libre Office](https://ru.libreoffice.org "LibreOffice — мощный офисный пакет, полностью совместимый с 32/64-битными системами. Переведён более чем на 30 языков мира. Поддерживает большинство популярных операционных систем, включая GNU/Linux, Microsoft Windows и Mac OS X.")
-- [Apostrophe - Edit Markdown in style](https://flathub.org/ru/apps/org.gnome.gitlab.somas.Apostrophe)
-- [Mini Text](https://github.com/Nokse22/mini-text "Очень маленький и простой текстовый редактор.")
-
-## E-Books
-
 - [Sigil & PageEdit](https://sigil-ebook.com/ "Sigil - Редактор электронных книг EPUB / PageEdit - это редактор WYSIWYG XHTML, предназначенный как приложение Sigil Companion.")
 - [Thorium](https://github.com/edrlab/thorium-reader/releases "Кроссплатформенное desktop-ное приложение для чтения электронных книг EPUB")
 
