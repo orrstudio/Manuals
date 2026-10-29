@@ -39,6 +39,7 @@
 
 <p align="right">(<a href="#readme-top">наверх</a>)</p>
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/orrstudio/cv/a0fb0105b68585c8b3d69ced6000ca8f6f75eeb2/images/ORRlogo.png" alt="ORRlogo" width="40" height="40" style="vertical-align: middle;"> © Orr Studio
+<div align="center" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+  <img src="https://raw.githubusercontent.com/orrstudio/cv/a0fb0105b68585c8b3d69ced6000ca8f6f75eeb2/images/ORRlogo.png" alt="ORRlogo" width="60" height="40">
+  <span>© Orr Studio</span>
 </div>
