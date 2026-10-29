@@ -37,7 +37,7 @@
 
 
 
-<table align="center">
+<table align="center" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td valign="middle">
       <img src="https://raw.githubusercontent.com/orrstudio/cv/a0fb0105b68585c8b3d69ced6000ca8f6f75eeb2/images/ORRlogo.png" alt="ORRlogo" width="60" height="40">
