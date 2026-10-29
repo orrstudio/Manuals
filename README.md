@@ -39,4 +39,6 @@
 
 <p align="right">(<a href="#readme-top">наверх</a>)</p>
 
-<img src="https://raw.githubusercontent.com/orrstudio/cv/a0fb0105b68585c8b3d69ced6000ca8f6f75eeb2/images/ORRlogo.png" alt="ORRlogo" width="40" height="40"> © Orr Studio
+<div align="center">
+  <img src="https://raw.githubusercontent.com/orrstudio/cv/a0fb0105b68585c8b3d69ced6000ca8f6f75eeb2/images/ORRlogo.png" alt="ORRlogo" width="40" height="40" style="vertical-align: middle;"> © Orr Studio
+</div>
