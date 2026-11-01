@@ -36,11 +36,7 @@
 
 Вы попадете в Live System ArchLinux. Загрузится виртуальная консоль (терминал), в котором вы будете вводить команды. Во время установки, вы работаете от имени суперпользователя (root).
 
-Инструкцию по установке Arch Linux можно посмотреть так:
-
-```bash
-less ~/install.txt
-```
+> **Альтернатива:** если вам не нужна ручная установка, в Arch Linux есть официальный скрипт автоматической установки — `archinstall`. Просто запустите его в Live-системе, и он задаст вопросы о языке, разметке диска, окружении рабочего стола и т.д., а потом установит систему за вас.
 
 Небольшой лайфхак: во время установки можно переключаться между терминалами с помощью `Alt+F1..6`. Если мы нажмем `Alt+F2` откроется второй терминал (по-умолчанию мы работаем в первом) и потребуется ввести пароль `root`, во втором терминале мы можем открыть инструкцию и периодически подсматривать ее, переключаясь между терминалами.
 
@@ -59,13 +55,13 @@ less ~/install.txt
 Выводит на экран список сетевых адаптеров.
 
 ```
-iwconfig
+ip link
 ```
 
-или полную информацию
+или подробную информацию
 
 ```
-ip a
+iw dev <iface> info
 ```
 
 Выводит список доступных сетей:
@@ -87,7 +83,7 @@ sudo ip link set wlan0 up
 Если внешний USB Wifi Adapter:
 
 ```
-iwconfig wlan0 essid OrrHome
+iw dev wlan0 connect OrrHome
 ```
 
 Если встроенный Wifi Adapter:
@@ -126,7 +122,6 @@ $ iwctl
 
 ```
 rfkill unblock wifi
-wifi-menu
 ```
 
 И наконец проверить соединение можно с помощью команды ping:
@@ -158,15 +153,15 @@ $ ping -c 3 www.google.com
 - `cd /mnt`  Переходим в монтированный раздел чтобы создать субволюм. (Проверяем: `df -h`)
 - `btrfs subvolume create @` Создаем subvolume @. Выходит сообщение: Create subvolume './@'
 - `cd /` Выходим из /mnt, `umount /dev/sda2` размонтируем его.
-- Монтируем subvolume с компресией и автодефрагиентацией если диск не SSD, если SSD то вместо автодефраг подключаем ssd.
+- Монтируем subvolume с компресией ZSTD (автодефрагментация на современных системах не требуется).
 
 ```
-mount -o compress=zstd,autodefrag,subvol=@ /dev/sda2 /mnt
+mount -o compress=zstd,subvol=@ /dev/sda2 /mnt
 ```
 
 Обратите внимание на параметр compress ‒ это тип сжатия для данных, так же через двоеточие можно указать уровень сжатия. В данный момент лучшим методом сжатия является ZSTD с уровнем сжатия 3 (по-умолчанию).
 
-- Проверяем `fdisk -l` бутабле
+- Проверяем `fdisk -l` bootable
 - Можно ещё `lsblk` или `df -h`
 - Теперь можно устанавливать линукс.
 
@@ -175,7 +170,7 @@ mount -o compress=zstd,autodefrag,subvol=@ /dev/sda2 /mnt
 > Убедитесь что /mnt смонтирован. Если раздел BTRFS, то монтирование нужно делать с компресией и сабволюмом @
 
 ```
-pacstrap -i /mnt base linux
+pacstrap /mnt base linux linux-firmware
 ```
 
 - base
@@ -193,12 +188,29 @@ pacstrap -i /mnt base linux
 - tmux
 - tilix
 
+# СВАП (swap-файл для Btrfs)
+
+> Для Btrfs рекомендуется использовать swap-файл вместо отдельного swap-раздела.
+
+```
+fallocate -l 4G /mnt/swapfile
+chmod 600 /mnt/swapfile
+mkswap /mnt/swapfile
+swapon /mnt/swapfile
+```
+
+Добавьте строку в `/mnt/etc/fstab` для постоянного подключения:
+
+```
+/mnt/swapfile none swap defaults 0 0
+```
+
 # ГЕНЕРАЦИЯ FSTAB
 
 Когда загрузка завершена, вы можете сгенерировать fstab файл Arch. Этот файл отслеживает разделы диска, которые необходимо монтировать в вашей системе.
 
 ```
-genfstab -U -p /mnt >> /mnt/etc/fstab
+genfstab -U /mnt >> /mnt/etc/fstab
 ```
 
 Для просмотра созданного файла:
@@ -285,7 +297,7 @@ ln -sf /usr/share/zoneinfo/Asia/Baku /etc/localtime
 Выполним `hwclock`, чтобы сгенерировать файл `/etc/adjtime`, в котором хранятся соответсвующие настройки:
 
 ```
-hwclock --systohc --localtime
+hwclock --systohc
 ```
 
 # HOSTNAME & HOST
@@ -357,7 +369,7 @@ visudo
 > Использование visudo обязательно!
 > Файл настроек `/etc/sudoers` **всегда** следует редактировать с помощью команды `visudo`. `visudo` блокирует файл `sudoers`, сохраняет изменения во временный файл и проверяет, что файл грамматически корректен, перед тем как скопировать его в `/etc/sudoers`.
 
-Удаляем решотку перед:
+Удаляем решётку перед:
 
 ```
 # %wheel ALL=(ALL:ALL) ALL
@@ -368,7 +380,7 @@ visudo
 Для просмотра текущих настроек можно выполните:
 
 ```
-sudo -ll
+sudo -l
 ```
 
 > (где “ll” это две буквы L (эль) маленькими)
@@ -381,7 +393,7 @@ usermod -aG wheel orr
 
 # TMPFS
 
-[Как изменить размер tmp (tmpfs) налету](http://www.michurin.net/tools/remount-resize-tmpfs.html)
+[Как изменить размер tmp (tmpfs) налету](https://wiki.archlinux.org/title/Tmpfs)
 
 > Смотрим, сколько места у нас сейчас:
 
@@ -433,7 +445,7 @@ tmpfs /dev/shm tmpfs defaults,rw,nodev,nofail,noatime,nosuid,size=6G 0 0 0
 tmpfs /tmp tmpfs defaults,rw,nodev,nofail,noatime,nosuid,size=6G 0 0 0
 ```
 
-# [Управляем тактовой частотой процессора](http://www.michurin.net/tools/cpu-frequency.html)
+# [Управляем тактовой частотой процессора](https://wiki.archlinux.org/title/CPU_frequency_scaling)
 
 Проверяем, какая сейчас у нас схема энергосбережения.
 
@@ -454,11 +466,7 @@ for CPUFREQ in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do [ -f $C
 
 $ pacman -S cpupower
 
-# Установка для UBUNTU
-# Перед установкой systemd-swap нужно  обновиться:
 
-sudo apt-get update -y
-sudo apt-get install -y cpupower
 ```
 
 После чего редактируем файл /etc/default/cpupower
@@ -487,6 +495,8 @@ $ sudo systemctl enable --now cpupower.service
 
 Установка графического компонента:
 
+> ⚠️ `yay` — это AUR-хелпер, он **не установлен по умолчанию** в Arch Live. Сначала установите `yay` (или другой AUR-хелпер, например `paru`), затем выполните команду ниже.
+
 ```
 yay -S cpupower-gui
 ```
@@ -512,7 +522,7 @@ Linux грузится с помощью образа **initramfs**: снача�
 Редактируем настройки образа в файле `/etc/mkinitcpio.conf`:
 
 ```bash
-micro /etc/mkinitcpio.conf
+nano /etc/mkinitcpio.conf
 ```
 
 Добавляем в образ поддержку btrfs (не является частью ядра). `MODULES` и `BINARIES` должны выглядеть примерно так:
@@ -522,11 +532,13 @@ MODULES=(btrfs)
 BINARIES=(/usr/bin/btrfs)
 ```
 
-В хуки добавляем `encrypt btrfs` до filesystems:
+В хуки добавляем `btrfs` до `filesystems` (если диск **не зашифрован**):
 
 ```conf
-HOOKS=(... encrypt btrfs filesystems ...)
+HOOKS=(... btrfs filesystems ...)
 ```
+
+> Если раздел зашифрован (LUKS), добавьте `encrypt` перед `btrfs`: `HOOKS=(... encrypt btrfs filesystems ...)`
 
 Хуки — это скрипты с функцией `run_hook`, которые выполняются последовательно при загрузке **initramfs**.
 
@@ -568,7 +580,7 @@ COMPRESSION_OPTIONS=(-9)
 Генерация:
 
 ```bash
-mkinitcpio -p linux
+mkinitcpio -P
 ```
 
 ## GRUB
@@ -591,10 +603,11 @@ grub-mkconfig -o /boot/grub/grub.cfg
 grub-install /dev/sda
 ```
 
-Выйдите из chroot размонтируйте разделы и перезагрузитесь:
+Выйдите из chroot, размонтируйте разделы и перезагрузитесь:
 
 ```
 exit
+umount -R /mnt
 reboot
 ```
 
@@ -610,20 +623,19 @@ pacman -S grub efibootmgr
 
 Создаем загрузочный раздел. (Если две системы, если один линукс и все, то этот пункт опускаем и переходим к генерации настроек конфигурации GRUB)
 
-> Размер раздела (boot, /dev/sda1) должен состовлять не менее 100 MB и не более 1024 MB (1 GB). У нас обычно 512 MB. И должен быть загрузочным (c флагом EFI System).
+> Размер раздела (boot, /dev/sda1) должен составлять не менее 100 MB и не более 1024 MB (1 GB). У нас обычно 512 MB. И должен быть загрузочным (c флагом EFI System).
 
 Форматируем под `FAT32` и создаем папку.
 
 ```
 mkfs.fat -F32 /dev/sda1
-mkdir -p /boot
 mkdir -p /boot/efi
 ```
 
-Монтиуем загрузочный раздел.
+Монтируем загрузочный раздел.
 
 ```
-mount /dev/sda1 /mnt/boot
+mount /dev/sda1 /boot/efi
 ```
 
 Генерируем настройки конфигурации GRUB на разделе `/boot`.
@@ -636,10 +648,11 @@ grub-install --target=x86_64-efi --bootloader-id=grub --efi-directory=/boot/efi
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-Выйдите из chroot размонтируйте разделы и перезагрузитесь:
+Выйдите из chroot, размонтируйте разделы и перезагрузитесь:
 
 ```
 exit
+umount -R /mnt
 reboot
 ```
 
@@ -657,12 +670,12 @@ bootctl install
 blkid -o value -s PARTUUID /dev/nvme0n1p2 > /boot/loader/entries/arch-encrypted.conf
 ```
 
-При монтировании через `/etc/fstab` лучше использовать **UUID**, так как они уникальны (**PARTUUID** уникален только для **GPT** таблицы).  Жесткие диски типа `/dev/sda` или `/dev/sdb`  могут изменить буквы при переподключении. Это правило не распространяется на [виртуальные блочные устройства](https://ru.wikipedia.org/wiki/Device_mapper) типа `/dev/mapper/cryprt`.
+При монтировании через `/etc/fstab` лучше использовать **UUID**, так как они уникальны (**PARTUUID** уникален только для **GPT** таблицы).  Жесткие диски типа `/dev/sda` или `/dev/sdb`  могут изменить буквы при переподключении. Это правило не распространяется на [виртуальные блочные устройства](https://ru.wikipedia.org/wiki/Device_mapper) типа `/dev/mapper/crypt`.
 
 Отредактируем конфиг:
 
 ```bash
-micro /boot/loader/entries/arch-encrypted.conf
+nano /boot/loader/entries/arch-encrypted.conf
 ```
 
 Он должен выглядеть примерно так:
@@ -681,15 +694,15 @@ options cryptdevice=PARTUUID=fa65a43e-eb75-48f0-aee1-975a50c2e00d:cryptroot:allo
 Установите микрокоды проца (в зависимости от производителя):
 
 ```bash
-pacman -Sy amd-ucode
+pacman -Syu amd-ucode
 # либо
-pacman -Sy intel-ucode
+pacman -Syu intel-ucode
 ```
 
 Настроим загрузчик:
 
 ```bash
-micro /boot/loader/loader.conf
+nano /boot/loader/loader.conf
 ```
 
 ```conf
@@ -815,7 +828,7 @@ $ ip a
 
 $ sudo pacman -S networkmanager-openvpn
 
-# Запустите и добавьтет в автозагрузку Network Manager:
+# Запустите и добавьте в автозагрузку NetworkManager:
 
 $ sudo systemctl start NetworkManager
 $ sudo systemctl enable NetworkManager
@@ -835,8 +848,7 @@ sudo pacman -S pipewire pipewire-alsa pipewire-pulse gst-plugin-pipewire pipewir
 
 ```
 sudo pacman -S reflector
-sudo systemctl enable reflector.service
-sudo pacman -Syy
+sudo systemctl enable --now reflector.timer
 ```
 
 # Установка менеджера отображения GDM + GNOME + Wayland + PipeWire
