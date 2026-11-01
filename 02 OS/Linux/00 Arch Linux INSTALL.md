@@ -155,10 +155,10 @@ $ ping -c 3 www.google.com
 - `cfdisk` (Отводим весь диск под систему и делаем `Bootable`. Далее: `Write`  и  `Quit`
 - `mkfs.btrfs /dev/sda2 -f` (Отформатировали)
 - `mount /dev/sda2 /mnt` (Монтируем)
-- `cd /mnt`  Перехоим в монтированный раздел чтобы создать субволюм. (Проверяем: `df -h`)
+- `cd /mnt`  Переходим в монтированный раздел чтобы создать субволюм. (Проверяем: `df -h`)
 - `btrfs subvolume create @` Создаем subvolume @. Выходит сообщение: Create subvolume './@'
 - `cd /` Выходим из /mnt, `umount /dev/sda2` размонтируем его.
-- Монтируем subvolume с компресией и автодефрагиентацией если дисk не SSD, если SSD то вместо автодефраг подключаем ssd.
+- Монтируем subvolume с компресией и автодефрагиентацией если диск не SSD, если SSD то вместо автодефраг подключаем ssd.
 
 ```
 mount -o compress=zstd,autodefrag,subvol=@ /dev/sda2 /mnt
@@ -334,7 +334,7 @@ passwd
 useradd -m -g users -G wheel -s /bin/bash orr
 ```
 
-- `-g` - добавлене в группу users
+- `-g` - добавление в группу users
 - `-G` - дополнительные группы,
 - группа `wheel` даёт возможность использовать команду `sudo` (Но для этого нужно отредактировать файл настроек `/etc/sudoers`).
 - `-s` задаёт командную оболочку
@@ -360,7 +360,7 @@ visudo
 Удаляем решотку перед:
 
 ```
-# %whell ALL=(ALL:ALL) ALL
+# %wheel ALL=(ALL:ALL) ALL
 ```
 
 > Сохраняемся `:w` выходим `:q`.
@@ -467,7 +467,7 @@ sudo apt-get install -y cpupower
 sudo nano /etc/default/cpupower
 ```
 
-Изменяем следующюю строку как ниже:
+Изменяем следующую строку как ниже:
 
 ```
 governor='performance'
@@ -528,7 +528,7 @@ BINARIES=(/usr/bin/btrfs)
 HOOKS=(... encrypt btrfs filesystems ...)
 ```
 
-Хуки — это скрипты с функцией `run_hook`, которые выполняются последовательно при загрузке **initrmafs**.
+Хуки — это скрипты с функцией `run_hook`, которые выполняются последовательно при загрузке **initramfs**.
 
 Пример:
 
@@ -580,7 +580,7 @@ mkinitcpio -p linux
 > Установка GRUB-BIOS, создание папки grub и создание конфига grub.cfg:
 
 ```
-pacman -S grub-bios
+pacman -S grub
 mkdir -p /boot/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
@@ -615,7 +615,7 @@ pacman -S grub efibootmgr
 Форматируем под `FAT32` и создаем папку.
 
 ```
-mkfs.fat32 /dev/sda1
+mkfs.fat -F32 /dev/sda1
 mkdir -p /boot
 mkdir -p /boot/efi
 ```
@@ -629,7 +629,7 @@ mount /dev/sda1 /mnt/boot
 Генерируем настройки конфигурации GRUB на разделе `/boot`.
 
 ```
-grub-install --target=x86_64-efi  --bootloader-id=grub --efi-directory=/boot/efi
+grub-install --target=x86_64-efi --bootloader-id=grub --efi-directory=/boot/efi
 ```
 
 ```
@@ -654,7 +654,7 @@ bootctl install
 Создаем загрузочную запись. Для начала сохраним PARTUUID шифрованного раздела в конфиг, так как его запомнить проблематично:
 
 ```bash
-blkid -o value -s PARTUUID /dev/nvme0n1p2 > /boot/loader/entries/arch-ecrypted.conf
+blkid -o value -s PARTUUID /dev/nvme0n1p2 > /boot/loader/entries/arch-encrypted.conf
 ```
 
 При монтировании через `/etc/fstab` лучше использовать **UUID**, так как они уникальны (**PARTUUID** уникален только для **GPT** таблицы).  Жесткие диски типа `/dev/sda` или `/dev/sdb`  могут изменить буквы при переподключении. Это правило не распространяется на [виртуальные блочные устройства](https://ru.wikipedia.org/wiki/Device_mapper) типа `/dev/mapper/cryprt`.
@@ -662,7 +662,7 @@ blkid -o value -s PARTUUID /dev/nvme0n1p2 > /boot/loader/entries/arch-ecrypted.c
 Отредактируем конфиг:
 
 ```bash
-micro /boot/loader/entries/arch-ecrypted.conf
+micro /boot/loader/entries/arch-encrypted.conf
 ```
 
 Он должен выглядеть примерно так:
@@ -694,7 +694,7 @@ micro /boot/loader/loader.conf
 
 ```conf
 timeout 4
-default arch-ecrypted.conf
+default arch-encrypted.conf
 console-mode max
 editor no
 ```
@@ -712,7 +712,7 @@ editor no
 - Виндовс больше не загружается.
 - rEFInd находит все системы из папки `/boot/EFI`
 - Далее конфигурируем и настраиваем rEFInd под себя.
-- Пользуемсю! 😃
+- Пользуемся! 😃
 
 > INFO
 
@@ -726,20 +726,20 @@ menuentry "Arch Linux" {
 }
 ```
 
-- `icon` - фал иконки и путь к нему
-- `volume` - Название для нас. Этот параметр не имеет значения дл я запуска.
+- `icon` - файл иконки и путь к нему
+- `volume` - Название для нас. Этот параметр не имеет значения для запуска.
 - `loader` - Ядро
-- `initrd` - имедж ядра
+- `initrd` - образ ядра
 - `options` - Диск, раздел и параметры запуска раздела.
 
-> Полная инфа находиться [тут](https://www.rodsbooks.com/refind/configfile.html "Настройка диспетчера загрузки rEFInd")
+> Полная инфа находится [тут](https://www.rodsbooks.com/refind/configfile.html "Настройка диспетчера загрузки rEFInd")
 
 # Подключение к сети OrrHome после перезагрузки:
 
 Стартуем NetworkManager:
 
 ```
-sudo NetworkManager
+sudo systemctl start NetworkManager
 ```
 
 Команда для просмотра адаптеров
@@ -754,7 +754,7 @@ nmcli device show
 sudo ip link set wlp16s0 up
 ```
 
-Комана для просмотра состояния адаптера
+Команда для просмотра состояния адаптера
 
 ```
 ip link show wlp16s0
@@ -797,7 +797,7 @@ sudo nmcli device wifi connect OrrHome
 sudo systemctl enable NetworkManager
 ```
 
-Перезанружаемся `sudo reboot` и проверяем соединение.
+Перезагружаемся `sudo reboot` и проверяем соединение.
 
 СЕТЬ и настройки из графического интерфейса.
 
@@ -835,13 +835,13 @@ sudo pacman -S pipewire pipewire-alsa pipewire-pulse gst-plugin-pipewire pipewir
 
 ```
 sudo pacman -S reflector
-sudo systmectl enable reflector.service
+sudo systemctl enable reflector.service
 sudo pacman -Syy
 ```
 
-# Установка менеджера отображения GDM + GNOME + Wyland + PipeWire
+# Установка менеджера отображения GDM + GNOME + Wayland + PipeWire
 
-Достаточно поставить gdm и он потянет за собой минимальный GNOME + Wyland + PipeWire
+Достаточно поставить gdm и он потянет за собой минимальный GNOME + Wayland + PipeWire
 
 ```
 sudo pacman -S gdm tilix
