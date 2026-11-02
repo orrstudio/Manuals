@@ -2,9 +2,7 @@
 
 ![](https://archlinux.org/static/logos/archlinux-logo-dark-90dpi.ebdee92a15b3.png)
 
-<div style="font-size: 32px; font-weight: bold; margin-bottom: 20px;">🐧 Установка Arch Linux</div>
-
-- ### [ 🚀 НАЧАЛО УСТАНОВКИ](#getting-started)
+- ### [ 🚀 НАЧАЛО УСТАНОВКИ 🐧 Arch Linux](#getting-started)
   - #### [ 🔌 Проверка режима загрузки](#boot-mode-check)
 - ### [ 🌐 НАСТРОЙКА СЕТИ](#network-setup)
   - #### [ 📶 Подключение к сети WiFi](#connect-to-wifi)
@@ -39,7 +37,7 @@
 - ### [ 🛠️ ДОПОЛНИТЕЛЬНЫЕ УТИЛИТЫ](#additional-utils)
 
 <a id="getting-started"></a>
-# 🚀 НАЧАЛО УСТАНОВКИ [↑](#menu)
+# 🚀 НАЧАЛО УСТАНОВКИ 🐧 Arch Linux [↑](#menu)
 
 После загрузки с live CD вы попадёте в Live System ArchLinux. Загрузится виртуальная консоль (терминал), в котором вы будете вводить команды. Во время установки, вы работаете от имени суперпользователя (root).
 
@@ -1005,11 +1003,12 @@ reboot
 sudo pacman -S flatpak gphoto2 neofetch hardinfo htop nvtop duf fzf eza tree terminator bash-completion xclip translate-shell systemctl-tui timeshift recoll ffmpeg gvfs gvfs-mtp gvfs-gphoto2 gvfs-afc gvfs-smb telnet inetutils nman samba cifs-utils hblock gufw ufw openssh gnupg pass seahorse
 ```
 
-> ⚠️ `yay` не входит в официальные репозитории Arch — устанавливается из AUR (см. инструкцию в [01 GNU Linux SOFTS.md](01%20GNU%20Linux%20SOFTS.md)).
-
-### 📋 Инструкции для установки утилит
+### 📋 Инструкции для установки утилит [↑](#menu)
 
 #### `yay` — установка из AUR
+
+> ⚠️ `yay` не входит в официальные репозитории Arch — устанавливается из AUR (см. инструкцию в [01 GNU Linux SOFTS.md](01%20GNU%20Linux%20SOFTS.md)).
+
 ```bash
 sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay.git
@@ -1039,4 +1038,8 @@ sudo hblock
 
 #### `timeshift` — создать первый снимок
 После установки создайте первый снимок системы для возможности восстановления.
+
+#### 🔌 Показ лога загрузки Linux
+
+Чтобы отображать лог загрузки Линукса, нужно раскомментировать в файле `/etc/systemd/system.conf` строку с надписью `ShowStatus=yes`.
 

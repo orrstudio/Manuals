@@ -1,45 +1,39 @@
+<a id="menu"></a>
+
 <img src="https://github.com/user-attachments/assets/99fb4512-b584-470d-ac4f-e7fdb0863766" height="300" align="middle">
 
-<br>
-<br>
+- ### [ 🖥️ СИСТЕМНЫЕ ПРИЛОЖЕНИЯ](#system-apps)
+  - #### [ 🔌 Boot](#boot)
+  - #### [ 🌐 Network](#network)
+  - #### [ 🛠️ System Tools](#system-tools)
+  - #### [ 🖥️ Remote Desktop Apps](#remote-desktop-apps)
+  - #### [ 📁 Commanders](#commanders)
+  - #### [ 💻 Terminal](#terminal)
+  - #### [ 🌍 Internet](#internet)
+  - #### [ 🔒 Security](#security)
+  - #### [ ⚙️ Settings Applications for GNOME](#settings-aplications-for-gnome)
+  - #### [ 🧩 Extensions for GNOME](#extensions-for-gnome)
+- ### [ 📄 OFFICE](#office-softs)
+- ### [ 📚 E-BOOKS](#e-books)
+- ### [ 🎵 AUDIO & VIDEO](#audio--video)
+- ### [ 📷 PHOTO](#photo)
+- ### [ 💻 DEVELOPE](#develope)
+- ### [ 🎮 GAMES](#games)
 
-[List of Arch Linux applications](https://wiki.archlinux.org/title/List_of_applications#top-page "Эта статья представляет собой общий список приложений, отсортированных по категориям, в качестве справки для тех, кто ищет пакеты. Многие разделы разделены между консольными и графическими приложениями.")
+<a id="system-apps"></a>
+# 🖥️ СИСТЕМНЫЕ ПРИЛОЖЕНИЯ [↑](#menu)
 
-# ОГЛАВЛЕНИЕ
+## 🔌 Boot [↑](#menu)
 
-- [SYSTEM APPS](#system-apps)
-  - alacarte - редактор меню Gnome. меняет иконки приложений.
-  - [BOOT](#boot)
-  - [NETWORK](#network)
-  - [SYSTEM TOOLS](#system-tools)
-  - [REMOTE DESKTOP APPS](#remote-desktop-apps)
-  - [COMMANDERS](#commanders)
-  - [TERMINAL](#terminal)
-  - [INTERNET](#internet)
-  - [SECURITY](#security)
-  - [SETTINGS Aplications for GNOME](#settings-aplications-for-gnome)
-  - [EXTENSIONS for GNOME](#extensions-for-gnome)
-- [OFFICE](#office-softs)
-- [E-BOOKS](#e-books)
-- [AUDIO & VIDEO](#audio--video)
-- [PHOTO](#photo)
-- [DEVELOPE](#develope)
-- [GAMES](#games)
-- [Список приложений GNOME](#%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-gnome)
-
-# SYSTEM APPS
-
-## Boot
-
-> Чтобы отображать лог загрузки Линукса, нужно раскоментировать в файле `/etc/systemd/system.conf` строку с надписью `ShowStatus=yes`
+> Чтобы отображать лог загрузки Линукса, нужно раскомментировать в файле `/etc/systemd/system.conf` строку с надписью `ShowStatus=yes`
 
 - [Ventoy](https://github.com/ventoy/Ventoy "A new bootable USB solution.")
 - [ЗАГРУЗОЧНЫ ДИСК SUPER GRUB2 2.04S1](https://www.supergrubdisk.org/category/download/supergrub2diskdownload/super-grub2-disk-stable/ "Это iso загрузочного диска для испорченных загрузок установленных систем линукс")
 - [Boost Changer](https://github.com/nbebaw/boostchanger "Управляет турбонаддувом процессора и настройками скорости процессора")
 
-## Network
+## 🌐 Network [↑](#menu)
 
-- [Sniffnet](https://sniffnet.net/) - Отслеживать свой интернет -трафик.
+- [Sniffnet](https://sniffnet.net/) - Отслеживать свой интернет-трафик.
 - [What IP](https://flathub.org/ru/apps/org.gabmus.whatip "Информация о вашем IP")
 - telnet (pacman -S inetutils)
 - nman - программа для определения открытых портов сервера
@@ -50,7 +44,7 @@
 - TOR PROXY - Включаем [TOR](https://wiki.archlinux.org/title/tor) в терминале под рутом и настраиваем [GNOME Proxy Switcher](https://extensions.gnome.org/extension/771/proxy-switcher/) как показано в [видео](https://www.youtube.com/watch?v=mM9680l7MyY&list=PLcrZh07ZsO5GO97bZtxqFlSw26UKgz5lB&index=10).
 - [IP Lookup](https://flathub.org/ru/apps/io.github.bytezz.IPLookup) - Найти информацию об IP-адресе интернет-провайдерa, географическое положение IP-адреса и т.д.
 
-## System Tools
+## 🛠️ System Tools [↑](#menu)
 
 - qt5ct, qt6ct, kvantum (Для настройки темного режима Qt приложений)
 - [Distrobox](https://github.com/89luca89/distrobox) - Используйте любой дистрибутив Linux внутри своего терминала
@@ -76,7 +70,7 @@
 - [DOSBox](https://www.dosbox.com/)
 - [NTFS-3G](https://wiki.archlinux.org/title/NTFS-3G_%28%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%29 "Поддержка NTFS томов")
 - QEMU
-  > 
+  >
   > yay -Sy libvirt virt-manager qemu extra/qemu-arch-extra extra/qemu-guest-agent dnsmasq edk2-ovmf iptables ebtables dmidecode
   > [Install tutorial -1](https://www.youtube.com/watch?v=Izxng1e67KE&list=PL6gG7zVB_EJxCYuQAKMwWXZqxED7FAesN&index=4)
   > [Install tutorial -2](https://www.youtube.com/watch?v=h4M36yHjnLM&list=PLjW32vCGNUuY7fcnkEjeHZPtr3Gibswb9&index=14)
@@ -91,13 +85,14 @@
 - [PeaZip](https://peazip.github.io/peazip-linux.html "МЕНЕДЖЕР АРХИВОВ ДЛЯ LINUX")
 - gnome-session-properties - Автоматический запуск приложений при входе в систему
 
-## Remote DESKTOP Apps
+## 🖥️ Remote Desktop Apps [↑](#menu)
 
 - [RustDesk](https://github.com/rustdesk/rustdesk "Приложение для удаленного рабочего стола с открытым исходным кодом на всех устройствах, предназначенное для самостоятельного размещения в качестве альтернативы TeamViewer.")
 - [AnyDesk](https://anydesk.com "Решение для удаленного доступа")
 - [Tiny RDM](https://github.com/tiny-craft/tiny-rdm "Tiny RDM (Tiny Redis Desktop Manager) — современный, красочный и сверхлегкий клиент Redis с графическим интерфейсом для Mac, Windows и Linux.")
 
-## Terminal - [7 удивительных инструментов CLI, без которых вы не сможете жить ](https://www.youtube.com/watch?v=mmqDYw9C30I)
+## 💻 Terminal [↑](#menu)
+
 
 - bash-completion
 - [FZF (Командная строка Fuzzy Finder) ](https://github.com/junegunn/fzf) - ✨ Современная альтернатива tree и history.
@@ -121,7 +116,7 @@
 - Recoll — утилита для поиска файлов по содержимому.
 - xclip - буфер обмена для командной строки
 
-## INTERNET
+## 🌍 Internet [↑](#menu)
 
 - Zen
 - FireFOX
@@ -135,13 +130,13 @@
 - [XAMPP Apache + MariaDB + PHP + Perl](https://www.apachefriends.org/ru/index.html "OpenServer для Linux")
 - [Youtube Downloader Plus](https://flathub.org/ru/apps/io.github.aandrew_me.ytdn "Скачивайте видео и аудио с сотен сайтов")
 
-## SECURITY
+## 🔒 Security [↑](#menu)
 
 - [Менеджер Паролей - GPG, Pass, QtPass, Kleopatra](https://github.com/orrstudio/Manuals/blob/9853127bda563d6edb6e1d8fb4c503d628a08eee/03%20HELP%20%26%20MAN/26%20%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%20%D0%9F%D0%B0%D1%80%D0%BE%D0%BB%D0%B5%D0%B9%20-%20GPG%2C%20Pass%2C%20QtPass%2C%20Kleopatra.md)
 - [GUFW](http://gufw.org/ "FireWall для Linux") - После установки включаем в автозапуск `systemctl enable ufw`
 - [hBlock](https://github.com/hectorm/hblock "Блокировщик рекламы и вредоносных доменов. Делает записи в /etc/hosts файле.") - После установки hBlock следует запустить в терминале: ($ sudo hblock) Для временного отключения hBlock введите в терминале: ($ sudo hblock -S none -D none)
 
-## EXTENSIONS for GNOME
+## 🧩 Extensions for GNOME [↑](#menu)
 
 <img src="https://raw.githubusercontent.com/andyholmes/gnome-shell-extensions-badge/master/get-it-on-ego.svg?sanitize=true" alt="Get it on GNOME Extensions" height="100" align="middle">
 
@@ -153,16 +148,16 @@
 - [Net Speed Simpl](https://github.com/prateekmedia/netspeedsimplified "Виджет на температуру, скорость интернета, использование памяти и загрузку процессора.")
 - [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect "GSConnect - это полная реализация KDE Connect специально для GNOME Shell с интеграцией Nautilus, Chrome и Firefox. Он не зависит от настольного приложения KDE Connect и не будет работать с установленным приложением. KDEConnect позволяет устройствам безопасно обмениваться контентом, например, уведомлениями или файлами, а также использовать другие функции, такие как SMS-сообщения и удаленное управление. Команда KDE Connect имеет приложения для Linux, BSD, Android, Sailfish, iOS, macOS и Windows.")
 
-## Aplications for GNOME
+## ⚙️ Applications for GNOME [↑](#menu)
 
-- gnome-session-properties — утилита для управления автозапуском приложений в сеансе GNOME. 
+- gnome-session-properties — утилита для управления автозапуском приложений в сеансе GNOME.
 - gnome-control-center — Центр управления
 - gnome-tweaks — Дополнительные настройки
 - Adwaita Dark — Темная тема для GNOME (предоставляется пакетом gnome-themes-extra)
 - chrome-gnome-shell — Позволяет устанавливать Gnome "extensions" через Хром браузер
-- transmission - torrent client 
+- transmission - torrent client
 - GtkHash - Hash summ files
-- seahorse - Хранител паролей и создатель ключей SSH, PGP
+- seahorse - Хранитель паролей и создатель ключей SSH, PGP
 - gnome-screenshot
 - System Monitor (HTOP)
 - fonts
@@ -177,22 +172,27 @@
 - Conglomerate — Редактор XML
 - Guake — выпадающий эмулятор терминала
 
-# OFFICE
+<a id="office-softs"></a>
+# 📄 OFFICE [↑](#menu)
 
 - [Libre Office](https://ru.libreoffice.org "LibreOffice — мощный офисный пакет, полностью совместимый с 32/64-битными системами. Переведён более чем на 30 языков мира. Поддерживает большинство популярных операционных систем, включая GNU/Linux, Microsoft Windows и Mac OS X.")
 - [Sigil & PageEdit](https://sigil-ebook.com/ "Sigil - Редактор электронных книг EPUB / PageEdit - это редактор WYSIWYG XHTML, предназначенный как приложение Sigil Companion.")
 - [Thorium](https://github.com/edrlab/thorium-reader/releases "Кроссплатформенное desktop-ное приложение для чтения электронных книг EPUB")
 
-# AUDIO & VIDEO
+<a id="e-books"></a>
+# 📚 E-BOOKS [↑](#menu)
 
-## Players
+<a id="audio--video"></a>
+# 🎵 AUDIO & VIDEO [↑](#menu)
+
+## 🎧 Players [↑](#menu)
 
 - [SMPlayer](https://flathub.org/ru/apps/info.smplayer.SMPlayer "Audio Video Player")
 - [Qmmp](https://flathub.org/ru/apps/com.ylsoftware.qmmp.Qmmp "Audio Player")
 - [Audacious](https://flathub.org/ru/apps/org.atheme.audacious "Audio Player")
 - [Kid3](https://kid3.kde.org "Редактoр тегoв audio файлoв")
 
-## Montaj
+## 🎬 Montaj [↑](#menu)
 
 - [SHOTCUT](https://flathub.org/ru/apps/org.shotcut.Shotcut "Видео монтаж")
 - [OBS Studio](https://flathub.org/ru/apps/com.obsproject.Studio "Запись Экрана")
@@ -200,14 +200,15 @@
 - [ocenaudio](https://www.ocenaudio.com/ "Аудио монтаж")
 - [Ardour](https://ardour.org/ "Аудио монтаж")
 
-## Converters
+## 🔄 Converters [↑](#menu)
 
 - [HandBrake](https://flathub.org/ru/apps/fr.handbrake.ghb "Конвертер видео")
 - [FF Multi Converter](https://sites.google.com/site/ffmulticonverter/home "Конвертер аудио, видео, изображений и документов между всеми популярными форматами")
 - [youtube-dl-gui](https://github.com/jely2002/youtube-dl-gui/releases/tag/v2.2.2 "youtube-dl-gui")
 - [VoiceGen](https://flathub.org/ru/apps/io.gitlab.persiangolf.voicegen "преобразовывать текст в речь")
 
-# PHOTO
+<a id="photo"></a>
+# 📷 PHOTO [↑](#menu)
 
 - [gThumb](https://pingvinus.ru/program/gthumb "Программа просмотра изображений для рабочего стола GNOME")
 - [digiKam](https://www.digikam.org/download) - Управления цифровыми фотографиями. Импорт, управление, редактирование, обмен фотографиями и необработанными файлами.
@@ -222,7 +223,8 @@
 - [Gromit-MPX](https://github.com/bk138/gromit-mpx) - Инструмент для экранных аннотаций. Можете рисовать везде на экране, выделяя какую-то кнопку или область. (yay -S gromit-mpx)
 - [pad.ws](https://github.com/pad-ws/pad.ws)
 
-# DEVELOPE
+<a id="develope"></a>
+# 💻 DEVELOPE [↑](#menu)
 
 - [GitHUB Desktop](https://flathub.org/ru/apps/io.github.shiftey.Desktop)
 - [VisualStudio](https://flathub.org/ru/apps/search?q=VisualStudio)
@@ -231,7 +233,8 @@
 - [Darling](https://www.darlinghq.org/) - run macOS software on Linux
 - [Waydroid](https://waydro.id/) - ANDROID В КОРОБКЕ
 
-# GAMES
+<a id="games"></a>
+# 🎮 GAMES [↑](#menu)
 
 - [Five or More](https://wiki.gnome.org/Apps/Five%20or%20more) — игра Lines. ШАРИКИ
 - [Kulki](https://flathub.org/ru/apps/net.jockx.Kulki) — игра Lines. ШАРИКИ
