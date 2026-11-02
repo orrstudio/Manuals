@@ -961,15 +961,82 @@ reboot
 
 | Утилита | Описание |
 |---------|-------------|
+| `yay` | Менеджер пакетов AUR для Arch Linux |
 | `flatpak` | Поддержка установки приложений в формате Flatpak |
 | `gphoto2` | Работа с фотоаппаратами — чтение фото, управление камерой, импорт снимков |
-| `ffmpeg` | Конвертация, запись и обработка аудио и видео из командной строки |
-| `timeshift` | Создание снимков системы и восстановление после сбоев |
 | `neofetch` | Красивый вывод информации о системе (версия ядра, оболочка, рабочее окружение, аппаратное обеспечение) в терминале |
+| `hardinfo` | Информация о системе и устройствах |
+| `htop` | Интерактивный мониторинг процессов и ресурсов системы |
+| `nvtop` | Мониторинг видеокарт NVIDIA (аналог htop для GPU) |
+| `duf` | Информация о дисках в табличном виде (аналог `df`) |
+| `fzf` | Fuzzy finder для поиска по файлам и истории команд |
+| `eza` | Современная замена команде `ls` |
+| `tree` | Отображение дерева файлов и каталогов |
+| `terminator` | Многооконный терминал |
+| `bash-completion` | Автодополнение команд в оболочке bash |
+| `xclip` | Буфер обмена для командной строки |
+| `translate-shell` | Переводчик командной строки |
+| `systemctl-tui` | TUI для управления службами systemd и их журналами |
+| `timeshift` | Создание снимков системы и восстановление после сбоев |
+| `recoll` | Поиск файлов по содержимому |
+| `ffmpeg` | Конвертация, запись и обработка аудио и видео из командной строки |
+| `gvfs` | Виртуальная файловая система GNOME (базовый пакет) |
+| `gvfs-mtp` | Поддержка устройств MTP (Android смартфоны, планшеты) |
+| `gvfs-gphoto2` | Поддержка цифровых фотоаппаратов |
+| `gvfs-afc` | Поддержка iPhone/iPod |
+| `gvfs-smb` | Поддержка SMB в GNOME файловом менеджере (Nautilus) |
+| `telnet` | Клиент telnet (пакет `inetutils`) |
+| `nman` | Определение открытых портов сервера |
+| `samba` | Сервер и клиент SMB/CIFS для доступа к сетевым ресурсам Windows |
+| `smbclient` | Клиент SMB/CIFS (входит в состав пакета `samba`) |
+| `cifs-utils` | Утилиты для монтирования SMB/CIFS разделов |
+| `hblock` | Блокировка рекламы и вредоносных доменов через `/etc/hosts` |
+| `gufw` | Графический интерфейс для управления брандмауэром UFW |
+| `ufw` | Простой брандмауэр (устанавливается автоматически с `gufw`) |
+| `openssh` | SSH-клиент и сервер |
+| `gnupg` | Инструмент шифрования и цифровой подписи GPG |
+| `gpg2` | Утилита GPG версии 2 (входит в состав пакета `gnupg`) |
+| `pass` | Менеджер паролей (password store), использует GPG для шифрования |
+| `seahorse` | Хранилище паролей и создатель ключей SSH, PGP |
 
 Пример установки:
 
 ```
-sudo pacman -S neofetch gphoto2 ffmpeg timeshift flatpak
+sudo pacman -S flatpak gphoto2 neofetch hardinfo htop nvtop duf fzf eza tree terminator bash-completion xclip translate-shell systemctl-tui timeshift recoll ffmpeg gvfs gvfs-mtp gvfs-gphoto2 gvfs-afc gvfs-smb telnet inetutils nman samba cifs-utils hblock gufw ufw openssh gnupg pass seahorse
 ```
+
+> ⚠️ `yay` не входит в официальные репозитории Arch — устанавливается из AUR (см. инструкцию в [01 GNU Linux SOFTS.md](01%20GNU%20Linux%20SOFTS.md)).
+
+### 📋 Инструкции для установки утилит
+
+#### `yay` — установка из AUR
+```bash
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+
+#### `openssh` — включить сервер
+```bash
+sudo systemctl enable --now sshd
+```
+
+#### `ufw` / `gufw` — включить брандмауэр
+```bash
+sudo systemctl enable --now ufw
+```
+
+#### `flatpak` — добавить репозиторий Flathub
+```bash
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+
+#### `hblock` — первый запуск
+```bash
+sudo hblock
+```
+
+#### `timeshift` — создать первый снимок
+После установки создайте первый снимок системы для возможности восстановления.
 
