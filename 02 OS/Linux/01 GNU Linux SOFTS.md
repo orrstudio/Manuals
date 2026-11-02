@@ -11,7 +11,7 @@
   - #### [ 💻 Terminal](#terminal)
   - #### [ 🌍 Internet](#internet)
   - #### [ 🔒 Security](#security)
-  - #### [ ⚙️ Settings Applications for GNOME](#settings-aplications-for-gnome)
+  - #### [ ⚙️ Settings Applications for GNOME](#settings-applications-for-gnome)
   - #### [ 🧩 Extensions for GNOME](#extensions-for-gnome)
 - ### [ 📄 OFFICE](#office-softs)
 - ### [ 📚 E-BOOKS](#e-books)
@@ -56,22 +56,20 @@
 - [Easy Effects](https://github.com/wwmm/easyeffects?tab=readme-ov-file) - инструмент для манипуляций со звуком
 - [pwvucontrol](https://flathub.org/ru/apps/com.saivert.pwvucontrol) - инструмент для манипуляций со звуком
 - [File manager functionality](https://wiki.archlinux.org/title/File_manager_functionality_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9) "Монтирование цифровых фотоаппаратов и мобильных устройств и многое другое")
-- [Double Commander](https://github.com/doublecmd/doublecmd) - Файл Менеджер
 - dconf-editor - все настройки gnome в одном месте
 - hardinfo - Информация о системе и устройствах
 - File Roller — Archive Manager
 - timeshift
 - [Mission Center](https://flathub.org/ru/apps/io.missioncenter.MissionCenter)
 - Stacer — Утилита для мониторинга, оптимизации, настройки и очистки системы.
-- [Шрифты](https://github.com/orrstudio/Manuals/blob/9853127bda563d6edb6e1d8fb4c503d628a08eee/03%20HELP%20%26%20MAN/07%20%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%A8%D1%80%D0%B8%D1%84%D1%82%D0%BE%D0%B2.md)
+- [Шрифты](https://github.com/orrstudio/Manuals/blob/main/03%20HELP%20%26%20MAN/07%20%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%A8%D1%80%D0%B8%D1%84%D1%82%D0%BE%D0%B2.md)
 - [gerb](https://github.com/epilys/gerb) - font editor
 - [PAMAC](https://gitlab.manjaro.org/applications/pamac) - Графический менеджер пакетов для Arch Linux с поддержкой Alpm, AUR, Appstream, Flatpak и Snap
-- [YAY](https://github.com/orrstudio/Manuals/blob/9853127bda563d6edb6e1d8fb4c503d628a08eee/03%20HELP%20%26%20MAN/01%20Yay%20%E2%80%93%20%D0%95%D1%89%D0%B5%20%D0%BE%D0%B4%D0%B8%D0%BD%20%D0%BD%D0%B0%D0%B4%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D0%BD%D0%B8%D0%BA%20AUR%2C%20%D0%BD%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%BD%D0%B0%20GO%20%E2%80%93%20IT%20is%20good.md) - менеджер пакетов для Arch Linux
+- [YAY](https://github.com/orrstudio/Manuals/blob/main/03%20HELP%20%26%20MAN/01%20Yay%20%E2%80%93%20%D0%95%D1%89%D0%B5%20%D0%BE%D0%B4%D0%B8%D0%BD%20%D0%BD%D0%B0%D0%B4%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D0%BD%D0%B8%D0%BA%20AUR%2C%20%D0%BD%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%BD%D0%B0%20GO%20%E2%80%93%20IT%20is%20good.md) - менеджер пакетов для Arch Linux
 - [DOSBox](https://www.dosbox.com/)
 - [NTFS-3G](https://wiki.archlinux.org/title/NTFS-3G_%28%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%29 "Поддержка NTFS томов")
-- QEMU
-  >
-  > yay -Sy libvirt virt-manager qemu extra/qemu-arch-extra extra/qemu-guest-agent dnsmasq edk2-ovmf iptables ebtables dmidecode
+- [QEMU](https://www.qemu.org/) - Эмулятор и виртуализатор аппаратного обеспечения
+  > Команда установки: `yay -Sy libvirt virt-manager qemu extra/qemu-arch-extra extra/qemu-guest-agent dnsmasq edk2-ovmf iptables ebtables dmidecode`
   > [Install tutorial -1](https://www.youtube.com/watch?v=Izxng1e67KE&list=PL6gG7zVB_EJxCYuQAKMwWXZqxED7FAesN&index=4)
   > [Install tutorial -2](https://www.youtube.com/watch?v=h4M36yHjnLM&list=PLjW32vCGNUuY7fcnkEjeHZPtr3Gibswb9&index=14)
 - [Oracle VM VirtualBox](https://www.virtualbox.org/ "Мощный продукт виртуализации x86 и AMD64/Intel64 для корпоративного и домашнего использования.")
@@ -83,7 +81,6 @@
 - [CPU-X](https://flathub.org/ru/apps/io.github.thetumultuousunicornofdarkness.cpu-x "Собирает информацию о процессоре, материнской плате и многом другом.")
 - [Shortcut](https://flathub.org/ru/apps/io.github.andreibachim.shortcut "Сделайте ярлыки приложений")
 - [PeaZip](https://peazip.github.io/peazip-linux.html "МЕНЕДЖЕР АРХИВОВ ДЛЯ LINUX")
-- gnome-session-properties - Автоматический запуск приложений при входе в систему
 
 ## 🖥️ Remote Desktop Apps [↑](#menu)
 
@@ -91,17 +88,24 @@
 - [AnyDesk](https://anydesk.com "Решение для удаленного доступа")
 - [Tiny RDM](https://github.com/tiny-craft/tiny-rdm "Tiny RDM (Tiny Redis Desktop Manager) — современный, красочный и сверхлегкий клиент Redis с графическим интерфейсом для Mac, Windows и Linux.")
 
-## 💻 Terminal [↑](#menu)
+<a id="commanders"></a>
+## 📁 Commanders [↑](#menu)
+
+- [Double Commander](https://github.com/doublecmd/doublecmd) - Двухпанельный файловый менеджер
+- [Midnight Commander (mc)](https://midnight-commander.org/) - Классический двухпанельный файловый менеджер для терминала
+- [ranger](https://ranger.github.io/) - Терминальный файловый менеджер с привязками клавиш в стиле vim
+
+## 💻 Terminal - [7 удивительных инструментов CLI, без которых вы не сможете жить ](https://www.youtube.com/watch?v=mmqDYw9C30I) [↑](#menu)
 
 
 - bash-completion
 - [FZF (Командная строка Fuzzy Finder) ](https://github.com/junegunn/fzf) - ✨ Современная альтернатива tree и history.
 - [eza](https://github.com/eza-community/eza) - ✨ Современная альтернатива ls.
 - tree - Дерево файлов и каталогов в терминале
-- git - Консольный Менеджер Закачки
-- wget - Консольный Менеджер Закачки
-- terminator - Много-окнонный терминал
-- ranger — терминальны файловый менеджер для Linux.
+- git - Система контроля версий
+- wget - Утилита для скачивания файлов из интернета
+- terminator - Много-оконный терминал
+- ranger — терминальный файловый менеджер для Linux.
 - nano - Консольный Текстовый Редактор
 - mc - файловый менеджер для Linux.
 - [systemctl-tui](https://github.com/rgwood/systemctl-tui "Быстрый и простой TUI для взаимодействия со службами systemd и их журналами.") - взаимодействия со службами systemd и их журналами
@@ -127,12 +131,12 @@
 - [uGet Download Manager](https://ugetdm.com/ "Консольный и Графический Менеджер Закачки и Торрента")
 - [uGet Integrator](https://github.com/ugetdm/uget-integrator "Интегрируйте uGet Download Manager с Google Chrome, Chromium, Opera, Vivaldi и Mozilla Firefox")
 - [Telegram Desktop](https://desktop.telegram.org)
-- [XAMPP Apache + MariaDB + PHP + Perl](https://www.apachefriends.org/ru/index.html "OpenServer для Linux")
+- [XAMPP Apache + MariaDB + PHP + Perl](https://www.apachefriends.org/ru/index.html "Кроссплатформенный веб-сервер: Apache, MariaDB, PHP и Perl в одном пакете для разработки и тестирования веб-приложений")
 - [Youtube Downloader Plus](https://flathub.org/ru/apps/io.github.aandrew_me.ytdn "Скачивайте видео и аудио с сотен сайтов")
 
 ## 🔒 Security [↑](#menu)
 
-- [Менеджер Паролей - GPG, Pass, QtPass, Kleopatra](https://github.com/orrstudio/Manuals/blob/9853127bda563d6edb6e1d8fb4c503d628a08eee/03%20HELP%20%26%20MAN/26%20%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%20%D0%9F%D0%B0%D1%80%D0%BE%D0%BB%D0%B5%D0%B9%20-%20GPG%2C%20Pass%2C%20QtPass%2C%20Kleopatra.md)
+- [Менеджер Паролей - GPG, Pass, QtPass, Kleopatra](https://github.com/orrstudio/Manuals/blob/main/03%20HELP%20%26%20MAN/26%20%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%20%D0%9F%D0%B0%D1%80%D0%BE%D0%BB%D0%B5%D0%B9%20-%20GPG%2C%20Pass%2C%20QtPass%2C%20Kleopatra.md)
 - [GUFW](http://gufw.org/ "FireWall для Linux") - После установки включаем в автозапуск `systemctl enable ufw`
 - [hBlock](https://github.com/hectorm/hblock "Блокировщик рекламы и вредоносных доменов. Делает записи в /etc/hosts файле.") - После установки hBlock следует запустить в терминале: ($ sudo hblock) Для временного отключения hBlock введите в терминале: ($ sudo hblock -S none -D none)
 
@@ -148,13 +152,12 @@
 - [Net Speed Simpl](https://github.com/prateekmedia/netspeedsimplified "Виджет на температуру, скорость интернета, использование памяти и загрузку процессора.")
 - [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect "GSConnect - это полная реализация KDE Connect специально для GNOME Shell с интеграцией Nautilus, Chrome и Firefox. Он не зависит от настольного приложения KDE Connect и не будет работать с установленным приложением. KDEConnect позволяет устройствам безопасно обмениваться контентом, например, уведомлениями или файлами, а также использовать другие функции, такие как SMS-сообщения и удаленное управление. Команда KDE Connect имеет приложения для Linux, BSD, Android, Sailfish, iOS, macOS и Windows.")
 
+<a id="settings-applications-for-gnome"></a>
 ## ⚙️ Applications for GNOME [↑](#menu)
 
-- gnome-session-properties — утилита для управления автозапуском приложений в сеансе GNOME.
 - gnome-control-center — Центр управления
 - gnome-tweaks — Дополнительные настройки
 - Adwaita Dark — Темная тема для GNOME (предоставляется пакетом gnome-themes-extra)
-- chrome-gnome-shell — Позволяет устанавливать Gnome "extensions" через Хром браузер
 - transmission - torrent client
 - GtkHash - Hash summ files
 - seahorse - Хранитель паролей и создатель ключей SSH, PGP
@@ -181,6 +184,11 @@
 
 <a id="e-books"></a>
 # 📚 E-BOOKS [↑](#menu)
+
+- [Calibre](https://calibre-ebook.com/) - Комплексное решение для управления электронными книгами: конвертация, каталогизация, чтение и отправка на устройства
+- [FBReader](https://fbreader.org/) - Кроссплатформенный читалка электронных книг с поддержкой множества форматов
+- [Okular](https://okular.org/) - Универсальный просмотрщик документов от KDE с поддержкой PDF, EPUB, DjVu и других форматов
+- [Thorium Reader](https://github.com/edrlab/thorium-reader) - Доступный читалка EPUB с поддержкой аудиокниг и специальных возможностей
 
 <a id="audio--video"></a>
 # 🎵 AUDIO & VIDEO [↑](#menu)
@@ -227,7 +235,7 @@
 # 💻 DEVELOPE [↑](#menu)
 
 - [GitHUB Desktop](https://flathub.org/ru/apps/io.github.shiftey.Desktop)
-- [VisualStudio](https://flathub.org/ru/apps/search?q=VisualStudio)
+- [Visual Studio Code](https://code.visualstudio.com/ "Редактор кода от Microsoft с поддержкой расширений, отладки и Git")
 - [SQLite Studio](https://github.com/pawelsalawa/sqlitestudio/releases/tag/3.3.3) - менеджер баз данных SQLite
 - [CyberPanel](https://cyberpanel.net/docs/installing-cyberpanel) - Панель управления веб-хостингом
 - [Darling](https://www.darlinghq.org/) - run macOS software on Linux
