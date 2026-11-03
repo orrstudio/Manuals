@@ -214,6 +214,7 @@
 - [FF Multi Converter](https://sites.google.com/site/ffmulticonverter/home "Конвертер аудио, видео, изображений и документов между всеми популярными форматами")
 - [youtube-dl-gui](https://github.com/jely2002/youtube-dl-gui/releases/tag/v2.2.2 "youtube-dl-gui")
 - [VoiceGen](https://flathub.org/ru/apps/io.gitlab.persiangolf.voicegen "преобразовывать текст в речь")
+- [Voxtype](https://github.com/atheerium/voxtype "Голосовой ввод текста для Linux. Нажимаете `ScrolLock`, говорите — и ваши слова вставляются в любое активное приложение: терминал, редактор, браузер или чат. Распознавание через модели Whisper Groq / Deepgram / Mistral — со своим бесплатным API-ключом. Работает на X11 и Wayland на Sway, Hyprland, KDE, GNOME, XFCE, i3. Установка: `curl -fsSL https://github.com/atheerium/voxtype/releases/latest/download/install.sh | bash`")
 
 <a id="photo"></a>
 # 📷 PHOTO [↑](#menu)
