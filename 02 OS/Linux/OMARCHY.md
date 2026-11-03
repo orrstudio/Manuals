@@ -8,9 +8,6 @@
 - 📖 [Руководство пользователя Omarchy](https://omarchy.org/manual)
 - 💻 [Omarchy на GitHub](https://github.com/basecamp/omarchy)
 - 🛠️ [Магазин плагинов Omarchy](https://omarchyplugins.com)
-- 🌐 [Hyprland](https://hypr.land)
-- 🌐 [Quickshell](https://quickshell.org)
-- 🌐 [Arch Linux](https://archlinux.org)
 - 🎤 [Voxtype (локальная диктовка)](https://voxtype.io)
 - 💻 [Voxtype на GitHub](https://github.com/peteonrails/voxtype)
 - 📤 [LocalSend](https://localsend.org)
@@ -23,6 +20,7 @@
 - 🖼️ [Коллекция обоев, которую я взял](https://github.com/dharmx/walls)
 - 🌐 [Ноутбуки Framework](https://frame.work)
 - 🌐 [ThreatLocker](https://www.threatlocker.com/networkchuck-ai)
+- 🛠️ [Официальные плагины Omarchy](https://plugins.omarchy.org/)
 
 ## Временные метки
 
