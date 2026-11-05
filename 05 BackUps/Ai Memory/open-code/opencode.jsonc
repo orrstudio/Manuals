@@ -1,0 +1,39 @@
+// Зеркало ~/.config/opencode/opencode.jsonc (без секретов)
+// Настоящие ключи: pass 01.OrrPrivat/open-code/dahl-apikey и pass 01.OrrPrivat/open-code/github-token
+// (подставляются в окружение через ~/.bashrc: export DAHL_API_KEY / GITHUB_API_KEY)
+{
+  "$schema": "https://opencode.ai/config.json",
+  "providers": {
+    "dahl": {
+      "name": "Dahl",
+      "package": "@ai-sdk/openai-compatible",
+      "settings": {
+        "baseURL": "https://inference.dahl.global/v1"
+      },
+      "headers": {
+        // <secret: pass show 01.OrrPrivat/open-code/dahl-apikey> → env DAHL_API_KEY
+        "Authorization": "Bearer {env:DAHL_API_KEY}"
+      },
+      "models": {
+        "MiniMaxAI/MiniMax-M2.7": { "name": "MiniMax M2.7" },
+        "deepseek-ai/DeepSeek-V4-Flash-0731": { "name": "DeepSeek V4 Flash" },
+        "zai-org/GLM-5.3-Flash": { "name": "GLM 5.3 Flash" }
+      }
+    },
+    "github": {
+      "name": "GitHub Models",
+      "package": "@ai-sdk/openai-compatible",
+      "settings": {
+        "baseURL": "https://models.github.ai/inference"
+      },
+      "headers": {
+        // <secret: pass show 01.OrrPrivat/open-code/github-token> → env GITHUB_API_KEY
+        "Authorization": "Bearer {env:GITHUB_API_KEY}"
+      },
+      "models": {
+        "gpt-4o": { "name": "GPT-4o" },
+        "meta-llama-3.1-70b-instruct": { "name": "Llama 3.1 70B" }
+      }
+    }
+  }
+}
