@@ -557,3 +557,13 @@ fzf/zoxide/ls/prettyjson) сохранена как
 Случай-инцидент: скопировал .bashrc в "05 BackUps" как
 bashrc-2026-11-05-минимальный — пользователь дал адрес: имя должно быть
 .bashrc. Исправлено: mv → "05 BackUps/.bashrc".
+
+## GPG-ключ перенесён на новую машину (2026-11-05)
+Один ключ OrrGPGkey rsa4096 (orr888@gmail.com), pass шифрует им всё.
+Правильная последовательность доверия (мою первую строчку 5/y/quit gpg
+съел как «выбор uid №5» — нужен СПЕРЕДА trust):
+echo -e "trust\n5\ny\nsave" | gpg --command-fd 0 --pinentry-mode loopback --edit-key OrrGPGkey
+Результат: «доверие: абсолютное»; «Ключ не изменялся» — норм (доверие
+отдельная метадата). Проверка: pass show 01.OrrPrivat/open-code/dahl-apikey.
+Порядок переноса: gpg --import pub.sec asc → trust-команда → tar
+~/.password-store → распаковка → ленивые экспорты в bashrc подхватят.
