@@ -1,0 +1,13 @@
+{
+  "model": "medium",
+  "device": "auto",
+  "compute_type": "auto",
+  "language": "ru",
+  "hotkey": "CTRL+TAB",
+  "microphone": null,
+  "notifications_enabled": true,
+  "audio_feedback_enabled": false,
+  "show_model_info": true,
+  "show_recording_timer": true,
+  "auto_paste_enabled": true
+}

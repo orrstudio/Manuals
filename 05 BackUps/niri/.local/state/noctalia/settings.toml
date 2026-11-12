@@ -1,0 +1,544 @@
+config_version = 16
+
+[accessibility]
+high_contrast = true
+ui_scale = 1.2500000111758709
+
+[backdrop]
+enabled = true
+
+[bar]
+order = [ "OrrPanel" ]
+
+    [bar.OrrPanel]
+    capsule = true
+    capsule_padding = 2.0
+    capsule_thickness = 0.99999998137354851
+    center = [ "weather", "date", "clock", "group:g5", "notifications", "bar_3", "bar_4", "group:g4" ]
+    compositor_blur = false
+    concave_edge_corners = false
+    end = [ "group:g1", "group:g3", "group:g2", "clipboard", "keyboard_layout", "volume", "control-center" ]
+    font_weight = 600
+    hover_highlight = false
+    margin_ends = 0
+    padding = 10
+    scale = 1.6000000163912773
+    shadow = false
+    start = [ "launcher", "workspaces" ]
+    widget_spacing = 2
+
+        [[bar.OrrPanel.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = ""
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g1"
+        members = [ "sysmon", "cat", "ram", "temp" ]
+        opacity = 1.0
+        padding = 6.0
+        radius = 3.0
+
+        [[bar.OrrPanel.capsule_group]]
+        accordion = true
+        accordion_delay_ms = 25
+        accordion_direction = "start"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g2"
+        members = [ "network", "status", "dns-switcher", "bar_5", "status_2" ]
+        opacity = 1.0
+        padding = 2.0
+
+        [[bar.OrrPanel.capsule_group]]
+        accordion = false
+        accordion_delay_ms = 25
+        accordion_direction = "end"
+        accordion_duration = 200
+        border_width = 1.0
+        enabled = true
+        fill = "primary"
+        foreground = "on_primary"
+        id = "g3"
+        members = [ "network_rx", "network_tx" ]
+        opacity = 1.0
+        padding = 2.0
+        radius = 8.0
+
+        [[bar.OrrPanel.capsule_group]]
+        accordion = true
+        accordion_delay_ms = 25
+        accordion_direction = "start"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g5"
+        members = [ "bar", "laptop-panel", "widget", "bar_2", "notes", "current" ]
+        opacity = 1.0
+        padding = 2.0
+
+        [[bar.OrrPanel.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g4"
+        members = [ "say-clipboard", "sw-record" ]
+        opacity = 1.0
+        padding = 2.0
+
+[control_center]
+circular_avatar = false
+hidden_tabs = [ "media" ]
+
+    [control_center.calendar]
+    show_events_card = false
+    show_week_numbers = true
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "bluetooth"
+
+    [[control_center.shortcuts]]
+    type = "caffeine"
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
+[dock]
+active_monitor_only = true
+active_scale = 0.80000001192092896
+background_opacity = 0.4999999888241291
+compositor_blur = false
+enabled = true
+inactive_opacity = 0.99999997764825821
+inactive_scale = 0.60000000894069672
+launcher_position = "start"
+layer = "overlay"
+magnification_scale = 1.7500000111758709
+pinned = [ "org.gnome.Nautilus", "zen", "terminator", "org.gnome.gedit", "org.localsend.localsend_app" ]
+reserve_space = false
+shadow = false
+show_dots = true
+smart_auto_hide = true
+
+[hot_corners.bottom_left]
+action = "control_center"
+
+[hot_corners.bottom_right]
+action = "window_switcher"
+
+[hot_corners.top_right]
+action = "launcher"
+
+[idle]
+pre_action_fade_seconds = 0
+
+[location]
+auto_locate = true
+
+[lockscreen]
+enabled = false
+fingerprint = false
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@DP-3" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-3"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-3".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[nightlight]
+enabled = true
+
+[osd.kinds]
+power_profile = false
+
+[plugin_settings."3dprogramin/ufw"]
+panel_layer = "overlay"
+
+[plugin_settings."blackbartblues/keymap"]
+compositor = "niri"
+
+[plugin_settings."kenn/keybind-cheatsheet"]
+cheatsheet_layer = "overlay"
+cheatsheet_open_near_click = false
+cheatsheet_placement = "attached"
+cheatsheet_position = "auto"
+columns = 2
+compositor = "niri"
+
+[plugin_settings."mera/localsend"]
+alias = "Z-Book"
+panel_layer = "overlay"
+
+[plugin_settings."piero-93/thinkpad-fan"]
+panel_layer = "overlay"
+
+[plugin_settings."pozzoo/hassio"]
+ha_url = "http:/182.168.10.20:8123"
+
+[plugin_settings."rylos/usb-manager"]
+scan_interval = 30
+
+[plugin_settings."umedbazarov/layout-fix"]
+dictionaries = "install"
+
+[plugins]
+enabled = [
+    "dunarand/bookmarks",
+    "yuuto/calculator",
+    "dotnetrob/cat",
+    "thaer99ob/default-apps",
+    "nightwatch75/dns-switcher",
+    "pk/geoip-monitor",
+    "hy4ri/herdr",
+    "blackbartblues/keymap",
+    "noctalia/notes",
+    "3dprogramin/ufw",
+    "rylos/usb-manager",
+    "andrewdems/vpn-manager"
+]
+
+[shell]
+app_icon_colorize = true
+corner_radius_scale = 2.0
+font_family = "Adwaita Sans"
+lang = "ru"
+niri_overview_close_on_launch_enabled = true
+niri_overview_type_to_launch_enabled = true
+panel_anchor_bar = "OrrPanel"
+polkit_agent = true
+
+    [shell.keyboard_layout.custom_labels]
+    "English (US)" = "EN"
+    Russian = "RU"
+
+    [shell.launcher]
+    app_grid = true
+    pinned = [ "org.gnome.Nautilus", "terminator", "org.gnome.gedit" ]
+    sort_by_usage = false
+
+    [shell.panel]
+    list_item_background = true
+    transparency_mode = "soft"
+
+    [shell.screenshot]
+    directory = "/home/orr/Pictures/Screenshots"
+    remember_last_region = true
+
+    [[shell.session.actions]]
+    action = "lock"
+    countdown_seconds = 0.0
+    enabled = false
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    countdown_seconds = 0.0
+    enabled = false
+    shortcut = "2"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "lock_and_suspend"
+    countdown_seconds = 0.0
+    enabled = false
+    shortcut = "3"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "4"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "5"
+    variant = "destructive"
+
+[theme]
+builtin = "Gruvbox"
+community_palette = "Oxocarbon"
+mode = "dark"
+pure_black_dark = true
+shell_mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    enable_builtin_templates = false
+    enable_community_templates = false
+
+[wallpaper]
+fill_mode = "stretch"
+transition_on_startup = true
+
+    [wallpaper.default]
+    path = "/usr/share/noctalia/assets/noctalia-wallpaper.png"
+
+    [wallpaper.last]
+    path = "/usr/share/noctalia/assets/noctalia-wallpaper.png"
+
+[weather]
+refresh_minutes = 60
+
+[widget.bar]
+capsule_padding = 7
+enable_scroll = false
+glyph = "grid-dots"
+scale = 1.4000000000000001
+text = ""
+type = "dunarand/bookmarks:bar"
+
+[widget.bar_2]
+scale = 1.55
+show_bar_value = false
+type = "yuuto/calculator:bar"
+
+[widget.bar_3]
+type = "hy4ri/herdr:bar"
+
+[widget.bar_4]
+hide_when_empty = false
+show_count = false
+type = "rylos/usb-manager:bar"
+
+[widget.bar_5]
+type = "andrewdems/vpn-manager:bar"
+
+[widget.bluetooth]
+capsule_fill = "primary"
+capsule_radius = 3
+icon_color = "on_primary"
+
+[widget.brightness]
+enabled = false
+
+[widget.cat]
+show_cpu_percent = true
+type = "dotnetrob/cat:cat"
+
+[widget.clipboard]
+glyph = "clipboard-check-filled"
+scale = 1.4000000000000001
+
+[widget.clock]
+capsule = true
+capsule_padding = 7
+format = "{:%H:%M:%S}"
+
+[widget.control-center]
+anchor = true
+capsule = true
+capsule_fill = "primary"
+capsule_padding = 7
+capsule_radius = 3
+glyph = "power"
+icon_color = "on_primary"
+scale = 1.4000000000000001
+
+[widget.current]
+type = "thaer99ob/default-apps:current"
+
+[widget.date]
+capsule_padding = 7
+format = "{:%a, %d %B}"
+
+[widget.dns-switcher]
+show_label = false
+type = "nightwatch75/dns-switcher:dns-switcher"
+
+[widget.keyboard_layout]
+capsule = true
+capsule_fill = "primary"
+capsule_radius = 4
+color = "on_primary"
+font_scale = 1.2
+hide_when_single_layout = false
+show_glyph = false
+
+[widget.laptop-panel]
+capsule_padding = 7
+glyph = "device-laptop"
+scale = 1.4000000000000001
+tooltip = """Переключить панель ноутбука (eDP-1)
+Горячая клавиша: Mod+Shift+F1"""
+type = "custom_button"
+
+    [widget.laptop-panel.actions]
+    left = "exec /home/orr/.local/bin/toggle-laptop-panel.sh"
+
+[widget.launcher]
+capsule_border = "primary"
+capsule_fill = "primary"
+capsule_padding = 7
+capsule_radius = 3
+icon_color = "on_primary"
+scale = 1.4000000000000001
+
+[widget.media]
+enabled = false
+
+[widget.network]
+capsule_padding = 7
+show_label = false
+vpn_status = "hidden"
+
+[widget.network_rx]
+glyph = "arrow-big-down-filled"
+network_speed_compact = true
+stat = "net_rx"
+type = "sysmon"
+visualization = "none"
+
+[widget.network_tx]
+glyph = "arrow-big-up-filled"
+network_speed_compact = true
+stat = "net_tx"
+type = "sysmon"
+visualization = "none"
+
+[widget.notes]
+scale = 1.4000000000000001
+type = "noctalia/notes:notes"
+
+[widget.notifications]
+anchor = true
+capsule_radius = 10
+scale = 1.3
+
+[widget.ram]
+visualization = "none"
+
+[widget.say-clipboard]
+capsule_padding = 7
+glyph = "volume"
+tooltip = """Озвучить буфер обмена
+Горячая клавиша: Pause"""
+type = "custom_button"
+
+    [widget.say-clipboard.actions]
+    left = "exec /home/orr/.local/bin/say-clipboard"
+
+[widget.session]
+capsule = true
+capsule_fill = "primary"
+capsule_padding = 7
+capsule_radius = 4
+color = "on_primary"
+font_family = "Adwaita Mono"
+font_weight = 700
+scale = 1.2
+
+[widget.status]
+show_city = false
+show_icon = false
+show_state = false
+type = "pk/geoip-monitor:status"
+
+[widget.status_2]
+show_count = false
+type = "3dprogramin/ufw:status"
+
+[widget.sw-record]
+glyph = "microphone-filled"
+tooltip = """Голосовой ввод SuperWhisper
+Запись + автостоп через 60 секунд
+Горячая клавиша: Ctrl+Tab"""
+type = "custom_button"
+
+    [widget.sw-record.actions]
+    left = "exec /home/orr/.local/bin/sw-start.sh"
+
+[widget.sysmon]
+enabled = false
+visualization = "none"
+
+[widget.temp]
+visualization = "none"
+
+[widget.wallpaper]
+enabled = false
+
+[widget.weather]
+capsule_padding = 5
+
+[widget.widget]
+scale = 1.3
+type = "blackbartblues/keymap:widget"
+
+[widget.workspaces]
+scale = 1.2

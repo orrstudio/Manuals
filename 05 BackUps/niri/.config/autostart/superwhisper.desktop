@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=SuperWhisper
+Comment=Speech-to-text using local Whisper models
+Exec=/home/orr/.local/bin/superwhisper
+Icon=/home/orr/.local/share/icons/hicolor/scalable/apps/superwhisper.svg
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;Utility;
+Keywords=speech;voice;whisper;transcribe;dictation;
+StartupNotify=false

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Stub hyprctl for Niri — SuperWhisper calls hyprctl activewindow -j to detect
+# active window class. On Niri hyprctl doesn't exist, so we return empty JSON
+# to let SuperWhisper fall back to Ctrl+V paste via wtype.
+if [ "$1" = "activewindow" ] && [ "$2" = "-j" ]; then
+    echo '{"class": ""}'
+    exit 0
+fi
+echo "hyprctl: stub for Niri (unknown args: $*)" >&2
+exit 1

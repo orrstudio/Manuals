@@ -1,0 +1,64 @@
+[global_config]
+  scroll_tabbar = True
+  ask_before_closing = never
+  link_single_click = True
+  new_tab_after_current_tab = True
+[keybindings]
+  split_horiz = <Control><Shift>o
+  split_vert = <Control><Shift>e
+  new_tab = <Control><Shift>t
+  close_term = <Control><Shift>w
+  next_tab = <Control>Tab
+  prev_tab = <Control><Shift>Tab
+  focus_left = <Alt>Left
+  focus_right = <Alt>Right
+  focus_up = <Alt>Up
+  focus_down = <Alt>Down
+[profiles]
+  [[default]]
+    visible_bell = True
+    urgent_bell = True
+    cursor_fg_color = "#000000"
+    cursor_bg_color = "#000000"
+    font = Adwaita Mono 16
+    foreground_color = "#ffffff"
+    scroll_on_keystroke = False
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    use_system_font = False
+    bold_is_bright = True
+    copy_on_selection = True
+    title_hide_sizetext = True
+    title_transmit_bg_color = "#77767b"
+    title_inactive_fg_color = "#deddda"
+    title_inactive_bg_color = "#5e5c64"
+    title_use_system_font = False
+    title_font = Sans 16
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+  [[SaveLastSessionLayout]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 26:23
+      maximised = False
+      fullscreen = False
+      size = 1888, 971
+      title = OC | Проблема с запуском Flatpak и ярлыкам…
+      last_active_term = 9ef206a8-0a18-42f7-9347-0261a4551abc
+      last_active_window = False
+    [[[terminal1]]]
+      type = Terminal
+      parent = child0
+      order = 0
+      profile = default
+      uuid = 9ef206a8-0a18-42f7-9347-0261a4551abc
+      directory = /home/orr
+[plugins]

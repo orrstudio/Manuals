@@ -1,0 +1,9 @@
+[Unit]
+Description=Write GPU/driver boot report
+
+[Service]
+Type=oneshot
+ExecStart=/home/orr/gpu-boot-report.sh
+
+[Install]
+WantedBy=default.target

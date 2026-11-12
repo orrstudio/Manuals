@@ -1,0 +1,2 @@
+io.github.shiftey.Desktop	flathub
+org.localsend.localsend_app	flathub

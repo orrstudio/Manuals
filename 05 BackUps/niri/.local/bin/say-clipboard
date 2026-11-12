@@ -1,0 +1,181 @@
+#!/usr/bin/env bash
+# Озвучить текст из буфера обмена.
+# Русский — Silero (Бая), английский — piper (lessac-high), резерв spd-say/espeak.
+# Повторное нажатие во время чтения — ПОЛНЫЙ СТОП и выход.
+set -u
+
+# Экспорт переменных окружения для работы из Niri keybindings
+export SAY_VOICE="${SAY_VOICE:-ru_RU-irina-medium}"
+export SAY_SPEED="${SAY_SPEED:-0.7}"
+export SAY_VOICE_EN="${SAY_VOICE_EN:-en_US-lessac-high}"
+export SAY_SPEED_EN="${SAY_SPEED_EN:-0.7}"
+export SILERO_VOICE="${SILERO_VOICE:-baya}"
+export SILERO_TEMPO="${SILERO_TEMPO:-1.3}"
+export SAY_RU_ENGINE="${SAY_RU_ENGINE:-silero}"
+
+RUNDIR="/run/user/$(id -u)"
+OUT="$RUNDIR/say-clipboard.wav"
+PIDF="$RUNDIR/say-clipboard.playpid"
+LOG="$RUNDIR/say-clipboard.log"
+
+log() { echo "$(date '+%H:%M:%S') $*" >> "$LOG" 2>/dev/null; }
+
+# --- Переключатель: если чтение уже идёт — СТОП и выходим ---
+if [ -f "$PIDF" ]; then
+    old="$(cat "$PIDF" 2>/dev/null || true)"
+    if [ -n "$old" ] && kill -0 "$old" 2>/dev/null; then
+        pkill -f "piper.*say-clipboard" 2>/dev/null || true
+        pkill -f "pw-play.*say-clipboard" 2>/dev/null || true
+        pkill -f "paplay.*say-clipboard" 2>/dev/null || true
+        pkill -f "silero.*say-clipboard" 2>/dev/null || true
+        pkill -f "ffmpeg.*say-clipboard" 2>/dev/null || true
+        kill "$old" 2>/dev/null || true
+        rm -f "$PIDF"
+        spd-say -C >/dev/null 2>&1 || true
+        exit 0
+    fi
+    rm -f "$PIDF"
+fi
+
+PIPER="$HOME/.local/bin/piper"
+VOICES="$HOME/.local/share/piper/voices"
+VOICE="${SAY_VOICE:-ru_RU-irina-medium}"
+ENG_VOICE="${SAY_VOICE_EN:-en_US-lessac-high}"
+SPEED="${SAY_SPEED:-0.7}"
+ENG_SPEED="${SAY_SPEED_EN:-0.7}"
+OUT="$RUNDIR/say-clipboard.wav"
+PLAYER="$(command -v pw-play || command -v paplay || command -v aplay)"
+
+TRACK_PID=0
+
+play_bg() {
+    "$PLAYER" "$1" 2>/dev/null &
+    TRACK_PID=$!
+    echo "$TRACK_PID" > "$PIDF"
+}
+
+wait_play() {
+    wait "$TRACK_PID" 2>/dev/null || true
+    if [ ! -f "$PIDF" ] || [ "$(cat "$PIDF" 2>/dev/null)" != "$TRACK_PID" ]; then
+        exit 0
+    fi
+    rm -f "$PIDF"
+}
+
+text="$(wl-paste --no-newline 2>/dev/null || true)"
+
+if [ -z "${text//[[:space:]]/}" ]; then
+    spd-say -l ru -- "Буфер обмена пуст" 2>/dev/null || true
+    exit 0
+fi
+
+if [ "${#text}" -gt 2000 ]; then
+    text="${text:0:2000}"
+fi
+
+SILERO_GEN="$HOME/.local/bin/silero-generate"
+SILERO_OK=0
+if [ "${SAY_RU_ENGINE:-silero}" = "silero" ] && [ -x "$SILERO_GEN" ]; then
+    SILERO_OK=1
+fi
+PIPER_OK=0
+if [ -x "$PIPER" ] && [ -f "$VOICES/$VOICE.onnx" ] && [ -n "$PLAYER" ]; then
+    PIPER_OK=1
+fi
+ENG_PIPER_OK=0
+if [ -x "$PIPER" ] && [ -f "$VOICES/$ENG_VOICE.onnx" ] && [ -n "$PLAYER" ]; then
+    ENG_PIPER_OK=1
+fi
+
+log "CYR check starting"
+CYR=0
+LAT=0
+printf '%s' "$text" | grep -qP '[\x{0400}-\x{04FF}]' && CYR=1
+printf '%s' "$text" | grep -qP '[A-Za-z]' && LAT=1
+log "CYR=$CYR LAT=$LAT text_len=${#text}"
+
+# --- Играть русский кусок ---
+play_ru_chunk() {
+    local txt="$1" out="$2"
+    if [ "$SILERO_OK" -eq 1 ]; then
+        if printf '%s' "$txt" | "$SILERO_GEN" --voice "$SILERO_VOICE" --tempo "$SILERO_TEMPO" --out "$out" >/dev/null 2>&1; then
+            return 0
+        fi
+    fi
+    if [ "$PIPER_OK" -eq 1 ]; then
+        if printf '%s' "$txt" | "$PIPER" --model "$VOICES/$VOICE.onnx" --length_scale "$SPEED" --output_file "$out" >/dev/null 2>&1; then
+            return 0
+        fi
+    fi
+    local f txt_short
+    txt_short="$(printf '%s' "$txt" | head -c 500)"
+    spd-say -l ru -- "$txt_short" 2>/dev/null || espeak-ng -s 160 -- "$txt_short" 2>/dev/null
+    return 2
+}
+
+# --- Играть английский кусок (piper lessac-high → spd-say → espeak) ---
+play_en_chunk() {
+    local txt="$1" out="$2"
+    if [ "$ENG_PIPER_OK" -eq 1 ]; then
+        log "Trying piper $ENG_VOICE for English"
+        if printf '%s' "$txt" | "$PIPER" --model "$VOICES/$ENG_VOICE.onnx" --length_scale "$ENG_SPEED" --output_file "$out" >/dev/null 2>&1; then
+            log "Piper English OK"
+            return 0
+        fi
+        log "Piper English FAILED"
+    fi
+    log "Trying spd-say English"
+    printf '%s' "$txt" | spd-say -l en -- stdin 2>/dev/null && return 0
+    log "Trying espeak English"
+    printf '%s' "$txt" | espeak-ng -s 165 -- stdin 2>/dev/null && return 0
+    return 2
+}
+
+# --- Смешанный текст (кириллица + латиница) целиком — Ирина (piper) ---
+if [ "$CYR" -eq 1 ] && [ "$LAT" -eq 1 ]; then
+    log "Mixed text, using Russian voice"
+    if [ "$PIPER_OK" -eq 1 ]; then
+        if printf '%s' "$text" | "$PIPER" --model "$VOICES/$VOICE.onnx" --length_scale "$SPEED" --output_file "$OUT" >/dev/null 2>&1; then
+            play_bg "$OUT"
+            wait_play
+            rm -f "$OUT" 2>/dev/null
+            exit 0
+        fi
+    fi
+    if play_ru_chunk "$text" "$OUT"; then
+        play_bg "$OUT"
+        wait_play
+        rm -f "$OUT" 2>/dev/null
+        exit 0
+    fi
+    exit 0
+fi
+
+# --- Только русский ---
+if [ "$CYR" -eq 1 ]; then
+    if play_ru_chunk "$text" "$OUT"; then
+        play_bg "$OUT"
+        wait_play
+        rm -f "$OUT" 2>/dev/null
+        exit 0
+    fi
+    exit 0
+fi
+
+# --- Только английский ---
+if [ "$LAT" -eq 1 ]; then
+    if play_en_chunk "$text" "$OUT"; then
+        play_bg "$OUT"
+        wait_play
+        rm -f "$OUT" 2>/dev/null
+        exit 0
+    fi
+    exit 0
+fi
+
+# --- Не текст ни на том, ни на другом (цифры/знаки) — читаем ru ---
+if play_ru_chunk "$text" "$OUT"; then
+    play_bg "$OUT"
+    wait_play
+fi
+rm -f "$OUT" 2>/dev/null

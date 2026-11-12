@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+rofi -dmenu \
+    -password \
+    -no-fixed-num-lines \
+    -p "Sudo Password:" \
+    -theme-str 'window {width: 400px;} entry {width: 300px;}'

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+export PATH="$HOME/.local/bin:$PATH"
+export WAYLAND_DISPLAY="${WAYLAND_DISPLAY:-wayland-1}"
+export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+export PIPEWIRE_RUNTIME_DIR="${PIPEWIRE_RUNTIME_DIR:-$XDG_RUNTIME_DIR/pipewire-0}"
+export PULSE_SERVER="${PULSE_SERVER:-unix:$XDG_RUNTIME_DIR/pulse/native}"
+exec /home/orr/.local/bin/superwhisper toggle
