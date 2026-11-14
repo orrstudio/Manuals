@@ -15,14 +15,23 @@
    - Логи: `~/.config/superwhisper-linux/logs/superwhisper.log`
 
 2. **Niri горячие клавиши** (`~/.config/niri/config.kdl` — стандартный конфиг niri-wm/niri + наши добавления):
-   - **Стандартные Niri:** Mod+T (foot), Mod+D (fuzzel), Mod+Shift+Slash (помощь), Alt+Q (quit), Alt+стрелки (фокус), Mod+стрелки (перемещение окон), Mod+1-9 (рабочие столы), Print (скриншот), и многие другие
-   - `Super+D` → `spawn "rofi" "-show" "drun"` (меню приложений Rofi)
-- `Super+Shift+T` → `spawn "terminator"` (терминал Terminator)
+   - **Стандартные Niri:** Mod+T, Mod+D, Mod+Shift+Slash (помощь), Mod+1-9 (рабочие столы), Print (скриншот), Mod+K/J (фокус окна), Mod+Left/Right (фокус колонок)
+   - `Mod+T` → `terminator` (alacritty не установлен)
+   - `Mod+D` → `rofi -show drun` (меню приложений)
+   - `Mod+E` → `nautilus` (файловый менеджер; раньше был мёртвый Super+F, перекрытый Mod+F)
+   - `Mod+A` → `noctalia msg panel-toggle launcher` (лаунчер Noctalia)
+   - `Mod+Shift+C` → `noctalia msg panel-toggle control-center`
+   - `Mod+Shift+X` → `noctalia msg panel-toggle clipboard`
+   - `Mod+Up` / `Mod+Down` → переключение рабочих столов (столы в niri вертикальные)
+   - `Mod+Tab` → предыдущий рабочий стол
+   - `Super+Alt+L` → `noctalia msg session lock` (lockscreen Noctalia, `lockscreen.enabled = true`)
+   - `Super+Alt+S` → `pkill orca || GDK_BACKEND=wayland orca` (экранный диктор Orca)
    - `Pause` → `spawn-sh "/home/orr/.local/bin/say-clipboard"` (озвучка буфера)
    - `Ctrl+Pause` → `spawn-sh "/home/orr/.local/bin/translate-clipboard"` (перевод буфера)
    - `Ctrl+Shift+Pause` → `spawn-sh "/home/orr/.local/bin/translate-clipboard --paste"` (перевод + вставка)
-   - `Ctrl+Tab` → `spawn-sh "/home/orr/.local/bin/sw-toggle"` (голосовой ввод SuperWhisper)
+   - `Ctrl+Tab` → `spawn-sh "/home/orr/.local/bin/sw-start.sh"` (голосовой ввод SuperWhisper + таймер)
    - `Print` → `spawn "niri" "msg" "action" "screenshot"` (скриншот)
+   - `XF86MonBrightnessUp/Down` → `brightnessctl` (яркость, после udev-правила)
 
 3. **TTS-читалка** (`~/.local/bin/say-clipboard`):
    - Русский: Silero (baya) → Piper Irina → RHVoice → espeak-ng
@@ -87,10 +96,36 @@
 - Перезагрузка конфига: `noctalia msg config-reload`
 - Плагин `blackbartblues/keymap` (v1.5.2, помечен **deprecated**, но работает) — описания берёт из `hotkey-overlay-title` в `config.kdl`. Замена при поломке: `kenn/keybind-cheatsheet` (нет ru-перевода).
 
+### ORCA (экранный диктор) — с 2026-11-15:
+- Пакет `orca 51.1`, запуск по `Super+Alt+S`: `pkill orca || GDK_BACKEND=wayland orca`.
+  - **Обязательно `GDK_BACKEND=wayland`**: с X11-бэкендом Orca падает на `X Error ... XkbSetMap` и молча умирает.
+- Модификатор Orca — `Insert` (внешняя клавиатура; встроенная клавиатура ноутбука испорчена — не использовать). Настройка: `org.gnome.Orca.Keybindings desktop-modifier-keys = ['Insert','KP_Insert']`.
+- **`Insert+Пробел` = открыть НАСТРОЙКИ Orca** (не плоский обзор!). `Insert+Ctrl+Пробел` = настройки текущего приложения.
+- Плоский обзор (flat review, keyboard-layout = `desktop`): **`KP_Subtract`** (минус на цифровом блоке) — вход/выход.
+  - Навигация: `KP_Home` (предыдущая строка), `KP_Up` (текущая), `KP_Page_Up` (следующая), `Insert+KP_Home/End` (начало/конец строки), `Insert+KP_Up/Page_Up` — по словам/символам.
+  - Альтернатива: переключить `keyboard-layout` на `laptop` → flat review = `Insert+P`, строки `Insert+U/I/O`.
+- `Insert+H` — справка по командам Orca; `Insert+Shift+D` — монитор речи (показывает произносимый текст).
+- Терминал Orca **не читает** (эмуляторы терминалов не отдают содержимое через AT-SPI; озвучивается только ввод). Проверять чтение в Firefox/GTK-приложениях; при необходимости `accessibility.browsewithcaret` в about:config.
+- Key echo (озвучивание нажатий) = `org.gnome.Orca.TypingEcho`: `key-echo true`, `alphabetic-keys true`, `character-echo false` — оставлено по решению пользователя.
+
+### Синтез речи для Orca (speech-dispatcher + piper):
+- `~/.config/speech-dispatcher/speechd.conf`: `AddModule "piper" "sd_generic" "piper.conf"`, `AddModule "espeak-ng" "sd_espeak-ng" "espeak-ng.conf"`, `DefaultModule piper`, `DefaultLanguage ru`.
+- Модуль piper лежит в двух местах (полная синхронизация): `~/.config/speech-dispatcher/modules/piper.conf` и `/etc/speech-dispatcher/modules/piper.conf`.
+  - Содержимое: `GenericExecuteSynth` → `~/.local/bin/piper-speechd`; `GenericLanguage ru ru_RU utf-8`; **`AddVoice "ru" "FEMALE1" "irina"`**.
+- **Критично**: `sd_generic` без `AddVoice` не инициализируется (`module does not have any voice`), speech-dispatcher молча падает на `espeak-ng` — отсюда «робот с английским акцентом».
+- `~/.local/bin/piper-speechd`: stdin → `piper --model ru_RU-irina-medium.onnx --length_scale 0.6 -q --output_file -` → `pw-play -`. Скорость 0.6 — как в читалке буфера (`SAY_SPEED=0.6`), быстрее нормы.
+- Резервный модуль — `espeak-ng` (подключён). Читатель буфера `say-clipboard` не затронут: он использует Silero/piper напрямую, spd-say там только резерв.
+- Альтернатива с мгновенным откликом — RHVoice: пакеты `rhvoice-voice-anna`, `rhvoice-voice-aleksandr`, `rhvoice-voice-aleksandr-hq` установлены (голоса есть, конфига модуля нет); переключение = `DefaultModule rhvoice` после создания `rhvoice.conf`.
+- Диагностика: лог `/run/user/1000/speech-dispatcher/log/speech-dispatcher.log` (и `piper.log`), проверка `spd-say -L`, `spd-say -o piper -w "текст"`.
+
+### Яркость (brightnessctl):
+- Установлен `brightnessctl`; создано `/etc/udev/rules.d/90-backlight.rules` (`chgrp video` + `chmod g+w` на `/sys/class/backlight/*/brightness`); пользователь `orr` добавлен в группу `video`.
+- Бинды `XF86MonBrightnessUp/Down` → `brightnessctl --class=backlight set +10%/-10%`. Проверка: `brightnessctl -m`.
+
 ### БЭКАП:
 - Папка: `~/GitHub/Manuals/05 BackUps/niri/` — структура повторяет домашнюю (`niri/` = `~/`)
 - Реестр: `~/GitHub/Manuals/05 BackUps/niri/BACKUP-MANIFEST.md`
-- Бэкапим: 10 скриптов `~/.local/bin/`, `config.kdl`, `settings.toml`, `state.toml`, `plugins/data/`
+- Бэкапим: 11 скриптов `~/.local/bin/` (включая `piper-speechd`), `config.kdl`, `settings.toml`, `state.toml`, `plugins/data/`, конфиги `speech-dispatcher/` (speechd.conf + modules/piper.conf), системные копии в `system/etc/` (udev backlight, `speech-dispatcher/modules/piper.conf`)
 - НЕ бэкапим: `plugins/sources/` (31 МБ), `plugins/materialized/`, `plugin-cache/`, `community-palettes/`, `community-templates/` — Noctalia скачивает сама
 
 ### ПРИЧИНЫ ВСЕХ ИЗМЕНЕНИЙ:

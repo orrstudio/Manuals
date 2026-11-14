@@ -36,6 +36,7 @@
 | `~/.local/bin/text-split-runs` | `.local/bin/text-split-runs` | Разбиение текста по алфавиту |
 | `~/.local/bin/toggle-laptop-panel.sh` | `.local/bin/toggle-laptop-panel.sh` | Вкл/выкл экрана eDP-1 |
 | `~/.local/bin/translate-clipboard` | `.local/bin/translate-clipboard` | Перевод буфера |
+| `~/.local/bin/piper-speechd` | `.local/bin/piper-speechd` | piper для speech-dispatcher (голос Orca) |
 
 ### 2.2. Конфиги
 
@@ -48,6 +49,8 @@
 | `~/.config/herdr/config.toml` | `.config/herdr/config.toml` | Плагин Noctalia herdr |
 | `~/.config/layout-fix/config` | `.config/layout-fix/config` | Плагин раскладки |
 | `~/.config/autostart/superwhisper.desktop` | `.config/autostart/superwhisper.desktop` | Автозапуск SuperWhisper |
+| `~/.config/speech-dispatcher/speechd.conf` | `.config/speech-dispatcher/speechd.conf` | speech-dispatcher: DefaultModule piper (Orca) |
+| `~/.config/speech-dispatcher/modules/piper.conf` | `.config/speech-dispatcher/modules/piper.conf` | Модуль piper (generic) для speech-dispatcher |
 
 ### 2.3. Домашняя папка
 
@@ -91,6 +94,8 @@
 | `system/systemd-enabled.txt` | `systemctl list-unit-files --state=enabled` | Системные сервисы |
 | `system/systemd-user-enabled.txt` | `systemctl --user list-unit-files --state=enabled` | Пользовательские сервисы |
 | `system/INSTALLED-APPS.md` | вручную | Журнал приложений: что установлено, где конфиг, бэкапится ли |
+| `system/etc/udev/rules.d/90-backlight.rules` | `/etc/udev/rules.d/90-backlight.rules` | Доступ к яркости для группы video (brightnessctl) |
+| `system/etc/speech-dispatcher/modules/piper.conf` | `/etc/speech-dispatcher/modules/piper.conf` | Модуль piper для speech-dispatcher (Orca) |
 
 Списки пакетов обновляются **вручную** после установки приложений (скрипта нет — по решению пользователя).
 

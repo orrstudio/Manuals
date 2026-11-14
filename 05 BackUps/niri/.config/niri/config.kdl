@@ -362,14 +362,21 @@ binds {
     Mod+Shift+Slash hotkey-overlay-title="Показать список горячих клавиш" { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T hotkey-overlay-title="Терминал: alacritty" { spawn "alacritty"; }
+    Mod+T hotkey-overlay-title="Терминал: terminator" { spawn "terminator"; }
     Mod+D hotkey-overlay-title="Запуск приложения: rofi" { spawn "rofi" "-show" "drun"; }
-    Super+Alt+L hotkey-overlay-title="Заблокировать экран: swaylock" { spawn "swaylock"; }
+    Super+Alt+L hotkey-overlay-title="Заблокировать экран: Noctalia" { spawn "noctalia" "msg" "session" "lock"; }
+
+    // Панели Noctalia (демон уже запущен, команды идут по IPC).
+    Mod+A hotkey-overlay-title="Лаунчер: Noctalia" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    Mod+Shift+C hotkey-overlay-title="Центр управления: Noctalia" { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
+    Mod+Shift+X hotkey-overlay-title="Буфер обмена: Noctalia" { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
     // For example, this is a standard bind to toggle the screen reader (orca).
-    Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
+    // Переключение скринридера Orca (Super+Alt+S).
+    // GDK_BACKEND=wayland обязателен: с X11-бэкендом Orca падает на XkbSetMap.
+    Super+Alt+S allow-when-locked=true hotkey-overlay-title="Скринридер Orca" { spawn-sh "pkill orca || GDK_BACKEND=wayland orca"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
@@ -388,9 +395,7 @@ binds {
     XF86AudioPrev        allow-when-locked=true hotkey-overlay-title="Предыдущий трек" { spawn-sh "playerctl previous"; }
     XF86AudioNext        allow-when-locked=true hotkey-overlay-title="Следующий трек" { spawn-sh "playerctl next"; }
 
-    // Example brightness key mappings for brightnessctl.
-    // You can use regular spawn with multiple arguments too (to avoid going through "sh"),
-    // but you need to manually put each argument in separate "" quotes.
+    // Яркость через brightnessctl (работает по udev-правилу для группы video).
     XF86MonBrightnessUp allow-when-locked=true hotkey-overlay-title="Яркость выше" { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
     XF86MonBrightnessDown allow-when-locked=true hotkey-overlay-title="Яркость ниже" { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
 
@@ -420,8 +425,8 @@ binds {
     Alt+F4 repeat=false hotkey-overlay-title="Закрыть окно" { close-window; }
 
     Mod+Left  hotkey-overlay-title="Фокус влево" { focus-column-left; }
-    Mod+Down  hotkey-overlay-title="Фокус вниз" { focus-window-down; }
-    Mod+Up    hotkey-overlay-title="Фокус вверх" { focus-window-up; }
+    Mod+Down  hotkey-overlay-title="Рабочий стол ниже" { focus-workspace-down; }
+    Mod+Up    hotkey-overlay-title="Рабочий стол выше" { focus-workspace-up; }
     Mod+Right hotkey-overlay-title="Фокус вправо" { focus-column-right; }
     Mod+H     hotkey-overlay-title="Фокус влево" { focus-column-left; }
     Mod+J     hotkey-overlay-title="Фокус вниз" { focus-window-down; }
@@ -556,7 +561,7 @@ binds {
     // Mod+Ctrl+1 { move-window-to-workspace 1; }
 
     // Switches focus between the current and the previous workspace.
-    // Mod+Tab { focus-workspace-previous; }
+    Mod+Tab hotkey-overlay-title="Предыдущий рабочий стол" { focus-workspace-previous; }
 
     // The following binds move the focused window in and out of a column.
     // If the window is alone, they will consume it into the nearby column to the side.
@@ -649,9 +654,7 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P hotkey-overlay-title="Выключить мониторы" { power-off-monitors; }
 
-Super+D { spawn "rofi" "-show" "drun"; }
-Super+T { spawn "terminator"; }
-Super+F { spawn "nautilus"; }
+Mod+E hotkey-overlay-title="Файловый менеджер: nautilus" { spawn "nautilus"; }
 Pause { spawn-sh "/home/orr/.local/bin/say-clipboard"; }
 Ctrl+Pause { spawn-sh "/home/orr/.local/bin/translate-clipboard"; }
 Ctrl+Shift+Pause { spawn-sh "/home/orr/.local/bin/translate-clipboard --paste"; }

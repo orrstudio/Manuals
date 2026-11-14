@@ -19,6 +19,7 @@
 | 8 | `~/.local/bin/text-split-runs` | `niri/.local/bin/text-split-runs` | Разбиение текста на куски по смене алфавита (для TTS) | актуален |
 | 9 | `~/.local/bin/toggle-laptop-panel.sh` | `niri/.local/bin/toggle-laptop-panel.sh` | Вкл/выкл экрана eDP-1 через `niri msg output` | актуален |
 | 10 | `~/.local/bin/translate-clipboard` | `niri/.local/bin/translate-clipboard` | Перевод буфера (кириллица→en, латиница→ru), опционально вставка | актуален |
+| 35 | `~/.local/bin/piper-speechd` | `niri/.local/bin/piper-speechd` | piper → speech-dispatcher: синтез голоса Orca (Ирина) в stdin → pw-play | актуален |
 
 ## Конфиги
 
@@ -31,6 +32,8 @@
 | 15 | `~/.config/herdr/config.toml` | `niri/.config/herdr/config.toml` | Плагин Noctalia herdr | актуален |
 | 16 | `~/.config/layout-fix/config` | `niri/.config/layout-fix/config` | Плагин раскладки | актуален |
 | 17 | `~/.config/autostart/superwhisper.desktop` | `niri/.config/autostart/superwhisper.desktop` | Автозапуск SuperWhisper при входе в сессию | актуален |
+| 36 | `~/.config/speech-dispatcher/speechd.conf` | `niri/.config/speech-dispatcher/speechd.conf` | speech-dispatcher: AddModule piper + espeak-ng, DefaultModule piper, DefaultLanguage ru | актуален |
+| 37 | `~/.config/speech-dispatcher/modules/piper.conf` | `niri/.config/speech-dispatcher/modules/piper.conf` | Модуль piper (sd_generic): GenericExecuteSynth → piper-speechd, AddVoice irina | актуален |
 
 ## Домашняя папка
 
@@ -74,6 +77,8 @@
 | 32 | `niri/system/systemd-enabled.txt` | `systemctl list-unit-files --state=enabled` | Системные сервисы | актуален |
 | 33 | `niri/system/systemd-user-enabled.txt` | `systemctl --user list-unit-files --state=enabled` | Пользовательские сервисы | актуален |
 | 34 | `niri/system/INSTALLED-APPS.md` | вручную | Журнал приложений: что установлено, конфиг, бэкапится ли | актуален |
+| 38 | `niri/system/etc/udev/rules.d/90-backlight.rules` | `/etc/udev/rules.d/90-backlight.rules` | Доступ к яркости подсветки для группы video (brightnessctl) | актуален |
+| 39 | `niri/system/etc/speech-dispatcher/modules/piper.conf` | `/etc/speech-dispatcher/modules/piper.conf` | Системная копия модуля piper для speech-dispatcher | актуален |
 
 Списки пакетов обновляются вручную после установки приложений (скрипта нет — по решению пользователя).
 
