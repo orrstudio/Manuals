@@ -24,6 +24,7 @@
    - `Mod+G` → `gtk-launch io.github.shiftey.Desktop` (GitHub Desktop, flatpak)
    - `Mod+N` → `gtk-launch org.gnome.gedit` (gedit)
    - `Mod+P` → `env QT_QPA_PLATFORMTHEME=qt6ct qtpass` (QtPass)
+   - `Mod+H` → Herdr (wezterm start --always-new-process -e herdr, со сбросом HERDR_*)
    - `Mod+X` → `noctalia msg panel-toggle clipboard` (история буфера; было Mod+Shift+X)
    - `Mod+S` → `pkill orca || GDK_BACKEND=wayland orca` (Orca; было Super+Alt+S)
    - `Mod+K` → `show-hotkey-overlay` (список хоткеев; было Mod+Shift+Slash)
@@ -126,6 +127,12 @@
 ### Orca: что осталось и что удалено (2026-11-16):
 - Оставлен только GNOME Orca (скринридер): пакет `orca`, бинд `Mod+S`, настройки speech-dispatcher (piper).
 - Удалено по решению пользователя: `stably-orca-bin` (Stably Orca), `/opt/orca-server`, `/usr/local/bin/orca-ide`, `~/.config/orca` (920 МБ, аккаунты), закладка Orca в Bookmarks, бэкап `system/usr/bin/stably-orca`.
+
+### Herdr (TUI-менеджер сессий ИИ-агентов):
+- `/home/orr/.local/bin/herdr` — консольное TUI-приложение (GUI нет), сессия `default` через сокет `~/.config/herdr/herdr.sock`.
+- Плагин Noctalia `hy4ri/herdr` — монитор (виджет бара + панель), открывает/фокусирует сессии в терминале.
+- Ярлык `~/.local/share/applications/herdr.desktop` и закладка Bookmarks «Herdr»: `env -u HERDR_ENV ... wezterm start --always-new-process -e herdr`.
+- Обязательно сбрасывать `HERDR_ENV`, `HERDR_SOCKET_PATH`, `HERDR_PANE_ID`, `HERDR_TAB_ID`, `HERDR_WORKSPACE_ID`, `HERDR_STARTUP_CWD`, `HERDR_BIN_PATH`, `TERM_PROGRAM`, иначе herdr отказывается: «nested herdr is disabled by default».
 
 ### Qt-приложения (тёмная тема):
 - Qt6 не наследует GTK-тему (qtpass выглядел светлым на тёмной системе).

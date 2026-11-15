@@ -18,6 +18,15 @@
     "type": "bookmark"
   },
   {
+    "cmd": "env -u HERDR_ENV -u HERDR_SOCKET_PATH -u HERDR_PANE_ID -u HERDR_TAB_ID -u HERDR_WORKSPACE_ID -u HERDR_STARTUP_CWD -u HERDR_BIN_PATH -u TERM_PROGRAM wezterm start --always-new-process -e herdr",
+    "description": "Менеджер терминальных сессий AI-агентов",
+    "glyph": "robot",
+    "label": "Herdr",
+    "runInBackground": true,
+    "runInTerminal": false,
+    "type": "bookmark"
+  },
+  {
     "cmd": "gtk-launch org.wezfurlong.wezterm",
     "description": "Терминал WezTerm",
     "glyph": "terminal",

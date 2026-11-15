@@ -74,6 +74,7 @@
 |----------------|---------------------------|------------|
 | `~/.local/share/applications/org.localsend.localsend_app.desktop` | `.local/share/applications/org.localsend.localsend_app.desktop` | Ярлык LocalSend |
 | `~/.local/share/applications/superwhisper.desktop` | `.local/share/applications/superwhisper.desktop` | Ярлык SuperWhisper |
+| `~/.local/share/applications/herdr.desktop` | `.local/share/applications/herdr.desktop` | Ярлык Herdr (WezTerm + herdr, сброс HERDR_*) |
 
 ### 2.6. Noctalia
 

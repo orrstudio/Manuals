@@ -57,6 +57,7 @@
 |---|----------------|---------------|------------|--------|
 | 24 | `~/.local/share/applications/org.localsend.localsend_app.desktop` | `niri/.local/share/applications/org.localsend.localsend_app.desktop` | Ярлык LocalSend | актуален |
 | 25 | `~/.local/share/applications/superwhisper.desktop` | `niri/.local/share/applications/superwhisper.desktop` | Ярлык SuperWhisper | актуален |
+| 41 | `~/.local/share/applications/herdr.desktop` | `niri/.local/share/applications/herdr.desktop` | Ярлык Herdr: WezTerm + herdr со сбросом HERDR_*-переменных | актуален |
 
 ## Noctalia
 

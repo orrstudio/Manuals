@@ -629,6 +629,7 @@ binds {
     Mod+G hotkey-overlay-title="GitHub Desktop" { spawn "gtk-launch" "io.github.shiftey.Desktop"; }
     Mod+N hotkey-overlay-title="Редактор: gedit" { spawn "gtk-launch" "org.gnome.gedit"; }
     Mod+P hotkey-overlay-title="Пароли: QtPass" { spawn "env" "QT_QPA_PLATFORMTHEME=qt6ct" "qtpass"; }
+    Mod+H hotkey-overlay-title="Herdr" { spawn-sh "env -u HERDR_ENV -u HERDR_SOCKET_PATH -u HERDR_PANE_ID -u HERDR_TAB_ID -u HERDR_WORKSPACE_ID -u HERDR_STARTUP_CWD -u HERDR_BIN_PATH -u TERM_PROGRAM wezterm start --always-new-process -e herdr"; }
 }
 
 environment
