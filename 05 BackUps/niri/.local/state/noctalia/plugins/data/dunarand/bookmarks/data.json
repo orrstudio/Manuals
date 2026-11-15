@@ -36,6 +36,15 @@
     "type": "bookmark"
   },
   {
+    "cmd": "gtk-launch io.github.shiftey.Desktop",
+    "description": "Git-клиент GitHub Desktop (flatpak)",
+    "glyph": "brand-github",
+    "label": "GitHub Desktop",
+    "runInBackground": true,
+    "runInTerminal": false,
+    "type": "bookmark"
+  },
+  {
     "cmd": "gtk-launch zen",
     "description": "Браузер Zen",
     "glyph": "world",
@@ -58,6 +67,15 @@
     "description": "Передача файлов на ближайшие устройства",
     "glyph": "send",
     "label": "LocalSend",
+    "runInBackground": true,
+    "runInTerminal": false,
+    "type": "bookmark"
+  },
+  {
+    "cmd": "qtpass",
+    "description": "GUI для менеджера паролей pass",
+    "glyph": "lock-square-rounded",
+    "label": "QtPass",
     "runInBackground": true,
     "runInTerminal": false,
     "type": "bookmark"
@@ -106,14 +124,5 @@
     "runInBackground": true,
     "runInTerminal": false,
     "type": "bookmark"
-  },
-  {
-    "type": "bookmark",
-    "glyph": "brand-github",
-    "label": "GitHub Desktop",
-    "cmd": "gtk-launch io.github.shiftey.Desktop",
-    "description": "Git-клиент GitHub Desktop (flatpak)",
-    "runInBackground": true,
-    "runInTerminal": false
   }
 ]

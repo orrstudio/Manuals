@@ -15,23 +15,25 @@
    - Логи: `~/.config/superwhisper-linux/logs/superwhisper.log`
 
 2. **Niri горячие клавиши** (`~/.config/niri/config.kdl` — стандартный конфиг niri-wm/niri + наши добавления):
-   - **Стандартные Niri:** Mod+T, Mod+D, Mod+Shift+Slash (помощь), Mod+1-9 (рабочие столы), Print (скриншот), Mod+K/J (фокус окна), Mod+Left/Right (фокус колонок)
+   - **Стандартные Niri:** Mod+1-9 (рабочие столы), Print (скриншот), Mod+J (фокус вниз), Mod+Left/Right (фокус колонок)
    - `Mod+T` → `terminator` (alacritty не установлен)
    - `Mod+D` → `rofi -show drun` (меню приложений)
    - `Mod+E` → `nautilus` (файловый менеджер; раньше был мёртвый Super+F, перекрытый Mod+F)
-   - `Mod+A` → `noctalia msg panel-toggle launcher` (лаунчер Noctalia)
-   - `Mod+Shift+C` → `noctalia msg panel-toggle control-center`
-   - `Mod+Shift+X` → `noctalia msg panel-toggle clipboard`
+   - `Mod+A` → `sw-start.sh` (голосовой ввод SuperWhisper + таймер; было Ctrl+Tab)
+   - `Mod+B` → `gtk-launch zen` (Zen Browser)
+   - `Mod+X` → `noctalia msg panel-toggle clipboard` (история буфера; было Mod+Shift+X)
+   - `Mod+S` → `pkill orca || GDK_BACKEND=wayland orca` (Orca; было Super+Alt+S)
+   - `Mod+K` → `show-hotkey-overlay` (список хоткеев; было Mod+Shift+Slash)
+   - `Mod+L` → `noctalia msg session lock` (блокировка; было Super+Alt+L)
    - `Mod+Up` / `Mod+Down` → переключение рабочих столов (столы в niri вертикальные)
    - `Mod+Tab` → предыдущий рабочий стол
-   - `Super+Alt+L` → `noctalia msg session lock` (lockscreen Noctalia, `lockscreen.enabled = true`)
-   - `Super+Alt+S` → `pkill orca || GDK_BACKEND=wayland orca` (экранный диктор Orca)
+   - Убрано по решению пользователя: `Mod+Shift+C` (центр управления), `Mod+A` → лаунчер, dock (`dock.enabled = false`), `Mod+Shift+E` (quit), `Mod+Shift+P` (power-off-monitors — не смог вернуть экран), `Mod+Escape` (инхибитор клавиш), `Mod+H` (дубль `Mod+Left`), `Mod+J` (фокус окна вниз), `Mod+Page_Up/Down` и `Mod+U/I` (дубли `Mod+Up/Down`), `Mod+Ctrl+U/I` и `Mod+Shift+U/I` (дубли Page-вариантов), `Mod+Shift+H/J/K/L` (дубли стрелок фокуса монитора), буквенные дубли перемещения `Mod+Ctrl+H/J/K/L` и `Mod+Shift+Ctrl+H/J/K/L`
    - `Pause` → `spawn-sh "/home/orr/.local/bin/say-clipboard"` (озвучка буфера)
    - `Ctrl+Pause` → `spawn-sh "/home/orr/.local/bin/translate-clipboard"` (перевод буфера)
    - `Ctrl+Shift+Pause` → `spawn-sh "/home/orr/.local/bin/translate-clipboard --paste"` (перевод + вставка)
-   - `Ctrl+Tab` → `spawn-sh "/home/orr/.local/bin/sw-start.sh"` (голосовой ввод SuperWhisper + таймер)
    - `Print` → `spawn "niri" "msg" "action" "screenshot"` (скриншот)
    - `XF86MonBrightnessUp/Down` → `brightnessctl` (яркость, после udev-правила)
+   - Все `XF86Audio*` и `XF86MonBrightness*` — `hotkey-overlay-title=null` (работают, но в списке `Mod+K` не показываются)
 
 3. **TTS-читалка** (`~/.local/bin/say-clipboard`):
    - Русский: Silero (baya) → Piper Irina → RHVoice → espeak-ng
@@ -117,6 +119,16 @@
 - Резервный модуль — `espeak-ng` (подключён). Читатель буфера `say-clipboard` не затронут: он использует Silero/piper напрямую, spd-say там только резерв.
 - Альтернатива с мгновенным откликом — RHVoice: пакеты `rhvoice-voice-anna`, `rhvoice-voice-aleksandr`, `rhvoice-voice-aleksandr-hq` установлены (голоса есть, конфига модуля нет); переключение = `DefaultModule rhvoice` после создания `rhvoice.conf`.
 - Диагностика: лог `/run/user/1000/speech-dispatcher/log/speech-dispatcher.log` (и `piper.log`), проверка `spd-say -L`, `spd-say -o piper -w "текст"`.
+
+### Orca: что осталось и что удалено (2026-11-16):
+- Оставлен только GNOME Orca (скринридер): пакет `orca`, бинд `Mod+S`, настройки speech-dispatcher (piper).
+- Удалено по решению пользователя: `stably-orca-bin` (Stably Orca), `/opt/orca-server`, `/usr/local/bin/orca-ide`, `~/.config/orca` (920 МБ, аккаунты), закладка Orca в Bookmarks, бэкап `system/usr/bin/stably-orca`.
+
+### Qt-приложения (тёмная тема):
+- Qt6 не наследует GTK-тему (qtpass выглядел светлым на тёмной системе).
+- Установлен `qt6ct`; конфиг `~/.config/qt6ct/qt6ct.conf`: `style=Fusion`, `color_scheme_path=/usr/share/qt6ct/colors/darker.conf`, `custom_palette=true`, `[Fonts] general/fixed = Adwaita Sans/Mono 16pt`.
+- В `~/.bashrc`: `export QT_QPA_PLATFORMTHEME="qt6ct"` (действует на все Qt-приложения, применяется после перелогина).
+- Проверка без перелогина: `QT_QPA_PLATFORMTHEME=qt6ct qtpass`.
 
 ### Яркость (brightnessctl):
 - Установлен `brightnessctl`; создано `/etc/udev/rules.d/90-backlight.rules` (`chgrp video` + `chmod g+w` на `/sys/class/backlight/*/brightness`); пользователь `orr` добавлен в группу `video`.
