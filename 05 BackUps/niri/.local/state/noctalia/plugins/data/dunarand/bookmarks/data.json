@@ -1,1 +1,119 @@
-{}
+[
+  {
+    "cmd": "gtk-launch rofi",
+    "description": "Меню приложений и переключатель окон",
+    "glyph": "search",
+    "label": "Rofi",
+    "runInBackground": true,
+    "runInTerminal": false,
+    "type": "bookmark"
+  },
+  {
+    "cmd": "gtk-launch org.gnome.Nautilus",
+    "description": "Управление файлами",
+    "glyph": "folder",
+    "label": "Файлы",
+    "runInBackground": true,
+    "runInTerminal": false,
+    "type": "bookmark"
+  },
+  {
+    "cmd": "gtk-launch org.wezfurlong.wezterm",
+    "description": "Терминал WezTerm",
+    "glyph": "terminal",
+    "label": "WezTerm",
+    "runInBackground": true,
+    "runInTerminal": false,
+    "type": "bookmark"
+  },
+  {
+    "cmd": "gtk-launch terminator",
+    "description": "Несколько терминалов в одном окне",
+    "glyph": "terminal-2",
+    "label": "Terminator",
+    "runInBackground": true,
+    "runInTerminal": false,
+    "type": "bookmark"
+  },
+  {
+    "cmd": "gtk-launch zen",
+    "description": "Браузер Zen",
+    "glyph": "world",
+    "label": "Zen Browser",
+    "runInBackground": true,
+    "runInTerminal": false,
+    "type": "bookmark"
+  },
+  {
+    "cmd": "gtk-launch org.gnome.gedit",
+    "description": "Редактор текстовых файлов",
+    "glyph": "file-text",
+    "label": "gedit",
+    "runInBackground": true,
+    "runInTerminal": false,
+    "type": "bookmark"
+  },
+  {
+    "cmd": "gtk-launch org.localsend.localsend_app",
+    "description": "Передача файлов на ближайшие устройства",
+    "glyph": "send",
+    "label": "LocalSend",
+    "runInBackground": true,
+    "runInTerminal": false,
+    "type": "bookmark"
+  },
+  {
+    "cmd": "gtk-launch superwhisper",
+    "description": "Голосовой ввод (локальные модели Whisper)",
+    "glyph": "microphone",
+    "label": "SuperWhisper",
+    "runInBackground": true,
+    "runInTerminal": false,
+    "type": "bookmark"
+  },
+  {
+    "cmd": "gtk-launch qvidcap",
+    "description": "Просмотр захвата видео",
+    "glyph": "camera",
+    "label": "Qt V4L2 video capture utility",
+    "runInBackground": true,
+    "runInTerminal": false,
+    "type": "bookmark"
+  },
+  {
+    "cmd": "gtk-launch lstopo",
+    "description": "Топология оборудования",
+    "glyph": "sitemap",
+    "label": "lstopo",
+    "runInBackground": true,
+    "runInTerminal": false,
+    "type": "bookmark"
+  },
+  {
+    "cmd": "gtk-launch rofi-theme-selector",
+    "description": "Выбор темы Rofi",
+    "glyph": "palette",
+    "label": "Rofi Theme Selector",
+    "runInBackground": true,
+    "runInTerminal": false,
+    "type": "bookmark"
+  },
+  {
+    "cmd": "gtk-launch io.github.nirimod",
+    "description": "Настройка Niri через GUI",
+    "glyph": "adjustments",
+    "label": "NiriMod",
+    "runInBackground": true,
+    "runInTerminal": false,
+    "type": "bookmark"
+  },
+  {
+    "type": "bookmark",
+    "glyph": "brand-github",
+    "label": "GitHub Desktop",
+    "cmd": "gtk-launch io.github.shiftey.Desktop",
+    "description": "Git-клиент GitHub Desktop (flatpak)",
+    "runInBackground": true,
+    "runInTerminal": false
+  }
+]
