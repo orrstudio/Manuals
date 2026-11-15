@@ -13,7 +13,6 @@
 | `~/.config/opencode/memory.md` | `OpenCode/memory.md` |
 | `~/.config/opencode/MIRRORS.md` | `OpenCode/MIRRORS.md` |
 | `~/.config/opencode/Voxtype-And-TTS-Reader.md` | `OpenCode/Voxtype-And-TTS-Reader.md` |
-| `~/.config/opencode/sudo-rofi-askpass.md` | `OpenCode/sudo-rofi-askpass.md` |
 | `~/.config/opencode/skills/` (вся папка) | `OpenCode/skills/` |
 
 ---
