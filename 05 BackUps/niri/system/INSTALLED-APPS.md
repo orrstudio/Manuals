@@ -12,7 +12,6 @@
 | Noctalia (shell) | `noctalia` | 07.11 | `~/.local/state/noctalia/` | да (settings, state, plugins/data) |
 | SuperWhisper | uv tool (github) | 11.11 | `~/.config/superwhisper-linux/config.json` | да |
 | WezTerm (терминал) | `wezterm` | — | `~/.wezterm.lua` | да |
-| Terminator (терминал) | `terminator` | — | `~/.config/terminator/config` | да |
 | Kanshi (мониторы) | `kanshi` | — | `~/.config/kanshi/config` | да |
 | Rofi (лаунчер) | `rofi` | — | нет (дефолт) | нет |
 | Zen Browser | `zen-browser-bin` (AUR) | — | `~/.config/zen/` | нет (решение) |
@@ -23,6 +22,10 @@
 | Waybar | `waybar` | — | `~/.config/waybar/` | нет (не используется) |
 | yay (AUR-хелпер) | `yay` (AUR) | — | `~/.config/yay/` (пусто) | нет |
 | OpenCode | `opencode-bin` (AUR) | — | `~/.config/opencode/` | да (AGENTS, memory, MIRRORS, skills, справочники) |
+| QtPass (менеджер pass) | `qtpass` | 15.11 | `~/.config/QtPass/` | нет (решение) |
+| qt6ct (тема/шрифт Qt) | `qt6ct` | 15.11 | `~/.config/qt6ct/qt6ct.conf` | нет (решение, параметры в memory) |
+| Orca (скринридер) | `orca` | 15.11 | speech-dispatcher + piper | да (конфиги speech-dispatcher) |
+| gThumb (просмотр/импорт фото) | `gthumb` | 16.11 | `~/.config/gthumb/` | нет (решение) |
 
 ## Плагины Noctalia
 
@@ -50,7 +53,8 @@
 |-----------|-------|-----------|
 | Silero | `~/.local/share/silero-venv` | Русский TTS (baya) |
 | Piper | `~/.local/share/piper` | Английский TTS (lessac-high) |
-| RHVoice | `rhvoice`, `rhvoice-language-russian` | Резервный русский TTS |
+| RHVoice | `rhvoice`, `rhvoice-language-russian`, `rhvoice-voice-anna`, `rhvoice-voice-aleksandr`, `rhvoice-voice-aleksandr-hq` | Резервный русский TTS (голоса для Orca) |
+| piper-speechd | `~/.local/bin/piper-speechd` | Модуль piper для speech-dispatcher (голос Orca, `--length_scale 0.6`) |
 | espeak-ng | `espeak-ng` | Резервный TTS |
 | speech-dispatcher | `speech-dispatcher` | Диспетчер речи |
 | translate-shell | `translate-shell` | Перевод буфера |
@@ -61,7 +65,10 @@
 | wl-clipboard | `wl-clipboard` | Буфер обмена Wayland |
 | wtype | `wtype` | Эмуляция ввода |
 | ydotool | `ydotool` | Эмуляция ввода (user-сервис) |
-| brightnessctl | — | Яркость (бинды Niri) |
+| brightnessctl | `brightnessctl` | Яркость (бинды Niri); доступ через `/etc/udev/rules.d/90-backlight.rules` |
+| gphoto2 | `gphoto2`, `libgphoto2` | Импорт с фотокамер (PTP, CLI) |
+| gvfs-gphoto2 | `gvfs-gphoto2` | Камера в Nautilus (PTP-монитор) |
+| exiftool | `perl-image-exiftool` | Метаданные фото (`exiftool`) |
 | playerctl | — | Управление медиа (бинды Niri) |
 | wpctl (wireplumber) | `wireplumber` | Звук (бинды Niri) |
 | uv | `uv` | Python-окружения |

@@ -369,7 +369,7 @@ binds {
     Mod+K hotkey-overlay-title="Показать список горячих клавиш" { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T hotkey-overlay-title="Терминал: terminator" { spawn "terminator"; }
+    Mod+T hotkey-overlay-title="Терминал: WezTerm" { spawn "wezterm"; }
     Mod+D hotkey-overlay-title="Запуск приложения: rofi" { spawn "rofi" "-show" "drun"; }
     Mod+L hotkey-overlay-title="Заблокировать экран: Noctalia" { spawn "noctalia" "msg" "session" "lock"; }
 
@@ -625,7 +625,8 @@ binds {
     Ctrl+Pause { spawn-sh "/home/orr/.local/bin/translate-clipboard"; }
     Ctrl+Shift+Pause { spawn-sh "/home/orr/.local/bin/translate-clipboard --paste"; }
     Mod+A hotkey-overlay-title="Голосовой ввод: SuperWhisper" { spawn-sh "/home/orr/.local/bin/sw-start.sh"; }
-Mod+B hotkey-overlay-title="Zen Browser" { spawn "gtk-launch" "zen"; }
+    Mod+B hotkey-overlay-title="Zen Browser" { spawn "gtk-launch" "zen"; }
+    Mod+G hotkey-overlay-title="GitHub Desktop" { spawn "gtk-launch" "io.github.shiftey.Desktop"; }
 }
 
 environment
@@ -633,4 +634,7 @@ environment
 gestures {
     hot-corners {
     }
+}
+cursor {
+    xcursor-size 40
 }

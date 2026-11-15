@@ -27,15 +27,6 @@
     "type": "bookmark"
   },
   {
-    "cmd": "gtk-launch terminator",
-    "description": "Несколько терминалов в одном окне",
-    "glyph": "terminal-2",
-    "label": "Terminator",
-    "runInBackground": true,
-    "runInTerminal": false,
-    "type": "bookmark"
-  },
-  {
     "cmd": "gtk-launch io.github.shiftey.Desktop",
     "description": "Git-клиент GitHub Desktop (flatpak)",
     "glyph": "brand-github",

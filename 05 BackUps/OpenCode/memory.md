@@ -16,11 +16,12 @@
 
 2. **Niri горячие клавиши** (`~/.config/niri/config.kdl` — стандартный конфиг niri-wm/niri + наши добавления):
    - **Стандартные Niri:** Mod+1-9 (рабочие столы), Print (скриншот), Mod+J (фокус вниз), Mod+Left/Right (фокус колонок)
-   - `Mod+T` → `terminator` (alacritty не установлен)
+   - `Mod+T` → `wezterm` (terminator и alacritty удалены)
    - `Mod+D` → `rofi -show drun` (меню приложений)
    - `Mod+E` → `nautilus` (файловый менеджер; раньше был мёртвый Super+F, перекрытый Mod+F)
    - `Mod+A` → `sw-start.sh` (голосовой ввод SuperWhisper + таймер; было Ctrl+Tab)
    - `Mod+B` → `gtk-launch zen` (Zen Browser)
+   - `Mod+G` → `gtk-launch io.github.shiftey.Desktop` (GitHub Desktop, flatpak)
    - `Mod+X` → `noctalia msg panel-toggle clipboard` (история буфера; было Mod+Shift+X)
    - `Mod+S` → `pkill orca || GDK_BACKEND=wayland orca` (Orca; было Super+Alt+S)
    - `Mod+K` → `show-hotkey-overlay` (список хоткеев; было Mod+Shift+Slash)

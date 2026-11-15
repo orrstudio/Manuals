@@ -26,7 +26,6 @@
 | # | Файл в системе | Файл в бэкапе | Назначение | Статус |
 |---|----------------|---------------|------------|--------|
 | 11 | `~/.config/niri/config.kdl` | `niri/.config/niri/config.kdl` | Конфиг Niri: бинды, 124 русских `hotkey-overlay-title`, `Ctrl+Tab` → `sw-start.sh` | актуален |
-| 12 | `~/.config/terminator/config` | `niri/.config/terminator/config` | Терминал Terminator | актуален |
 | 13 | `~/.config/kanshi/config` | `niri/.config/kanshi/config` | Профили мониторов (eDP-1, DP-3) | актуален |
 | 14 | `~/.config/superwhisper-linux/config.json` | `niri/.config/superwhisper-linux/config.json` | SuperWhisper: модель medium, язык ru, auto_paste true | актуален |
 | 15 | `~/.config/herdr/config.toml` | `niri/.config/herdr/config.toml` | Плагин Noctalia herdr | актуален |

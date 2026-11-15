@@ -1,6 +1,5 @@
 nirimod-git
 opencode-bin
-pass-secret-service-debug
 pinentry-rofi
 yay
 yay-debug

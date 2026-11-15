@@ -43,7 +43,6 @@
 | Файл в системе | Файл в бэкапе (`niri/...`) | Назначение |
 |----------------|---------------------------|------------|
 | `~/.config/niri/config.kdl` | `.config/niri/config.kdl` | Конфиг Niri (бинды, 124 русских описания) |
-| `~/.config/terminator/config` | `.config/terminator/config` | Терминал Terminator |
 | `~/.config/kanshi/config` | `.config/kanshi/config` | Профили мониторов (eDP-1, DP-3) |
 | `~/.config/superwhisper-linux/config.json` | `.config/superwhisper-linux/config.json` | SuperWhisper: модель medium, ru, auto_paste true |
 | `~/.config/herdr/config.toml` | `.config/herdr/config.toml` | Плагин Noctalia herdr |
