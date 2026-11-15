@@ -625,8 +625,10 @@ binds {
     Ctrl+Pause { spawn-sh "/home/orr/.local/bin/translate-clipboard"; }
     Ctrl+Shift+Pause { spawn-sh "/home/orr/.local/bin/translate-clipboard --paste"; }
     Mod+A hotkey-overlay-title="Голосовой ввод: SuperWhisper" { spawn-sh "/home/orr/.local/bin/sw-start.sh"; }
-    Mod+B hotkey-overlay-title="Zen Browser" { spawn "gtk-launch" "zen"; }
+    Mod+Z hotkey-overlay-title="Zen Browser" { spawn "gtk-launch" "zen"; }
     Mod+G hotkey-overlay-title="GitHub Desktop" { spawn "gtk-launch" "io.github.shiftey.Desktop"; }
+    Mod+N hotkey-overlay-title="Редактор: gedit" { spawn "gtk-launch" "org.gnome.gedit"; }
+    Mod+P hotkey-overlay-title="Пароли: QtPass" { spawn "env" "QT_QPA_PLATFORMTHEME=qt6ct" "qtpass"; }
 }
 
 environment
