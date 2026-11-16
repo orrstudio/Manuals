@@ -34,3 +34,6 @@ export SILERO_VOICE="baya"
 export SILERO_TEMPO="1.3"
 export SAY_RU_ENGINE="silero"
 
+
+# zoxide: умный cd (команды z, zi)
+eval "$(zoxide init bash)"

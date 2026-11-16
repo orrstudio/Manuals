@@ -21,7 +21,7 @@
 | `recently_used.json`, `usage_counts.json`, `screen_time.json` | статистика |
 | `~/.ssh`, `~/.password-store`, `~/.gnupg` (ключи), `~/.local/share/keyrings` | секреты |
 | `~/.var/app/` (flatpak-профили) | по решению пользователя |
-| `~/.config/qt5ct`, `~/.config/qt6ct`, `gtk-3.0`, `gtk-4.0`, `mimeapps.list` | по решению (настройка описана в памяти) |
+| `~/.config/qt5ct`, `gtk-3.0`, `gtk-4.0`, `mimeapps.list` | по решению (qt6ct бэкапится: conf + палитра Adwaita) |
 | `herdr`, `piper`, `superwhisper` бинарники/симлинки | переустанавливаются |
 | `~/.config/zen/`, `~/.config/mc/`, `~/.config/waybar/` | по решению |
 

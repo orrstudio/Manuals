@@ -13,6 +13,11 @@
 | Zen Browser | AUR `zen-browser-bin` | `~/.config/zen/` | нет (решение) |
 | GitHub Desktop | flatpak `io.github.shiftey.Desktop` | `~/.var/app/...` | нет (решение) |
 | LocalSend | flatpak `org.localsend.localsend_app` | `~/.var/app/...` | нет (решение) |
+| Easyflatpak (GUI для flatpak) | flatpak `org.dupot.easyflatpak` | `~/.var/app/...` | нет (решение) |
+| Transmission (torrent) | flatpak `com.transmissionbt.Transmission` | `~/.var/app/...` | нет (решение) |
+| Pinta (графика) | flatpak `com.github.PintaProject.Pinta` | `~/.var/app/...` | нет (решение) |
+| VLC (медиа) | flatpak `org.videolan.VLC` | `~/.var/app/...` | нет (решение) |
+| SMPlayer (медиа) | flatpak `info.smplayer.SMPlayer` | `~/.var/app/...` | нет (решение) |
 | herdr | бинарник `~/.local/bin/herdr` | `~/.config/herdr/config.toml` | бинарник нет, конфиг да |
 | piper | `~/.local/share/piper` (модели) | — | нет (пересоздаётся) |
 | Silero | `~/.local/share/silero-venv` | — | нет (пересоздаётся) |

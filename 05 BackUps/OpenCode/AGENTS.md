@@ -43,6 +43,7 @@
    - Реестр бэкапов: `~/GitHub/Manuals/05 BackUps/niri/BACKUP-MANIFEST.md` — таблица «файл в системе → файл в бэкапе → назначение → статус».
    - При добавлении файла в бэкап: вписать его в `MIRRORS.md` (раздел 2) и в `BACKUP-MANIFEST.md`.
    - При изменении системного файла — сразу обновлять его копию в бэкапе (полная синхронизация, без напоминаний).
+   - **ПРАВИЛО БУКМАРКОВ:** при установке ЛЮБОГО нового приложения (пакет, flatpak, AUR, бинарник) — сразу добавить его закладку в плагин Bookmarks: `~/.local/state/noctalia/plugins/data/dunarand/bookmarks/data.json` (поля `label`, `glyph` из Tabler, `cmd`, `runInBackground: true`; для GUI — `gtk-launch <desktop-id>`), затем скопировать файл в бэкап. То же — при удалении приложения: закладку убрать.
 
 7. **СЕКРЕТЫ OPENCODE (ключи)**
    Правила и Схема: ВСЕ ключи живут ТОЛЬКО в pass (~/.password-store/01.OrrPrivat/open-code/):

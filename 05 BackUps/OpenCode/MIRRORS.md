@@ -47,6 +47,10 @@
 | `~/.config/herdr/config.toml` | `.config/herdr/config.toml` | Плагин Noctalia herdr |
 | `~/.config/layout-fix/config` | `.config/layout-fix/config` | Плагин раскладки |
 | `~/.config/autostart/superwhisper.desktop` | `.config/autostart/superwhisper.desktop` | Автозапуск SuperWhisper |
+| `~/.config/yazi/` (theme.toml, flavors/) | `.config/yazi/` | Тема yazi (Adwaita Dark, без flavor) |
+| `~/.config/noctalia/palettes/AdwaitaDark.json` | `.config/noctalia/palettes/AdwaitaDark.json` | Кастомная палитра Noctalia (Adwaita Dark) |
+| `~/.config/qt6ct/qt6ct.conf` + `colors/adwaita-dark.conf` | `.config/qt6ct/` | Тема/шрифт Qt (Adwaita Dark, 16 pt) |
+| `~/.config/gtk-3.0/gtk.css`, `gtk-4.0/gtk.css` | `.config/gtk-3.0/`, `.config/gtk-4.0/` | Чёрный фон GTK (остальное Adwaita Dark) |
 | `~/.config/speech-dispatcher/speechd.conf` | `.config/speech-dispatcher/speechd.conf` | speech-dispatcher: DefaultModule piper (Orca) |
 | `~/.config/speech-dispatcher/modules/piper.conf` | `.config/speech-dispatcher/modules/piper.conf` | Модуль piper (generic) для speech-dispatcher |
 
@@ -105,7 +109,7 @@
 | Что | Причина |
 |-----|---------|
 | `~/.config/waybar/` | Не используется (заменён Noctalia) |
-| `~/.config/mc/`, `gtk-3.0/`, `gtk-4.0/`, `qt5ct/`, `qt6ct/` | По решению пользователя |
+| `~/.config/mc/`, `qt5ct/` | По решению пользователя (qt6ct и gtk css бэкапятся) |
 | `~/.config/mimeapps.list`, `user-dirs.dirs` | По решению пользователя |
 | `~/.config/opencode/opencode.jsonc`, `cli.json`, `package.json` | По решению пользователя |
 | `~/.config/dconf/user` | По решению пользователя |

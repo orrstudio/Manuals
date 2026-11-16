@@ -3,10 +3,14 @@ base-devel
 bluez
 bluez-utils
 brightnessctl
+chafa
 cmake
 dkms
 espeak-ng
+fd
+ffmpegthumbnailer
 flatpak
+fzf
 gcc
 gedit
 git
@@ -17,6 +21,7 @@ gst-plugin-pipewire
 gthumb
 gtk4-layer-shell
 gvfs-gphoto2
+imagemagick
 intel-ucode
 kanshi
 libappindicator
@@ -61,6 +66,7 @@ sudo
 translate-shell
 ttf-dejavu
 ttf-liberation
+ttf-nerd-fonts-symbols-mono
 ufw
 uv
 waybar
@@ -74,6 +80,8 @@ xdg-desktop-portal-gnome
 xwayland-satellite
 yay
 yay-debug
+yazi
 ydotool
 zen-browser-bin
+zoxide
 zram-generator

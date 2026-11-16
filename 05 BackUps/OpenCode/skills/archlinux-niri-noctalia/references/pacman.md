@@ -63,6 +63,8 @@ flatpak list --app --columns=application,origin > <backup>/system/flatpak-list.t
 
 Also add a row to `INSTALLED-APPS.md` (app, package, date, config path, backed up or not).
 
+Finally add the app to the Bookmarks panel (`~/.local/state/noctalia/plugins/data/dunarand/bookmarks/data.json`): `label`, a Tabler `glyph`, `cmd` (`gtk-launch <desktop-id>` for GUI apps), `runInBackground: true`; mirror the file afterwards. Removing an app means removing its bookmark too. Details: `noctalia.md`.
+
 ## Gotchas seen in practice
 
 - A package that ships a `.desktop` file can hide a previously installed app's launcher. Check `/usr/share/applications`, `~/.local/share/applications` and `/var/lib/flatpak/exports/share/applications` before overwriting a symlink in `/usr/local/bin`.
