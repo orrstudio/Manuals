@@ -40,7 +40,7 @@ Result: the command fails and nothing changes. Ask the user to close the rofi wi
 
 ## Gotcha: interactive tools
 
-Commands that need a TTY (`opencode auth login`, `herdr`) must run inside a real terminal window, not through a captured shell. Open a terminal:
+Commands that need a TTY (`opencode auth login`) must run inside a real terminal window, not through a captured shell. Open a terminal:
 
 ```sh
 niri msg action spawn -- "terminator" "-e" "<command>"

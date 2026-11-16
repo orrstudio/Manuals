@@ -621,16 +621,16 @@ binds {
     Ctrl+Alt+Delete hotkey-overlay-title="Выход из Niri" { quit; }
 
     Mod+E hotkey-overlay-title="Файловый менеджер: nautilus" { spawn "nautilus"; }
-    Pause { spawn-sh "/home/orr/.local/bin/say-clipboard"; }
-    Ctrl+Pause { spawn-sh "/home/orr/.local/bin/translate-clipboard"; }
-    Ctrl+Shift+Pause { spawn-sh "/home/orr/.local/bin/translate-clipboard --paste"; }
-    Mod+A hotkey-overlay-title="Голосовой ввод: SuperWhisper" { spawn-sh "/home/orr/.local/bin/sw-start.sh"; }
+    Pause { spawn-sh "$HOME/.local/bin/say-clipboard"; }
+    Ctrl+Pause { spawn-sh "$HOME/.local/bin/translate-clipboard"; }
+    Ctrl+Shift+Pause { spawn-sh "$HOME/.local/bin/translate-clipboard --paste"; }
+    Mod+A hotkey-overlay-title="Голосовой ввод: SuperWhisper" { spawn-sh "$HOME/.local/bin/sw-start.sh"; }
     Mod+Z hotkey-overlay-title="Zen Browser" { spawn "gtk-launch" "zen"; }
     Mod+G hotkey-overlay-title="GitHub Desktop" { spawn "gtk-launch" "io.github.shiftey.Desktop"; }
     Mod+N hotkey-overlay-title="Редактор: gedit" { spawn "gtk-launch" "org.gnome.gedit"; }
     Mod+P hotkey-overlay-title="Пароли: QtPass" { spawn "env" "QT_QPA_PLATFORMTHEME=qt6ct" "qtpass"; }
-    Mod+H hotkey-overlay-title="Herdr" { spawn-sh "env -u HERDR_ENV -u HERDR_SOCKET_PATH -u HERDR_PANE_ID -u HERDR_TAB_ID -u HERDR_WORKSPACE_ID -u HERDR_STARTUP_CWD -u HERDR_BIN_PATH -u TERM_PROGRAM wezterm start --always-new-process -e herdr"; }
     Mod+Y hotkey-overlay-title="Yazi" { spawn "wezterm" "start" "--always-new-process" "-e" "yazi"; }
+    Mod+H hotkey-overlay-title="Herdr App" { spawn "herdr-app"; }
 }
 
 environment

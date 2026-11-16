@@ -65,7 +65,8 @@ Data: `~/.local/state/noctalia/plugins/data/dunarand/bookmarks/data.json`. Root 
 - `label` and `cmd` are required; `glyph` falls back to `bookmark`/`folder`.
 - Glyph names come from the Tabler set shipped by Noctalia: `/usr/share/noctalia/assets/fonts/tabler.json`. Check a name before using it:
   `grep -q '"terminal"' /usr/share/noctalia/assets/fonts/tabler.json`
-- GUI apps: `runInBackground: true`, `cmd` starting with `gtk-launch <desktop-id>` (works for flatpak ids too).
+- GUI apps: `runInBackground: true`. Для flatpak-приложений надёжнее `cmd = "flatpak run <app-id>"` — `gtk-launch` в окружении Noctalia срабатывал нестабильно.
+- Для обычных приложений — `gtk-launch <desktop-id>`.
 - Add/edit with a small JSON script, then mirror the file to the backup.
 
 Useful glyphs seen: `folder`, `terminal`, `terminal-2`, `search`, `palette`, `world`, `file-text`, `layout-dashboard`, `adjustments`, `send`, `microphone`, `chart-line`, `sitemap`, `tool`, `video`, `camera`, `satellite`, `gauge`, `robot`, `key`, `lock-square-rounded`.

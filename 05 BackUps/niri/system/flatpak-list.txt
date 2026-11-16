@@ -1,7 +1,10 @@
 com.github.PintaProject.Pinta	flathub
+com.github.tchx84.Flatseal	flathub
 com.transmissionbt.Transmission	flathub
 info.smplayer.SMPlayer	flathub
+io.github.giantpinkrobots.flatsweep	flathub
 io.github.shiftey.Desktop	flathub
+it.mijorus.gearlever	flathub
 org.dupot.easyflatpak	flathub
 org.localsend.localsend_app	flathub
 org.videolan.VLC	flathub

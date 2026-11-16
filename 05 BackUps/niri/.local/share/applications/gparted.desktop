@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=GParted
+GenericName=Partition Editor
+Comment=Create, reorganize, and delete partitions (root, Wayland-safe)
+Exec=gparted-root.sh
+Icon=gparted
+Terminal=false
+Categories=System;Filesystem;
+Keywords=partition;disk;

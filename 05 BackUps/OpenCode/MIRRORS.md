@@ -13,6 +13,7 @@
 | `~/.config/opencode/memory.md` | `OpenCode/memory.md` |
 | `~/.config/opencode/MIRRORS.md` | `OpenCode/MIRRORS.md` |
 | `~/.config/opencode/Voxtype-And-TTS-Reader.md` | `OpenCode/Voxtype-And-TTS-Reader.md` |
+| `~/.config/opencode/Theme-Palette.md` | `OpenCode/Theme-Palette.md` | Палитра и тема (единая точка) |
 | `~/.config/opencode/skills/` (вся папка) | `OpenCode/skills/` |
 
 ---
@@ -36,6 +37,7 @@
 | `~/.local/bin/toggle-laptop-panel.sh` | `.local/bin/toggle-laptop-panel.sh` | Вкл/выкл экрана eDP-1 |
 | `~/.local/bin/translate-clipboard` | `.local/bin/translate-clipboard` | Перевод буфера |
 | `~/.local/bin/piper-speechd` | `.local/bin/piper-speechd` | piper для speech-dispatcher (голос Orca) |
+| `~/.local/bin/gparted-root.sh` | `.local/bin/gparted-root.sh` | Запуск GParted от root на Wayland (sudo -A) |
 
 ### 2.2. Конфиги
 
@@ -44,10 +46,10 @@
 | `~/.config/niri/config.kdl` | `.config/niri/config.kdl` | Конфиг Niri (бинды, 124 русских описания) |
 | `~/.config/kanshi/config` | `.config/kanshi/config` | Профили мониторов (eDP-1, DP-3) |
 | `~/.config/superwhisper-linux/config.json` | `.config/superwhisper-linux/config.json` | SuperWhisper: модель medium, ru, auto_paste true |
-| `~/.config/herdr/config.toml` | `.config/herdr/config.toml` | Плагин Noctalia herdr |
+| `~/.config/herdr-app/` (settings, keys, layouts, mods, themes, AGENTS.md) | `.config/herdr-app/` | Нативное приложение Herdr (data/ и frame/ не бэкапятся — кеш) |
 | `~/.config/layout-fix/config` | `.config/layout-fix/config` | Плагин раскладки |
 | `~/.config/autostart/superwhisper.desktop` | `.config/autostart/superwhisper.desktop` | Автозапуск SuperWhisper |
-| `~/.config/yazi/` (theme.toml, flavors/) | `.config/yazi/` | Тема yazi (Adwaita Dark, без flavor) |
+| `~/.config/yazi/` (theme.toml, flavors/) | `.config/yazi/` | Тема yazi (gruvbox-dark) |
 | `~/.config/noctalia/palettes/AdwaitaDark.json` | `.config/noctalia/palettes/AdwaitaDark.json` | Кастомная палитра Noctalia (Adwaita Dark) |
 | `~/.config/qt6ct/qt6ct.conf` + `colors/darker-black.conf` | `.config/qt6ct/` | Тема/шрифт Qt (dark, фон #000000, 16 pt) |
 | `~/.config/gtk-3.0/gtk.css`, `gtk-4.0/gtk.css` | `.config/gtk-3.0/`, `.config/gtk-4.0/` | Чёрный фон GTK (остальное Adwaita) |
@@ -77,7 +79,6 @@
 |----------------|---------------------------|------------|
 | `~/.local/share/applications/org.localsend.localsend_app.desktop` | `.local/share/applications/org.localsend.localsend_app.desktop` | Ярлык LocalSend |
 | `~/.local/share/applications/superwhisper.desktop` | `.local/share/applications/superwhisper.desktop` | Ярлык SuperWhisper |
-| `~/.local/share/applications/herdr.desktop` | `.local/share/applications/herdr.desktop` | Ярлык Herdr (WezTerm + herdr, сброс HERDR_*) |
 
 ### 2.6. Noctalia
 
@@ -109,7 +110,7 @@
 | Что | Причина |
 |-----|---------|
 | `~/.config/waybar/` | Не используется (заменён Noctalia) |
-| `~/.config/mc/`, `qt5ct/` | По решению пользователя (qt6ct и gtk css бэкапятся) |
+| `~/.config/qt5ct/` | По решению пользователя (qt6ct, gtk css, mc бэкапятся) |
 | `~/.config/mimeapps.list`, `user-dirs.dirs` | По решению пользователя |
 | `~/.config/opencode/opencode.jsonc`, `cli.json`, `package.json` | По решению пользователя |
 | `~/.config/dconf/user` | По решению пользователя |

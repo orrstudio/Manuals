@@ -14,14 +14,13 @@ Niri reloads the config automatically on save (journal shows `niri_config: loade
 
 ```kdl
 spawn "gtk-launch" "zen"                       // correct
-spawn "wezterm" "start" "--always-new-process" "-e" "herdr"
+spawn "herdr-app"
 spawn "gtk-launch zen"                         // WRONG: one binary name with a space
 ```
 
 Use `spawn-sh` when you need a shell (pipes, env, variables, `||`):
 
 ```kdl
-spawn-sh "env -u HERDR_ENV wezterm start -e herdr"
 spawn-sh "pkill orca || GDK_BACKEND=wayland orca"
 ```
 

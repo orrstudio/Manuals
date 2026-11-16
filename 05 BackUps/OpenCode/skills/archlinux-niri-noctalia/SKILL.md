@@ -1,6 +1,6 @@
 ---
 name: archlinux-niri-noctalia
-description: Operates an Arch Linux desktop built on Niri + Noctalia. Use when installing or removing packages (pacman/yay/flatpak), running privileged commands through sudo -A with rofi-askpass, editing Niri keybinds (spawn/spawn-sh, hotkey overlay, Mod vs Super duplicates), configuring Noctalia (dock, lockscreen, panels, Bookmarks plugin, settings.toml), setting up TTS (speech-dispatcher, piper, RHVoice, GNOME Orca screen reader), theming Qt apps (qt6ct, QtPass/pass), fixing brightness (brightnessctl + udev), importing photos from a camera (gphoto2, gvfs-gphoto2, gthumb, exiftool), launching herdr, or syncing the file backup (MIRRORS.md, BACKUP-MANIFEST.md). Triggers: pacman, sudo -A, rofi-askpass, Mod+K, bookmarks data.json, piper, Orca Insert, qtpass, gphoto2, MIRRORS.
+description: Operates an Arch Linux desktop built on Niri + Noctalia. Use when installing or removing packages (pacman/yay/flatpak), running privileged commands through sudo -A with rofi-askpass, editing Niri keybinds (spawn/spawn-sh, hotkey overlay, Mod vs Super duplicates), configuring Noctalia (dock, lockscreen, panels, Bookmarks plugin, settings.toml), setting up TTS (speech-dispatcher, piper, RHVoice, GNOME Orca screen reader), theming Qt apps (qt6ct, QtPass/pass), fixing brightness (brightnessctl + udev), importing photos from a camera (gphoto2, gvfs-gphoto2, gthumb, exiftool), launching Herdr App (native GUI), or syncing the file backup (MIRRORS.md, BACKUP-MANIFEST.md). Triggers: pacman, sudo -A, rofi-askpass, Mod+K, bookmarks data.json, piper, Orca Insert, qtpass, gphoto2, MIRRORS.
 ---
 
 # Arch + Niri + Noctalia operations
@@ -28,7 +28,8 @@ description: Operates an Arch Linux desktop built on Niri + Noctalia. Use when i
 | Niri keybinds, overlay, spawn vs spawn-sh, duplicate keys | `references/niri.md` |
 | Noctalia: dock, lockscreen, panels, Bookmarks, settings.toml | `references/noctalia.md` |
 | TTS: speech-dispatcher, piper, RHVoice, GNOME Orca | `references/tts-orca.md` |
-| Qt theme, QtPass/pass, brightness, cameras, herdr, media keys | `references/desktop-apps.md` |
+| Qt theme, QtPass/pass, brightness, cameras, Herdr App, media keys | `references/desktop-apps.md` |
 | backup mirroring, registries, package lists | `references/backup-sync.md` |
+| migrating to another machine, hardcoded paths, hardware | `references/migration.md` |
 
 Scripts: `scripts/sudo-a.sh`, `scripts/pkg-remove-check.sh`, `scripts/backup-sync.sh`.

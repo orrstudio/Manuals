@@ -3,6 +3,7 @@ high_contrast = true
 ui_scale = 1.25
 
 [audio]
+colorize_icons = true
 enable_notification_sounds = true
 enable_overdrive = false
 enable_power_sounds = true
@@ -11,6 +12,7 @@ enable_sounds = true
 enable_volume_sounds = true
 sound_theme = "freedesktop"
 sound_volume = 0.5
+spectrum_frame_rate = 60
 
 [backdrop]
 blur_intensity = 0.5
@@ -23,6 +25,7 @@ order = [ "OrrPanel" ]
     [bar.OrrPanel]
     auto_hide = false
     auto_hide_delay_ms = 0
+    auto_hide_reserve_space = false
     background_opacity = 1.0
     border = "outline_variant"
     border_width = 0.0
@@ -32,7 +35,7 @@ order = [ "OrrPanel" ]
     capsule_opacity = 1.0
     capsule_padding = 2.0
     capsule_thickness = 1.0
-    center = [ "weather", "date", "clock", "group:g5", "notifications", "bar_3", "bar_4", "group:g4" ]
+    center = [ "weather", "date", "clock", "group:g5", "notifications", "herdr-btn", "wezterm-btn", "bar_4", "group:g4" ]
     compositor_blur = false
     concave_edge_corners = false
     contact_shadow = false
@@ -138,8 +141,11 @@ connection_notifications = false
 
 [brightness]
 enable_ddcutil = false
+enable_scheduled_brightness = false
 ignore_mmids = []
 minimum_brightness = 0.0
+scheduled_day_brightness = 1.0
+scheduled_night_brightness = 0.5
 sync_all_monitors = false
 
 [calendar]
@@ -157,7 +163,6 @@ refresh_minutes = 15
     use_event_reminders = true
 
 [control_center]
-circular_avatar = false
 hidden_tabs = [ "media" ]
 show_avatar_border = true
 show_session_button = true
@@ -205,13 +210,17 @@ active_monitor_only = true
 active_opacity = 1.0
 active_scale = 0.80000001192092896
 auto_hide = false
+auto_hide_reveal_delay_ms = 250
 background_opacity = 0.5
 border = "outline_variant"
 border_width = 0.0
+colorize_icons = true
 compositor_blur = false
 concave_edge_corners = true
 cross_axis_padding = 8
-enabled = true
+enabled = false
+icon_saturation = 1.0
+icon_shadow = false
 icon_size = 48
 inactive_opacity = 1.0
 inactive_scale = 0.60000002384185791
@@ -318,12 +327,15 @@ pre_action_fade_seconds = 0.0
 
 [keybinds]
 cancel = [ "Escape" ]
+category_next = [ "Ctrl+Tab" ]
+category_previous = [ "Ctrl+Shift+ISO_Left_Tab" ]
 copy = [ "Ctrl+c" ]
 delete = [ "Delete" ]
 down = [ "Down" ]
 left = [ "Left" ]
 right = [ "Right" ]
 save = [ "Ctrl+s" ]
+select_all = [ "Ctrl+a" ]
 tab_next = [ "Tab" ]
 tab_previous = [ "Shift+ISO_Left_Tab" ]
 up = [ "Up" ]
@@ -340,14 +352,16 @@ sunset = ""
 allow_empty_password = false
 blur_intensity = 0.5
 blurred_desktop = false
+dnd = false
 edge_smoothness = 0.30000001192092896
-enabled = false
+enabled = true
 fingerprint = false
 grace_period_seconds = 0
 lock_before_suspend = true
 monitors = []
+tint_color = "surface"
 tint_intensity = 0.30000001192092896
-transition = [ "fade", "wipe", "disc", "stripes", "zoom", "honeycomb", "vortex", "pixel", "diamond", "golden", "melt" ]
+transition = [ "fade", "wipe", "disc", "stripes", "zoom", "honeycomb", "vortex", "pixel", "diamond", "golden", "melt", "crt" ]
 transition_duration = 1500.0
 wallpaper = ""
 
@@ -431,19 +445,23 @@ border = true
 border_color = "outline_variant"
 border_width = 1.0
 collapse_on_dismiss = true
+colorize_icons = true
 enable_daemon = true
 follow_focused_output = false
+group_by_app = true
 history_retention_hours = 0
 keep_dismissed_in_history = true
 layer = "top"
 max_visible = 0
 monitors = []
+newest_on_edge = false
 offset_x = 20
 offset_y = 8
 position = "top_right"
 scale = 1.0
 show_actions = true
 show_app_name = true
+show_progress_bar = true
 width = 360
 
 [osd]
@@ -523,7 +541,6 @@ enabled = [
     "thaer99ob/default-apps",
     "nightwatch75/dns-switcher",
     "pk/geoip-monitor",
-    "hy4ri/herdr",
     "blackbartblues/keymap",
     "noctalia/notes",
     "3dprogramin/ufw",
@@ -544,10 +561,10 @@ enabled = [
     name = "community"
 
 [shell]
-app_icon_colorize = true
 avatar_path = ""
 button_borders = true
 card_borders = true
+circular_avatar = false
 clipboard_auto_paste = "auto"
 clipboard_confirm_clear_history = true
 clipboard_enabled = true
@@ -569,9 +586,11 @@ offline_mode = false
 panel_anchor_bar = "OrrPanel"
 password_style = "default"
 polkit_agent = true
+polkit_colorize_icons = true
 popup_borders = true
 popup_shadows = true
 readline_shortcuts = false
+screen_time_colorize_icons = true
 screen_time_enabled = false
 settings_expand_all_groups = false
 settings_show_advanced = true
@@ -602,6 +621,7 @@ umbriel_overview_type_to_launch_enabled = false
     auto_paste = "auto"
     categories = true
     category_icons_only = false
+    colorize_icons = true
     compact = false
     default_view = "recent"
     fetch_exchange_rates = true
@@ -667,6 +687,7 @@ umbriel_overview_type_to_launch_enabled = false
 
     [shell.screenshot]
     annotate = false
+    append_mode_suffix = true
     close_on_copy = true
     close_on_save = true
     confirm_region = false
@@ -756,6 +777,7 @@ umbriel_overview_type_to_launch_enabled = false
     direction = "down"
 
     [shell.window_switcher]
+    colorize_icons = true
     current_workspace_only = false
     mru = false
     show_all_outputs = true
@@ -808,12 +830,13 @@ swap_pct_critical_threshold = 80.0
 [theme]
 builtin = "Gruvbox"
 community_palette = "Oxocarbon"
-custom_palette = ""
+custom_palette = "AdwaitaDark"
 mode = "dark"
 pure_black_dark = true
 shell_mode = "dark"
 source = "wallpaper"
 sync_color_scheme = true
+terminal_colors = "palette"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
@@ -831,7 +854,8 @@ enabled = true
 fill_color = ""
 fill_mode = "stretch"
 per_monitor_directories = false
-transition = [ "fade", "wipe", "disc", "stripes", "zoom", "honeycomb", "vortex", "pixel", "diamond", "golden", "melt" ]
+sync_transitions = true
+transition = [ "fade", "wipe", "disc", "stripes", "zoom", "honeycomb", "vortex", "pixel", "diamond", "golden", "melt", "crt" ]
 transition_duration = 1500.0
 transition_on_startup = true
 
@@ -849,6 +873,7 @@ refresh_minutes = 60
 unit = "metric"
 
 [widget.active_window]
+colorize_icons = true
 icon_size = 16.0
 max_length = 260.0
 min_length = 80.0
@@ -867,9 +892,6 @@ type = "dunarand/bookmarks:bar"
 scale = 1.55
 show_bar_value = false
 type = "yuuto/calculator:bar"
-
-[widget.bar_3]
-type = "hy4ri/herdr:bar"
 
 [widget.bar_4]
 hide_when_empty = false
@@ -930,6 +952,16 @@ type = "clock"
 [widget.dns-switcher]
 show_label = false
 type = "nightwatch75/dns-switcher:dns-switcher"
+
+[widget.herdr-btn]
+glyph = "robot"
+scale = 1.3
+tooltip = """Herdr App (GUI)
+Горячая клавиша: Mod+H"""
+type = "custom_button"
+
+    [widget.herdr-btn.actions]
+    left = "exec herdr-app"
 
 [widget.input_volume]
 device = "input"
@@ -1070,10 +1102,18 @@ enabled = false
 type = "sysmon"
 visualization = "none"
 
+[widget.taskbar]
+colorize_icons = true
+type = "taskbar"
+
 [widget.temp]
 stat = "cpu_temp"
 type = "sysmon"
 visualization = "none"
+
+[widget.tray]
+colorize_icons = true
+type = "tray"
 
 [widget.wallpaper]
 enabled = false
@@ -1083,10 +1123,21 @@ type = "wallpaper"
 capsule_padding = 5
 type = "weather"
 
+[widget.wezterm-btn]
+glyph = "terminal-2"
+scale = 1.3
+tooltip = """WezTerm
+Терминал"""
+type = "custom_button"
+
+    [widget.wezterm-btn.actions]
+    left = "exec wezterm"
+
 [widget.widget]
 scale = 1.3
 type = "blackbartblues/keymap:widget"
 
 [widget.workspaces]
+colorize_icons = true
 scale = 1.2
 type = "workspaces"

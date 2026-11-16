@@ -18,7 +18,10 @@
 | Pinta (графика) | flatpak `com.github.PintaProject.Pinta` | `~/.var/app/...` | нет (решение) |
 | VLC (медиа) | flatpak `org.videolan.VLC` | `~/.var/app/...` | нет (решение) |
 | SMPlayer (медиа) | flatpak `info.smplayer.SMPlayer` | `~/.var/app/...` | нет (решение) |
-| herdr | бинарник `~/.local/bin/herdr` | `~/.config/herdr/config.toml` | бинарник нет, конфиг да |
+| Flatsweep (очистка flatpak) | flatpak `io.github.giantpinkrobots.flatsweep` | `~/.var/app/...` | нет (решение) |
+| Flatseal (права flatpak) | flatpak `com.github.tchx84.Flatseal` | `~/.var/app/...` | нет (решение) |
+| Gearlever (AppImage) | flatpak `it.mijorus.gearlever` | `~/.var/app/...` | нет (решение) |
+| Herdr App (нативный GUI) | установщик releases.herdr.dev → `~/.local/share/herdr-app`, `herdr-app` в `~/.local/bin` | `~/.config/herdr-app/` | да (без data/frame) |
 | piper | `~/.local/share/piper` (модели) | — | нет (пересоздаётся) |
 | Silero | `~/.local/share/silero-venv` | — | нет (пересоздаётся) |
 

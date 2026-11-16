@@ -1,8 +1,0 @@
-onboarding = false
-
-[ui.toast]
-delivery = "herdr"
-
-[theme]
-name = "nord"
-auto_switch = false

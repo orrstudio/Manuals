@@ -2,7 +2,7 @@
 
 Система: Arch Linux + Niri (Wayland) + Noctalia, GTX 1650. Встроенная клавиатура ноутбука испорчена — только внешняя.
 
-Процедуры — скилл `archlinux-niri-noctalia`. Данные — в бэкапе (`config.kdl`, `settings.toml`, `.bashrc`, скрипты) и реестрах (`MIRRORS.md`, `BACKUP-MANIFEST.md`, `INSTALLED-APPS.md`). Здесь — только решения и грабли, которые из конфигов не выводятся.
+Процедуры — скилл `archlinux-niri-noctalia`; перенос на новую машину — его `references/migration.md` + `05 BackUps/niri/MIGRATION-README.md`. Данные — в бэкапе (`config.kdl`, `settings.toml`, `.bashrc`, скрипты) и реестрах (`MIRRORS.md`, `BACKUP-MANIFEST.md`, `INSTALLED-APPS.md`). Здесь — только решения и грабли, которые из конфигов не выводятся.
 
 ## Решения и грабли
 
@@ -11,10 +11,10 @@
 - **TTS английский**: piper `Amy` сломан (ошибка кодпоинтов) — использовать `lessac-high`.
 - **TTS русский**: основной Silero (baya), резерв piper Irina; `SAY_SPEED=0.6`.
 - **Orca**: `GDK_BACKEND=wayland` обязателен (иначе `XkbSetMap`); `Insert+Пробел` = настройки, не flat review; `AddVoice` в piper-модуле обязателен (иначе espeak-«робот»).
-- **Herdr**: запускать со сбросом переменных `HERDR_*`, иначе «nested herdr is disabled».
+- **Herdr**: только нативное приложение **Herdr App** (`herdr-app`, `~/.config/herdr-app/`, бинд `Mod+H`). TUI удалён и не используется.
 - **Qt**: `qt6ct`, палитра `darker`, шрифт 16 pt, `QT_QPA_PLATFORMTHEME=qt6ct`.
 - **Noctalia**: `dock.enabled = false`, `lockscreen.enabled = true`; плагин `keymap` deprecated, но работает.
-- **Тема:** Noctalia `source = wallpaper`, GTK `Adwaita`, Qt `qt6ct`/`darker-black`, WezTerm `GruvboxDark` + `background #000000`, yazi `gruvbox-dark`. Фон чёрный, бар Noctalia не менялся.
+- **Тема и палитра:** отдельный файл `~/.config/opencode/Theme-Palette.md` (PS1, WezTerm GruvboxDark + чёрный фон, Noctalia wallpaper, Qt `darker-black`, GTK Adwaita + чёрный `gtk.css`, yazi gruvbox-dark; Herdr App — своя тема (`~/.config/herdr-app/settings.json`, `appearance=dark`, zoom 1.4)).
 - **Удалено**: Terminator, alacritty (терминал — WezTerm); Stably Orca, orca-server, `~/.config/orca` (остался GNOME Orca).
 - **Не бэкапим**: секреты (`pass`, `~/.ssh`, GPG), кэши Noctalia, `qt6ct`, `.var/app`.
 

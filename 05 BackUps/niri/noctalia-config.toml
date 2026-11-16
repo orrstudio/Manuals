@@ -2,6 +2,9 @@
 high_contrast = true
 ui_scale = 1.2500000111758709
 
+[audio]
+colorize_icons = true
+
 [backdrop]
 enabled = true
 
@@ -12,7 +15,7 @@ order = [ "OrrPanel" ]
     capsule = true
     capsule_padding = 2.0
     capsule_thickness = 0.99999998137354851
-    center = [ "weather", "date", "clock", "group:g5", "notifications", "bar_3", "bar_4", "group:g4" ]
+    center = [ "weather", "date", "clock", "group:g5", "notifications", "herdr-btn", "wezterm-btn", "bar_4", "group:g4" ]
     compositor_blur = false
     concave_edge_corners = false
     end = [ "group:g1", "group:g3", "group:g2", "clipboard", "keyboard_layout", "volume", "control-center" ]
@@ -91,7 +94,6 @@ order = [ "OrrPanel" ]
 [calendar]
 
 [control_center]
-circular_avatar = false
 hidden_tabs = [ "media" ]
 
     [control_center.calendar]
@@ -117,8 +119,9 @@ hidden_tabs = [ "media" ]
 active_monitor_only = true
 active_scale = 0.80000001192092896
 background_opacity = 0.4999999888241291
+colorize_icons = true
 compositor_blur = false
-enabled = true
+enabled = false
 inactive_opacity = 0.99999997764825821
 inactive_scale = 0.60000000894069672
 launcher_position = "start"
@@ -154,7 +157,7 @@ pre_action_fade_seconds = 0
 auto_locate = true
 
 [lockscreen]
-enabled = false
+enabled = true
 fingerprint = false
 
 [lockscreen_widgets]
@@ -226,6 +229,9 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@DP-3" ]
 [nightlight]
 enabled = true
 
+[notification]
+colorize_icons = true
+
 [osd.kinds]
 power_profile = false
 
@@ -270,7 +276,6 @@ enabled = [
     "thaer99ob/default-apps",
     "nightwatch75/dns-switcher",
     "pk/geoip-monitor",
-    "hy4ri/herdr",
     "blackbartblues/keymap",
     "noctalia/notes",
     "3dprogramin/ufw",
@@ -279,7 +284,7 @@ enabled = [
 ]
 
 [shell]
-app_icon_colorize = true
+circular_avatar = false
 corner_radius_scale = 2.0
 font_family = "Adwaita Sans"
 lang = "ru"
@@ -287,6 +292,8 @@ niri_overview_close_on_launch_enabled = true
 niri_overview_type_to_launch_enabled = true
 panel_anchor_bar = "OrrPanel"
 polkit_agent = true
+polkit_colorize_icons = true
+screen_time_colorize_icons = true
 
     [shell.keyboard_layout.custom_labels]
     "English (US)" = "EN"
@@ -294,6 +301,7 @@ polkit_agent = true
 
     [shell.launcher]
     app_grid = true
+    colorize_icons = true
     pinned = [ "org.gnome.Nautilus", "terminator", "org.gnome.gedit" ]
     sort_by_usage = false
 
@@ -340,9 +348,13 @@ polkit_agent = true
     shortcut = "5"
     variant = "destructive"
 
+    [shell.window_switcher]
+    colorize_icons = true
+
 [theme]
 builtin = "Gruvbox"
 community_palette = "Oxocarbon"
+custom_palette = "AdwaitaDark"
 mode = "dark"
 pure_black_dark = true
 shell_mode = "dark"
@@ -366,6 +378,9 @@ transition_on_startup = true
 [weather]
 refresh_minutes = 60
 
+[widget.active_window]
+colorize_icons = true
+
 [widget.bar]
 capsule_padding = 7
 enable_scroll = false
@@ -378,9 +393,6 @@ type = "dunarand/bookmarks:bar"
 scale = 1.55
 show_bar_value = false
 type = "yuuto/calculator:bar"
-
-[widget.bar_3]
-type = "hy4ri/herdr:bar"
 
 [widget.bar_4]
 hide_when_empty = false
@@ -431,6 +443,16 @@ format = "{:%a, %d %B}"
 [widget.dns-switcher]
 show_label = false
 type = "nightwatch75/dns-switcher:dns-switcher"
+
+[widget.herdr-btn]
+glyph = "robot"
+scale = 1.3
+tooltip = """Herdr App (GUI)
+Горячая клавиша: Mod+H"""
+type = "custom_button"
+
+    [widget.herdr-btn.actions]
+    left = "exec herdr-app"
 
 [widget.keyboard_layout]
 capsule = true
@@ -538,8 +560,14 @@ type = "custom_button"
 enabled = false
 visualization = "none"
 
+[widget.taskbar]
+colorize_icons = true
+
 [widget.temp]
 visualization = "none"
+
+[widget.tray]
+colorize_icons = true
 
 [widget.wallpaper]
 enabled = false
@@ -547,9 +575,20 @@ enabled = false
 [widget.weather]
 capsule_padding = 5
 
+[widget.wezterm-btn]
+glyph = "terminal-2"
+scale = 1.3
+tooltip = """WezTerm
+Терминал"""
+type = "custom_button"
+
+    [widget.wezterm-btn.actions]
+    left = "exec wezterm"
+
 [widget.widget]
 scale = 1.3
 type = "blackbartblues/keymap:widget"
 
 [widget.workspaces]
+colorize_icons = true
 scale = 1.2
