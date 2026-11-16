@@ -14,7 +14,7 @@
 - **Herdr**: запускать со сбросом переменных `HERDR_*`, иначе «nested herdr is disabled».
 - **Qt**: `qt6ct`, палитра `adwaita-dark` (своя, `~/.config/qt6ct/colors/`), шрифт 16 pt, `QT_QPA_PLATFORMTHEME=qt6ct`.
 - **Noctalia**: `dock.enabled = false`, `lockscreen.enabled = true`; палитра `custom` = `AdwaitaDark` (`~/.config/noctalia/palettes/`), `pure_black_dark = false`; плагин `keymap` deprecated, но работает.
-- **Тема:** Adwaita Dark + чёрный фон везде: GTK `Adwaita-dark` + `gtk.css` (bg `#000000`), Qt палитра `adwaita-dark` (Base/Window `#000000`), WezTerm `background #000000`, Noctalia `pure_black_dark = true`, yazi без flavor (ANSI терминала).
+- **Тема:** Adwaita Dark + чёрный фон везде: GTK `Adwaita-dark` + `gtk.css` (bg `#000000`), Qt палитра `adwaita-dark` (Base/Window `#000000`), WezTerm `background #000000`, Noctalia `pure_black_dark = true`, yazi без flavor.
 - **Удалено**: Terminator, alacritty (терминал — WezTerm); Stably Orca, orca-server, `~/.config/orca` (остался GNOME Orca).
 - **Не бэкапим**: секреты (`pass`, `~/.ssh`, GPG), кэши Noctalia, `qt6ct`, `.var/app`.
 
