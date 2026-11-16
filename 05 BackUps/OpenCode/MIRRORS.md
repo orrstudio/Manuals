@@ -49,8 +49,8 @@
 | `~/.config/autostart/superwhisper.desktop` | `.config/autostart/superwhisper.desktop` | Автозапуск SuperWhisper |
 | `~/.config/yazi/` (theme.toml, flavors/) | `.config/yazi/` | Тема yazi (Adwaita Dark, без flavor) |
 | `~/.config/noctalia/palettes/AdwaitaDark.json` | `.config/noctalia/palettes/AdwaitaDark.json` | Кастомная палитра Noctalia (Adwaita Dark) |
-| `~/.config/qt6ct/qt6ct.conf` + `colors/adwaita-dark.conf` | `.config/qt6ct/` | Тема/шрифт Qt (Adwaita Dark, 16 pt) |
-| `~/.config/gtk-3.0/gtk.css`, `gtk-4.0/gtk.css` | `.config/gtk-3.0/`, `.config/gtk-4.0/` | Чёрный фон GTK (остальное Adwaita Dark) |
+| `~/.config/qt6ct/qt6ct.conf` + `colors/darker-black.conf` | `.config/qt6ct/` | Тема/шрифт Qt (dark, фон #000000, 16 pt) |
+| `~/.config/gtk-3.0/gtk.css`, `gtk-4.0/gtk.css` | `.config/gtk-3.0/`, `.config/gtk-4.0/` | Чёрный фон GTK (остальное Adwaita) |
 | `~/.config/speech-dispatcher/speechd.conf` | `.config/speech-dispatcher/speechd.conf` | speech-dispatcher: DefaultModule piper (Orca) |
 | `~/.config/speech-dispatcher/modules/piper.conf` | `.config/speech-dispatcher/modules/piper.conf` | Модуль piper (generic) для speech-dispatcher |
 

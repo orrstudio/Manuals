@@ -1,5 +1,6 @@
-# Тема Adwaita Dark: цвета берутся из палитры терминала (WezTerm/Adwaita),
-# поэтому flavor не подключаем — иначе он тянет свои ANSI-акценты.
+[flavor]
+dark = "gruvbox-dark"
+
 [indicator]
-current = { fg = "#ffffff", bg = "#3584e4" }
-preview = { fg = "#c0bfbc", bg = "#303030" }
+current = { fg = "#ebdbb2", bg = "#504945" }
+preview = { fg = "#a89984", bg = "#3c3836" }

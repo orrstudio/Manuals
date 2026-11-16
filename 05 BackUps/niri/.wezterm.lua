@@ -8,25 +8,8 @@ config.font = wezterm.font_with_fallback {
   { family = 'Symbols Nerd Font Mono' },
 }
 config.font_size = 16.0
-config.colors = {
-  foreground = '#ffffff',
-  background = '#000000',
-  cursor_bg = '#ffffff',
-  cursor_fg = '#242424',
-  cursor_border = '#ffffff',
-  selection_fg = '#ffffff',
-  selection_bg = '#3584e4',
-  scrollbar_thumb = '#5e5c64',
-  split = '#5e5c64',
-  ansi = {
-    '#241f31', '#c01c28', '#2ec27e', '#f5c211',
-    '#1e78e4', '#9841bb', '#0ab9dc', '#c0bfbc',
-  },
-  brights = {
-    '#5e5c64', '#ed333b', '#57e389', '#f8e45c',
-    '#51a1ff', '#c061cb', '#4fd2fd', '#f6f5f4',
-  },
-}
+config.color_scheme = 'GruvboxDark'
+config.colors = { background = '#000000' }
 config.window_background_opacity = 1.0
 config.adjust_window_size_when_changing_font_size = false
 

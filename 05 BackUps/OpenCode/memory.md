@@ -12,9 +12,9 @@
 - **TTS русский**: основной Silero (baya), резерв piper Irina; `SAY_SPEED=0.6`.
 - **Orca**: `GDK_BACKEND=wayland` обязателен (иначе `XkbSetMap`); `Insert+Пробел` = настройки, не flat review; `AddVoice` в piper-модуле обязателен (иначе espeak-«робот»).
 - **Herdr**: запускать со сбросом переменных `HERDR_*`, иначе «nested herdr is disabled».
-- **Qt**: `qt6ct`, палитра `adwaita-dark` (своя, `~/.config/qt6ct/colors/`), шрифт 16 pt, `QT_QPA_PLATFORMTHEME=qt6ct`.
-- **Noctalia**: `dock.enabled = false`, `lockscreen.enabled = true`; палитра `custom` = `AdwaitaDark` (`~/.config/noctalia/palettes/`), `pure_black_dark = false`; плагин `keymap` deprecated, но работает.
-- **Тема:** Adwaita Dark + чёрный фон везде: GTK `Adwaita-dark` + `gtk.css` (bg `#000000`), Qt палитра `adwaita-dark` (Base/Window `#000000`), WezTerm `background #000000`, Noctalia `pure_black_dark = true`, yazi без flavor.
+- **Qt**: `qt6ct`, палитра `darker`, шрифт 16 pt, `QT_QPA_PLATFORMTHEME=qt6ct`.
+- **Noctalia**: `dock.enabled = false`, `lockscreen.enabled = true`; плагин `keymap` deprecated, но работает.
+- **Тема:** Noctalia `source = wallpaper`, GTK `Adwaita`, Qt `qt6ct`/`darker-black`, WezTerm `GruvboxDark` + `background #000000`, yazi `gruvbox-dark`. Фон чёрный, бар Noctalia не менялся.
 - **Удалено**: Terminator, alacritty (терминал — WezTerm); Stably Orca, orca-server, `~/.config/orca` (остался GNOME Orca).
 - **Не бэкапим**: секреты (`pass`, `~/.ssh`, GPG), кэши Noctalia, `qt6ct`, `.var/app`.
 

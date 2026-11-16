@@ -359,7 +359,7 @@ custom_palette = "AdwaitaDark"
 mode = "dark"
 pure_black_dark = true
 shell_mode = "dark"
-source = "custom"
+source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
