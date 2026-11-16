@@ -13,7 +13,6 @@
 | `~/.config/opencode/memory.md` | `OpenCode/memory.md` |
 | `~/.config/opencode/MIRRORS.md` | `OpenCode/MIRRORS.md` |
 | `~/.config/opencode/Voxtype-And-TTS-Reader.md` | `OpenCode/Voxtype-And-TTS-Reader.md` |
-| `~/.config/opencode/sudo-rofi-askpass.md` | `OpenCode/sudo-rofi-askpass.md` |
 | `~/.config/opencode/skills/` (вся папка) | `OpenCode/skills/` |
 
 ---
@@ -36,18 +35,24 @@
 | `~/.local/bin/text-split-runs` | `.local/bin/text-split-runs` | Разбиение текста по алфавиту |
 | `~/.local/bin/toggle-laptop-panel.sh` | `.local/bin/toggle-laptop-panel.sh` | Вкл/выкл экрана eDP-1 |
 | `~/.local/bin/translate-clipboard` | `.local/bin/translate-clipboard` | Перевод буфера |
+| `~/.local/bin/piper-speechd` | `.local/bin/piper-speechd` | piper для speech-dispatcher (голос Orca) |
 
 ### 2.2. Конфиги
 
 | Файл в системе | Файл в бэкапе (`niri/...`) | Назначение |
 |----------------|---------------------------|------------|
 | `~/.config/niri/config.kdl` | `.config/niri/config.kdl` | Конфиг Niri (бинды, 124 русских описания) |
-| `~/.config/terminator/config` | `.config/terminator/config` | Терминал Terminator |
 | `~/.config/kanshi/config` | `.config/kanshi/config` | Профили мониторов (eDP-1, DP-3) |
 | `~/.config/superwhisper-linux/config.json` | `.config/superwhisper-linux/config.json` | SuperWhisper: модель medium, ru, auto_paste true |
 | `~/.config/herdr/config.toml` | `.config/herdr/config.toml` | Плагин Noctalia herdr |
 | `~/.config/layout-fix/config` | `.config/layout-fix/config` | Плагин раскладки |
 | `~/.config/autostart/superwhisper.desktop` | `.config/autostart/superwhisper.desktop` | Автозапуск SuperWhisper |
+| `~/.config/yazi/` (theme.toml, flavors/) | `.config/yazi/` | Тема yazi (Adwaita Dark, без flavor) |
+| `~/.config/noctalia/palettes/AdwaitaDark.json` | `.config/noctalia/palettes/AdwaitaDark.json` | Кастомная палитра Noctalia (Adwaita Dark) |
+| `~/.config/qt6ct/qt6ct.conf` + `colors/darker-black.conf` | `.config/qt6ct/` | Тема/шрифт Qt (dark, фон #000000, 16 pt) |
+| `~/.config/gtk-3.0/gtk.css`, `gtk-4.0/gtk.css` | `.config/gtk-3.0/`, `.config/gtk-4.0/` | Чёрный фон GTK (остальное Adwaita) |
+| `~/.config/speech-dispatcher/speechd.conf` | `.config/speech-dispatcher/speechd.conf` | speech-dispatcher: DefaultModule piper (Orca) |
+| `~/.config/speech-dispatcher/modules/piper.conf` | `.config/speech-dispatcher/modules/piper.conf` | Модуль piper (generic) для speech-dispatcher |
 
 ### 2.3. Домашняя папка
 
@@ -72,6 +77,7 @@
 |----------------|---------------------------|------------|
 | `~/.local/share/applications/org.localsend.localsend_app.desktop` | `.local/share/applications/org.localsend.localsend_app.desktop` | Ярлык LocalSend |
 | `~/.local/share/applications/superwhisper.desktop` | `.local/share/applications/superwhisper.desktop` | Ярлык SuperWhisper |
+| `~/.local/share/applications/herdr.desktop` | `.local/share/applications/herdr.desktop` | Ярлык Herdr (WezTerm + herdr, сброс HERDR_*) |
 
 ### 2.6. Noctalia
 
@@ -91,6 +97,8 @@
 | `system/systemd-enabled.txt` | `systemctl list-unit-files --state=enabled` | Системные сервисы |
 | `system/systemd-user-enabled.txt` | `systemctl --user list-unit-files --state=enabled` | Пользовательские сервисы |
 | `system/INSTALLED-APPS.md` | вручную | Журнал приложений: что установлено, где конфиг, бэкапится ли |
+| `system/etc/udev/rules.d/90-backlight.rules` | `/etc/udev/rules.d/90-backlight.rules` | Доступ к яркости для группы video (brightnessctl) |
+| `system/etc/speech-dispatcher/modules/piper.conf` | `/etc/speech-dispatcher/modules/piper.conf` | Модуль piper для speech-dispatcher (Orca) |
 
 Списки пакетов обновляются **вручную** после установки приложений (скрипта нет — по решению пользователя).
 
@@ -101,7 +109,7 @@
 | Что | Причина |
 |-----|---------|
 | `~/.config/waybar/` | Не используется (заменён Noctalia) |
-| `~/.config/mc/`, `gtk-3.0/`, `gtk-4.0/`, `qt5ct/`, `qt6ct/` | По решению пользователя |
+| `~/.config/mc/`, `qt5ct/` | По решению пользователя (qt6ct и gtk css бэкапятся) |
 | `~/.config/mimeapps.list`, `user-dirs.dirs` | По решению пользователя |
 | `~/.config/opencode/opencode.jsonc`, `cli.json`, `package.json` | По решению пользователя |
 | `~/.config/dconf/user` | По решению пользователя |

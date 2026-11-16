@@ -5,9 +5,11 @@ config.front_end = "Software"
 config.font = wezterm.font_with_fallback {
   { family = 'JetBrains Mono' },
   { family = 'Noto Sans CJK KR' },
+  { family = 'Symbols Nerd Font Mono' },
 }
 config.font_size = 16.0
-config.color_scheme = 'Dracula'
+config.color_scheme = 'GruvboxDark'
+config.colors = { background = '#000000' }
 config.window_background_opacity = 1.0
 config.adjust_window_size_when_changing_font_size = false
 

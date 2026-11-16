@@ -1,2 +1,7 @@
+com.github.PintaProject.Pinta	flathub
+com.transmissionbt.Transmission	flathub
+info.smplayer.SMPlayer	flathub
 io.github.shiftey.Desktop	flathub
+org.dupot.easyflatpak	flathub
 org.localsend.localsend_app	flathub
+org.videolan.VLC	flathub

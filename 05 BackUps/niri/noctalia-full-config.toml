@@ -32,7 +32,7 @@ order = [ "OrrPanel" ]
     capsule_opacity = 1.0
     capsule_padding = 2.0
     capsule_thickness = 1.0
-    center = [ "weather", "date", "clock", "group:g5", "notifications", "bar_3", "bar_4" ]
+    center = [ "weather", "date", "clock", "group:g5", "notifications", "bar_3", "bar_4", "group:g4" ]
     compositor_blur = false
     concave_edge_corners = false
     contact_shadow = false
@@ -74,7 +74,7 @@ order = [ "OrrPanel" ]
         enabled = true
         fill = "surface_container"
         id = "g1"
-        members = [ "sysmon", "cat", "ram", "temp" ]
+        members = [ "cat", "ram", "temp" ]
         opacity = 1.0
         padding = 6.0
         radius = 3.0
@@ -115,6 +115,17 @@ order = [ "OrrPanel" ]
         fill = "surface_container"
         id = "g5"
         members = [ "bar", "laptop-panel", "widget", "bar_2", "notes", "current" ]
+        opacity = 1.0
+        padding = 2.0
+
+        [[bar.OrrPanel.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g4"
+        members = [ "say-clipboard", "sw-record" ]
         opacity = 1.0
         padding = 2.0
 
@@ -215,7 +226,15 @@ magnification_scale = 1.75
 main_axis_padding = 16
 margin_edge = 0
 margin_ends = 0
-pinned = [ "org.gnome.Nautilus", "zen", "terminator", "org.gnome.gedit", "org.localsend.localsend_app" ]
+pinned = [
+    "org.gnome.Nautilus",
+    "zen",
+    "terminator",
+    "org.wezfurlong.wezterm",
+    "org.gnome.gedit",
+    "org.localsend.localsend_app",
+    "io.github.shiftey.Desktop"
+]
 position = "bottom"
 radius = 16
 radius_bottom_left = 16
@@ -475,6 +494,9 @@ cheatsheet_placement = "attached"
 cheatsheet_position = "auto"
 columns = 2
 compositor = "niri"
+
+[plugin_settings."mellotanica/launcher-pass"]
+storePath = "/home/orr/.password-store"
 
 [plugin_settings."mera/localsend"]
 alias = "Z-Book"
@@ -998,6 +1020,16 @@ stat = "ram_used"
 type = "sysmon"
 visualization = "none"
 
+[widget.say-clipboard]
+capsule_padding = 7
+glyph = "volume"
+tooltip = """Озвучить буфер обмена
+Горячая клавиша: Pause"""
+type = "custom_button"
+
+    [widget.say-clipboard.actions]
+    left = "exec /home/orr/.local/bin/say-clipboard"
+
 [widget.session]
 capsule = true
 capsule_fill = "primary"
@@ -1022,6 +1054,16 @@ type = "pk/geoip-monitor:status"
 [widget.status_2]
 show_count = false
 type = "3dprogramin/ufw:status"
+
+[widget.sw-record]
+glyph = "microphone-filled"
+tooltip = """Голосовой ввод SuperWhisper
+Запись + автостоп через 60 секунд
+Горячая клавиша: Ctrl+Tab"""
+type = "custom_button"
+
+    [widget.sw-record.actions]
+    left = "exec /home/orr/.local/bin/sw-start.sh"
 
 [widget.sysmon]
 enabled = false

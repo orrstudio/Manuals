@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Синтез речи piper для speech-dispatcher (Orca).
+# Текст приходит в stdin, звук сразу играется через PipeWire.
+set -u
+
+PIPER="$HOME/.local/bin/piper"
+MODEL="$HOME/.local/share/piper/voices/ru_RU-irina-medium.onnx"
+
+exec "$PIPER" --model "$MODEL" --length_scale 0.6 -q --output_file - | pw-play -

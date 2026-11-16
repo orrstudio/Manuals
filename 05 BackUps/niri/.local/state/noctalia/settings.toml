@@ -1,8 +1,11 @@
-config_version = 16
+config_version = 20
 
 [accessibility]
 high_contrast = true
 ui_scale = 1.2500000111758709
+
+[audio]
+colorize_icons = true
 
 [backdrop]
 enabled = true
@@ -35,7 +38,7 @@ order = [ "OrrPanel" ]
         enabled = true
         fill = "surface_container"
         id = "g1"
-        members = [ "sysmon", "cat", "ram", "temp" ]
+        members = [ "cat", "ram", "temp" ]
         opacity = 1.0
         padding = 6.0
         radius = 3.0
@@ -91,7 +94,6 @@ order = [ "OrrPanel" ]
         padding = 2.0
 
 [control_center]
-circular_avatar = false
 hidden_tabs = [ "media" ]
 
     [control_center.calendar]
@@ -117,14 +119,23 @@ hidden_tabs = [ "media" ]
 active_monitor_only = true
 active_scale = 0.80000001192092896
 background_opacity = 0.4999999888241291
+colorize_icons = true
 compositor_blur = false
-enabled = true
+enabled = false
 inactive_opacity = 0.99999997764825821
 inactive_scale = 0.60000000894069672
 launcher_position = "start"
 layer = "overlay"
 magnification_scale = 1.7500000111758709
-pinned = [ "org.gnome.Nautilus", "zen", "terminator", "org.gnome.gedit", "org.localsend.localsend_app" ]
+pinned = [
+    "org.gnome.Nautilus",
+    "zen",
+    "terminator",
+    "org.wezfurlong.wezterm",
+    "org.gnome.gedit",
+    "org.localsend.localsend_app",
+    "io.github.shiftey.Desktop"
+]
 reserve_space = false
 shadow = false
 show_dots = true
@@ -146,7 +157,7 @@ pre_action_fade_seconds = 0
 auto_locate = true
 
 [lockscreen]
-enabled = false
+enabled = true
 fingerprint = false
 
 [lockscreen_widgets]
@@ -218,6 +229,9 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-login-box@DP-3" ]
 [nightlight]
 enabled = true
 
+[notification]
+colorize_icons = true
+
 [osd.kinds]
 power_profile = false
 
@@ -234,6 +248,9 @@ cheatsheet_placement = "attached"
 cheatsheet_position = "auto"
 columns = 2
 compositor = "niri"
+
+[plugin_settings."mellotanica/launcher-pass"]
+storePath = "/home/orr/.password-store"
 
 [plugin_settings."mera/localsend"]
 alias = "Z-Book"
@@ -268,7 +285,7 @@ enabled = [
 ]
 
 [shell]
-app_icon_colorize = true
+circular_avatar = false
 corner_radius_scale = 2.0
 font_family = "Adwaita Sans"
 lang = "ru"
@@ -276,6 +293,8 @@ niri_overview_close_on_launch_enabled = true
 niri_overview_type_to_launch_enabled = true
 panel_anchor_bar = "OrrPanel"
 polkit_agent = true
+polkit_colorize_icons = true
+screen_time_colorize_icons = true
 
     [shell.keyboard_layout.custom_labels]
     "English (US)" = "EN"
@@ -283,6 +302,7 @@ polkit_agent = true
 
     [shell.launcher]
     app_grid = true
+    colorize_icons = true
     pinned = [ "org.gnome.Nautilus", "terminator", "org.gnome.gedit" ]
     sort_by_usage = false
 
@@ -329,9 +349,13 @@ polkit_agent = true
     shortcut = "5"
     variant = "destructive"
 
+    [shell.window_switcher]
+    colorize_icons = true
+
 [theme]
 builtin = "Gruvbox"
 community_palette = "Oxocarbon"
+custom_palette = "AdwaitaDark"
 mode = "dark"
 pure_black_dark = true
 shell_mode = "dark"
@@ -354,6 +378,9 @@ transition_on_startup = true
 
 [weather]
 refresh_minutes = 60
+
+[widget.active_window]
+colorize_icons = true
 
 [widget.bar]
 capsule_padding = 7
@@ -527,8 +554,14 @@ type = "custom_button"
 enabled = false
 visualization = "none"
 
+[widget.taskbar]
+colorize_icons = true
+
 [widget.temp]
 visualization = "none"
+
+[widget.tray]
+colorize_icons = true
 
 [widget.wallpaper]
 enabled = false
@@ -541,4 +574,5 @@ scale = 1.3
 type = "blackbartblues/keymap:widget"
 
 [widget.workspaces]
+colorize_icons = true
 scale = 1.2
