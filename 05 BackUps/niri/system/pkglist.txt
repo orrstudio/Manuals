@@ -4,6 +4,8 @@ base-devel
 bluez
 bluez-utils
 brightnessctl
+browserpass
+browserpass-firefox
 chafa
 cmake
 dkms

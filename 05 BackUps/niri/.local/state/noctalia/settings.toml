@@ -17,7 +17,7 @@ order = [ "OrrPanel" ]
     capsule = true
     capsule_padding = 2.0
     capsule_thickness = 0.99999998137354851
-    center = [ "weather", "date", "clock", "group:g5", "notifications", "herdr-btn", "wezterm-btn", "bar_4", "group:g4" ]
+    center = [ "weather", "date", "clock", "group:g5", "notifications", "zen-btn", "herdr-btn", "wezterm-btn", "bar_4", "group:g4" ]
     compositor_blur = false
     concave_edge_corners = false
     end = [ "group:g1", "group:g3", "group:g2", "clipboard", "keyboard_layout", "volume", "control-center" ]
@@ -443,6 +443,16 @@ format = "{:%a, %d %B}"
 [widget.dns-switcher]
 show_label = false
 type = "nightwatch75/dns-switcher:dns-switcher"
+
+[widget.zen-btn]
+glyph = "world"
+scale = 1.3
+tooltip = """Zen Browser
+Mod+Z"""
+type = "custom_button"
+
+    [widget.zen-btn.actions]
+    left = "exec gtk-launch zen"
 
 [widget.herdr-btn]
 glyph = "robot"

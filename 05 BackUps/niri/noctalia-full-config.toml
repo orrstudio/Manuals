@@ -35,7 +35,7 @@ order = [ "OrrPanel" ]
     capsule_opacity = 1.0
     capsule_padding = 2.0
     capsule_thickness = 1.0
-    center = [ "weather", "date", "clock", "group:g5", "notifications", "herdr-btn", "wezterm-btn", "bar_4", "group:g4" ]
+    center = [ "weather", "date", "clock", "group:g5", "notifications", "zen-btn", "herdr-btn", "wezterm-btn", "bar_4" ]
     compositor_blur = false
     concave_edge_corners = false
     contact_shadow = false
@@ -117,18 +117,7 @@ order = [ "OrrPanel" ]
         enabled = true
         fill = "surface_container"
         id = "g5"
-        members = [ "bar", "laptop-panel", "widget", "bar_2", "notes", "current" ]
-        opacity = 1.0
-        padding = 2.0
-
-        [[bar.OrrPanel.capsule_group]]
-        accordion = false
-        accordion_direction = "end"
-        border_width = 1.0
-        enabled = true
-        fill = "surface_container"
-        id = "g4"
-        members = [ "say-clipboard", "sw-record" ]
+        members = [ "bar", "laptop-panel", "widget", "bar_2", "notes", "current", "sw-record", "say-clipboard" ]
         opacity = 1.0
         padding = 2.0
 
@@ -1141,3 +1130,13 @@ type = "blackbartblues/keymap:widget"
 colorize_icons = true
 scale = 1.2
 type = "workspaces"
+
+[widget.zen-btn]
+glyph = "world"
+scale = 1.3
+tooltip = """Zen Browser
+Mod+Z"""
+type = "custom_button"
+
+    [widget.zen-btn.actions]
+    left = "exec gtk-launch zen"

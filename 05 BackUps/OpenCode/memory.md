@@ -16,6 +16,8 @@
 - **Noctalia**: `dock.enabled = false`, `lockscreen.enabled = true`; плагин `keymap` deprecated, но работает.
 - **Тема и палитра:** отдельный файл `~/.config/opencode/Theme-Palette.md` (PS1, WezTerm GruvboxDark + чёрный фон, Noctalia wallpaper, Qt `darker-black`, GTK Adwaita + чёрный `gtk.css`, yazi gruvbox-dark; Herdr App — своя тема (`~/.config/herdr-app/settings.json`, `appearance=dark`, zoom 1.4)).
 - **Удалено**: Terminator, alacritty (терминал — WezTerm); Stably Orca, orca-server, `~/.config/orca` (остался GNOME Orca).
+- **browserpass**: хост `/usr/bin/browserpass`, расширение `browserpass@maximbaz.com` в Zen; хост-манифест в `~/.mozilla/native-messaging-hosts/`.
+- **GPG без запросов**: пароль в gnome-keyring, `gpg-keyring-unlock.sh` в `.bash_profile`, `allow-preset-passphrase` в `gpg-agent.conf`.
 - **Не бэкапим**: секреты (`pass`, `~/.ssh`, GPG), кэши Noctalia, `qt6ct`, `.var/app`.
 
 ## Что где искать

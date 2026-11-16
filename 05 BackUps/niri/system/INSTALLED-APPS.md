@@ -33,6 +33,8 @@
 | pinentry-rofi | `pinentry-rofi` (AUR) | `~/.gnupg/gpg-agent.conf` (бэкап) |
 | gnome-keyring | `gnome-keyring` | `~/.local/share/keyrings/` (не бэкап) |
 | Автозапуск keyring | — | `~/.bash_profile` перед Niri |
+| browserpass | `browserpass` + `browserpass-firefox` | хост `/usr/bin/browserpass`, расширение `browserpass@maximbaz.com` в Zen |
+| GPG авторазблокировка | — | пароль в gnome-keyring, `gpg-keyring-unlock.sh` в `.bash_profile`, `allow-preset-passphrase` |
 
 `pass-secret-service` удалён (конфликт с gnome-keyring); токены приложений — в gnome-keyring с пустым паролем.
 
