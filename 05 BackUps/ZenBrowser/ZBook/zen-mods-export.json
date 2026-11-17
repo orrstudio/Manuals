@@ -1,0 +1,83 @@
+{
+  "d868eaf4-cefc-4f41-8f1c-1f603726d2fa": {
+    "id": "d868eaf4-cefc-4f41-8f1c-1f603726d2fa",
+    "name": "Tab Text Size",
+    "description": "Change tab, folder, and workspace text size",
+    "homepage": "https://github.com/ajkuftic/Zen-TabTextSize",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/image.png",
+    "author": "ajkuftic",
+    "version": "1.1.0",
+    "tags": [],
+    "createdAt": "2024-12-16",
+    "updatedAt": "2025-11-06",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/preferences.json",
+    "enabled": true
+  },
+  "e122b5d9-d385-4bf8-9971-e137809097d0": {
+    "id": "e122b5d9-d385-4bf8-9971-e137809097d0",
+    "name": "No Top Sites",
+    "description": "Annoyed with top sites that appear when you open the URL bar? With this mod, you can now hide them!",
+    "homepage": "https://github.com/Ivaon/zen-theme/tree/main/NoTopSites",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e122b5d9-d385-4bf8-9971-e137809097d0/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e122b5d9-d385-4bf8-9971-e137809097d0/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e122b5d9-d385-4bf8-9971-e137809097d0/image.png",
+    "author": "Ivaon",
+    "version": "1.1.0",
+    "tags": [],
+    "createdAt": "2025-10-21",
+    "updatedAt": "2026-01-26",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e122b5d9-d385-4bf8-9971-e137809097d0/preferences.json",
+    "enabled": true
+  },
+  "81fcd6b3-f014-4796-988f-6c3cb3874db8": {
+    "id": "81fcd6b3-f014-4796-988f-6c3cb3874db8",
+    "name": "Zen Context Menu",
+    "description": "Declutter your right click menu, hide options you don't need",
+    "homepage": "https://github.com/KiKaraage/ZenMods/",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/81fcd6b3-f014-4796-988f-6c3cb3874db8/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/81fcd6b3-f014-4796-988f-6c3cb3874db8/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/81fcd6b3-f014-4796-988f-6c3cb3874db8/image.png",
+    "author": "KiKaraage",
+    "version": "3.1",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/81fcd6b3-f014-4796-988f-6c3cb3874db8/preferences.json",
+    "tags": [
+      "context menu"
+    ],
+    "createdAt": "2024-10-06",
+    "updatedAt": "2025-08-26",
+    "enabled": true
+  },
+  "1e86cf37-a127-4f24-b919-d265b5ce29a0": {
+    "id": "1e86cf37-a127-4f24-b919-d265b5ce29a0",
+    "name": "Lean",
+    "description": "Extensions. Spaces. Toolbars. Clean them up, give extra room for your stuff",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e86cf37-a127-4f24-b919-d265b5ce29a0/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e86cf37-a127-4f24-b919-d265b5ce29a0/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e86cf37-a127-4f24-b919-d265b5ce29a0/image.png",
+    "author": "KiKaraage",
+    "version": "3.1",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e86cf37-a127-4f24-b919-d265b5ce29a0/preferences.json",
+    "tags": [],
+    "createdAt": "2024-09-03",
+    "updatedAt": "2025-10-10",
+    "enabled": true
+  },
+  "181e41d4-dfd3-410d-9a73-561381a2f77d": {
+    "id": "181e41d4-dfd3-410d-9a73-561381a2f77d",
+    "name": "Extensions List",
+    "description": "Use a list instead of the default grid on the extensions popout",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/181e41d4-dfd3-410d-9a73-561381a2f77d/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/181e41d4-dfd3-410d-9a73-561381a2f77d/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/181e41d4-dfd3-410d-9a73-561381a2f77d/image.png",
+    "author": "dagadtwok",
+    "version": "1.0.1",
+    "tags": [],
+    "createdAt": "2025-10-21",
+    "updatedAt": "2025-11-16",
+    "enabled": true
+  }
+}

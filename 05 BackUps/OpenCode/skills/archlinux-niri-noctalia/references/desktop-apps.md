@@ -39,6 +39,33 @@ Alternative palettes: `/usr/share/qt6ct/colors/{darker,dusk,airy,sand,waves}.con
 - QtPass config: `~/.config/QtPass/`. Not backed up by policy; the theme/font settings live in qt6ct.
 - Launch with the Qt theme: `env QT_QPA_PLATFORMTHEME=qt6ct qtpass`.
 
+
+## browserpass (pass in the browser)
+
+```sh
+sudo -A pacman -S --needed browserpass browserpass-firefox
+ln -sfn /usr/lib/browserpass/hosts/firefox/com.github.browserpass.native.json \
+        ~/.mozilla/native-messaging-hosts/com.github.browserpass.native.json
+```
+
+- Native host: `/usr/bin/browserpass`; manifest `allowed_extensions: ["browserpass@maximbaz.com"]`.
+- Zen/Firefox forks read native messaging from `~/.mozilla/native-messaging-hosts/`; the user-level symlink is more reliable than the system path.
+- Extension: install `browserpass@maximbaz.com.xpi` from `/usr/lib/firefox/browser/extensions/` via `about:addons` → gear → Install Add-on From File, or from AMO.
+
+## GPG without passphrase prompts
+
+gpg-agent cache lives in memory and is empty after a reboot. To avoid prompts entirely, keep the passphrase in gnome-keyring (which autounlocks with an empty password) and preset it at login:
+
+```
+# ~/.gnupg/gpg-agent.conf
+allow-preset-passphrase
+```
+
+- `~/.local/bin/gpg-keyring-set.sh` — asks the passphrase in rofi, stores it via `secret-tool store service gpg key gpg-passphrase`.
+- `~/.local/bin/gpg-keyring-unlock.sh` — reads it back and runs `gpg-preset-passphrase --preset <encryption-subkey keygrip>`; called from `~/.bash_profile` after the keyring starts.
+- Keygrip is the encryption subkey's (`gpg --with-keygrip --list-secret-keys`), not the primary key's.
+- Verify: `gpg-connect-agent 'KEYINFO --list' /bye` shows `1` for the keygrip after a `CLEAR_PASSPHRASE`.
+
 ## Brightness (brightnessctl + udev)
 
 `brightnessctl` alone is not enough: `/sys/class/backlight/*/brightness` is root-only.

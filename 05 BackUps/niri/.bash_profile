@@ -10,6 +10,9 @@ if [ -z "${GNOME_KEYRING_CONTROL}" ] && command -v gnome-keyring-daemon >/dev/nu
     export GNOME_KEYRING_CONTROL
 fi
 
+# Предзагрузка GPG-пароля из keyring, чтобы pass не спрашивал пароль
+[ -x "$HOME/.local/bin/gpg-keyring-unlock.sh" ] && "$HOME/.local/bin/gpg-keyring-unlock.sh"
+
 # Автозапуск niri на tty1 (после автологина).
 if [ "$(tty)" = "/dev/tty1" ] \
    && [ -z "${WAYLAND_DISPLAY}" ] \

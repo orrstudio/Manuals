@@ -46,6 +46,7 @@
 
 ## 🛠️ System Tools [↑](#menu)
 
+- HydraPaper - Для обоев на два монитора раздельно.
 - qt5ct, qt6ct, kvantum (Для настройки темного режима Qt приложений)
 - [Distrobox](https://github.com/89luca89/distrobox) - Используйте любой дистрибутив Linux внутри своего терминала
 - [Flatseal](https://flathub.org/ru/apps/com.github.tchx84.Flatseal "Это графическая утилита для просмотра и изменения разрешений ваших приложений Flatpak.") - Утилита управления разрешениями Flatpak

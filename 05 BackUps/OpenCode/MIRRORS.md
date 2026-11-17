@@ -38,6 +38,8 @@
 | `~/.local/bin/translate-clipboard` | `.local/bin/translate-clipboard` | Перевод буфера |
 | `~/.local/bin/piper-speechd` | `.local/bin/piper-speechd` | piper для speech-dispatcher (голос Orca) |
 | `~/.local/bin/gparted-root.sh` | `.local/bin/gparted-root.sh` | Запуск GParted от root на Wayland (sudo -A) |
+| `~/.local/bin/gpg-keyring-set.sh` | `.local/bin/gpg-keyring-set.sh` | Сохранить GPG-пароль в gnome-keyring (rofi) |
+| `~/.local/bin/gpg-keyring-unlock.sh` | `.local/bin/gpg-keyring-unlock.sh` | Предзагрузка GPG-пароля из keyring в gpg-agent |
 
 ### 2.2. Конфиги
 
